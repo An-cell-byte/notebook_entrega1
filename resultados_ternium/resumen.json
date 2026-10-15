@@ -1,0 +1,301 @@
+{
+  "versiones": {
+    "pandas": "3.0.6",
+    "numpy": "2.5.4",
+    "openpyxl": "3.1.5",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "matplotlib": "3.11.2"
+  },
+  "semilla": 42,
+  "archivos_sha256": {
+    "Viajes con Costos V2.xlsx": "63b178b0b8ceccec0c337e5f6ac9224dd041cd93ed4a68517af4141df5878491",
+    "Tiempos Viajes Foraneos.xlsx": "aea9e9a19be76c3c16ca68657c7826662dc2dc209fd8877fed78999212364966",
+    "Detalle Ciclos de Viajes Despachados.xlsx": "2c80ce1c2a897993f84a97e3b329f7f1ca8aa3204e55f6d921a6668bd36549b6"
+  },
+  "auditoria": [
+    {
+      "Dato necesario": "Camión usado",
+      "Resultado": "Sí",
+      "Evidencia": "Desc TpoTrn / FAMILIA_CAMION_DESC"
+    },
+    {
+      "Dato necesario": "Costo observado",
+      "Resultado": "Sí",
+      "Evidencia": "Monto total; Moneda = MXN"
+    },
+    {
+      "Dato necesario": "Peso transportado",
+      "Resultado": "Sí, unidad pendiente",
+      "Evidencia": "Peso Total"
+    },
+    {
+      "Dato necesario": "Tarifa del camión no usado",
+      "Resultado": "No explícita",
+      "Evidencia": "Sin tabla de alternativas por decisión"
+    },
+    {
+      "Dato necesario": "Disponibilidad al asignar",
+      "Resultado": "No explícita",
+      "Evidencia": "Sin estado de flota a la hora de decisión"
+    },
+    {
+      "Dato necesario": "Capacidad por equipo y peso por eje",
+      "Resultado": "No explícita",
+      "Evidencia": "Los nombres de ejes no dan límites de carga"
+    },
+    {
+      "Dato necesario": "Volumen, dimensiones y producto",
+      "Resultado": "No explícitos",
+      "Evidencia": "Sin medidas o catálogo de productos"
+    },
+    {
+      "Dato necesario": "Ventana de entrega acordada",
+      "Resultado": "No explícita",
+      "Evidencia": "ETA y ETA_FLEX requieren diccionario"
+    },
+    {
+      "Dato necesario": "Pedido dividido o consolidado",
+      "Resultado": "No reconstruible",
+      "Evidencia": "Hay #Remitos, pero no IDs de pedido por remito"
+    }
+  ],
+  "unidades": [
+    {
+      "Archivo": "costos",
+      "Filas": 91772,
+      "IDs únicos": 91619,
+      "IDs con varias filas": 145,
+      "Filas adicionales por ID": 153,
+      "Duplicados exactos": 0
+    },
+    {
+      "Archivo": "tiempos",
+      "Filas": 105449,
+      "IDs únicos": 93239,
+      "IDs con varias filas": 10296,
+      "Filas adicionales por ID": 12210,
+      "Duplicados exactos": 7
+    },
+    {
+      "Archivo": "ciclos",
+      "Filas": 7476,
+      "IDs únicos": 6051,
+      "IDs con varias filas": 1232,
+      "Filas adicionales por ID": 1425,
+      "Duplicados exactos": 0
+    }
+  ],
+  "flujo": {
+    "Filas costos originales": 91772,
+    "Viajes costos sin ID repetido": 91474,
+    "Viajes tiempos con proyección única": 82954,
+    "Viajes unidos uno a uno": 76071,
+    "Origen inconsistente": 1,
+    "Base final positiva y origen coherente": 76070
+  },
+  "calidad_tiempos": [
+    {
+      "Etapa": "Espera_h",
+      "Faltantes": 5844,
+      "Negativos": 2,
+      "Mediana no negativa": 0.43333333333333335
+    },
+    {
+      "Etapa": "Planta_h",
+      "Faltantes": 5844,
+      "Negativos": 27,
+      "Mediana no negativa": 3.2666666666666666
+    },
+    {
+      "Etapa": "Traslado_h",
+      "Faltantes": 21083,
+      "Negativos": 2,
+      "Mediana no negativa": 26.96472222222222
+    }
+  ],
+  "coincidencias_costos_tiempos": 85480,
+  "coincidencias_tres": 4961,
+  "distribuciones": [
+    {
+      "Variable": "Peso Total",
+      "n": 91772,
+      "Media": 30363.834731726452,
+      "Mediana": 29381.5,
+      "Desv estándar": 278179.5651105952,
+      "P95": 36612.45,
+      "P99": 43115.349999999904,
+      "Máximo": 62058000.0,
+      "Asimetría": 171.7467180072747,
+      "Fuera de Tukey %": 5.174780978947827
+    },
+    {
+      "Variable": "Monto total",
+      "n": 91772,
+      "Media": 27404.851492612128,
+      "Mediana": 21738.09,
+      "Desv estándar": 20914.330235151683,
+      "P95": 70182.0,
+      "P99": 97190.7,
+      "Máximo": 185000.0,
+      "Asimetría": 1.6270466707245552,
+      "Fuera de Tukey %": 3.4956195789565445
+    }
+  ],
+  "pesos_mayores_100000": 44,
+  "faltante_llegada_original": 30230,
+  "sesgo": {
+    "n": 72219,
+    "cobertura_base": 0.9493755751281714,
+    "chi2": 82775.21217929348,
+    "gl": 64,
+    "p": 0.0,
+    "cramer_v": 0.5352965204617403,
+    "min_esperado": 6.672662318780376,
+    "plantas": 17,
+    "tipos": 5
+  },
+  "relaciones": [
+    {
+      "Relación": "Peso Total / costo",
+      "n": 76070,
+      "rho": 0.013982403881591032,
+      "p": 0.00011498323293979794,
+      "p Holm": 0.00011498323293979794
+    },
+    {
+      "Relación": "#Remitos / costo",
+      "n": 76070,
+      "rho": -0.08456292699920584,
+      "p": 9.79385861428228e-121,
+      "p Holm": 1.958771722856456e-120
+    },
+    {
+      "Relación": "Traslado_h / costo",
+      "n": 54985,
+      "rho": 0.6706689280499917,
+      "p": 0.0,
+      "p Holm": 0.0
+    }
+  ],
+  "dentro_ruta": {
+    "n": 64594,
+    "rutas": 403,
+    "r_rangos_centrados": 0.20812330884169836,
+    "p_permutacion": 0.001,
+    "permutaciones": 999,
+    "rho_medianas_ruta": 0.007798124456282903,
+    "p_medianas_ruta": 0.8759838599299515
+  },
+  "pca": {
+    "Sin costo": {
+      "n": 51928,
+      "variables": [
+        "Peso Total",
+        "#Remitos",
+        "Espera_h",
+        "Planta_h",
+        "Traslado_h"
+      ],
+      "varianza": [
+        0.24161279719234915,
+        0.22967073954259554,
+        0.20175303674361053,
+        0.1768221238512214,
+        0.1501413026702234
+      ],
+      "acumulada_2": 0.4712835367349447,
+      "acumulada_2_sensibilidad": 0.4777971201539166
+    },
+    "Con costo": {
+      "n": 51928,
+      "variables": [
+        "Peso Total",
+        "#Remitos",
+        "Espera_h",
+        "Planta_h",
+        "Traslado_h",
+        "Monto total"
+      ],
+      "varianza": [
+        0.2858955732480783,
+        0.20117878660941543,
+        0.17822635650694815,
+        0.1492106522817921,
+        0.1327843004675804,
+        0.05270433088618565
+      ],
+      "acumulada_2": 0.4870743598574937,
+      "acumulada_2_sensibilidad": 0.48788032714437446
+    }
+  },
+  "pca_coeficientes": [
+    {
+      "Modelo": "Sin costo",
+      "Variable": "Peso Total",
+      "CP1": 0.022342276516496045,
+      "CP2": -0.48464636087452845
+    },
+    {
+      "Modelo": "Sin costo",
+      "Variable": "#Remitos",
+      "CP1": 0.6361009840475611,
+      "CP2": 0.06599174273021602
+    },
+    {
+      "Modelo": "Sin costo",
+      "Variable": "Espera_h",
+      "CP1": 0.46444134988801544,
+      "CP2": -0.4240004268029992
+    },
+    {
+      "Modelo": "Sin costo",
+      "Variable": "Planta_h",
+      "CP1": 0.6151534126089812,
+      "CP2": 0.3008059541730959
+    },
+    {
+      "Modelo": "Sin costo",
+      "Variable": "Traslado_h",
+      "CP1": -0.027511311192069954,
+      "CP2": 0.7003587729067109
+    },
+    {
+      "Modelo": "Con costo",
+      "Variable": "Peso Total",
+      "CP1": 0.02849853564102784,
+      "CP2": 0.05699972791962054
+    },
+    {
+      "Modelo": "Con costo",
+      "Variable": "#Remitos",
+      "CP1": -0.010014887397496841,
+      "CP2": 0.6335052127091357
+    },
+    {
+      "Modelo": "Con costo",
+      "Variable": "Espera_h",
+      "CP1": -0.08407479944574296,
+      "CP2": 0.5043825058853371
+    },
+    {
+      "Modelo": "Con costo",
+      "Variable": "Planta_h",
+      "CP1": 0.2512200708682617,
+      "CP2": 0.5697902602182034
+    },
+    {
+      "Modelo": "Con costo",
+      "Variable": "Traslado_h",
+      "CP1": 0.6767788039617542,
+      "CP2": -0.1270681426461446
+    },
+    {
+      "Modelo": "Con costo",
+      "Variable": "Monto total",
+      "CP1": 0.6862054284949468,
+      "CP2": -0.01460173719803598
+    }
+  ],
+  "pca_cobertura_base": 0.6826344156697778
+}

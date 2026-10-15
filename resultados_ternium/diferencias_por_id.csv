@@ -1,0 +1,24 @@
+﻿Archivo,Columna,IDs repetidos con diferencias
+costos,Permiso,140
+costos,Planta Origen,134
+costos,Desc Org. Apt,134
+costos,TpoTrn.APT,1
+costos,TpoSrv,5
+costos,F.Salida,57
+costos,H.Salida,140
+costos,#Remitos,36
+costos,Peso Total,5
+costos,Shp.Cost,5
+costos,Monto total,5
+costos,F.CargaP,55
+costos,H.CargaP,139
+tiempos,D_REGION,1668
+tiempos,ZONA_LOCALIDAD,5841
+tiempos,C_ZONA_TRANSPORTE,5841
+tiempos,FECHA_ETA_CALCULADA,2836
+tiempos,FECHA_ETA_FLEX,8107
+tiempos,TIPO_DESPACHO,1307
+tiempos,GEOCERCA_ID,10208
+ciclos,Estado Destino,183
+ciclos,Ciudad Destino,1206
+ciclos,Descripción Zona,1228

@@ -1,0 +1,59 @@
+﻿Archivo,Columna,Tipo,Faltantes,Valores distintos
+Viajes con Costos V2.xlsx,Viaje,int64,0,91619
+Viajes con Costos V2.xlsx,Permiso,int64,0,90542
+Viajes con Costos V2.xlsx,Planta Origen,str,0,49
+Viajes con Costos V2.xlsx,Desc Org. Apt,str,0,50
+Viajes con Costos V2.xlsx,Nombre,str,0,164
+Viajes con Costos V2.xlsx,TpoTrn.APT,int64,0,23
+Viajes con Costos V2.xlsx,Desc TpoTrn,object,0,8
+Viajes con Costos V2.xlsx,TpoSrv,str,5369,2
+Viajes con Costos V2.xlsx,Placas tract,str,1,2994
+Viajes con Costos V2.xlsx,Placas plat,str,5303,4969
+Viajes con Costos V2.xlsx,Chofer,str,0,3139
+Viajes con Costos V2.xlsx,F.Salida,datetime64[us],0,234
+Viajes con Costos V2.xlsx,H.Salida,object,0,37688
+Viajes con Costos V2.xlsx,#Remitos,int64,0,19
+Viajes con Costos V2.xlsx,Peso Total,int64,0,22971
+Viajes con Costos V2.xlsx,Shp.Cost,int64,0,91624
+Viajes con Costos V2.xlsx,Monto total,float64,0,12871
+Viajes con Costos V2.xlsx,Moneda,str,0,1
+Viajes con Costos V2.xlsx,F.CargaP,datetime64[us],0,236
+Viajes con Costos V2.xlsx,H.CargaP,object,0,48501
+Tiempos Viajes Foraneos.xlsx,GRUPO_PLANTA_ORIGEN,str,0,7
+Tiempos Viajes Foraneos.xlsx,COD_PLANTA_ORIGEN,str,0,47
+Tiempos Viajes Foraneos.xlsx,PLANTA_ORIGEN,str,0,47
+Tiempos Viajes Foraneos.xlsx,ID_VIAJE_NCA,int64,0,93239
+Tiempos Viajes Foraneos.xlsx,FECHA_PRESENTACION,str,0,79170
+Tiempos Viajes Foraneos.xlsx,FECHA_INGRESO,str,13280,73255
+Tiempos Viajes Foraneos.xlsx,FECHA_EGRESO,str,0,79880
+Tiempos Viajes Foraneos.xlsx,D_REGION,str,202,42
+Tiempos Viajes Foraneos.xlsx,ZONA_LOCALIDAD,str,217,664
+Tiempos Viajes Foraneos.xlsx,FECHA_LLEGADA_GEO_CERCA,str,30230,64360
+Tiempos Viajes Foraneos.xlsx,FECHA_SALIDA_GEO_CERCA,str,31467,64367
+Tiempos Viajes Foraneos.xlsx,TIPO_SERVICIO,str,0,1
+Tiempos Viajes Foraneos.xlsx,SOCIEDAD,str,0,1
+Tiempos Viajes Foraneos.xlsx,C_ZONA_TRANSPORTE,float64,202,621
+Tiempos Viajes Foraneos.xlsx,FECHA_ETA_CALCULADA,str,0,15405
+Tiempos Viajes Foraneos.xlsx,FECHA_ETA_FLEX,str,25964,69208
+Tiempos Viajes Foraneos.xlsx,TIPO_DESPACHO,str,0,2
+Tiempos Viajes Foraneos.xlsx,GEOCERCA_ID,float64,2356,2154
+Tiempos Viajes Foraneos.xlsx,FAMILIA_CAMION_DESC,str,9,24
+Tiempos Viajes Foraneos.xlsx,ESTADO,str,0,1
+Tiempos Viajes Foraneos.xlsx,FECHA_VIAJE_FINALIZADO,str,0,88546
+Tiempos Viajes Foraneos.xlsx,CC_FECHA_EGRESO_ANIO_MES,str,0,9
+Tiempos Viajes Foraneos.xlsx,CC_FECHA_EGRESO_ANIO,int64,0,1
+Tiempos Viajes Foraneos.xlsx,CC_FECHA_EGRESO_MES,int64,0,9
+Tiempos Viajes Foraneos.xlsx,CC_FECHA_EGRESO_DIA,int64,0,31
+Tiempos Viajes Foraneos.xlsx,CC_FECHA_EGRESO_HORA,int64,0,24
+Tiempos Viajes Foraneos.xlsx,SEMANA_EGRESO,int64,0,37
+Detalle Ciclos de Viajes Despachados.xlsx,Planta,str,0,5
+Detalle Ciclos de Viajes Despachados.xlsx,Critico,str,0,2
+Detalle Ciclos de Viajes Despachados.xlsx,Cant. Ciclos,str,0,6
+Detalle Ciclos de Viajes Despachados.xlsx,ID Viaje,int64,0,6051
+Detalle Ciclos de Viajes Despachados.xlsx,Estado Origen,str,0,5
+Detalle Ciclos de Viajes Despachados.xlsx,Estado Destino,str,98,30
+Detalle Ciclos de Viajes Despachados.xlsx,Ciudad Destino,str,0,394
+Detalle Ciclos de Viajes Despachados.xlsx,Descripción Zona,str,300,330
+Detalle Ciclos de Viajes Despachados.xlsx,Año,int64,0,1
+Detalle Ciclos de Viajes Despachados.xlsx,Mes,str,0,9
+Detalle Ciclos de Viajes Despachados.xlsx,Día,int64,0,31
