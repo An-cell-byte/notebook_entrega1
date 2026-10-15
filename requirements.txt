@@ -1,0 +1,8 @@
+jupyter
+ipython
+numpy==2.5.4
+pandas==3.0.6
+openpyxl==3.1.5
+matplotlib==3.11.2
+scipy==1.18.1
+scikit-learn==1.9.1
