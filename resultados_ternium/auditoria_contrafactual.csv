@@ -1,0 +1,10 @@
+﻿Dato necesario,Resultado,Evidencia
+Camión usado,Sí,Desc TpoTrn / FAMILIA_CAMION_DESC
+Costo observado,Sí,Monto total; Moneda = MXN
+Peso transportado,"Sí, unidad pendiente",Peso Total
+Tarifa del camión no usado,No explícita,Sin tabla de alternativas por decisión
+Disponibilidad al asignar,No explícita,Sin estado de flota a la hora de decisión
+Capacidad por equipo y peso por eje,No explícita,Los nombres de ejes no dan límites de carga
+"Volumen, dimensiones y producto",No explícitos,Sin medidas o catálogo de productos
+Ventana de entrega acordada,No explícita,ETA y ETA_FLEX requieren diccionario
+Pedido dividido o consolidado,No reconstruible,"Hay #Remitos, pero no IDs de pedido por remito"
