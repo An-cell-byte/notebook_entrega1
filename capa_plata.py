@@ -28,12 +28,12 @@ def una_fila_por_viaje(df, nombre):
 
 # Detalles viajes foraneos ultimo año (ya limpia con limpieza_viajes_foraneos.py)
 det = leer("Detalles viajes foraneos ultimo año.csv")
-det = det[["Planta", "ID Viaje", "ID Camión", "Tipo Camión", "Programado (Peso)"]]
+det = det[["Planta", "ID Viaje", "Ciudad Destino", "ID Camión", "Tipo Camión", "Programado (Peso)"]]
 det = una_fila_por_viaje(det.rename(columns={"ID Viaje": "ID_VIAJE"}), "Detalles")
 
 # Tiempos Viajes Foraneos (una fila por parada; se deja una por viaje)
 tie = leer("Tiempos Viajes Foraneos.csv")
-tie = tie[["GRUPO_PLANTA_ORIGEN", "COD_PLANTA_ORIGEN", "ID_VIAJE_NCA", "FECHA_EGRESO", "FAMILIA_CAMION_DESC", "FECHA_VIAJE_FINALIZADO"]]
+tie = tie[["GRUPO_PLANTA_ORIGEN", "COD_PLANTA_ORIGEN", "PLANTA_ORIGEN", "ID_VIAJE_NCA", "FECHA_EGRESO", "FAMILIA_CAMION_DESC", "FECHA_VIAJE_FINALIZADO"]]
 tie = una_fila_por_viaje(tie.rename(columns={"ID_VIAJE_NCA": "ID_VIAJE"}), "Tiempos")
 
 # Viajes con Costos V2
