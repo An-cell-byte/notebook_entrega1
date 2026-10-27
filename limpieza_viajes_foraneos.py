@@ -28,8 +28,8 @@ n3 = len(df)
 df = df.drop_duplicates(subset="ID Viaje", keep="first")
 n4 = len(df)
 
-# 5. Columnas que sobran.
-df = df.drop(columns=["Ciudad Destino", "Descripción Zona", "Cant. Ciclos", "Sociedad", "Motivo"])
+# 5. Columnas que sobran (Ciudad Destino se conserva para la capa de plata).
+df = df.drop(columns=["Descripción Zona", "Cant. Ciclos", "Sociedad", "Motivo"])
 for c in ["ID Viaje", "ID Camión", "Año", "Día"]:
     df[c] = df[c].astype("int64")
 
