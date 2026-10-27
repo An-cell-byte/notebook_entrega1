@@ -33,7 +33,7 @@ det = una_fila_por_viaje(det.rename(columns={"ID Viaje": "ID_VIAJE"}), "Detalles
 
 # Tiempos Viajes Foraneos (una fila por parada; se deja una por viaje)
 tie = leer("Tiempos Viajes Foraneos.csv")
-tie = tie[["COD_PLANTA_ORIGEN", "ID_VIAJE_NCA", "FECHA_EGRESO", "FAMILIA_CAMION_DESC", "FECHA_VIAJE_FINALIZADO"]]
+tie = tie[["GRUPO_PLANTA_ORIGEN", "COD_PLANTA_ORIGEN", "ID_VIAJE_NCA", "FECHA_EGRESO", "FAMILIA_CAMION_DESC", "FECHA_VIAJE_FINALIZADO"]]
 tie = una_fila_por_viaje(tie.rename(columns={"ID_VIAJE_NCA": "ID_VIAJE"}), "Tiempos")
 
 # Viajes con Costos V2
