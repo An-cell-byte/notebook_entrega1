@@ -1,4 +1,4 @@
-﻿Planta;Critico;Cant. Ciclos;ID Viaje;Estado Origen;Estado Destino;Ciudad Destino;Descripción Zona;Año;Mes;Día
+﻿Planta;Critico;Cant. Ciclos;ID_VIAJE;Estado Origen;Estado Destino;Ciudad Destino;Descripción Zona;Año;Mes;Día
 GDL;NO;1;74415006;JAL;Nayarit;Tepic;Tepic;2026;Abr;16
 GDL;NO;1;74423938;JAL;Jalisco;Ocotlán;Ocotlán;2026;Abr;17
 GDL;NO;1;74429711;JAL;CDMX+EDOMEX;Tultitlán;Tultitlan;2026;May;13

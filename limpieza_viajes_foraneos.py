@@ -7,10 +7,12 @@ ENTRADA = DATA / "Detalles viajes foraneos ultimo año.xlsx"
 SALIDA = DATA / "Detalles viajes foraneos ultimo año.csv"
 
 df = pd.read_excel(ENTRADA)
+# Mismo nombre de ID que las otras tablas (el Excel puede traer "ID Viaje" o "ID_VIAJE").
+df = df.rename(columns={"ID Viaje": "ID_VIAJE"})
 n0 = len(df)
 
-# 1. Filas basura del final: "Total", fila vacía y texto de filtros (no tienen ID Viaje).
-df = df[df["ID Viaje"].notna()].copy()
+# 1. Filas basura del final: "Total", fila vacía y texto de filtros (no tienen ID_VIAJE).
+df = df[df["ID_VIAJE"].notna()].copy()
 n1 = len(df)
 
 # 2. Categoría Extranjero/Texas (antes de borrar Ciudad/Zona, que es de donde se detecta).
@@ -24,13 +26,13 @@ peso = df["Programado (Peso)"]
 df = df[(peso > 0) & (peso <= 80)]
 n3 = len(df)
 
-# 4. Viajes repetidos: una fila por ID Viaje (se conserva la primera aparición).
-df = df.drop_duplicates(subset="ID Viaje", keep="first")
+# 4. Viajes repetidos: una fila por ID_VIAJE (se conserva la primera aparición).
+df = df.drop_duplicates(subset="ID_VIAJE", keep="first")
 n4 = len(df)
 
 # 5. Columnas que sobran (Ciudad Destino se conserva para la capa de plata).
 df = df.drop(columns=["Descripción Zona", "Cant. Ciclos", "Sociedad", "Motivo"])
-for c in ["ID Viaje", "ID Camión", "Año", "Día"]:
+for c in ["ID_VIAJE", "ID Camión", "Año", "Día"]:
     df[c] = df[c].astype("int64")
 
 df.to_csv(SALIDA, sep=";", index=False, encoding="utf-8-sig")

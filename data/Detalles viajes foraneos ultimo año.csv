@@ -1,4 +1,4 @@
-﻿Planta;Critico;ID Viaje;Estado Origen;Estado Destino;Ciudad Destino;ID Camión;Tipo Camión;Programado (Peso);Servicio;Clasificación;Año;Mes;Día;Usuario
+﻿Planta;Critico;ID_VIAJE;Estado Origen;Estado Destino;Ciudad Destino;ID Camión;Tipo Camión;Programado (Peso);Servicio;Clasificación;Año;Mes;Día;Usuario
 GUE;NO;72905102;NL;San Luis Potosí;San Luis Potosí;66;Plataforma 3 ejes Neumática Cortina;30.55;FO;Oferta Automática;2025;Sep;9;SISTEMA
 JUV;NO;72928076;NL;Puebla;Puebla;26;Plataforma 2 ejes Neumática;6.608;FO;Ofertas Manuales;2025;Sep;23;jriverah
 CHU;NO;72942210;NL;Coahuila;Monclova;69;Plataforma 3 Ejes Neumática Ultra Ligera;29.039;FO;Oferta Automática;2025;Sep;30;SISTEMA
