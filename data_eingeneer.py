@@ -1,172 +1,178 @@
 import pandas as pd
-import sqlite3
-import datetime
+import numpy as np
 import os
-import logging
+import requests
+import time
+from pathlib import Path
+from geopy.geocoders import Nominatim
+from geopy.exc import GeocoderTimedOut
 
-# 1. Configuración de Logging para Idempotencia y Trazabilidad
-timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
-logging.basicConfig(
-    filename=f'etl_pipeline_{timestamp}.log',
-    level=logging.INFO,
-    format='%(asctime)s - %(levelname)s - %(message)s'
-)
+DS_FILE_ADRESS = Path()
+DATA_DIR = DS_FILE_ADRESS/'data'/'plata'
+DATA_ADRESS = DATA_DIR/'viajes_foraneos_plata.csv'
+        
+# --- MÓDULOS DE TIEMPO Y CAPACIDAD ---
 
-def extract_data(file_paths):
-    dfs = {}
-    for name, path in file_paths.items():
+def calcular_tiempo_viaje(df, col_egreso='FECHA_EGRESO', col_llegada='FECHA_VIAJE_FINALIZADO'):
+    df = df.copy()
+    df[col_egreso] = pd.to_datetime(df[col_egreso], errors='coerce')
+    df[col_llegada] = pd.to_datetime(df[col_llegada], errors='coerce')
+    df['Tiempo_Viaje_Horas'] = (df[col_llegada] - df[col_egreso]).dt.total_seconds() / 3600
+    return df
+
+def calcular_discrepancia_peso(df, col_programado='Programado (Peso)', col_real='Peso Total'):
+    df = df.copy()
+    df['Programado_kg'] = df[col_programado] * 1000
+    df['Discrepancia_Peso_kg'] = df['Programado_kg'] - df[col_real]
+    df['Ineficiencia_Capacidad'] = df['Discrepancia_Peso_kg'] > 0
+    return df
+
+def inferir_vehiculo_y_costos(df):
+    df = df.copy()
+    LIMITE_2_EJES = 32000
+    LIMITE_3_EJES = 38500
+    LIMITE_FULL = 46000
+    
+    condiciones = [
+        (df['Programado_kg'] > LIMITE_3_EJES),
+        (df['Programado_kg'] > LIMITE_2_EJES) & (df['Programado_kg'] <= LIMITE_3_EJES),
+        (df['Programado_kg'] <= LIMITE_2_EJES) & (df['FAMILIA_CAMION_DESC'].astype(str).str.contains('3 EJES', case=False, na=False)),
+        (df['Programado_kg'] <= LIMITE_2_EJES) & (df['FAMILIA_CAMION_DESC'].astype(str).str.contains('2 EJES', case=False, na=False))
+    ]
+    
+    nomenclaturas = ['T3-S2-R4 (Full)', 'T3-S3 (3 Ejes)', 'T3-S3 (3 Ejes)', 'T3-S2 (2 Ejes)']
+    df['Nomenclatura_Inferida'] = np.select(condiciones, nomenclaturas, default='Desconocido')
+    
+    capacidades = [LIMITE_FULL, LIMITE_3_EJES, LIMITE_3_EJES, LIMITE_2_EJES]
+    df['Capacidad_Max_kg'] = np.select(condiciones, capacidades, default=LIMITE_2_EJES)
+    
+    df['Porcentaje_Utilizacion_Real'] = (df['Peso Total'] / df['Capacidad_Max_kg']) * 100
+    df['Capacidad_Sobra_kg'] = df['Capacidad_Max_kg'] - df['Peso Total']
+    
+    df['Toneladas_Reales'] = df['Peso Total'] / 1000
+    df['Toneladas_Maximas'] = df['Capacidad_Max_kg'] / 1000
+    
+    df['Costo_Ton_Real'] = df['Monto total'] / df['Toneladas_Reales'].replace(0, np.nan)
+    df['Costo_Ton_Optimo'] = df['Monto total'] / df['Toneladas_Maximas']
+    df['Sobrecosto_Ton'] = df['Costo_Ton_Real'] - df['Costo_Ton_Optimo']
+    
+    return df
+
+# --- MÓDULOS DE DISTANCIA Y GEOLOCALIZACIÓN ---
+
+def obtener_coordenadas(ubicaciones):
+    geolocator = Nominatim(user_agent="ternium_logistics_project")
+    diccionario_coords = {}
+    print(f"Geocodificando {len(ubicaciones)} ubicaciones únicas...")
+    for ciudad in ubicaciones:
+        busqueda = f"{ciudad}, México"
         try:
-            # Usamos read_csv en lugar de read_excel. low_memory=False ayuda con tipos mixtos.
-            dfs[name] = pd.read_csv(path, low_memory=False, encoding='utf-8-sig')
-            # Limpiar espacios en blanco al inicio o final de los nombres de las columnas
-            dfs[name].columns = dfs[name].columns.str.strip()
-            logging.info(f"Archivo {name} cargado exitosamente. Filas: {len(dfs[name])}")
-        except Exception as e:
-            # Intento de fallback con otra codificación muy común en caso de error
-            try:
-                dfs[name] = pd.read_csv(path, low_memory=False, encoding='latin1')
-                dfs[name].columns = dfs[name].columns.str.strip()
-                logging.info(f"Archivo {name} cargado exitosamente (latin1). Filas: {len(dfs[name])}")
-            except Exception as inner_e:
-                logging.error(f"Error cargando {path}: {inner_e}")
-    return dfs
+            location = geolocator.geocode(busqueda, timeout=10)
+            diccionario_coords[ciudad] = (location.latitude, location.longitude) if location else (None, None)
+            time.sleep(1) 
+        except GeocoderTimedOut:
+            diccionario_coords[ciudad] = (None, None)
+            time.sleep(2)
+    return diccionario_coords
 
-def standardize_text(df, columns):
-    """Estandariza los nombres a mayúsculas y elimina espacios innecesarios"""
-    for col in columns:
-        if col in df.columns:
-            df[col] = df[col].astype(str).str.strip().str.upper()
-    return df
-
-def standardize_dates(df, columns):
-    """Convierte columnas a formato datetime unificado"""
-    for col in columns:
-        if col in df.columns:
-            df[col] = pd.to_datetime(df[col], errors='coerce')
-    return df
-
-def process_bronze_to_silver(dfs):
-    silver_dfs = {}
-    quarantine_dfs = []
-    
-    for name, df in dfs.items():
-        original_len = len(df)
-        
-        # Asumimos que la columna clave se llama 'ID_VIAJE'. 
-        if 'ID_VIAJE' not in df.columns:
-            logging.warning(f"ID_VIAJE no encontrado en {name}. Archivo saltado.")
-            continue
-            
-        # CUARENTENA 1: Nulos en ID_VIAJE
-        q_nulls = df[df['ID_VIAJE'].isnull()].copy()
-        if not q_nulls.empty:
-            q_nulls['Razon_Rechazo'] = 'ID_VIAJE es nulo'
-            q_nulls['Origen_Datos'] = name
-            quarantine_dfs.append(q_nulls)
-            
-        df = df.dropna(subset=['ID_VIAJE']).copy()
-        
-        # CUARENTENA 2: Duplicados en ID_VIAJE
-        q_dups = df[df.duplicated(subset=['ID_VIAJE'], keep='first')].copy()
-        if not q_dups.empty:
-            q_dups['Razon_Rechazo'] = 'ID_VIAJE duplicado (se conservó el primero)'
-            q_dups['Origen_Datos'] = name
-            quarantine_dfs.append(q_dups)
-            
-        df = df.drop_duplicates(subset=['ID_VIAJE'], keep='first').copy()
-        
-        # ESTANDARIZACIÓN
-        cols_to_upper = ['PLANTA', 'PLANTA_ORIGEN', 'CIUDAD DESTINO', 'ESTADO DESTINO', 'DESTINO', 'FAMILIA_CAMION_DESC']
-        df = standardize_text(df, cols_to_upper)
-        
-        date_cols = ['FECHA_LLEGADA', 'FECHA_SALIDA', 'FECHA_VIAJE_FINALIZADO', 'FECHA']
-        df = standardize_dates(df, date_cols)
-        
-        silver_dfs[name] = df
-        logging.info(f"{name}: {original_len} filas crudas -> {len(df)} filas Silver. {len(q_nulls) + len(q_dups)} a cuarentena.")
-        
-    quarantine_master = pd.concat(quarantine_dfs, ignore_index=True) if quarantine_dfs else pd.DataFrame()
-    return silver_dfs, quarantine_master
-
-def load_to_sqlite_and_join(silver_dfs, db_name="ternium_silver.db"):
-    conn = sqlite3.connect(db_name)
-    
-    for name, df in silver_dfs.items():
-        df.to_sql(name, conn, if_exists='replace', index=False)
-        logging.info(f"Tabla {name} cargada a SQLite.")
-        
-    tables = list(silver_dfs.keys())
-    if not tables:
-        return pd.DataFrame(), conn
-
-    # Unificación en Pandas usando 'costos' como base
-    base_table = 'costos' if 'costos' in tables else tables[0]
-    unified_df = silver_dfs[base_table].copy()
-    
-    other_tables = [t for t in tables if t != base_table]
-    for table in other_tables:
-        # Se utilizan sufijos para garantizar que NINGUNA columna se sobreescriba o borre
-        # Si 'Peso' o 'Costo' existen en varios CSV, se conservarán como 'Peso', 'Peso_tiempos', etc.
-        unified_df = pd.merge(
-            unified_df, 
-            silver_dfs[table], 
-            on='ID_VIAJE', 
-            how='left', 
-            suffixes=('', f'_{table}')
-        )
-        
+def calcular_distancia_osrm(coord_origen, coord_destino):
+    if None in coord_origen or None in coord_destino:
+        return None
+    lon1, lat1 = coord_origen[1], coord_origen[0]
+    lon2, lat2 = coord_destino[1], coord_destino[0]
+    url = f"http://router.project-osrm.org/route/v1/driving/{lon1},{lat1};{lon2},{lat2}?overview=false"
     try:
-        unified_df.to_sql('viajes_unificados', conn, if_exists='replace', index=False)
-        logging.info(f"Join exitoso. Total de filas unificadas: {len(unified_df)}")
-    except Exception as e:
-        logging.error(f"Error guardando tabla unificada en SQLite: {e}")
+        response = requests.get(url)
+        if response.status_code == 200:
+            data = response.json()
+            if data['code'] == 'Ok':
+                return data['routes'][0]['distance'] / 1000
+    except requests.exceptions.RequestException:
+        pass
+    return None
+
+def integrar_distancias(df, archivo_catalogo='catalogo_distancias.csv'):
+    df = df.copy()
+    if os.path.exists(archivo_catalogo):
+        print(f"Cargando catálogo de distancias existente desde {archivo_catalogo}...")
+        df_distancias = pd.read_csv(archivo_catalogo)
+    else:
+        print("Generando catálogo de distancias por primera vez (esto tomará unos minutos)...")
+        rutas = df[['PLANTA_ORIGEN', 'Ciudad Destino']].drop_duplicates().dropna()
+        lugares_unicos = set(rutas['PLANTA_ORIGEN']).union(set(rutas['Ciudad Destino']))
+        coords_dict = obtener_coordenadas(lugares_unicos)
+        
+        print("Calculando kilómetros por ruta con OSRM...")
+        distancias = []
+        for _, row in rutas.iterrows():
+            origen = row['PLANTA_ORIGEN']
+            destino = row['Ciudad Destino']
+            km = calcular_distancia_osrm(coords_dict.get(origen, (None, None)), coords_dict.get(destino, (None, None)))
+            distancias.append({'PLANTA_ORIGEN': origen, 'Ciudad Destino': destino, 'Kilometros_Ruta': km})
+            time.sleep(0.1)
             
-    return unified_df, conn
+        df_distancias = pd.DataFrame(distancias)
+        df_distancias.to_csv(archivo_catalogo, index=False)
+        print("Catálogo de distancias guardado exitosamente.")
 
-def validate_silver(df):
-    if df.empty:
-        logging.error("VALIDACIÓN FALLIDA: El DataFrame resultante está vacío.")
-        return False
+    # Cruzar distancias con el dataset principal
+    df = pd.merge(df, df_distancias, on=['PLANTA_ORIGEN', 'Ciudad Destino'], how='left')
     
-    if 'ID_VIAJE' not in df.columns:
-        logging.error("VALIDACIÓN FALLIDA: Falta la columna clave ID_VIAJE.")
-        return False
-        
-    if df['ID_VIAJE'].duplicated().any():
-        dups = df['ID_VIAJE'].duplicated().sum()
-        logging.error(f"VALIDACIÓN FALLIDA: Existen {dups} ID_VIAJE duplicados tras el Join.")
-        return False
-        
-    logging.info("VALIDACIÓN EXITOSA: La capa Silver cumple con los requisitos estructurales.")
-    return True
+    # Calcular Costo por Tonelada-Kilómetro
+    df['Tonelada_Kilometro'] = df['Toneladas_Reales'] * df['Kilometros_Ruta']
+    df['Costo_Ton_Km'] = df['Monto total'] / df['Tonelada_Kilometro'].replace(0, np.nan)
+    
+    return df
 
-if __name__ == "__main__":
-    file_paths = {
-        'detalles_viajes': 'data/Detalles viajes foraneos ultimo año.csv',
-        'ciclos': 'data/Detalle Ciclos de Viajes Despachados.csv',
-        'tiempos': 'data/Tiempos Viajes Foraneos.csv',
-        'costos': 'data/Viajes con Costos V2.csv'
-    }
+# --- LIMPIEZA Y EXPORTACIÓN ---
+
+def limpiar_outliers_iqr(df, columnas):
+    df_limpio = df.copy()
+    for col in columnas:
+        Q1 = df_limpio[col].quantile(0.25)
+        Q3 = df_limpio[col].quantile(0.75)
+        IQR = Q3 - Q1
+        df_limpio = df_limpio[(df_limpio[col] >= (Q1 - 1.5 * IQR)) & (df_limpio[col] <= (Q3 + 1.5 * IQR))]
+    return df_limpio
+
+def exportar_capa_oro(df, ruta_salida=DATA_DIR/'viajes_foraneos_oro.csv'):
+    try:
+        df.to_csv(ruta_salida, sep=',', index=False, encoding='utf-8')
+        print(f"\n[ÉXITO] Archivo Capa Oro exportado correctamente: {ruta_salida}")
+        return True
+    except Exception as e:
+        print(f"\n[ERROR] No se pudo guardar el archivo Capa Oro: {str(e)}")
+        return False
+
+def ejecutar_pipeline_completo(ruta_archivo, sep=';', ruta_salida_oro=DATA_DIR/'viajes_foraneos_oro.csv'):
+    print(f"Iniciando pipeline Medallion (Plata -> Oro) para: {ruta_archivo}")
+    df = pd.read_csv(ruta_archivo, sep=sep)
     
-    print(f"Iniciando pipeline ETL a las {timestamp}...")
+    print("1. Calculando tiempos de viaje...")
+    df = calcular_tiempo_viaje(df)
     
-    dfs = extract_data(file_paths)
-    silver_dfs, quarantine_df = process_bronze_to_silver(dfs)
+    print("2. Calculando discrepancias de peso...")
+    df = calcular_discrepancia_peso(df)
     
-    if not quarantine_df.empty:
-        q_filename = f'cuarentena_rechazados_{timestamp}.csv'
-        quarantine_df.to_csv(q_filename, index=False)
-        print(f"-> {len(quarantine_df)} registros enviados a cuarentena. Archivo: {q_filename}")
-        
-    unified_silver, db_conn = load_to_sqlite_and_join(silver_dfs, db_name='ternium_silver.db')
+    print("3. Infiriendo vehículos y estimando costos base...")
+    df = inferir_vehiculo_y_costos(df)
     
-    if not unified_silver.empty:
-        is_valid = validate_silver(unified_silver)
-        
-        silver_filename = f'silver_viajes_unificados_{timestamp}.csv'
-        unified_silver.to_csv(silver_filename, index=False)
-        print(f"-> Datos Silver unificados y guardados en {silver_filename} (Filas: {len(unified_silver)})")
-        print(f"-> Estatus de Validación: {'APROBADO' if is_valid else 'FALLIDO (ver logs)'}")
-        
-    print(f"Revisar el archivo 'etl_pipeline_{timestamp}.log' para detalles técnicos.")
-    db_conn.close()
+    print("4. Integrando API de distancias y métricas Ton-Km...")
+    df = integrar_distancias(df)
+    
+    print("5. Limpiando nulos y outliers...")
+    df = df.dropna(subset=['Tiempo_Viaje_Horas', 'Discrepancia_Peso_kg', 'Costo_Ton_Real'])
+    # Se añade Costo_Ton_Km a la limpieza si la distancia existe
+    df_final = limpiar_outliers_iqr(df, ['Tiempo_Viaje_Horas', 'Discrepancia_Peso_kg', 'Sobrecosto_Ton'])
+    
+    print("6. Exportando a Capa Oro...")
+    exportar_capa_oro(df_final, ruta_salida_oro)
+    return df_final
+
+if __name__ == '__main__':
+
+    df_oro = ejecutar_pipeline_completo(DATA_ADRESS)
+    
+    if 'Costo_Ton_Km' in df_oro.columns:
+        print("\nVista previa de métricas de transporte (Capa Oro):")
+        print(df_oro[['PLANTA_ORIGEN', 'Ciudad Destino', 'Kilometros_Ruta', 'Costo_Ton_Km', 'Sobrecosto_Ton']].head().to_string())
