@@ -17,14 +17,14 @@ def extract_data(file_paths):
     for name, path in file_paths.items():
         try:
             # Usamos read_csv en lugar de read_excel. low_memory=False ayuda con tipos mixtos.
-            dfs[name] = pd.read_csv(path, low_memory=False, encoding='utf-8-sig')
+            dfs[name] = pd.read_csv(path, sep=';', low_memory=False, encoding='utf-8-sig')
             # Limpiar espacios en blanco al inicio o final de los nombres de las columnas
             dfs[name].columns = dfs[name].columns.str.strip()
             logging.info(f"Archivo {name} cargado exitosamente. Filas: {len(dfs[name])}")
         except Exception as e:
             # Intento de fallback con otra codificación muy común en caso de error
             try:
-                dfs[name] = pd.read_csv(path, low_memory=False, encoding='latin1')
+                dfs[name] = pd.read_csv(path, sep=';', low_memory=False, encoding='latin1')
                 dfs[name].columns = dfs[name].columns.str.strip()
                 logging.info(f"Archivo {name} cargado exitosamente (latin1). Filas: {len(dfs[name])}")
             except Exception as inner_e:
@@ -76,10 +76,10 @@ def process_bronze_to_silver(dfs):
         df = df.drop_duplicates(subset=['ID_VIAJE'], keep='first').copy()
         
         # ESTANDARIZACIÓN
-        cols_to_upper = ['PLANTA', 'PLANTA_ORIGEN', 'CIUDAD DESTINO', 'ESTADO DESTINO', 'DESTINO', 'FAMILIA_CAMION_DESC']
+        cols_to_upper = ['Planta', 'PLANTA_ORIGEN', 'Ciudad Destino', 'Estado Destino', 'FAMILIA_CAMION_DESC']
         df = standardize_text(df, cols_to_upper)
         
-        date_cols = ['FECHA_LLEGADA', 'FECHA_SALIDA', 'FECHA_VIAJE_FINALIZADO', 'FECHA']
+        date_cols = ['FECHA_LLEGADA_GEO_CERCA', 'FECHA_SALIDA_GEO_CERCA', 'FECHA_VIAJE_FINALIZADO']
         df = standardize_dates(df, date_cols)
         
         silver_dfs[name] = df
@@ -142,7 +142,7 @@ def validate_silver(df):
 
 if __name__ == "__main__":
     file_paths = {
-        'detalles_viajes': 'data/Detalles viajes foraneos ultimo año.csv',
+        'detalles_viajes': 'data/Detalles viajes foraneos ultimo año.csv',
         'ciclos': 'data/Detalle Ciclos de Viajes Despachados.csv',
         'tiempos': 'data/Tiempos Viajes Foraneos.csv',
         'costos': 'data/Viajes con Costos V2.csv'

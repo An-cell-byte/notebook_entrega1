@@ -28,18 +28,18 @@ def una_fila_por_viaje(df, nombre):
 
 # Detalles viajes foraneos ultimo año (ya limpia con limpieza_viajes_foraneos.py)
 det = leer("Detalles viajes foraneos ultimo año.csv")
-det = det[["Planta", "ID Viaje", "Ciudad Destino", "ID Camión", "Tipo Camión", "Programado (Peso)"]]
-det = una_fila_por_viaje(det.rename(columns={"ID Viaje": "ID_VIAJE"}), "Detalles")
+det = det[["Planta", "ID_VIAJE", "Ciudad Destino", "ID Camión", "Tipo Camión", "Programado (Peso)"]]
+det = una_fila_por_viaje(det, "Detalles")
 
 # Tiempos Viajes Foraneos (una fila por parada; se deja una por viaje)
 tie = leer("Tiempos Viajes Foraneos.csv")
-tie = tie[["GRUPO_PLANTA_ORIGEN", "COD_PLANTA_ORIGEN", "PLANTA_ORIGEN", "ID_VIAJE_NCA", "FECHA_EGRESO", "FAMILIA_CAMION_DESC", "FECHA_VIAJE_FINALIZADO"]]
-tie = una_fila_por_viaje(tie.rename(columns={"ID_VIAJE_NCA": "ID_VIAJE"}), "Tiempos")
+tie = tie[["GRUPO_PLANTA_ORIGEN", "COD_PLANTA_ORIGEN", "PLANTA_ORIGEN", "ID_VIAJE", "FECHA_EGRESO", "FAMILIA_CAMION_DESC", "FECHA_VIAJE_FINALIZADO"]]
+tie = una_fila_por_viaje(tie, "Tiempos")
 
 # Viajes con Costos V2
 cos = leer("Viajes con Costos V2.csv")
-cos = cos[["Viaje", "Planta Origen", "Nombre", "Desc TpoTrn", "Peso Total", "Monto total"]]
-cos = cos.rename(columns={"Viaje": "ID_VIAJE", "Nombre": "Transportista"})
+cos = cos[["ID_VIAJE", "Planta Origen", "Nombre", "Desc TpoTrn", "Peso Total", "Monto total"]]
+cos = cos.rename(columns={"Nombre": "Transportista"})
 cos = una_fila_por_viaje(cos, "Costos")
 
 plata = (det.merge(tie, on="ID_VIAJE", how="inner")

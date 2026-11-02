@@ -1,17 +1,16 @@
 {
   "versiones": {
-    "pandas": "3.0.6",
+    "pandas": "3.1.0",
     "numpy": "2.5.4",
-    "openpyxl": "3.1.5",
     "scipy": "1.18.1",
     "scikit-learn": "1.9.1",
     "matplotlib": "3.11.2"
   },
   "semilla": 42,
   "archivos_sha256": {
-    "Viajes con Costos V2.xlsx": "63b178b0b8ceccec0c337e5f6ac9224dd041cd93ed4a68517af4141df5878491",
-    "Tiempos Viajes Foraneos.xlsx": "aea9e9a19be76c3c16ca68657c7826662dc2dc209fd8877fed78999212364966",
-    "Detalle Ciclos de Viajes Despachados.xlsx": "2c80ce1c2a897993f84a97e3b329f7f1ca8aa3204e55f6d921a6668bd36549b6"
+    "Viajes con Costos V2.csv": "12cb08abb2c9662c57acd84166e68bc4d7b332e286d8031f966a59535b37be85",
+    "Tiempos Viajes Foraneos.csv": "735e452041e6f39ac01f53914d45955450929da2dd89443a59fa2375f08e5859",
+    "Detalle Ciclos de Viajes Despachados.csv": "1ad1867962e2c5ce41422ef890f29d500738c37ccaf8c0e2ab86c0f4553f91d6"
   },
   "auditoria": [
     {
@@ -132,13 +131,13 @@
     {
       "Variable": "Monto total",
       "n": 91772,
-      "Media": 27404.851492612128,
-      "Mediana": 21738.09,
-      "Desv estándar": 20914.330235151683,
+      "Media": 27404.84886457743,
+      "Mediana": 21738.0,
+      "Desv estándar": 20914.327957170288,
       "P95": 70182.0,
-      "P99": 97190.7,
+      "P99": 97191.0,
       "Máximo": 185000.0,
-      "Asimetría": 1.6270466707245552,
+      "Asimetría": 1.627047765370019,
       "Fuera de Tukey %": 3.4956195789565445
     }
   ],
@@ -159,21 +158,21 @@
     {
       "Relación": "Peso Total / costo",
       "n": 76070,
-      "rho": 0.013982403881591032,
-      "p": 0.00011498323293979794,
-      "p Holm": 0.00011498323293979794
+      "rho": 0.01398081795700882,
+      "p": 0.00011518909268917457,
+      "p Holm": 0.00011518909268917457
     },
     {
       "Relación": "#Remitos / costo",
       "n": 76070,
-      "rho": -0.08456292699920584,
-      "p": 9.79385861428228e-121,
-      "p Holm": 1.958771722856456e-120
+      "rho": -0.08456272675216488,
+      "p": 9.806596270488828e-121,
+      "p Holm": 1.9613192540977657e-120
     },
     {
       "Relación": "Traslado_h / costo",
       "n": 54985,
-      "rho": 0.6706689280499917,
+      "rho": 0.670671297335473,
       "p": 0.0,
       "p Holm": 0.0
     }
@@ -181,12 +180,134 @@
   "dentro_ruta": {
     "n": 64594,
     "rutas": 403,
-    "r_rangos_centrados": 0.20812330884169836,
+    "r_rangos_centrados": 0.20812493621220457,
     "p_permutacion": 0.001,
     "permutaciones": 999,
     "rho_medianas_ruta": 0.007798124456282903,
     "p_medianas_ruta": 0.8759838599299515
   },
+  "linea_base_top12": [
+    {
+      "Planta Origen": "PSQ",
+      "D_REGION": "COAHUILA",
+      "ZONA_LOCALIDAD": "CASTAÑOS",
+      "Desc TpoTrn": "3_EJES",
+      "viajes": 2558,
+      "peso_mediano": 26975.0,
+      "costo_mediano_MXN": 12050.0,
+      "remitos_medianos": 1.0
+    },
+    {
+      "Planta Origen": "PSQ",
+      "D_REGION": "COAHUILA",
+      "ZONA_LOCALIDAD": "RAMOS ARIZPE",
+      "Desc TpoTrn": "3_EJES",
+      "viajes": 1961,
+      "peso_mediano": 31744.0,
+      "costo_mediano_MXN": 9900.0,
+      "remitos_medianos": 1.0
+    },
+    {
+      "Planta Origen": "CSCA",
+      "D_REGION": "MEXICO",
+      "ZONA_LOCALIDAD": "TULTITLAN",
+      "Desc TpoTrn": "2_EJES",
+      "viajes": 1517,
+      "peso_mediano": 24872.0,
+      "costo_mediano_MXN": 38400.0,
+      "remitos_medianos": 1.0
+    },
+    {
+      "Planta Origen": "PSQ",
+      "D_REGION": "SAN LUIS POTOSI",
+      "ZONA_LOCALIDAD": "SAN LUIS POTOSI",
+      "Desc TpoTrn": "3_EJES",
+      "viajes": 1147,
+      "peso_mediano": 31700.0,
+      "costo_mediano_MXN": 25927.0,
+      "remitos_medianos": 1.0
+    },
+    {
+      "Planta Origen": "GUE",
+      "D_REGION": "COAHUILA",
+      "ZONA_LOCALIDAD": "CIUDAD FRONTERA",
+      "Desc TpoTrn": "3_EJES",
+      "viajes": 1118,
+      "peso_mediano": 36125.0,
+      "costo_mediano_MXN": 11400.0,
+      "remitos_medianos": 1.0
+    },
+    {
+      "Planta Origen": "PSQ",
+      "D_REGION": "TAMAULIPAS",
+      "ZONA_LOCALIDAD": "ALTAMIRA",
+      "Desc TpoTrn": "2_EJES",
+      "viajes": 980,
+      "peso_mediano": 22985.0,
+      "costo_mediano_MXN": 14359.0,
+      "remitos_medianos": 1.0
+    },
+    {
+      "Planta Origen": "CHU",
+      "D_REGION": "COAHUILA",
+      "ZONA_LOCALIDAD": "RAMOS ARIZPE",
+      "Desc TpoTrn": "3_EJES",
+      "viajes": 975,
+      "peso_mediano": 29748.0,
+      "costo_mediano_MXN": 9900.0,
+      "remitos_medianos": 1.0
+    },
+    {
+      "Planta Origen": "GUE",
+      "D_REGION": "COAHUILA",
+      "ZONA_LOCALIDAD": "RAMOS ARIZPE",
+      "Desc TpoTrn": "3_EJES",
+      "viajes": 944,
+      "peso_mediano": 30872.5,
+      "costo_mediano_MXN": 9900.0,
+      "remitos_medianos": 1.0
+    },
+    {
+      "Planta Origen": "GUE",
+      "D_REGION": "TAMAULIPAS",
+      "ZONA_LOCALIDAD": "NUEVO LAREDO",
+      "Desc TpoTrn": "3_EJES",
+      "viajes": 934,
+      "peso_mediano": 33075.0,
+      "costo_mediano_MXN": 15653.0,
+      "remitos_medianos": 1.0
+    },
+    {
+      "Planta Origen": "LPU",
+      "D_REGION": "SAN LUIS POTOSI",
+      "ZONA_LOCALIDAD": "SAN LUIS POTOSI",
+      "Desc TpoTrn": "3_EJES",
+      "viajes": 883,
+      "peso_mediano": 35220.0,
+      "costo_mediano_MXN": 31030.0,
+      "remitos_medianos": 1.0
+    },
+    {
+      "Planta Origen": "CHU",
+      "D_REGION": "SAN LUIS POTOSI",
+      "ZONA_LOCALIDAD": "SAN LUIS POTOSI",
+      "Desc TpoTrn": "3_EJES",
+      "viajes": 847,
+      "peso_mediano": 28918.0,
+      "costo_mediano_MXN": 22956.0,
+      "remitos_medianos": 1.0
+    },
+    {
+      "Planta Origen": "CHU",
+      "D_REGION": "COAHUILA",
+      "ZONA_LOCALIDAD": "MONCLOVA",
+      "Desc TpoTrn": "3_EJES",
+      "viajes": 762,
+      "peso_mediano": 30542.5,
+      "costo_mediano_MXN": 11300.0,
+      "remitos_medianos": 1.0
+    }
+  ],
   "pca": {
     "Sin costo": {
       "n": 51928,
@@ -218,15 +339,15 @@
         "Monto total"
       ],
       "varianza": [
-        0.2858955732480783,
-        0.20117878660941543,
-        0.17822635650694815,
-        0.1492106522817921,
-        0.1327843004675804,
-        0.05270433088618565
+        0.2858955779795097,
+        0.20117879172840636,
+        0.1782263761951054,
+        0.14921065611360812,
+        0.13278424312780587,
+        0.052704354855564586
       ],
-      "acumulada_2": 0.4870743598574937,
-      "acumulada_2_sensibilidad": 0.48788032714437446
+      "acumulada_2": 0.48707436970791607,
+      "acumulada_2_sensibilidad": 0.48788029332432503
     }
   },
   "pca_coeficientes": [
@@ -263,38 +384,38 @@
     {
       "Modelo": "Con costo",
       "Variable": "Peso Total",
-      "CP1": 0.02849853564102784,
-      "CP2": 0.05699972791962054
+      "CP1": 0.02849867351271504,
+      "CP2": 0.05699915329651695
     },
     {
       "Modelo": "Con costo",
       "Variable": "#Remitos",
-      "CP1": -0.010014887397496841,
-      "CP2": 0.6335052127091357
+      "CP1": -0.010016540439907462,
+      "CP2": 0.633505375606677
     },
     {
       "Modelo": "Con costo",
       "Variable": "Espera_h",
-      "CP1": -0.08407479944574296,
-      "CP2": 0.5043825058853371
+      "CP1": -0.08407519859718045,
+      "CP2": 0.5043819129239522
     },
     {
       "Modelo": "Con costo",
       "Variable": "Planta_h",
-      "CP1": 0.2512200708682617,
-      "CP2": 0.5697902602182034
+      "CP1": 0.25121976155900366,
+      "CP2": 0.5697910123967634
     },
     {
       "Modelo": "Con costo",
       "Variable": "Traslado_h",
-      "CP1": 0.6767788039617542,
-      "CP2": -0.1270681426461446
+      "CP1": 0.6767788306470852,
+      "CP2": -0.12706659451818436
     },
     {
       "Modelo": "Con costo",
       "Variable": "Monto total",
-      "CP1": 0.6862054284949468,
-      "CP2": -0.01460173719803598
+      "CP1": 0.6862054366563104,
+      "CP2": -0.014601515863828962
     }
   ],
   "pca_cobertura_base": 0.6826344156697778
