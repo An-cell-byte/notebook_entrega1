@@ -29,23 +29,60 @@ def calcular_discrepancia_peso(df, col_programado='Programado (Peso)', col_real=
 
 def inferir_vehiculo_y_costos(df):
     df = df.copy()
-    LIMITE_2_EJES = 32000
-    LIMITE_3_EJES = 38500
-    LIMITE_FULL = 46000
+    if 'Programado_kg' not in df.columns:
+        df['Programado_kg'] = df['Programado (Peso)'] * 1000
+        
+    familia = df['FAMILIA_CAMION_DESC'].astype(str).str.upper()
     
+    # Reglas de inferencia jerárquicas (Peso físico manda sobre etiqueta de texto)
     condiciones = [
-        (df['Programado_kg'] > LIMITE_3_EJES),
-        (df['Programado_kg'] > LIMITE_2_EJES) & (df['Programado_kg'] <= LIMITE_3_EJES),
-        (df['Programado_kg'] <= LIMITE_2_EJES) & (df['FAMILIA_CAMION_DESC'].astype(str).str.contains('3 EJES', case=False, na=False)),
-        (df['Programado_kg'] <= LIMITE_2_EJES) & (df['FAMILIA_CAMION_DESC'].astype(str).str.contains('2 EJES', case=False, na=False))
+        (df['Programado_kg'] > 38500) | familia.str.contains('FULL', na=False),
+        familia.str.contains('PORTACINTA|BIG COIL', na=False),
+        familia.str.contains('48 PIES', na=False),
+        familia.str.contains('53 PIES', na=False),
+        familia.str.contains('TORTONETA', na=False),
+        familia.str.contains('TORTON', na=False) & ~familia.str.contains('TORTONETA', na=False),
+        familia.str.contains('CAMIONETA 3.5', na=False),
+        familia.str.contains('CAMA BAJA', na=False),
+        familia.str.contains('HEAVY', na=False),
+        (df['Programado_kg'] > 32000) | familia.str.contains('3 EJES', na=False),
+        familia.str.contains('2 EJES', na=False)
     ]
     
-    nomenclaturas = ['T3-S2-R4 (Full)', 'T3-S3 (3 Ejes)', 'T3-S3 (3 Ejes)', 'T3-S2 (2 Ejes)']
-    df['Nomenclatura_Inferida'] = np.select(condiciones, nomenclaturas, default='Desconocido')
+    nomenclaturas = [
+        'T3-S2-R4 (Full)',
+        'T3-S3 (Portacintas/Big Coil)',
+        'Plataforma larga 48 pies',
+        'Plataforma larga 53 pies',
+        'Tortoneta',
+        'Torton',
+        'Camioneta 3.5',
+        'Cama Baja Doble Piso',
+        'Heavy',
+        'T3-S3 (3 Ejes)',
+        'T3-S2 (2 Ejes)'
+    ]
     
-    capacidades = [LIMITE_FULL, LIMITE_3_EJES, LIMITE_3_EJES, LIMITE_2_EJES]
-    df['Capacidad_Max_kg'] = np.select(condiciones, capacidades, default=LIMITE_2_EJES)
+    df['Nomenclatura_Inferida'] = np.select(condiciones, nomenclaturas, default='T3-S2 (2 Ejes)')
     
+    # Asignación de Capacidad Máxima (Carga Útil Neta en kg)
+    limites = {
+        'T3-S2-R4 (Full)': 51500,
+        'T3-S3 (3 Ejes)': 38500,
+        'T3-S3 (Portacintas/Big Coil)': 38500,
+        'T3-S2 (2 Ejes)': 32000,
+        'Plataforma larga 48 pies': 25000,
+        'Plataforma larga 53 pies': 24000,
+        'Torton': 20000,
+        'Tortoneta': 12000,
+        'Camioneta 3.5': 3500,
+        'Cama Baja Doble Piso': 35000, 
+        'Heavy': 40000 
+    }
+    
+    df['Capacidad_Max_kg'] = df['Nomenclatura_Inferida'].map(limites)
+    
+    # 3. Cálculo de Ineficiencias y Costos
     df['Porcentaje_Utilizacion_Real'] = (df['Peso Total'] / df['Capacidad_Max_kg']) * 100
     df['Capacidad_Sobra_kg'] = df['Capacidad_Max_kg'] - df['Peso Total']
     
@@ -146,7 +183,8 @@ def exportar_capa_oro(df, ruta_salida=DATA_DIR/'viajes_foraneos_oro.csv'):
 
 def ejecutar_pipeline_completo(ruta_archivo, sep=';', ruta_salida_oro=DATA_DIR/'viajes_foraneos_oro.csv'):
     print(f"Iniciando pipeline Medallion (Plata -> Oro) para: {ruta_archivo}")
-    df = pd.read_csv(ruta_archivo, sep=sep)
+    dF = pd.read_csv(ruta_archivo, sep=sep)
+    df = dF.drop(columns=['Planta','COD_PLANTA_ORIGEN','Planta Origen'])
     
     print("1. Calculando tiempos de viaje...")
     df = calcular_tiempo_viaje(df)
