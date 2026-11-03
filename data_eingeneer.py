@@ -82,7 +82,7 @@ def inferir_vehiculo_y_costos(df):
     
     df['Capacidad_Max_kg'] = df['Nomenclatura_Inferida'].map(limites)
     
-    # 3. Cálculo de Ineficiencias y Costos
+    # Cálculo de Ineficiencias y Costos
     df['Porcentaje_Utilizacion_Real'] = (df['Peso Total'] / df['Capacidad_Max_kg']) * 100
     df['Capacidad_Sobra_kg'] = df['Capacidad_Max_kg'] - df['Peso Total']
     
@@ -183,8 +183,7 @@ def exportar_capa_oro(df, ruta_salida=DATA_DIR/'viajes_foraneos_oro.csv'):
 
 def ejecutar_pipeline_completo(ruta_archivo, sep=';', ruta_salida_oro=DATA_DIR/'viajes_foraneos_oro.csv'):
     print(f"Iniciando pipeline Medallion (Plata -> Oro) para: {ruta_archivo}")
-    dF = pd.read_csv(ruta_archivo, sep=sep)
-    df = dF.drop(columns=['Planta','COD_PLANTA_ORIGEN','Planta Origen'])
+    df = pd.read_csv(ruta_archivo, sep=sep)
     
     print("1. Calculando tiempos de viaje...")
     df = calcular_tiempo_viaje(df)
