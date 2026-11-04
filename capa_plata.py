@@ -11,7 +11,7 @@ SALIDA = DATA / "plata" / "viajes_foraneos_plata.csv"
 
 
 def leer(nombre):
-    return pd.read_csv(DATA / nombre, sep=";", encoding="utf-8-sig", dtype=str)
+    return pd.read_csv(DATA/nombre, sep=";", encoding="utf-8-sig", dtype=str)
 
 
 def numero_es(s):
@@ -28,18 +28,18 @@ def una_fila_por_viaje(df, nombre):
 
 # Detalles viajes foraneos ultimo año (ya limpia con limpieza_viajes_foraneos.py)
 det = leer("Detalles viajes foraneos ultimo año.csv")
-det = det[["Planta", "ID_VIAJE", "Ciudad Destino", "ID Camión", "Tipo Camión", "Programado (Peso)"]]
-det = una_fila_por_viaje(det, "Detalles")
+det = det[["ID Viaje","Ciudad Destino", "ID Camión", "Tipo Camión", "Programado (Peso)"]]
+det = una_fila_por_viaje(det.rename(columns={"ID Viaje": "ID_VIAJE"}), "Detalles")
 
 # Tiempos Viajes Foraneos (una fila por parada; se deja una por viaje)
 tie = leer("Tiempos Viajes Foraneos.csv")
-tie = tie[["GRUPO_PLANTA_ORIGEN", "COD_PLANTA_ORIGEN", "PLANTA_ORIGEN", "ID_VIAJE", "FECHA_EGRESO", "FAMILIA_CAMION_DESC", "FECHA_VIAJE_FINALIZADO"]]
-tie = una_fila_por_viaje(tie, "Tiempos")
+tie = tie[["PLANTA_ORIGEN", "GRUPO_PLANTA_ORIGEN",'ID_VIAJE', "FECHA_EGRESO", "FAMILIA_CAMION_DESC", "FECHA_VIAJE_FINALIZADO"]]
+tie = una_fila_por_viaje(tie.rename(columns={"ID_VIAJE": "ID_VIAJE"}), "Tiempos")
 
 # Viajes con Costos V2
 cos = leer("Viajes con Costos V2.csv")
-cos = cos[["ID_VIAJE", "Planta Origen", "Nombre", "Desc TpoTrn", "Peso Total", "Monto total"]]
-cos = cos.rename(columns={"Nombre": "Transportista"})
+cos = cos[["ID_VIAJE", "Planta Origen", "Nombre", "Desc TpoTrn", "Peso Total", "Monto total","Placas tract"]]
+cos = cos.rename(columns={"ID_VIAJE": "ID_VIAJE", "Nombre": "Transportista","Placas tract":"Placas"})
 cos = una_fila_por_viaje(cos, "Costos")
 
 plata = (det.merge(tie, on="ID_VIAJE", how="inner")
@@ -48,9 +48,10 @@ plata = (det.merge(tie, on="ID_VIAJE", how="inner")
 # Tipos de dato
 plata["ID_VIAJE"] = plata["ID_VIAJE"].astype("int64")
 plata["ID Camión"] = plata["ID Camión"].astype("int64")
-plata["Programado (Peso)"] = pd.to_numeric(plata["Programado (Peso)"])   # toneladas
+plata["Programado (Peso)"] = numero_es(plata["Programado (Peso)"])   # toneladas
 plata["Peso Total"] = numero_es(plata["Peso Total"])                      # kilogramos
 plata["Monto total"] = numero_es(plata["Monto total"])                    # MXN
+
 for c in ["FECHA_EGRESO", "FECHA_VIAJE_FINALIZADO"]:
     plata[c] = pd.to_datetime(plata[c], format="%d/%m/%Y %H:%M:%S")
 
