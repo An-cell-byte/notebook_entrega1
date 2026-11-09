@@ -34,7 +34,7 @@ Las columnas se dividen en dos bloques:
 | # | Columna | Tipo | Unidad | Descripción |
 |---|---|---|---|---|
 | 6 | `PLANTA_ORIGEN` | texto | – | Nombre de la planta de salida (p. ej. *Guerrero*). Junto con `Ciudad Destino`, define la ruta. |
-| 7 | `GRUPO_PLANTA_ORIGEN` | texto | – | Grupo de producto o planta (p. ej. *Masivos*, *Revestidos*). |
+| 7 | `GRUPO_PLANTA_ORIGEN` | texto | – | Grupo de producción al que pertenece cada planta (p. ej. *Masivos*, *Revestidos*). |
 | 8 | `FECHA_EGRESO` | fecha-hora | – | Momento en que el camión salió de la planta. |
 | 9 | `FAMILIA_CAMION_DESC` | texto | – | Familia de camión registrada en el sistema. Contiene errores de captura (ver sección C). |
 | 10 | `FECHA_VIAJE_FINALIZADO` | fecha-hora | – | Momento en que el viaje se dio por terminado. |
