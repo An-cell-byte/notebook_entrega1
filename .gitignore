@@ -1,1 +1,6 @@
 
+
+# Archivos generados o demasiado grandes para GitHub
+*.db
+etl_pipeline_*.log
+.DS_Store
