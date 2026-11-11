@@ -1,0 +1,13 @@
+Nomenclatura_Inferida,Capacidad_Max_kg,Verificado_NOM012,Fuente
+T3-S2-R4 (Full),51500.0,False,heredado de data_engineer.py (carga útil supuesta); pendiente de verificar
+T3-S3 (3 Ejes),38500.0,False,heredado de data_engineer.py (carga útil supuesta); pendiente de verificar
+T3-S3 (Portacintas/Big Coil),38500.0,False,heredado de data_engineer.py (carga útil supuesta); pendiente de verificar
+T3-S2 (2 Ejes),32000.0,False,heredado de data_engineer.py (carga útil supuesta); pendiente de verificar
+Plataforma larga 48 pies,25000.0,False,heredado de data_engineer.py (carga útil supuesta); pendiente de verificar
+Plataforma larga 53 pies,24000.0,False,heredado de data_engineer.py (carga útil supuesta); pendiente de verificar
+Torton,20000.0,False,heredado de data_engineer.py (carga útil supuesta); pendiente de verificar
+Tortoneta,12000.0,False,heredado de data_engineer.py (carga útil supuesta); pendiente de verificar
+Camioneta 3.5,3500.0,False,heredado de data_engineer.py (carga útil supuesta); pendiente de verificar
+Cama Baja Doble Piso,35000.0,False,heredado de data_engineer.py (carga útil supuesta); pendiente de verificar
+Heavy,40000.0,False,heredado de data_engineer.py (carga útil supuesta); pendiente de verificar
+Plataforma larga 40 pies,,False,heredado de data_engineer.py (carga útil supuesta); pendiente de verificar

@@ -1,0 +1,1601 @@
+PLANTA_ORIGEN,Ciudad Destino,Kilometros_Ruta,Km_Fuente,Ratio_Carretera,Viajes
+Pesquería,Ramos Arizpe,171.8932,osrm,1.2982124712262713,2539
+Pesquería,Castaños,178.6498,osrm,1.1377269617199104,2536
+Pesquería,San Luis Potosí,553.5182,osrm,1.3441633656048115,2385
+Churubusco,San Luis Potosí,512.4524,osrm,1.2873461879000492,1735
+Pesquería,Altamira,475.8321,osrm,1.1821492461251584,1656
+Largos Puebla,San Luis Potosí,525.0846,osrm,1.1653677866307832,1435
+Churubusco,Ramos Arizpe,130.82739999999998,osrm,1.2644328763218344,1206
+Guerrero,Ciudad Frontera,190.9879,osrm,1.0929755501505591,1196
+Juventud,Nuevo Laredo,211.2983,osrm,1.0143325497621407,1115
+Guerrero,Ramos Arizpe,137.9613,osrm,1.3254885523519904,1047
+Juventud,Altamira,474.5569,osrm,1.13561286425289,975
+Guerrero,Nuevo Laredo,211.2983,osrm,1.0143325497621407,958
+Pesquería,Ciudad Frontera,219.7773,osrm,1.12476191961235,775
+Churubusco,Monclova,220.1054,osrm,1.3771853665056009,764
+Pesquería,Monclova,240.2771,osrm,1.3864820665504887,699
+Largos Puebla,Cuautitlán,163.207,osrm,1.3011011434339963,634
+Churubusco,Ciudad Frontera,199.6056,osrm,1.1118405371962008,619
+Largos Apodaca,CDMX+EDOMEX,,region,,606
+Largos Puebla,León,492.932,osrm,1.1435058425925826,602
+Guerrero,San Luis Potosí,519.5862999999999,osrm,1.2772780710155736,577
+Juventud,Tultitlán,884.5598,osrm,1.2775788127486845,553
+Guerrero,Tultitlán,884.5598,osrm,1.2775788127486845,550
+Universidad,San Luis Potosí,519.5862999999999,osrm,1.2772780710155736,543
+Juventud,San Luis Potosí,519.5862999999999,osrm,1.2772780710155736,542
+CSI Apodaca,Nuevo Laredo,211.2257,osrm,1.0489480235786923,535
+Largos Puebla,Naucalpan de Juárez,145.814,osrm,1.2264286464435652,530
+Guerrero,Monclova,211.4877,osrm,1.3701914464773022,523
+Juventud,Ciudad Hidalgo,847.3609,osrm,1.2556745893295012,516
+Guerrero,Matamoros,312.5786,osrm,1.1206576305110487,506
+CSI Apodaca,Saltillo,108.9607,osrm,1.2034161127893548,494
+Pesquería,Mexicali,2205.9292,osrm,1.3103738885014828,489
+CSI Apodaca,Ramos Arizpe,150.7921,osrm,1.3243125665044553,488
+Pesquería,Querétaro,745.091,osrm,1.2968573461932025,482
+Largos Puebla,Los Reyes La Paz,111.6186,osrm,1.2397847092611505,479
+Largos Puebla,Querétaro,331.4366,osrm,1.1553195514938204,413
+Largos Puebla,Amozoc,19.6373,osrm,1.2035006104005255,403
+Pesquería,Torreón,375.7349,osrm,1.098086111016895,398
+Juventud,Saltillo,96.1298,osrm,1.207187527338838,387
+Churubusco,Querétaro,704.0253,osrm,1.2442925198310855,373
+Largos Puebla,San Nicolás de los Garza,943.5308,osrm,1.214880136645235,371
+Juventud,Tuxtla Gutiérrez,1491.9134,osrm,1.1972223560018782,366
+Pesquería,Matamoros,282.7214,osrm,1.1286907827996033,354
+Juventud,Ramos Arizpe,137.9613,osrm,1.3254885523519904,339
+Universidad,Silao,670.3968000000001,osrm,1.224199365642232,324
+Pesquería,Gómez Palacios,387.0844,osrm,1.1048430300948795,324
+Largos Apodaca,Puebla,945.9719,osrm,1.217319771018245,313
+Largos Puebla,Tepeapulco,116.5172,osrm,1.2842950563624076,311
+Largos Puebla,Torreón,1109.334,osrm,1.2331211909144253,304
+Guerrero,Tijuana,2369.4342,osrm,1.3238677910471948,303
+Largos Puebla,Villagrán,391.5917,osrm,1.167581291702035,301
+Juventud,Puebla,953.5665,osrm,1.227801996310368,293
+CSI San Luis Potosi,Celaya,250.1663,osrm,1.376024043225367,285
+Churubusco,San José Iturbide,661.8078,osrm,1.2719165262847163,284
+Churubusco,Arteaga,114.6905,osrm,2.187313867836996,274
+Churubusco,Derramadero,133.95929999999998,osrm,1.2589395748069707,270
+Guerrero,Saltillo,96.1298,osrm,1.207187527338838,270
+Guerrero,Mexicali,2184.6522,osrm,1.3173178804463168,269
+Largos Puebla,Ciénega de Flores,962.6679,osrm,1.2109461996309774,254
+Guerrero,Ecatepec,897.7186999999999,osrm,1.2893028673370377,254
+Churubusco,Torreón,334.66909999999996,osrm,1.0770431255686157,237
+Churubusco,Nuevo Laredo,219.916,osrm,1.0131005226199854,236
+Guerrero,Tepejic del Río,842.5233000000001,osrm,1.278634875440229,232
+Juventud,Guadalajara,792.6551999999999,osrm,1.2296425182109223,230
+Churubusco,Mexicali,2193.2699,osrm,1.3207990425082854,215
+Pesquería,Saltillo,130.0617,osrm,1.2333111036931812,212
+Churubusco,Saltillo,88.996,osrm,1.206952039564824,212
+Largos Apodaca,Reynosa,214.799,osrm,1.1089092389985833,211
+Juventud,León,699.2945,osrm,1.3083360442740104,205
+Guerrero,Guadalajara,792.6551999999999,osrm,1.2296425182109223,203
+Largos Apodaca,Texcoco,934.896,osrm,1.307667462592957,199
+Pesquería,Villa de Reyes,586.7927,osrm,1.3134880459002225,199
+Pesquería,León,733.2265,osrm,1.3527808068826284,196
+Largos Apodaca,Tultitlán,897.3906999999999,osrm,1.292890305671576,196
+Largos Apodaca,Torreón,354.6338,osrm,1.0931968459494614,194
+Juventud,Mexicali,2184.6522,osrm,1.3173178804463168,194
+Churubusco,Tepejic del Río,835.3895,osrm,1.2832258364233615,193
+Churubusco,Villa de Reyes,545.7269,osrm,1.2594607047679383,191
+Pesquería,Tultitlán,918.4917,osrm,1.3367528593665834,189
+Universidad,Ciudad Hidalgo,847.3609,osrm,1.2556745893295012,189
+Juventud,Veracruz,951.0049,osrm,1.1262864265640238,188
+Guerrero,Querétaro,711.1591,osrm,1.2384120157809824,186
+Juventud,Culiacán,1045.283,osrm,1.447610897938278,185
+Pesquería,Arteaga,155.7562,osrm,1.912848502828942,184
+Churubusco,Apaseo El Grande,726.3273,osrm,1.2820680965807911,183
+Universidad,Monclova,211.4877,osrm,1.3701914464773022,183
+CSI San Luis Potosi,Querétaro,206.533,osrm,1.1245645696954865,178
+Churubusco,Ciudad Juárez,1199.5713,osrm,1.3287639088749457,178
+Largos Apodaca,Tuxtla Gutiérrez,1484.3188,osrm,1.1946288261001794,176
+Guerrero,Reynosa,223.2368,osrm,1.090876489023522,174
+Churubusco,Aguascalientes,568.2588000000001,osrm,1.2139020073185913,171
+Pesquería,Cuautlancingo,952.8869,osrm,1.2559803624367663,170
+CSI Apodaca,San Luis Potosí,532.4172,osrm,1.2917770787429963,167
+CEDI Tuxtla,Tapachula,363.7889,osrm,1.651447449281147,167
+CSI San Luis Potosi,Ramos Arizpe,514.9575,osrm,1.223770754507781,166
+Largos Apodaca,Tapachula,1728.4955,osrm,1.1850294668135468,161
+Pesquería,Tepeapulco,898.809,osrm,1.3253324201192225,160
+Churubusco,León,692.1606999999999,osrm,1.316634428091382,159
+Churubusco,El Marques,704.0824,osrm,1.2804222384651804,158
+Churubusco,Castaños,158.478,osrm,1.1515536325889355,156
+Churubusco,CDMX+EDOMEX,,region,,156
+Juventud,Gómez Palacios,353.1525,osrm,1.0971985551093455,154
+CSI Apodaca,Mexicali,2184.5796,osrm,1.31158155257052,149
+CSI San Luis Potosi,Silao,165.7707,osrm,1.1649811033182467,148
+Largos Apodaca,Ciudad Juárez,1190.8809,osrm,1.3198156856885337,148
+Juventud,Chihuahua,811.1759000000001,osrm,1.236975061373786,147
+Largos Puebla,CDMX+EDOMEX,,region,,143
+Pesquería,Tepejic del Río,876.4552,osrm,1.3395092933690567,142
+Bodega del Toro,Nuevo Laredo,210.7635,osrm,1.03237837862635,141
+CEDI Veracruz,Orizaba,136.38979999999998,osrm,1.2510892193313363,141
+CEDI Mexico,Veracruz,383.0171,osrm,1.2146996392147107,140
+CSI Apodaca,Hermosillo,1515.9893,osrm,1.347043979795191,139
+Largos Apodaca,Durango,611.0919,osrm,1.2430244105192,139
+Juventud,Monclova,211.4877,osrm,1.3701914464773022,139
+Largos Apodaca,Naucalpan de Juárez,910.8872,osrm,1.2861757245327539,138
+Largos Puebla,Apodaca,938.5259,osrm,1.2077379187296076,135
+Juventud,Tlajomulco de Zúñiga,811.2591,osrm,1.2161285890210667,133
+Largos Puebla,Villa de García,1003.4937,osrm,1.2661278803850784,130
+Juventud,Tlaquepaque,788.8568,osrm,1.2187694868443717,129
+Largos Apodaca,Culiacán,1058.1138999999998,osrm,1.4437505473467322,128
+Guerrero,El Salto,781.8566999999999,osrm,1.197458571461512,128
+Churubusco,Tultitlán,877.4259000000001,osrm,1.281771988272891,127
+Largos Apodaca,Chimalhuacan,934.3733,osrm,1.2989199891047944,126
+CSI San Luis Potosi,San José Iturbide,164.3155,osrm,1.158735091077397,124
+Pesquería,Hermosillo,1537.0903,osrm,1.3437467122668374,123
+Juventud,Querétaro,711.1591,osrm,1.2384120157809824,123
+CEDI Mexico,Tuxtla Gutiérrez,830.0061,osrm,1.1819999525534066,122
+Churubusco,Jesús María,589.9956999999999,osrm,1.2538191581019487,121
+Largos Puebla,Jilotepec de Abasolo,233.3479,osrm,1.2623983492548223,120
+Universidad,Altamira,474.5569,osrm,1.13561286425289,120
+Pesquería,Apaseo El Grande,767.393,osrm,1.3313290151287736,119
+Juventud,Celaya,754.7925,osrm,1.2912082447088191,118
+CEDI Guadalajara,Tepic,206.044,osrm,1.1070178201138332,118
+Largos Apodaca,Guadalupe,16.081,osrm,1.2551097384468588,117
+Largos Puebla,Tijuana,2883.722,osrm,1.2000618945662067,117
+Pesquería,San José Iturbide,702.8736,osrm,1.3283832469906054,117
+Largos Apodaca,Chihuahua,824.0068,osrm,1.24270873587478,116
+CEDI Tuxtla,Ocotzingo,301.39779999999996,osrm,1.4697442286653994,113
+CEDI Tuxtla,Comitán,146.6789,osrm,1.2380176920076031,112
+Largos Apodaca,Jiutepec,1009.5382,osrm,1.303671994085162,111
+CSI Apodaca,Celaya,767.6234000000001,osrm,1.3029827214216632,109
+Churubusco,Matamoros,313.7681,osrm,1.1122013873612207,109
+Largos Apodaca,Saltillo,108.9607,osrm,1.2034161127893548,108
+Churubusco,Celaya,747.6586,osrm,1.2981289021143225,108
+Guerrero,Arteaga,121.8243,osrm,2.0188309143509895,107
+Guerrero,León,699.2945,osrm,1.3083360442740104,105
+CEDI Guadalajara,Ocotlán,83.0766,osrm,1.1981756050635575,104
+Churubusco,Tijuana,2378.0519,osrm,1.3273312530095194,104
+Largos Apodaca,Guadalajara,805.486,osrm,1.2337984785308111,103
+Universidad,Ramos Arizpe,137.9613,osrm,1.3254885523519904,103
+Largos Apodaca,Isla Cancun,2263.1243999999997,osrm,1.5562930301333127,102
+Universidad,Querétaro,711.1591,osrm,1.2384120157809824,101
+Guerrero,Ciudad Juárez,1190.9536,osrm,1.3261518955993379,101
+Largos Apodaca,Veracruz,943.4103,osrm,1.1204317873778886,100
+Largos Puebla,Tultitlán,156.9377,osrm,1.315491149587382,100
+Guerrero,Cd Cuauhtemoc,912.1495,osrm,1.276912744219412,99
+Churubusco,Zapopan,794.9108,osrm,1.252472981713834,99
+Pesquería,Aguascalientes,609.3246,osrm,1.2459003115970835,98
+CEDI Puebla,Tepeaca,38.6461,osrm,1.2000554879902519,97
+Guerrero,Castaños,149.8603,osrm,1.1199712542197737,96
+CEDI Mexico,Tapachula,1088.8062,osrm,1.2373801096907255,95
+Largos Apodaca,Mazatlán,862.3832,osrm,1.244117356433206,95
+CEDI Puebla,Tehuacan,128.983,osrm,1.2170719507009082,95
+Pesquería,El Marques,745.1481,osrm,1.33533390255711,94
+Guerrero,Nogales,1741.1085,osrm,1.4385024911614375,94
+CSI Apodaca,Silao,683.2276999999999,osrm,1.2346704922809215,93
+Largos Apodaca,Cuautla,1030.0855,osrm,1.3118811383612345,92
+Largos Apodaca,Hermosillo,1515.9893,osrm,1.347043979795191,90
+Largos Apodaca,Piedras Negras,384.0946,osrm,1.1824085090859149,88
+CEDI Guadalajara,Aguascalientes,218.9199,osrm,1.2756036228779037,87
+Pesquería,Silao,704.3286999999999,osrm,1.2723145287136226,87
+Largos Apodaca,Aguascalientes,588.2235,osrm,1.2139251153957313,86
+Juventud,Tijuana,2369.4342,osrm,1.3238677910471948,86
+CEDI Veracruz,Acayucan,244.6411,osrm,1.401145669496907,86
+Juventud,Villahermosa,1413.9363999999998,osrm,1.2305502881590005,84
+CSI Apodaca,Querétaro,723.99,osrm,1.2525301894973793,83
+Churubusco,Gómez Palacios,346.0186,osrm,1.0847555152986075,83
+Largos Apodaca,Los Mochis,1252.44,osrm,1.420968161057572,82
+Churubusco,Cuautlancingo,942.0953,osrm,1.2399654424773592,82
+Pesquería,Irapuato,739.3829000000001,osrm,1.2738393868040363,81
+Largos Apodaca,Villahermosa,1406.3418,osrm,1.2287550414429065,81
+Largos Apodaca,Mérida,1960.3565,osrm,1.62928973423194,80
+Largos Apodaca,León,712.1254,osrm,1.3169050550689447,80
+Largos Puebla,Tlalnepantla,156.3681,osrm,1.3235185199938748,79
+Pesquería,Tijuana,2390.7112,osrm,1.3169692349143682,79
+Guerrero,CDMX+EDOMEX,,region,,78
+Largos Puebla,Santa Rosa de Jáuregui,347.3014,osrm,1.1630525389770767,78
+Largos Apodaca,Querétaro,723.99,osrm,1.2525301894973793,76
+Largos Apodaca,Ciudad Victoria,284.8954,osrm,1.1358562386684663,75
+Largos Apodaca,Iztapalapa,937.8191,osrm,1.2961833503768423,74
+Largos Apodaca,Cuernavaca,999.8656,osrm,1.301854665455008,74
+CEDI Veracruz,Córdoba,113.908,osrm,1.2599785386577511,73
+Largos Apodaca,Nuevo Laredo,211.2257,osrm,1.0489480235786923,71
+Guerrero,Puebla,953.5665,osrm,1.227801996310368,70
+Guerrero,El Marques,711.2162,osrm,1.2739413513992135,70
+Guerrero,Chihuahua,811.1759000000001,osrm,1.236975061373786,69
+Largos Apodaca,Fresnillo,478.0205,osrm,1.202868408155545,69
+Guerrero,Jesús María,597.1295,osrm,1.2461403848669674,69
+CSI Apodaca,San José Iturbide,681.7726,osrm,1.2802026150709374,69
+CEDI Puebla,Teziutlán,148.8976,osrm,1.1759630968187758,68
+Churubusco,Hermosillo,1496.0246000000002,osrm,1.3384285014305497,68
+Largos Puebla,Chalco,108.2226,osrm,1.57533594429749,67
+Pesquería,Nuevo Laredo,232.5753,osrm,1.1604894550650593,65
+Largos Apodaca,Cd Cuauhtemoc,924.9803,osrm,1.2806171269041415,65
+Largos Puebla,Ciudad Hidalgo,358.392,osrm,1.3913037645707835,65
+Largos Apodaca,Los Reyes La Paz,941.2699,osrm,1.2969809768738392,65
+CEDI Mexico,Villahermosa,752.0291,osrm,1.1190517705124745,64
+Universidad,León,699.2945,osrm,1.3083360442740104,64
+Guerrero,Aguascalientes,575.3927,osrm,1.206755012687113,64
+CSI Apodaca,Ciudad Juárez,1190.8809,osrm,1.3198156856885337,63
+Largos Apodaca,San Vicente Chicoloapa,940.8829,osrm,1.3058115082000883,63
+Churubusco,Cd Cuauhtemoc,905.0156,osrm,1.2644518841084396,62
+Bodega del Toro,El Marques,705.3633000000001,osrm,1.2502996149215504,61
+Largos Apodaca,Jalacingo,868.3297,osrm,1.1870979565876554,61
+CEDI Veracruz,Juchitán,449.752,osrm,1.3385556040411914,61
+CEDI Puebla,Oaxaca,334.92240000000004,osrm,1.2545757160189297,61
+Juventud,San Juan de los Lagos,654.7488000000001,osrm,1.21217203455675,61
+CEDI Puebla,Atlixco,33.991699999999994,osrm,1.159151823556899,60
+Pesquería,Derramadero,175.0251,osrm,1.268202006693714,60
+Juventud,Cd Cuauhtemoc,912.1495,osrm,1.276912744219412,59
+Guerrero,Cuautitlán,875.8998,osrm,1.2833025128586377,59
+Largos Puebla,Tlaquepaque,659.6716,osrm,1.1706463722131153,59
+Pesquería,Naucalpan de Juárez,931.9883,osrm,1.3286349373032043,58
+Churubusco,Naucalpan de Juárez,890.9225,osrm,1.275576369502984,58
+CEDI Mexico,Puebla,131.505,osrm,1.2259950026488489,58
+Largos Apodaca,El Prieto,592.1553,osrm,1.25237841930701,58
+Largos Apodaca,Acapulco,1291.4542,osrm,1.3015918132984559,57
+Largos Puebla,Morelia,434.1079,osrm,1.3211968117623747,56
+Churubusco,Reynosa,224.4263,osrm,1.074292763824688,56
+CEDI Guadalajara,El Salto,28.7003,osrm,1.2023312168644213,56
+CSI Apodaca,Puebla,945.9719,osrm,1.217319771018245,56
+Largos Apodaca,Morelia,859.3516,osrm,1.244021564908886,55
+Juventud,Mérida,1967.9511,osrm,1.6246081488239288,55
+Guerrero,Derramadero,141.09320000000002,osrm,1.2558284543249025,55
+Juventud,Zapopan,802.0446999999999,osrm,1.2469055245263752,54
+Largos Apodaca,Puerto Vallarta,1115.0223,osrm,1.4492476659515747,54
+Pesquería,Celaya,788.7244000000001,osrm,1.3435104312094168,54
+Largos Apodaca,Benito Juarez,2254.524,osrm,1.5551960259017437,54
+Largos Puebla,Fresnillo,781.0718,osrm,1.1687414245762495,53
+Largos Puebla,Iztapalapa,123.8939,osrm,1.2359701100439464,52
+CSI San Luis Potosi,Apodaca,532.8913,osrm,1.2929273637319714,52
+Largos Apodaca,Solidaridad,2241.7085,osrm,1.5441081258508407,52
+Bodega del Toro,Mexicali,2184.1174,osrm,1.3216415973881916,52
+CEDI Mexico,Comitán,975.2307,osrm,1.1883978262613109,51
+Largos Apodaca,Matamoros,304.1408,osrm,1.1336780236717827,51
+CSI San Luis Potosi,Escobedo,511.346,osrm,1.2410846566726954,51
+Largos Apodaca,Gómez Palacios,365.9833,osrm,1.1006543563463083,51
+Pesquería,Reynosa,193.3796,osrm,1.0931682092252477,51
+CEDI Mexico,Mérida,1306.0439,osrm,1.2972846507591822,51
+CEDI Tuxtla,San Cristóbal de las Casas,61.413599999999995,osrm,1.207580575392278,51
+Juventud,Hermosillo,1503.1583999999998,osrm,1.3457442168816545,51
+Largos Puebla,Santa Isabel Xiloxoxtla,28.0559,osrm,1.1475678981955033,50
+Pesquería,Ciudad Juárez,1212.2306,osrm,1.3209921769608968,50
+Pesquería,Atitalaquia,892.0151999999999,osrm,1.3991197390268642,48
+Largos Apodaca,Tepic,1008.4455,osrm,1.4940168866320616,48
+Largos Apodaca,Atlautla,1005.4215,osrm,1.3090120456514698,48
+Bodega del Toro,Ramos Arizpe,132.1084,osrm,1.3221698258583392,48
+Largos Apodaca,Toluca,906.4465,osrm,1.2516630359964542,47
+CEDI Veracruz,Tantoyuca,382.5519000000001,osrm,1.1785850702769773,47
+Largos Apodaca,Ciudad Frontera,198.6763,osrm,1.1080054579151173,46
+CEDI Norte,Altamira,473.7264,osrm,1.1324573604654138,46
+CEDI Mexico,Campeche,1134.5992,osrm,1.2587880278435695,45
+CSI San Luis Potosi,Puebla,525.9063000000001,osrm,1.1671914598260638,45
+CEDI Puebla,Santiago Mihuatlán,136.256,osrm,1.4167316580179519,44
+CEDI Norte,San Luis Potosí,540.5025,osrm,1.2906471894163756,43
+Largos Apodaca,Tehuacan,1049.8008,osrm,1.216262900863951,43
+CEDI Veracruz,Poza Rica,241.8126,osrm,1.1973531258805075,43
+CEDI Guadalajara,Colima,192.7554,osrm,1.1699502327214728,43
+Largos Apodaca,Poza Rica,724.1696,osrm,1.1186240729208659,43
+CEDI Guadalajara,León,220.8878,osrm,1.2366076457065684,43
+CSI San Luis Potosi,Nuevo Laredo,719.3301,osrm,1.1749825169970722,43
+Largos Apodaca,Pachuca,888.5491999999999,osrm,1.3715814624928677,42
+Pesquería,Atotonilco de Tula,897.6684,osrm,1.3848001877044536,42
+CSI San Luis Potosi,Monterrey,510.763,osrm,1.2831021983122584,42
+Largos Apodaca,Zapopan,814.8756,osrm,1.2506928566322095,42
+Largos Apodaca,Sta Ana Chautempan,913.1462,osrm,1.2203524509359047,42
+Juventud,Silao,670.3968000000001,osrm,1.224199365642232,41
+Largos Apodaca,Comitán,1629.5433,osrm,1.208005253250349,41
+Juventud,Ocotzingo,1699.9623,osrm,1.2301319484442954,40
+Juventud,Juan C Bonilla,970.4312,osrm,1.2698878018808746,40
+Largos Apodaca,Oaxaca,1255.7402,osrm,1.2185274875161916,40
+Largos Apodaca,Chalco,968.0848,osrm,1.3054415471446443,40
+Largos Puebla,Zapopan,672.8594,osrm,1.1719646083619015,40
+Largos Apodaca,Tlaquepaque,801.6877,osrm,1.2231347423002659,39
+Largos Apodaca,Monclova,219.1761,osrm,1.3872522401613088,39
+Guerrero,San José Iturbide,668.9417,osrm,1.2650895709353187,39
+Universidad,Atitalaquia,858.0833,osrm,1.3347375103382693,39
+CEDI Tuxtla,Tonalá,1358.8645,osrm,1.1818533861822555,39
+CEDI Norte,Torreón,362.7192,osrm,1.1021333864193565,39
+Juventud,Ciudad Juárez,1190.9536,osrm,1.3261518955993379,39
+Largos Puebla,Guadalupe,930.7012,osrm,1.215109951079249,38
+Churubusco,Tizayuca,902.3968,osrm,1.3616340232412294,38
+CEDI Norte,Saltillo,117.0461,osrm,1.2063498025692456,38
+CEDI Mexico,San Cristóbal de las Casas,889.9653000000001,osrm,1.188161762448296,37
+Juventud,Tapachula,1736.0901,osrm,1.1875401179403426,37
+Bodega del Toro,San Luis Potosí,513.7334000000001,osrm,1.246879100179324,37
+CEDI Tuxtla,Chiapa de Corzo,26.1752,osrm,1.2359368615246782,37
+CEDI Tuxtla,Comalapan,257.4845,osrm,1.6647901352148782,37
+Largos Apodaca,Palenque,1586.9295,osrm,1.2523195420644884,36
+Guerrero,Gómez Palacios,353.1525,osrm,1.0971985551093455,36
+Largos Apodaca,Celaya,767.6234000000001,osrm,1.3029827214216632,36
+CSI San Luis Potosi,Ciudad Juárez,1387.5889,osrm,1.1590776498319353,36
+Largos Puebla,Corregidora,335.7593,osrm,1.18349302702422,36
+Juventud,Orizaba,1077.288,osrm,1.2923834238177996,35
+Guerrero,Tlaquepaque,788.8568,osrm,1.2187694868443717,35
+Juventud,Centro,1441.0629,osrm,1.2456999628936816,35
+Guerrero,Cuautlancingo,951.6117,osrm,1.2405134696046014,35
+Largos Apodaca,Jalapa,920.6782,osrm,1.193732770423984,35
+Churubusco,Amozoc,955.9203,osrm,1.2385233085643839,35
+Largos Puebla,Veracruz,274.4272,osrm,1.2640654966910971,35
+CEDI Guadalajara,Morelia,300.47790000000003,osrm,1.2288330405743477,35
+Juventud,San Juan del Río,750.123,osrm,1.2551125047624119,35
+Pesquería,Tetla,899.6889,osrm,1.2454361895879618,35
+Largos Apodaca,Tampico,505.0105999999999,osrm,1.1099589752661885,34
+Juventud,Ecatepec,897.7186999999999,osrm,1.2893028673370377,34
+CEDI Tuxtla,Angel Albino Corzo,173.1386,osrm,1.4471570292843727,34
+Guerrero,Celaya,754.7925,osrm,1.2912082447088191,33
+Largos Apodaca,Apetatitlan,910.9135,osrm,1.2207297597654645,33
+CSI Apodaca,Villa de Reyes,565.6916,osrm,1.2646607879351464,33
+CEDI Mexico,Acapulco,367.4134,osrm,1.2400828490082778,33
+Juventud,Tantoyuca,657.3385,osrm,1.2397119348441408,33
+CEDI Puebla,Zacatlán,125.1042,osrm,1.2038570186976332,33
+Universidad,Tijuana,2369.4342,osrm,1.3238677910471948,33
+CEDI Guadalajara,Tepatitlán de Morelos,74.4513,osrm,1.2030961151401138,32
+CEDI Puebla,Amozoc,19.6373,osrm,1.2035006104005255,32
+CEDI Mexico,Sta Cruz Xoxocotlan,467.5309,osrm,1.2650388815033635,32
+CEDI Tuxtla,San Fernando,1329.5658999999998,osrm,1.2853239153252853,32
+Churubusco,Santa Rosa de Jáuregui,686.7465,osrm,1.2418750250828337,32
+Juventud,Lerma,916.7007,osrm,1.2732434922779938,32
+Largos Apodaca,Villa de Santiago,81.0612,osrm,1.7425303975405526,32
+CEDI Tuxtla,Margaritas,165.9654,osrm,1.2716195716362573,31
+Largos Apodaca,Jacona,848.3737,osrm,1.237128301083357,31
+Largos Apodaca,Ocotlán,799.9602,osrm,1.2127499370286214,31
+Largos Apodaca,Manzanillo,1088.3103999999998,osrm,1.2642187907392055,31
+Pesquería,Toluca,927.5475,osrm,1.29079913212616,31
+Juventud,Ocotlán,787.1293000000001,osrm,1.2068450864734481,31
+CEDI Mexico,Ocotzingo,1038.055,osrm,1.160847914229116,30
+CEDI Mexico,Orizaba,266.4477,osrm,1.2012228205937512,30
+CEDI Guadalajara,Tecomán,242.3016,osrm,1.184806306591331,30
+CEDI Mexico,Tepeaca,163.943,osrm,1.1779644482083131,30
+Guerrero,San Pablo Monte,952.4037,osrm,1.2431481929446133,30
+CEDI Veracruz,Coatzacoalcos,313.6323,osrm,1.460612856839882,30
+Pesquería,Ecatepec,931.6506,osrm,1.3491159859425077,30
+CEDI Puebla,Sta Cruz Xoxocotlan,342.234,osrm,1.2496417593505904,30
+Juventud,Aguascalientes,575.3927,osrm,1.206755012687113,30
+Juventud,El Marques,711.2162,osrm,1.2739413513992135,30
+Largos Puebla,Tuxtla Gutiérrez,704.7092,osrm,1.1844922950232033,30
+Juventud,Cajeme,1490.2668,osrm,1.5225757489275282,30
+Universidad,Matamoros,312.5786,osrm,1.1206576305110487,30
+Largos Puebla,Villa de Tezontepec,135.69170000000005,osrm,1.1741489274605452,30
+Churubusco,Corregidora,716.8947,osrm,1.238862481731336,30
+CEDI Mexico,Ciudad Altamirano,271.6325,osrm,1.3523673064576163,29
+CSI San Luis Potosi,Villa de García,493.7415,osrm,1.2109701062052254,29
+Largos Apodaca,Irapuato,718.2818000000001,osrm,1.2369126933504722,28
+CSI Apodaca,Cuautitlán,888.7307,osrm,1.298843228815018,28
+Largos Apodaca,Ciudad Valles,526.4641,osrm,1.230461430064731,28
+Largos Apodaca,San Andrés Cholula,954.9485,osrm,1.2288845531866803,28
+CSI San Luis Potosi,Saltillo,445.4574,osrm,1.224568375063373,28
+Guerrero,Mazatlán,849.5523000000001,osrm,1.245360920112808,28
+Pesquería,Cd Cuauhtemoc,946.0814,osrm,1.2775155015673885,28
+CEDI Guadalajara,Ciudad Guzmán,127.3386,osrm,1.1512315614403361,27
+Largos Puebla,Sta Ana Chautempan,33.380900000000004,osrm,1.1112627639128838,27
+Churubusco,Guadalajara,785.5213,osrm,1.2350095575252242,26
+CEDI Veracruz,Matías Romero,387.6264000000001,osrm,1.459008922847574,26
+Juventud,El Salto,781.8566999999999,osrm,1.197458571461512,26
+Largos Apodaca,Zamora,862.6373000000001,osrm,1.2718390609431218,26
+CEDI Mexico,Poza Rica,267.00329999999997,osrm,1.242033142439267,25
+CEDI Mexico,Uman,1283.1514,osrm,1.295974876211932,25
+CEDI Guadalajara,Guadalupe,796.1510999999999,osrm,1.2428598282925412,25
+Largos Apodaca,Colima,994.3751,osrm,1.2224494019280168,25
+Juventud,Santa Rosa de Jáuregui,693.8803,osrm,1.2358481868377336,25
+Largos Apodaca,Altamira,466.9622,osrm,1.124191185445906,25
+Largos Apodaca,Ciudad Delicias,741.817,osrm,1.2692827671489388,25
+CEDI Mexico,Benito Juarez,1600.2114,osrm,1.2442712760680306,25
+Bodega Aceromex,Nuevo Laredo,312.2741,osrm,1.3375665014374114,25
+Largos Apodaca,Tecomán,1043.9212,osrm,1.2239542597898552,25
+Largos Puebla,Othon P Blanco,1144.1705,osrm,1.1567838930622711,25
+Largos Apodaca,Uruapan,948.6071,osrm,1.2923718190051097,24
+Juventud,Tepatitlán de Morelos,722.7105,osrm,1.195659481911085,24
+CEDI Puebla,S FelipeTeotlalcingo,51.452,osrm,1.2857363394869845,24
+CEDI Mexico,Guadalajara,540.6058,osrm,1.1745160304679145,24
+Largos Puebla,Río Grande,858.6124,osrm,1.1757318258450615,24
+CEDI Mexico,Tantoyuca,352.12190000000004,osrm,1.4765415400758832,24
+CEDI Tuxtla,Chicomuselo,217.327,osrm,1.6702217834858426,24
+Largos Puebla,Chihuahua,1550.8802,osrm,1.163282035373169,24
+Largos Apodaca,Campeche,1788.9118999999998,osrm,1.5049324304581666,24
+Largos Puebla,Amatlan de los Reyes,171.3013,osrm,1.213922181009493,24
+CSI Apodaca,Irapuato,718.2818000000001,osrm,1.2369126933504722,23
+Largos Puebla,San Martin Texmelucan,41.3791,osrm,1.2058479685327188,23
+Guerrero,Silao,670.3968000000001,osrm,1.224199365642232,23
+Guerrero,Atzcapotzalco,899.5295,osrm,1.2731140427385188,23
+Largos Apodaca,Allende,62.6323,osrm,1.1168963458308476,23
+Pesquería,CDMX+EDOMEX,,region,,23
+Churubusco,San Pablo Monte,942.8873,osrm,1.242483867309942,23
+Pesquería,Santa Rosa de Jáuregui,727.8122,osrm,1.2949822329767715,23
+Universidad,Celaya,754.7925,osrm,1.2912082447088191,22
+CEDI Veracruz,San Andrés Tuxtla,158.5796,osrm,1.234430188212737,22
+CEDI Veracruz,Jesus Carranza,339.9893,osrm,1.4185370861275497,22
+CSI Apodaca,El Marques,724.0471,osrm,1.2886837808551335,22
+CEDI Tuxtla,Mapastepec,270.699,osrm,1.8428153132329321,22
+CEDI Puebla,Ajalpan,184.7925,osrm,1.311629755716988,22
+Largos Apodaca,Apizaco,899.1631,osrm,1.2157818564501786,22
+Juventud,Ecuandureo,826.9258000000001,osrm,1.2640513445033708,22
+Bodega del Toro,Saltillo,90.277,osrm,1.1325053432341732,22
+Churubusco,Ocoyoacac,910.7334,osrm,1.2649840572369428,22
+Largos Apodaca,Guaymas,1602.5088999999998,osrm,1.4719983101671226,22
+Juventud,Alvarado,1015.5289,osrm,1.1214772361937604,22
+Guerrero,Tlajomulco de Zúñiga,811.2591,osrm,1.2161285890210667,21
+Largos Apodaca,Netzahualcóyotl,929.4083,osrm,1.297376736908203,21
+Largos Apodaca,Xoxtla,944.5008,osrm,1.2421448667521107,21
+CEDI Mexico,Jalapa,281.8238,osrm,1.2102221995489224,21
+Universidad,Puebla,953.5665,osrm,1.227801996310368,21
+CEDI Puebla,Zaragoza,1443.4203,osrm,1.2623173429206442,21
+Guerrero,Apaseo El Grande,733.4611,osrm,1.275450490997314,21
+Largos Apodaca,Tecamac,910.2148,osrm,1.3249407485873332,21
+CEDI Puebla,Acajete,32.6453,osrm,1.1449660250186167,21
+Largos Apodaca,Salamanca,747.1129,osrm,1.2885059145935316,21
+Juventud,Atizapan,894.7589,osrm,1.2851248447476171,20
+Churubusco,Atitalaquia,850.9495,osrm,1.339927363161088,20
+Pesquería,San Francisco de los Romo,594.5767,osrm,1.2570004499494516,20
+CEDI Tuxtla,Chilon,195.0427,osrm,1.9949990718029025,20
+CEDI Veracruz,Jalapa,101.5643,osrm,1.130964069407561,20
+Largos Puebla,Ramos Arizpe,1024.7098,osrm,1.2359178182067931,20
+CEDI Puebla,Zacatelco,22.016599999999997,osrm,1.1220549445694339,20
+CEDI Veracruz,Tuxtepec,156.372,osrm,1.256931463061676,20
+CSI San Luis Potosi,El Marques,206.5901,osrm,1.193694280820937,20
+Largos Apodaca,Corregidora,736.8594,osrm,1.246813136172683,20
+Largos Puebla,Villahermosa,626.7321999999999,osrm,1.1053187593747247,20
+Guerrero,Culiacán,1045.283,osrm,1.447610897938278,19
+Bodega Aceromex,Tultitlán,855.4265,osrm,1.329091443260487,19
+Largos Puebla,Mazatlán,1148.7129,osrm,1.1843433115170612,19
+CEDI Mexico,Ocotlán,475.5655,osrm,1.2081799728752938,19
+CEDI Mexico,Medellín de Bravo,391.9471,osrm,1.238496080241155,19
+Pesquería,Jesús María,631.0614,osrm,1.2815657095417787,19
+CEDI Mexico,Metepec,63.0275,osrm,1.2036055678512279,19
+Universidad,Ciudad Frontera,190.9879,osrm,1.0929755501505591,19
+Universidad,Gómez Palacios,353.1525,osrm,1.0971985551093455,19
+CEDI Mexico,Córdoba,288.5476,osrm,1.2099515203630233,19
+Juventud,CDMX+EDOMEX,,region,,19
+Largos Apodaca,Coatzacoalcos,1246.9359,osrm,1.2033111375260297,19
+CEDI Norte,Gómez Palacios,374.0687,osrm,1.1095048889913228,19
+Largos Apodaca,Tecamachalco,1000.7758,osrm,1.2352911926548749,19
+Largos Apodaca,Los Cabos,3656.0136,osrm,3.6522212735966764,19
+Largos Apodaca,Tijuana,2369.3615,osrm,1.3182937133613022,19
+CSI Apodaca,Ciudad Hidalgo,860.1917,osrm,1.2671910432439533,18
+Churubusco,San Francisco de los Romo,553.511,osrm,1.22478985621572,18
+Churubusco,Silao,663.263,osrm,1.2308661228945899,18
+CEDI Mexico,Centro,779.1555999999999,osrm,1.1332852396952346,18
+CEDI Puebla,Tecamachalco,62.0964,osrm,1.1648645691018356,18
+CEDI Veracruz,Martínez de la Torre,178.5649,osrm,1.2791592191429464,18
+Bodega Aceromex,Mexicali,2285.628,osrm,1.3113250254422033,18
+Largos Apodaca,Chetumal,1979.1493,osrm,1.3492171226217429,18
+CEDI Puebla,Zacapoaxtla,131.55829999999995,osrm,1.1978352374921146,18
+Bodega del Toro,Querétaro,705.3062,osrm,1.2159174840226938,18
+CEDI Puebla,S Maria Zacatepec*NU,115.6937,osrm,1.2400972115464404,18
+Largos Apodaca,Río Bravo,266.0299,osrm,1.2457487373051928,18
+Universidad,Guadalajara,792.6551999999999,osrm,1.2296425182109223,18
+CSI San Luis Potosi,Santa Catarina,492.3288,osrm,1.2457647463756056,18
+CEDI Tuxtla,Huixtla,331.28290000000004,osrm,1.7176374098917235,18
+CEDI Tuxtla,Huitiupan,145.7243,osrm,2.089991069861512,18
+Pesquería,Ocoyoacac,951.7991,osrm,1.3147010017243095,18
+Largos Puebla,Isla Cancun,1483.5149,osrm,1.227627679200735,18
+CEDI Guadalajara,La Piedad,162.44670000000002,osrm,1.1550938965496598,17
+CEDI Norte,Piedras Negras,383.6756,osrm,1.20096012384403,17
+CEDI Tuxtla,Pijijiapan,232.4519,osrm,1.8999146692822397,17
+Largos Puebla,Matamoros,907.5654,osrm,1.1885753730254758,17
+Largos Puebla,Guadalajara,663.4699,osrm,1.169813249429907,17
+CEDI Veracruz,Emiliano Zapata,436.0561,osrm,1.3485781098212368,17
+Largos Puebla,Valle de Santiago,436.5063,osrm,1.2560551031799851,17
+Largos Puebla,Acapulco,386.1839000000001,osrm,1.282261083309103,17
+Juventud,Torreón,341.803,osrm,1.0895236704100426,17
+Largos Apodaca,El Marques,724.0471,osrm,1.2886837808551335,17
+Universidad,Cuautlancingo,951.6117,osrm,1.2405134696046014,17
+CEDI Mexico,Riva Palacio,1576.8832,osrm,1.2155704758859225,17
+CEDI Mexico,Celaya,250.7804,osrm,1.1673424861807036,17
+Largos Puebla,Oaxaca,334.92240000000004,osrm,1.2545757160189297,17
+Juventud,Ciudad Guzmán,916.1274,osrm,1.2211727907080143,17
+Bodega del Toro,Cd Cuauhtemoc,906.2966,osrm,1.2785535999915296,17
+CEDI Veracruz,Playa Vicente,239.6947,osrm,1.4273702315673302,17
+Largos Apodaca,Medellín de Bravo,957.5723,osrm,1.1174607479477816,17
+Churubusco,Tepeapulco,888.0173000000001,osrm,1.3079159447162845,16
+Largos Apodaca,San Francisco del Rincón,733.1643,osrm,1.2969716282637418,16
+CEDI Mexico,Tehuacan,254.2799,osrm,1.2004996681966684,16
+Largos Apodaca,Ciudad Obregón,1474.4284,osrm,1.49401749772296,16
+Largos Apodaca,Cuautitlán,888.7307,osrm,1.298843228815018,16
+Churubusco,Chihuahua,804.0421,osrm,1.2221531602795022,16
+CSI Apodaca,Chihuahua,824.0068,osrm,1.24270873587478,16
+Juventud,Reynosa,223.2368,osrm,1.090876489023522,16
+Largos Puebla,Silao,461.4098,osrm,1.158675647029011,16
+Universidad,Ciudad Juárez,1190.9536,osrm,1.3261518955993379,16
+Largos Puebla,Monterrey,935.1769,osrm,1.2155767839546192,16
+CEDI Mexico,Aguascalientes,484.3336,osrm,1.1340386058879777,16
+Churubusco,Sta Ana Xalmimilulco,945.3874,osrm,1.2668413156199632,16
+Bodega del Toro,Silao,664.544,osrm,1.2024641684845145,15
+Largos Puebla,Magdalena Tlatelulco,30.0379,osrm,1.1435370955124953,15
+CEDI Mexico,Comalcalco,742.8798,osrm,1.1691971501259548,15
+CEDI Tuxtla,Tapilula,155.2626,osrm,2.7656993881200944,15
+CEDI Guadalajara,Ecuandureo,156.32729999999998,osrm,1.2451563841550375,15
+CEDI Mexico,Tepic,743.5652,osrm,1.1567446770198173,15
+Largos Apodaca,Córdoba,1047.2116,osrm,1.2526272978137198,15
+CEDI Guadalajara,Acatlán,741.4671,osrm,1.1981104434901813,15
+Juventud,Matamoros,312.5786,osrm,1.1206576305110487,15
+Largos Apodaca,Ixtapaluca,966.1693,osrm,1.3201911982810794,15
+Largos Apodaca,Zapotiltic,942.8859,osrm,1.239103800919034,15
+CEDI Mexico,San Fernando,800.4115,osrm,1.2986356187302794,15
+Largos Apodaca,Ecatepec,910.5496,osrm,1.3048261104653391,15
+Largos Puebla,Texcoco,123.7511,osrm,1.4722713272900487,15
+Largos Apodaca,Tarímbaro,836.8425,osrm,1.2463183345757034,15
+Largos Apodaca,Tlalnepantla,903.493,osrm,1.2881535657708358,15
+Largos Puebla,Tapachula,963.5093,osrm,1.243987226541223,15
+CEDI Mexico,Atlixco,156.0648,osrm,1.6707019389528008,15
+Largos Apodaca,Teziutlán,862.9838000000001,osrm,1.2021402693152243,15
+Largos Apodaca,Ocozocoautla,1478.191,osrm,1.213200162541482,15
+Largos Puebla,S Lorenzo Cacaotepec,329.72159999999997,osrm,1.2730412720742312,15
+CEDI Mexico,Palenque,932.6168,osrm,1.1615467264198673,14
+CSI Apodaca,Arteaga,134.6552,osrm,1.9219058737576566,14
+CEDI Norte,Tlajomulco de Zúñiga,832.1753,osrm,1.219332544485513,14
+Pesquería,Zapopan,835.9766,osrm,1.2719772762657928,14
+Largos Apodaca,Acatlán,1099.04,osrm,1.2610743568424119,14
+Juventud,Uman,1945.0587,osrm,1.6147585077076367,14
+CEDI Mexico,Tonalá,529.1599,osrm,1.1779431920182633,14
+Juventud,Tlalnepantla,890.6621,osrm,1.2731145789902194,14
+CEDI Mexico,Jalacingo,270.9126,osrm,1.3771638132864301,14
+Juventud,Tala,845.1801999999999,osrm,1.2608857273405691,14
+Juventud,Medellín de Bravo,965.1669,osrm,1.123375676755974,14
+Juventud,Apaseo el Alto,740.1086,osrm,1.2486537680312213,14
+Largos Apodaca,Juchitán,1383.0556,osrm,1.1753422225757493,14
+Largos Apodaca,Nogales,1741.0358,osrm,1.4303152730132358,14
+Largos Puebla,Cd Cuauhtemoc,1651.8537,osrm,1.2117526166564885,14
+Guerrero,Corregidora,724.0285,osrm,1.233146548036395,14
+Largos Puebla,Benito Juarez,1474.9145,osrm,1.2306689096406245,14
+Juventud,Cuautitlán,875.8998,osrm,1.2833025128586377,14
+Churubusco,El Salto,774.7229,osrm,1.202442858176598,14
+Largos Apodaca,Bahia de Banderas,1094.5558999999998,osrm,1.4390094460523104,14
+Churubusco,Ecatepec,890.5849000000001,osrm,1.2934834496954497,14
+CEDI Mexico,San Andrés Cholula,132.4122,osrm,1.325958605302721,13
+Churubusco,Puebla,944.0501,osrm,1.22711049048585,13
+CEDI Norte,Mérida,1967.1207,osrm,1.636858632989789,13
+CEDI Mexico,Tulancingo,119.1215,osrm,1.0997662094476415,13
+CEDI Mexico,Atotonilco de Tula,67.95360000000001,osrm,1.1388152932460132,13
+CEDI Veracruz,Coactepec,107.6235,osrm,1.1867865631016754,13
+CEDI Veracruz,Coatzintla,249.4307,osrm,1.2362275828494684,13
+CEDI Tuxtla,Villacorzo,115.4269,osrm,1.4718873403173585,13
+CEDI Tuxtla,La Concordia,139.5276,osrm,1.6609140338562756,13
+Universidad,Ocotlán,787.1293000000001,osrm,1.2068450864734481,13
+CEDI Guadalajara,Jesús María,245.109,osrm,1.4759258717719992,13
+Largos Puebla,Tizayuca,147.1314,osrm,1.2237027360548927,13
+Juventud,Guadalupe,15.1478,osrm,1.2981099196579846,13
+Largos Apodaca,Seybaplaya,1764.0082,osrm,1.4737059645260162,13
+Churubusco,Tlajomulco de Zúñiga,804.1252,osrm,1.2211600409943508,13
+CEDI Puebla,Chiautla de Tapia,146.151,osrm,1.5633733497442561,13
+Largos Puebla,Mérida,1180.747,osrm,1.2821369310388675,13
+Largos Apodaca,Temixco,1016.661,osrm,1.3073549128504705,13
+CEDI Veracruz,Catemaco,183.4187,osrm,1.255036453244531,13
+Largos Puebla,Tecamac,149.5901,osrm,1.3633231057709696,13
+CEDI Puebla,Huajuapan de León,216.0662,osrm,1.4973983753256823,13
+Largos Puebla,Tecamachalco,62.0964,osrm,1.1648645691018356,13
+Universidad,Santa Rosa de Jáuregui,693.8803,osrm,1.2358481868377336,13
+Guerrero,Altamira,474.5569,osrm,1.13561286425289,13
+Largos Apodaca,Huejutla de Reyes,651.7009,osrm,1.1894762946633126,12
+Universidad,Saltillo,96.1298,osrm,1.207187527338838,12
+Guerrero,Tizayuca,909.5306,osrm,1.3566862279916339,12
+Guerrero,Villa de Reyes,552.8608,osrm,1.2507675044807798,12
+CEDI Tuxtla,Mitontic,97.9441,osrm,1.6106310555644605,12
+CEDI Mexico,Playa del Carmen,1588.9452,osrm,1.2551545267244753,12
+Largos Puebla,Cd Hidalgo,358.392,osrm,1.3913037645707835,12
+Churubusco,Ciudad Acuña,521.1526,osrm,1.271600708998351,12
+CEDI Guadalajara,Puruandiro,232.7114,osrm,1.1804711693411258,12
+Universidad,El Marques,711.2162,osrm,1.2739413513992135,12
+CSI San Luis Potosi,Irapuato,200.8248,osrm,1.1908201531052354,12
+Universidad,Hermosillo,1503.1583999999998,osrm,1.3457442168816545,12
+CSI San Luis Potosi,Cuautitlán,371.2737,osrm,1.1229902551018653,12
+Largos Apodaca,Chicoloapan,940.8829,osrm,1.3058115082000883,12
+CEDI Mexico,Cacahuatan,1125.1471,osrm,1.2734864144529705,12
+CEDI Guadalajara,Tamazula de Gordiano,178.2199,osrm,1.594517929202976,12
+Largos Puebla,Puerto Vallarta,973.0062,osrm,1.2878146348113055,12
+Universidad,Tala,845.1801999999999,osrm,1.2608857273405691,12
+Largos Puebla,Chimalhuacan,119.3888,osrm,1.3277516927709911,12
+Largos Apodaca,Jantetelco,1030.9653,osrm,1.2808770492784487,12
+CEDI Veracruz,Cosoleacaque,291.8476,osrm,1.4021387961495249,12
+Largos Apodaca,San Francisco Teotimehuacan,955.1336,osrm,1.2160273558570733,12
+CEDI Guadalajara,Apatzingan,321.0245,osrm,1.5239046868527917,12
+Bodega del Toro,Tuxtla Gutiérrez,1497.5276,osrm,1.1953574136651424,12
+Bodega del Toro,Centro,1446.6772,osrm,1.243553241393603,12
+Bodega del Toro,Veracruz,956.6191,osrm,1.1239972501365263,12
+CEDI Norte,Querétaro,732.0753000000001,osrm,1.2533804997709639,11
+Largos Apodaca,San Luis Potosí,532.4172,osrm,1.2917770787429963,11
+Guerrero,Atitalaquia,858.0833,osrm,1.3347375103382693,11
+CEDI Tuxtla,Arriaga,127.8682,osrm,1.2802852765975679,11
+CEDI Norte,Allende,69.3965,osrm,1.1381881357807282,11
+Largos Apodaca,Tlajomulco de Zúñiga,824.0899000000001,osrm,1.2204013193235619,11
+CEDI Guadalajara,San Juan de los Lagos,154.3199,osrm,1.2167952556823693,11
+CEDI Veracruz,Tuxpan,273.3991,osrm,1.1746556254950986,11
+Largos Puebla,Lagos de Moreno,562.9259000000001,osrm,1.2021742095590748,11
+Universidad,Tultitlán,884.5598,osrm,1.2775788127486845,11
+CEDI Veracruz,"Cd Ixtepec, Oax",,multidestino,,11
+Largos Apodaca,Valle de Chalco,954.9865,osrm,1.3002073576134232,11
+Largos Puebla,Escobedo,959.2887,osrm,1.2248341479143745,11
+CEDI Guadalajara,Villa de Álvarez,194.7382,osrm,1.197464132539703,11
+CEDI Mexico,Juchitán,725.8405,osrm,1.2992427494319667,11
+CEDI Mexico,Acatlán,255.2057,osrm,1.4330463863539058,11
+Largos Apodaca,Emiliano Zapata,1023.1097,osrm,1.3072336514771872,11
+Juventud,Ahome,1276.3596,osrm,1.4303643331320286,11
+Guerrero,Sta Ana Xalmimilulco,954.9038,osrm,1.2670241016147445,11
+Largos Puebla,Tepic,866.4293,osrm,1.1551793809104007,11
+CEDI Guadalajara,Moroleon,270.31690000000003,osrm,1.1941609437287695,11
+CEDI Guadalajara,Jacona,164.9443,osrm,1.229391439456275,11
+Largos Puebla,Tejeria,201.0957,osrm,1.4392361784166245,11
+Largos Apodaca,Guasave,1204.153,osrm,1.4370246569238223,11
+Largos Apodaca,Navojoa,1406.5576999999998,osrm,1.5080480329819397,11
+Churubusco,Cuautitlán,868.766,osrm,1.2876134627180624,11
+CEDI Mexico,Acajete,157.9422,osrm,1.2034725955943837,10
+Universidad,Veracruz,951.0049,osrm,1.1262864265640238,10
+CEDI Guadalajara,Tangancícuaro,174.3555,osrm,1.238677215888804,10
+Juventud,San Cristóbal de las Casas,1551.8726,osrm,1.2144856083208289,10
+CEDI Mexico,Teziutlán,260.1667,osrm,1.362934609157718,10
+CEDI Norte,Reynosa,221.5632,osrm,1.1752932351303997,10
+Bodega del Toro,Arteaga,115.9715,osrm,1.8425985862008414,10
+CSI Apodaca,Tijuana,2369.3615,osrm,1.3182937133613022,10
+Largos Puebla,Zacatelco,22.016599999999997,osrm,1.1220549445694339,10
+Largos Apodaca,San Juan del Río,762.9539,osrm,1.2700652663189371,10
+Juventud,Nogales,1741.1085,osrm,1.4385024911614375,10
+Largos Apodaca,La Barca,779.8706999999999,osrm,1.20233300122267,10
+Bodega Aceromex,Saltillo,198.532,osrm,1.366572910584412,10
+CEDI Veracruz,Tepatlaxco Ver,112.4581,osrm,1.4695898802901093,10
+CEDI Guadalajara,Bucerías,277.51590000000004,osrm,1.3339151885143152,10
+CEDI Puebla,Apizaco,56.4426,osrm,1.2713876050483222,10
+Largos Apodaca,San Andrés Tuxtla,1091.6658,osrm,1.1341506294636483,10
+Largos Apodaca,La Huerta,1131.5342,osrm,1.339258615658296,10
+CEDI Tuxtla,Cacahuatan,400.1298,osrm,1.8930375975849307,10
+CEDI Guadalajara,Celaya,307.15090000000004,osrm,1.175474708113057,10
+Bodega del Toro,Celaya,748.9395999999999,osrm,1.2691886434089625,10
+CEDI Guadalajara,Zamora,358.9423,osrm,1.1629658371508904,10
+Guerrero,Veracruz,951.0049,osrm,1.1262864265640238,10
+CEDI Mexico,Izuca de Matamoros,181.5614,osrm,1.4274115471919016,10
+CEDI Mexico,Tula de Allende,86.1096,osrm,1.1798773262919466,10
+CSI San Luis Potosi,Zapopan,337.2476,osrm,1.138319140269813,10
+CEDI Mexico,Chiapa de Corzo,854.727,osrm,1.185288811915833,10
+Juventud,Tepeaca,984.9202,osrm,1.2410596249033132,10
+CEDI Tuxtla,Villaflores,86.05330000000001,osrm,1.742071295687227,10
+CEDI Mexico,Santiago Mihuatlán,261.5529,osrm,1.2912964409926342,10
+CEDI Norte,León,720.2108000000001,osrm,1.3151521891900049,10
+Largos Apodaca,Santiago Pinotepa Nacional,1485.0257,osrm,1.3801460299148507,10
+Pesquería,San Pablo Monte,953.6789,osrm,1.259458822853352,10
+CEDI Puebla,Libres,84.0709,osrm,1.1432561299809239,10
+CEDI Norte,San Juan del Río,771.0391999999999,osrm,1.2713003774889506,10
+Juventud,Tezoyuca,908.2793,osrm,1.2974220185715988,10
+Largos Apodaca,Mexicali,2184.5796,osrm,1.31158155257052,10
+Pesquería,Ixtlahuacan de los M,827.519,osrm,1.2198834518756936,10
+CEDI Mexico,Chilpancingo,261.8845,osrm,1.2323085496134978,9
+Juventud,Toluca,893.6156,osrm,1.2383631137960545,9
+CEDI Tuxtla,Berriozabal,37.3588,osrm,1.38671880745064,9
+CEDI Norte,Monclova,227.2614,osrm,1.4538867597870893,9
+CSI Apodaca,Tlaquepaque,801.6877,osrm,1.2231347423002659,9
+Largos Apodaca,Tlalmanalco,983.5991,osrm,1.31715719771274,9
+Juventud,Comitán,1637.1379,osrm,1.2099881945433881,9
+CEDI Mexico,Amozoc,144.4595,osrm,1.189553678820101,9
+Churubusco,Piedras Negras,392.785,osrm,1.1705257718102973,9
+Largos Apodaca,San Cristóbal de las Casas,1544.278,osrm,1.2123202443824324,9
+CEDI Mexico,Oaxaca,460.2193,osrm,1.2650404712804393,9
+Juventud,Huamantla,931.4567,osrm,1.2326653752844916,9
+Largos Apodaca,Autlán,1041.7222,osrm,1.313585280212298,9
+Largos Puebla,Tlalpan,135.7893,osrm,1.2893103870963027,9
+Largos Puebla,Tehuacan,128.983,osrm,1.2170719507009082,9
+CEDI Guadalajara,Bahia de Banderas,292.1544,osrm,1.412765500237129,9
+CEDI Veracruz,Papantla,217.7128,osrm,1.1870401239619848,9
+CEDI Mexico,Coatzintla,257.1733,osrm,1.2935415546408215,9
+CEDI Mexico,Cárdenas,686.1443,osrm,1.1662486835252075,9
+Guerrero,San Juan del Río,750.123,osrm,1.2551125047624119,9
+CEDI Tuxtla,Oxchuc Chs,116.3782,osrm,1.3490482834363675,9
+Largos Puebla,Tampico,437.9374,osrm,1.2160379568760544,9
+Universidad,Irapuato,705.451,osrm,1.2264611241537913,9
+CEDI Veracruz,Tierra Blanca,112.1764,osrm,1.4901146263546265,9
+Largos Puebla,Sn Salvador el Verde,49.41,osrm,1.1843721187865235,9
+Largos Puebla,Ocozocoautla,698.5814,osrm,1.2462698559973653,9
+CEDI Mexico,Tuxtepec,435.3629,osrm,1.239734948990026,9
+CEDI Mexico,Acayucan,523.632,osrm,1.1412134771995635,9
+Largos Apodaca,Othon P Blanco,1923.78,osrm,1.3489411048268312,9
+Pesquería,Tizayuca,943.4625,osrm,1.4206369185334522,9
+Largos Puebla,Riva Palacio,1700.2588999999998,osrm,1.223464081313358,9
+CSI Apodaca,León,712.1254,osrm,1.3169050550689447,9
+CEDI Puebla,Huautla de Jimenez,267.0473,osrm,1.5018389280348199,9
+CEDI Veracruz,San Juan B Tuxtepec,156.372,osrm,1.256931463061676,9
+Largos Puebla,Jiutepec,147.49929999999998,osrm,1.4223765696696453,9
+Bodega Aceromex,León,667.9116,osrm,1.277708268242278,9
+Juventud,San Andrés Cholula,962.5431,osrm,1.239593210966628,9
+CEDI Veracruz,Cosamaloapan,148.6612,osrm,1.432443247644668,9
+Largos Puebla,Apizaco,56.4426,osrm,1.2713876050483222,9
+Largos Puebla,Solidaridad,1462.099,osrm,1.246017809585783,9
+Pesquería,Cuautitlán,909.8317,osrm,1.3434340656482164,9
+Largos Puebla,Toluca,191.7118,osrm,1.2313769873517608,9
+Largos Puebla,Tepeaca,38.6461,osrm,1.2000554879902519,9
+Largos Apodaca,S Lorenzo Cacaotepec,1250.5394,osrm,1.2207766781677352,9
+CEDI Mexico,Isla Cancun,1608.8118,osrm,1.2416915335306065,8
+CSI San Luis Potosi,Chihuahua,1015.4662,osrm,1.1483128248784202,8
+CEDI Mexico,Chilon,931.8681,osrm,1.2116753669949603,8
+Juventud,Soledad de Graciano Sánchez,503.1972,osrm,1.293430755012683,8
+CEDI Mexico,Martínez de la Torre,312.7927,osrm,1.3520053527069746,8
+CEDI Mexico,Teapa,798.4907,osrm,1.1742673600401987,8
+CEDI Guadalajara,Los Reyes,222.562,osrm,1.4754758434933406,8
+Largos Apodaca,Zaachila,1272.433,osrm,1.219540069764491,8
+Guerrero,Irapuato,705.451,osrm,1.2264611241537913,8
+CSI San Luis Potosi,Ciénega de Flores,535.8126,osrm,1.2453579046794132,8
+Juventud,Metepec,901.2111,osrm,1.2399611581461836,8
+Largos Puebla,Ezequiel Montes,314.79720000000003,osrm,1.244282618308583,8
+Bodega Aceromex,Corregidora,694.8953,osrm,1.2535867408380332,8
+Bodega Aceromex,San Luis Potosí,490.453,osrm,1.26151168381684,8
+Largos Apodaca,Tonalá,794.0401999999999,osrm,1.2150164219009896,8
+CEDI Mexico,Zacatlán,179.32379999999998,osrm,1.360310019241471,8
+CSI San Luis Potosi,Pesquería,552.817,osrm,1.3424605718177924,8
+CEDI Tuxtla,Benemerito de las A,400.3622,osrm,1.4182761168433373,8
+CEDI Veracruz,Alamo Temapache*NU,301.8135,osrm,1.1543944508050576,8
+CEDI Norte,Culiacán,1066.1992,osrm,1.4450025159125162,8
+Largos Apodaca,Tequila,789.552,osrm,1.238489621219992,8
+CEDI Mexico,Río Blanco,260.1165,osrm,1.1926708402697632,8
+Bodega del Toro,Gómez Palacios,347.2996,osrm,1.0889003570819304,8
+Guerrero,Fortín de las Flores,927.3112,osrm,1.2027599259383615,8
+CEDI Mexico,Matías Romero,666.6174,osrm,1.2897029983039718,8
+Largos Puebla,Culiacán,1344.4435,osrm,1.175670668168344,8
+Largos Apodaca,Melaque,1146.3979,osrm,1.3256071924346684,8
+Guerrero,Ocoyoacac,917.8672,osrm,1.2608702942584709,8
+CEDI Tuxtla,Simojovel,151.0315,osrm,2.004975485151527,8
+Largos Puebla,Comitán,849.9338,osrm,1.1914270503084223,8
+Largos Puebla,Lerma,186.3387,osrm,1.368150896157201,8
+Largos Apodaca,Puruandiro,811.4761,osrm,1.2575170710619767,8
+CEDI Guadalajara,Lagos de Moreno,214.0463,osrm,1.1650815757167357,8
+CEDI Tuxtla,Palenque,289.8917,osrm,1.8244001853742995,8
+Largos Apodaca,San Pablo Etla,1250.8498,osrm,1.2219793158522325,8
+Juventud,Arteaga,121.8243,osrm,2.0188309143509895,8
+CEDI Mexico,Comalapan,1086.0362,osrm,1.276890083609815,7
+Guerrero,Tecamac,897.3839,osrm,1.3088995555595788,7
+Juventud,Tehuacan,1057.3954,osrm,1.2245237306879295,7
+CEDI Puebla,Rafael Lara Grajales,57.9084,osrm,1.2574697293591124,7
+CSI San Luis Potosi,Arteaga,431.9534,osrm,1.2120672309930185,7
+Universidad,San Francisco de los Romo,560.6448,osrm,1.2172056121867034,7
+CSI Apodaca,Cuautlancingo,944.0171,osrm,1.229825399192235,7
+Juventud,Tampico,512.6052,osrm,1.1202957376027758,7
+Largos Puebla,Zamora,360.8375999999999,osrm,1.392603407409927,7
+CEDI Veracruz,Minatitlán,293.7607,osrm,1.3724504686841679,7
+Largos Puebla,Los Mochis,1538.7696,osrm,1.1497730958534285,7
+Universidad,Mexicali,2184.6522,osrm,1.3173178804463168,7
+CEDI Norte,Guadalajara,813.5714,osrm,1.2325373812623934,7
+CEDI Tuxtla,Ocozocoautla,44.231300000000005,osrm,1.2095842945216944,7
+CEDI Mexico,S FelipeTeotlalcingo,96.6251,osrm,1.4241420962447626,7
+CEDI Mexico,Cunduacan,726.3336999999999,osrm,1.1366424134846864,7
+Bodega del Toro,León,693.4417,osrm,1.2858963472407507,7
+CEDI Mexico,Zacapoaxtla,242.8274,osrm,1.4373437739020107,7
+CEDI Guadalajara,Irapuato,245.9805,osrm,1.1920171941483995,7
+Largos Apodaca,Atlixco,978.6011,osrm,1.245653427495883,7
+Churubusco,Ciudad Lerdo,386.6793,osrm,1.148568185152691,7
+CEDI Mexico,Tapilula,856.5074000000001,osrm,1.2420145580741833,7
+CEDI Norte,Fresnillo,486.1059,osrm,1.2014650890431284,7
+Largos Apodaca,Arriaga,1491.7788,osrm,1.1989129101963716,7
+Largos Apodaca,Miguel Auza,573.7963000000001,osrm,1.5239303251088792,7
+Largos Apodaca,Riva Palacio,973.3856,osrm,1.3375513111975617,7
+Juventud,Lagos de Moreno,657.5533,osrm,1.329112186862298,7
+CEDI Mexico,Margaritas,994.5171,osrm,1.1946942434087007,7
+CEDI Veracruz,Santo Domingo Tehuantepec,520.4802,osrm,1.51320741473069,7
+Universidad,Aguascalientes,575.3927,osrm,1.206755012687113,7
+Largos Puebla,Celaya,374.1561,osrm,1.1664098007721753,7
+CEDI Mexico,Apizaco,133.09279999999998,osrm,1.2021726500262406,7
+CEDI Mexico,Juan R Escudero,337.4862,osrm,1.3150273843254754,7
+Juventud,Tenancingo,943.1053,osrm,1.2429509502920326,7
+Guerrero,Texcoco,922.0651,osrm,1.2920326959820245,7
+Largos Apodaca,Nochixtlán,1184.8915,osrm,1.212476603537,7
+Universidad,Tlajomulco de Zúñiga,811.2591,osrm,1.2161285890210667,7
+CSI San Luis Potosi,Salinas Victoria,552.6066999999999,osrm,1.2380985431539862,7
+Largos Apodaca,Margaritas,1648.8298,osrm,1.2180977763894276,7
+Bodega Aceromex,Cuautitlán,846.7665,osrm,1.3361308032730592,7
+CEDI Mexico,Tlapa,318.8417,osrm,1.4518427172922235,6
+Bodega Aceromex,Guadalajara,815.9662,osrm,1.2514261669291935,6
+Bodega Aceromex,El Marques,682.0829,osrm,1.3028937530978395,6
+Largos Puebla,Tarímbaro,417.2485999999999,osrm,1.2933304435747413,6
+Largos Apodaca,Caborca,1956.2243,osrm,1.5125700970196683,6
+CEDI Mexico,Santiago Pinotepa Nacional,560.9849,osrm,1.5427163552051952,6
+CEDI Guadalajara,Salamanca,272.98470000000003,osrm,1.2096315704890528,6
+Largos Apodaca,Cihuatlan,1149.0031,osrm,1.3429945131407366,6
+Largos Apodaca,Temoac,1026.5764,osrm,1.2922553505804506,6
+CEDI Puebla,TLACOTEPEC,97.41,osrm,1.3069141625350809,6
+CEDI Tuxtla,Mezcalapa,102.8614,osrm,1.3360960848397925,6
+Largos Apodaca,Chiapa de Corzo,1509.0396,osrm,1.1941816569232087,6
+CEDI Mexico,León,369.5563,osrm,1.135035498428394,6
+CEDI Veracruz,Salina Cruz,482.4939,osrm,1.3866636356524886,6
+CSI San Luis Potosi,San Francisco de los Romo,184.3704,osrm,1.394660865677462,6
+CEDI Veracruz,Alamo,301.8135,osrm,1.1543944508050576,6
+CEDI Mexico,Huajuapan de León,316.8412,osrm,1.3764097898848071,6
+Pesquería,Sabinas,345.38509999999997,osrm,1.2977528903160733,6
+Juventud,Mazatlán,849.5523000000001,osrm,1.245360920112808,6
+Largos Puebla,Uruapan,528.7825,osrm,1.30006358525601,6
+Juventud,Fresnillo,465.1897,osrm,1.1999271965235956,6
+Largos Puebla,Aguascalientes,607.7093000000001,osrm,1.1448958505226632,6
+CEDI Mexico,Sta Ana Chautempan,125.835,osrm,1.263968873488837,6
+CEDI Mexico,Pachuca,90.1989,osrm,1.0875171956024459,6
+Largos Puebla,Ocoyucan,24.1803,osrm,1.3336251367665914,6
+Churubusco,Atotonilco de Tula,856.6026999999999,osrm,1.3269462526296343,6
+Largos Puebla,Irapuato,430.1291,osrm,1.1425711215653547,6
+Universidad,Medellín de Bravo,965.1669,osrm,1.123375676755974,6
+Universidad,Castaños,149.8603,osrm,1.1199712542197737,6
+CEDI Veracruz,Paso del Macho,86.8463,osrm,1.444838558739796,6
+CEDI Guadalajara,Salvatierra,333.687,osrm,1.2690589019969847,6
+Pesquería,Sta Ana Xalmimilulco,956.179,osrm,1.2823884587905423,6
+CEDI Guadalajara,Puerto Vallarta,312.6208,osrm,1.5939695283986834,6
+Bodega del Toro,Santa Rosa de Jáuregui,688.0275,osrm,1.2129389919055218,6
+CEDI Mexico,Emiliano Zapata,99.0688,osrm,1.4249748764627823,6
+CEDI Guadalajara,Uriangato,297.2042,osrm,1.2520425390411707,6
+Bodega Aceromex,Cd Cuauhtemoc,1014.5516,osrm,1.2698523971419289,6
+CEDI Veracruz,Jalacingo,176.2705,osrm,1.2907968298401815,6
+CEDI Mexico,Ciudad Sahagún,80.96130000000001,osrm,1.171846124065874,6
+Largos Puebla,San Francisco del Rincón,515.1673,osrm,1.197001160129003,6
+Bodega del Toro,Tijuana,2368.8993,osrm,1.3277955727738688,6
+Churubusco,Texcoco,914.9313,osrm,1.2959501483682863,6
+Largos Puebla,Gómez Palacios,1100.3438,osrm,1.2125305343644441,6
+Universidad,San José Iturbide,668.9417,osrm,1.2650895709353187,6
+Guerrero,Medellín de Bravo,965.1669,osrm,1.123375676755974,6
+CEDI Mexico,Mapastepec,995.7163,osrm,1.253253240692849,6
+Largos Puebla,Saltillo,955.2096,osrm,1.2480576772661858,6
+CEDI Tuxtla,Ciudad Altamirano,1110.8703,osrm,1.354369971827293,6
+Guerrero,Ciudad Hidalgo,847.3609,osrm,1.2556745893295012,6
+CEDI Norte,Matamoros,310.905,osrm,1.1785318087771224,6
+Largos Puebla,S Felipe de Progreso,290.51059999999995,osrm,1.469261739283704,6
+Juventud,Coatepec de Harinas,975.9616,osrm,1.2849079738235976,6
+Guerrero,Santa Rosa de Jáuregui,693.8803,osrm,1.2358481868377336,6
+Guerrero,Uman,1945.0587,osrm,1.6147585077076367,6
+CEDI Puebla,Tlaxiaco,310.8538,osrm,1.518011423361509,6
+CEDI Norte,Nextlalpan,900.6917,osrm,1.308189563590269,6
+CEDI Guadalajara,Cerano,254.5046,osrm,1.1947574976017492,6
+Bodega del Toro,Monclova,207.2227,osrm,1.4032226538601966,6
+Largos Apodaca,Ciudad Camargo,754.2330999999999,osrm,1.550268457376259,6
+Largos Apodaca,Ciudad Meoqui,822.6251,osrm,1.245542435222457,6
+Largos Apodaca,Hidalgo del Parral,708.7261,osrm,1.2332648895892415,6
+Juventud,Atotonilco el Alto,741.5976999999999,osrm,1.1905305801425305,6
+Juventud,Ciudad Victoria,292.49,osrm,1.1591462109310804,6
+CEDI Mexico,Tlajomulco de Zúñiga,559.2097,osrm,1.2130408538021837,6
+Largos Puebla,Tlachichuca,113.7293,osrm,1.2471178663184461,6
+Bodega del Toro,Tepeaca,990.5344,osrm,1.2378377627666568,6
+Largos Puebla,Pachuca,149.21720000000002,osrm,1.120268524203134,6
+Juventud,Chetumal,1986.744,osrm,1.347786158837983,6
+CEDI Mexico,San Andrés Tuxtla,519.6173,osrm,1.2151420332726988,6
+Pesquería,Amozoc,966.7119,osrm,1.2555910124407381,6
+Largos Apodaca,Ocotzingo,1692.3677,osrm,1.228956769087331,6
+Largos Apodaca,Ozumba,996.5088,osrm,1.3003655852647555,6
+Largos Apodaca,Ciudad CONSTITUCION,3285.499,osrm,2.844557174898505,6
+Guerrero,"Ixtaczoquitlan, Ver",,multidestino,,6
+Juventud,Amaxac de Guerrero,918.6512,osrm,1.2408979979713581,6
+CEDI Tuxtla,Tultitlán,863.7782,osrm,1.2109623364256763,5
+Juventud,Naucalpan de Juárez,898.0564,osrm,1.2714317856342152,5
+CEDI Guadalajara,Lázaro Cárdenas,482.2893,osrm,1.4838686316232779,5
+Largos Apodaca,Villa de Álvarez,996.3579,osrm,1.2276162514291702,5
+Pesquería,Tlajomulco de Zúñiga,845.191,osrm,1.241802279307003,5
+Juventud,Ensenada,2407.5347,osrm,1.3948110173634631,5
+Juventud,Córdoba,1054.8062,osrm,1.2599125867879668,5
+Guerrero,Hermosillo,1503.1583999999998,osrm,1.3457442168816545,5
+CEDI Mexico,Zacatelco,123.6842,osrm,1.277724267388485,5
+Largos Apodaca,Bucerías,1079.9173999999998,osrm,1.406673364822301,5
+Guerrero,Atizapan,894.7589,osrm,1.2851248447476171,5
+CSI Apodaca,Ecatepec,910.5496,osrm,1.3048261104653391,5
+CEDI Puebla,San Jacinto Amilpas,331.8077,osrm,1.2522301346652425,5
+CEDI Guadalajara,Xalisco,215.2124,osrm,1.1633900618785482,5
+Juventud,Chilon,1593.7753,osrm,1.2554103803366785,5
+Bodega del Toro,Tultitlán,878.7069,osrm,1.2576074136942945,5
+Largos Puebla,Iguala,217.3777,osrm,1.3503050505958332,5
+CEDI Mexico,Jesus Carranza,618.9803,osrm,1.2373944332759033,5
+Largos Puebla,Manzanillo,880.9902,osrm,1.3701309934335253,5
+CEDI Mexico,Tila,891.3146999999999,osrm,1.2097170796364012,5
+CEDI Norte,Orizaba,1076.4576000000002,osrm,1.2869950292643164,5
+Largos Puebla,Seybaplaya,984.3987,osrm,1.2351552004054898,5
+Juventud,Durango,598.261,osrm,1.2447873138256296,5
+Largos Apodaca,Ciudad Del Carmen,1582.1556,osrm,1.3516047164847522,5
+Largos Puebla,Chilpancingo,280.6551,osrm,1.302019418976405,5
+CEDI Puebla,San Agustin Yatareni,341.8154,osrm,1.2610265205981661,5
+CEDI Mexico,Chicomuselo,1039.3898000000002,osrm,1.2700274657347421,5
+CEDI Mexico,Berriozabal,816.2606999999999,osrm,1.2087263794330696,5
+Largos Puebla,Salamanca,418.9856,osrm,1.1695704426925209,5
+CEDI Puebla,Zaachila,351.6152,osrm,1.2719405051025794,5
+Guerrero,Pachuca,922.2098,osrm,1.4255938833030808,5
+Largos Puebla,Acatlán,154.4306,osrm,1.6294513375727886,5
+Bodega Aceromex,Monclova,319.9759,osrm,1.370857238042746,5
+Juventud,Apaseo El Grande,733.4611,osrm,1.275450490997314,5
+Largos Puebla,San Andrés Tuxtla,394.3204,osrm,1.2231575094539444,5
+Universidad,Cuautitlán,875.8998,osrm,1.2833025128586377,5
+CEDI Guadalajara,Autlán,240.1025,osrm,1.6564662198103728,5
+CEDI Mexico,Arriaga,852.0896,osrm,1.2962132292457211,5
+CEDI Mexico,Champotón,1114.6749,osrm,1.2264421837185626,5
+Largos Puebla,Hermosillo,2016.0642,osrm,1.17936687142513,5
+CEDI Guadalajara,Jalpa,160.0844,osrm,1.4396194006094483,5
+CEDI Mexico,Chachapa,136.9011,osrm,1.18443515009422,5
+Largos Apodaca,El Salto,794.6876,osrm,1.2024319424918544,5
+CEDI Norte,Ciudad Acuña,512.0432,osrm,1.2950353767057485,5
+Largos Apodaca,Sombrerete,580.4999,osrm,1.371766210100559,5
+CEDI Puebla,Xicotepec,173.4213,osrm,1.2446824552806675,5
+CEDI Mexico,Coatzacoalcos,592.6232,osrm,1.150584460356991,5
+Largos Puebla,Poza Rica,256.7747,osrm,1.396682322438401,5
+CEDI Mexico,Tetla,135.52470000000002,osrm,1.2356478403352793,5
+Largos Apodaca,Jojutla,1045.7396,osrm,1.298760559948084,5
+Bodega del Toro,Corregidora,718.1757,osrm,1.2112507427292374,5
+Juventud,Benito Juarez,2262.1187,osrm,1.550966020408831,5
+Largos Puebla,Jalacingo,159.6435,osrm,1.2761452311213488,5
+Largos Apodaca,Atotonilco de Tula,876.5674,osrm,1.3379769624405329,5
+Pesquería,Fortín de las Flores,928.5865,osrm,1.225816758732145,5
+CSI Apodaca,San Juan de los Lagos,667.5797,osrm,1.2194734459024552,5
+CEDI Mexico,Huixtla,1056.3002,osrm,1.2407158220306753,5
+Largos Apodaca,San Pedro Mixtepec,1459.313,osrm,1.2790541420951902,5
+Juventud,Ameca,876.9936,osrm,1.25817325438342,5
+CEDI Guadalajara,Apaseo el Alto,331.9,osrm,1.1566584552037407,5
+Largos Puebla,Córdoba,163.25070000000002,osrm,1.2198192135514059,4
+Largos Apodaca,Arteaga,134.6552,osrm,1.9219058737576566,4
+CEDI Mexico,Oxchuc Chs,944.93,osrm,1.2136329578649883,4
+CEDI Mexico,Huitiupan,903.3279,osrm,1.252771334713017,4
+CEDI Mexico,"Cd Ixtepec, Oax",,multidestino,,4
+CSI Apodaca,Guadalajara,805.486,osrm,1.2337984785308111,4
+Largos Apodaca,Sta Cruz Xoxocotlan,1263.0518,osrm,1.2155986622946675,4
+Bodega Aceromex,Irapuato,676.3177,osrm,1.2159709590271441,4
+Largos Puebla,Campeche,1009.3023,osrm,1.2488907215260543,4
+Juventud,Zacatlán,846.5354,osrm,1.234876377627709,4
+Largos Puebla,San Luis Teolocholco,25.7394,osrm,1.1533324491055088,4
+Largos Apodaca,Orizaba,1069.6934,osrm,1.284735508620185,4
+CEDI Guadalajara,Santa Clara,567.8146999999999,osrm,1.341430059927273,4
+Largos Puebla,Acayucan,398.3350999999999,osrm,1.1316877112806614,4
+Juventud,Colon,737.9612,osrm,1.3247195111888688,4
+Juventud,Huixtla,1703.5841,osrm,1.1888551039544724,4
+CEDI Guadalajara,Zacatecas,335.5132,osrm,1.3630893669345852,4
+Juventud,Tequila,776.7211,osrm,1.235723583915993,4
+Bodega del Toro,Cuautlancingo,957.2259,osrm,1.2372707023275362,4
+Largos Puebla,Orizaba,141.15079999999998,osrm,1.2147646358786668,4
+Pesquería,Puebla,954.8418,osrm,1.2431149073838457,4
+CEDI Guadalajara,San Francisco de los Romo,240.0094,osrm,1.284412697994109,4
+CEDI Puebla,"Tlatlauquitepec, Pue",,multidestino,,4
+CEDI Mexico,Mitontic,926.4959,osrm,1.234655294247642,4
+Guerrero,San Andrés Cholula,962.5431,osrm,1.239593210966628,4
+Largos Apodaca,Tlalpan,942.5664,osrm,1.290878285381803,4
+CEDI Puebla,Asunción,264.07370000000003,osrm,1.2764580028814834,4
+CEDI Guadalajara,Tonila,163.101,osrm,1.1620002256745117,4
+CEDI Mexico,Angel Albino Corzo,995.2014,osrm,1.2507722041196545,4
+Largos Puebla,Teziutlán,148.8976,osrm,1.1759630968187758,4
+CEDI Puebla,Acapulco,386.1839000000001,osrm,1.282261083309103,4
+CSI Apodaca,Atitalaquia,870.9141999999999,osrm,1.3511465656025399,4
+CEDI Norte,Tampico,511.7748,osrm,1.1177384982985763,4
+CSI San Luis Potosi,Naucalpan de Juárez,393.4302,osrm,1.1302677719238663,4
+Juventud,Morelia,846.5208,osrm,1.234514345466056,4
+Largos Puebla,Ciudad Victoria,666.7085999999999,osrm,1.25514193433292,4
+Bodega del Toro,Texcoco,916.2122,osrm,1.2723754415553017,4
+Guerrero,Acatzingo,998.1528,osrm,1.2609545222911611,4
+Juventud,Zapotlanejo,759.7605,osrm,1.196463007690925,4
+Largos Apodaca,Jerez,525.2293000000001,osrm,1.1668873966512925,4
+CEDI Puebla,Santiago Pinotepa Nacional,579.7555,osrm,1.8974410579518728,4
+Juventud,Tamuin,540.9989,osrm,1.230794673943715,4
+Juventud,Villa de Pozos,532.1535,osrm,1.2969846943622123,4
+Pesquería,Mérida,1969.2264,osrm,1.661961321205174,4
+Largos Apodaca,M. Muzquiz,394.3925,osrm,1.2294866068174464,4
+Largos Puebla,Durango,1008.4758,osrm,1.162979173691872,4
+Juventud,Atitalaquia,858.0833,osrm,1.3347375103382693,4
+Largos Puebla,Bahia de Banderas,952.5398,osrm,1.2368241831140259,4
+CEDI Veracruz,Tlapacoyan,186.1726,osrm,1.3255220256424485,4
+CEDI Veracruz,"Alamo Temapache*NU,Poza Rica",,multidestino,,4
+Largos Puebla,Comalcalco,617.5829,osrm,1.1624303389583137,4
+Largos Apodaca,Gabriel Zamora,977.3239,osrm,1.2843169803039183,4
+CSI Apodaca,Tultitlán,897.3906999999999,osrm,1.292890305671576,4
+CEDI Veracruz,Río Blanco,144.3085,osrm,1.2695649565620204,4
+Largos Apodaca,Zacatecas,483.018,osrm,1.169181049273326,4
+Juventud,Ciudad Frontera,190.9879,osrm,1.0929755501505591,4
+CSI Apodaca,Atotonilco de Tula,876.5674,osrm,1.3379769624405329,4
+Largos Puebla,Boca del Río,275.2762,osrm,1.2548058633280152,4
+Juventud,Irapuato,705.451,osrm,1.2264611241537913,4
+CEDI Mexico,Tlaquepaque,536.8074,osrm,1.1754198535545508,4
+CEDI Mexico,Simojovel,927.8319,osrm,1.2520824246343454,4
+CEDI Puebla,Tlalixtac de Cabrera,346.6676,osrm,1.2653582492841764,4
+Largos Apodaca,Tepalcingo,1045.0787,osrm,1.2878330636331614,4
+Largos Apodaca,San Fernando,294.46029999999996,osrm,1.208255669125932,4
+CSI San Luis Potosi,Tultitlán,379.9337,osrm,1.1200526226278338,4
+Largos Puebla,El Marques,344.7644,osrm,1.1973382975048212,4
+CEDI Norte,Soledad de Graciano Sánchez,524.1134000000001,osrm,1.3077611028651768,4
+Juventud,Abasolo,733.9734,osrm,1.2350798908942802,4
+Largos Apodaca,Tamuin,533.4043,osrm,1.215042553005717,4
+Bodega del Toro,Acapulco,1272.7705,osrm,1.2790084498015957,4
+Juventud,Atlixco,986.1957,osrm,1.2566744763238138,4
+Largos Apodaca,San Buenaventura,468.0844,osrm,1.6307066287846612,4
+Guerrero,San Francisco de los Romo,560.6448,osrm,1.2172056121867034,4
+CEDI Guadalajara,Tala,55.6096,osrm,1.4103830003799764,4
+Largos Puebla,Huimanguillo,579.7804,osrm,1.1614158249060207,4
+Largos Apodaca,Linares,152.6684,osrm,1.1760459818710267,4
+Pesquería,Guadalajara,826.5871,osrm,1.2555694378049358,4
+Largos Puebla,Palenque,807.3199000000001,osrm,1.1580626187543956,4
+Juventud,Los Mochis,1239.6091,osrm,1.4231044643733717,4
+Juventud,Navojoa,1393.7268,osrm,1.5098559600854717,4
+Largos Puebla,Ocotlán,598.4295999999999,osrm,1.196686046631609,4
+Largos Puebla,San Cristóbal de las Casas,764.6684,osrm,1.1914728696724093,4
+CEDI Mexico,Yajalón,920.3931,osrm,1.2135082472057954,4
+CEDI Tuxtla,Yajalón,209.7569,osrm,2.2340225082644727,4
+Juventud,Huejotzingo,959.6129,osrm,1.267371605829852,4
+Largos Puebla,San Pedro Garza Garcia,936.5704,osrm,1.2193933585785388,4
+CEDI Veracruz,Medellín de Bravo,24.486,osrm,1.3997339325811056,4
+Largos Apodaca,Puente de Ixtla,1040.6746,osrm,1.2901806421756346,4
+Churubusco,Toluca,886.4816999999999,osrm,1.242468159205882,4
+Largos Apodaca,Coronango,942.035,osrm,1.232045042981606,4
+Guerrero,Tepatitlán de Morelos,722.7105,osrm,1.195659481911085,3
+CEDI Norte,CDMX+EDOMEX,,region,,3
+Pesquería,Tecamac,931.3158,osrm,1.3706682673118273,3
+CEDI Mexico,Chimalhuacan,25.5261,osrm,1.3801637262580178,3
+Bodega Aceromex,Cuautlancingo,903.4135,osrm,1.271760752425453,3
+Largos Apodaca,Tepeaca,977.3256,osrm,1.2313943213150242,3
+CEDI Mexico,Villacorzo,912.2187,osrm,1.2572987462373306,3
+CEDI Puebla,San Juan Bautista G.,327.2194,osrm,1.2968693177405335,3
+Bodega del Toro,San José Iturbide,663.0888,osrm,1.2403901999146587,3
+Guerrero,Torreón,341.803,osrm,1.0895236704100426,3
+Juventud,Sabinas,316.5956,osrm,1.2403129126621362,3
+Bodega del Toro,Castaños,145.59539999999998,osrm,1.141886250805468,3
+Juventud,Palenque,1594.5241,osrm,1.2534378337672003,3
+Bodega del Toro,Puebla,959.1808,osrm,1.2246963795819008,3
+CEDI Norte,Chihuahua,832.0921999999999,osrm,1.2534102728072387,3
+Juventud,Papantla,759.1169,osrm,1.138692410297797,3
+CEDI Norte,Tultitlán,905.476,osrm,1.294877031968351,3
+CEDI Mexico,Playa Vicente,518.6856,osrm,1.265105172623761,3
+CEDI Mexico,"San Sebastian Tutla,Sta Cruz Xoxocotlan",,multidestino,,3
+CEDI Mexico,Atzitzihuacan,158.5157,osrm,1.8026539086684314,3
+CEDI Guadalajara,Tequila,118.0193,osrm,1.7044731022490942,3
+Universidad,Cd Cuauhtemoc,912.1495,osrm,1.276912744219412,3
+Juventud,Tetla,898.4137,osrm,1.2276458104404993,3
+Juventud,Martínez de la Torre,815.6784,osrm,1.1501716085700313,3
+Universidad,Fortín de las Flores,927.3112,osrm,1.2027599259383615,3
+Juventud,Jacona,835.5429,osrm,1.2303309610207382,3
+CEDI Puebla,San Pablo Monte,17.3403,osrm,1.1641980331200392,3
+Juventud,Margaritas,1656.4244,osrm,1.2199270304243262,3
+Juventud,Tlatenango,632.168,osrm,1.1813765521279929,3
+Juventud,Guanajuato,688.5814,osrm,1.284339306882228,3
+Bodega Aceromex,Querétaro,682.0258,osrm,1.260924942612593,3
+CEDI Puebla,Izuca de Matamoros,80.7864,osrm,1.2572192932962967,3
+CEDI Puebla,"Ajalpan,Huautla de Jimenez",,multidestino,,3
+Juventud,Oaxaca,1263.3348,osrm,1.2252202193441786,3
+CEDI Mexico,Chetumal,1324.8367,osrm,1.1579523533661986,3
+CSI Apodaca,Tepatitlán de Morelos,735.5414000000001,osrm,1.2016653421775871,3
+Largos Puebla,Sta Cruz Xoxocotlan,342.234,osrm,1.2496417593505904,3
+Largos Puebla,Ocoyoacac,170.8536,osrm,1.3110226110154317,3
+Pesquería,Tepatitlán de Morelos,756.6424000000001,osrm,1.2277543678822391,3
+CEDI Puebla,Santiago Juxtlahuaca,330.7465,osrm,1.6152330467095795,3
+Largos Puebla,Margaritas,869.2202,osrm,1.1986248030057287,3
+Largos Puebla,Villa de Álvarez,789.0376,osrm,1.3552987056683083,3
+Bodega Aceromex,Veracruz,902.8067,osrm,1.1683439466293484,3
+Universidad,Cunduacan,1388.2409,osrm,1.2387897968318458,3
+CEDI Mexico,Huimanguillo,705.0773,osrm,1.1642782496502955,3
+Largos Puebla,Cosoleacaque,445.5416,osrm,1.1286600484393097,3
+CEDI Mexico,Tlalixtac de Cabrera,471.9645,osrm,1.270109222461438,3
+CEDI Mexico,Irapuato,306.7534,osrm,1.1366970397636353,3
+CEDI Guadalajara,Fresnillo,392.2823,osrm,1.3893497995399176,3
+Largos Apodaca,Kanasin,1965.1432,osrm,1.6195931766875726,3
+CEDI Mexico,Chilapa,323.4636,osrm,1.4978677202996178,3
+Churubusco,Mazatlán,842.4185,osrm,1.2452116273118663,3
+Largos Apodaca,Estacion Manuel,431.5914,osrm,1.1084999528354875,3
+CEDI Puebla,San Sebastian Tutla,343.8544,osrm,1.2533865014391994,3
+Universidad,CDMX+EDOMEX,,region,,3
+Largos Apodaca,Santiago Juxtlahuaca,1275.3559,osrm,1.3022642954349302,3
+CEDI Tuxtla,La Trinitaria,164.1174,osrm,1.2308527379470868,3
+Pesquería,Tonalá,815.1411999999999,osrm,1.2375073619283725,3
+CEDI Norte,Nueva Ideal,724.3891,osrm,1.4461016649920986,3
+Largos Puebla,Izuca de Matamoros,80.7864,osrm,1.2572192932962967,3
+CEDI Mexico,Alamo,304.97229999999996,osrm,1.352507998359754,3
+CEDI Mexico,Perote,243.8182,osrm,1.246048203146536,3
+Juventud,Ciudad Meoqui,809.7941999999999,osrm,1.239854314264946,3
+Bodega del Toro,Guadalajara,786.8023000000001,osrm,1.2139475730852152,3
+CEDI Guadalajara,El Grullo,223.6253,osrm,1.697390026476216,3
+Pesquería,Veracruz,952.2801,osrm,1.1485379170477736,3
+Bodega del Toro,Villahermosa,1419.5507,osrm,1.228450903814893,3
+Largos Apodaca,Comalcalco,1397.1925,osrm,1.2680487153336324,3
+CEDI Tuxtla,ACALA,52.7683,osrm,1.3383413606930092,3
+Juventud,Manzanillo,1075.4796,osrm,1.2614203747180703,3
+Guerrero,Huejotzingo,959.6129,osrm,1.267371605829852,3
+Largos Apodaca,Chicomuselo,1693.7024,osrm,1.2339263341558047,3
+Juventud,Juchitán,1390.6502,osrm,1.17976373042109,3
+CEDI Norte,Ciudad Victoria,291.65959999999995,osrm,1.1462665394464429,3
+Largos Puebla,Apetatitlan,36.0003,osrm,1.1229953007451132,3
+Largos Apodaca,Tepejic del Río,855.3542,osrm,1.2942411631298085,3
+Largos Puebla,Ocotzingo,912.7581,osrm,1.159254281661434,3
+Largos Puebla,Centro,653.8587,osrm,1.1219150032872098,3
+Largos Puebla,Comalapan,960.7393,osrm,1.2921237777815586,3
+Juventud,Chalco,955.2539,osrm,1.2904008257293298,3
+CEDI Guadalajara,Tamazula,743.3462,osrm,1.2425486488150868,3
+Largos Apodaca,Centro,1433.4683,osrm,1.2441263540135588,3
+Largos Apodaca,Alamo,695.9571,osrm,1.1843194460923843,3
+CEDI Norte,M. Muzquiz,402.4778,osrm,1.2675400663209944,3
+Largos Apodaca,Macuspana,1477.0753,osrm,1.240288803600834,3
+CEDI Mexico,Zempoala,85.8295,osrm,1.1429586275629107,3
+Juventud,"Atenguillo, Jal",,multidestino,,3
+CEDI Guadalajara,Zapotiltic,141.2662,osrm,1.2040908944433892,3
+Largos Apodaca,Tantoyuca,649.7439,osrm,1.227678126652545,3
+Largos Puebla,Mapastepec,870.4194,osrm,1.2635392599937814,3
+CEDI Veracruz,Acajete,248.9342,osrm,1.3178641829669295,3
+Juventud,Miguel Aleman,193.2581,osrm,1.4671503015982656,3
+Pesquería,Texcoco,955.997,osrm,1.3517407845141165,3
+CEDI Guadalajara,Unión de Tula,154.2104,osrm,1.291193381875283,2
+CEDI Mexico,"Tlatlauquitepec, Pue",,multidestino,,2
+Juventud,Acatlán,1106.6346,osrm,1.2706165924388502,2
+CEDI Mexico,Corregidora,212.3836,osrm,1.1840155542931114,2
+Bodega del Toro,Villa de Reyes,547.0079000000001,osrm,1.2229960268822946,2
+Juventud,"Aldama, Chi",,multidestino,,2
+CEDI Guadalajara,Zihuatanejo,530.2114,osrm,1.4214510205155215,2
+Universidad,Apaseo El Grande,733.4611,osrm,1.275450490997314,2
+Juventud,Cantamayec,2020.9585,osrm,1.563404493523225,2
+CEDI Mexico,Coacalco,32.9426,osrm,1.4346823579278065,2
+CEDI Mexico,San Pedro Pochutla,709.7814000000001,osrm,1.4311559561368383,2
+CSI Apodaca,Altamira,466.9622,osrm,1.124191185445906,2
+Universidad,Tlaquepaque,788.8568,osrm,1.2187694868443717,2
+CEDI Norte,Tijuana,2368.9424,osrm,1.317383826416309,2
+CEDI Mexico,Zaachila,476.9120999999999,osrm,1.285663261818811,2
+CEDI Mexico,Sn Salvador el Verde,92.8484,osrm,1.390165679420246,2
+Juventud,Tapilula,1518.4147,osrm,1.2570282186151274,2
+Largos Apodaca,San Francisco de los Romo,573.4757,osrm,1.224337805840055,2
+CEDI Norte,Tlaquepaque,809.773,osrm,1.2220034022917898,2
+Pesquería,Ciudad Acuña,533.8119,osrm,1.3068847240603856,2
+Largos Puebla,"Ahuacatlan, Nay",,multidestino,,2
+CEDI Puebla,"Ajalpan,Tehuacan",,multidestino,,2
+Juventud,Guaymas,1589.6781,osrm,1.4726596825394622,2
+Juventud,San Francisco de los Romo,560.6448,osrm,1.2172056121867034,2
+Juventud,Oxchuc Chs,1606.8372,osrm,1.2417362283717563,2
+Juventud,Colima,981.5442,osrm,1.2184365798396775,2
+Largos Apodaca,Ciudad Acuña,512.4623,osrm,1.2800580898066534,2
+Guerrero,Mérida,1967.9511,osrm,1.6246081488239288,2
+Bodega Aceromex,CDMX+EDOMEX,,region,,2
+CEDI Mexico,Morelia,311.2437,osrm,1.3865349930141062,2
+Bodega del Toro,Ciudad Juárez,1190.4188,osrm,1.3353428166544807,2
+CEDI Norte,Colon,758.8775,osrm,1.34062227840509,2
+CSI San Luis Potosi,Mexicali,2223.8585,osrm,1.2067638962976264,2
+Largos Apodaca,Apatzingan,1047.8045,osrm,1.32012757522135,2
+Juventud,Cárdenas,1348.0515,osrm,1.2454160690699525,2
+CEDI Norte,Miguel Auza,581.8815999999999,osrm,1.5190668429372038,2
+Bodega del Toro,Mérida,1973.5654,osrm,1.6220390684615231,2
+CEDI Guadalajara,Ameca,87.423,osrm,1.1275052635880876,2
+Bodega Aceromex,Ciudad Frontera,299.4761,osrm,1.170942961332934,2
+CEDI Puebla,Ocotlán,598.4295999999999,osrm,1.196686046631609,2
+Largos Puebla,Acambaro,366.0237,osrm,1.2611196049394113,2
+Juventud,Amatitan,842.9479,osrm,1.3004038214132363,2
+CEDI Puebla,Acatlán,154.4306,osrm,1.6294513375727886,2
+Largos Puebla,Tamazuchale,354.46540000000005,osrm,1.4040772796306156,2
+CEDI Puebla,San Martin Texmelucan,41.3791,osrm,1.2058479685327188,2
+Juventud,Cacahuatan,1772.431,osrm,1.2170242330233325,2
+CEDI Mexico,Hopelchen,1235.2833,osrm,1.2388788928568764,2
+Juventud,Poza Rica,731.7642,osrm,1.1275789806325573,2
+Juventud,Simojovel,1589.7391,osrm,1.2736892654579222,2
+Largos Puebla,San Luis de la Paz,427.8276,osrm,1.2134634698646807,2
+CEDI Mexico,Zapopan,549.9953,osrm,1.1772095763652297,2
+CEDI Mexico,Tepatitlán de Morelos,510.2444,osrm,1.24892731477983,2
+CEDI Norte,Durango,619.1772,osrm,1.2437892535314379,2
+Juventud,Corregidora,724.0285,osrm,1.233146548036395,2
+CEDI Mexico,Fresnillo,657.6961,osrm,1.1559174914527495,2
+Guerrero,Jiutepec,996.7073,osrm,1.2903006909146064,2
+Guerrero,Piedras Negras,384.1673,osrm,1.1735425796060277,2
+Largos Apodaca,Vicente Guerrero,625.289,osrm,1.4099517174810203,2
+Bodega Aceromex,Chalco,933.6163,osrm,1.3558636335796912,2
+Guerrero,Benito Juarez,2262.1187,osrm,1.550966020408831,2
+CEDI Guadalajara,Gabriel Zamora,293.4018,osrm,1.3404342594777954,2
+Juventud,"Ajalpan,Tehuacan",,multidestino,,2
+CEDI Norte,Sabinas,332.36940000000004,osrm,1.3225298144076765,2
+Juventud,Tepic,995.6146,osrm,1.4970729440471904,2
+Largos Apodaca,Tecolotlan Jal,905.229,osrm,1.2477210181842533,2
+Largos Puebla,Atlautla,112.2242,osrm,2.1006460986662074,2
+Largos Apodaca,Ciudad Guzmán,928.9582,osrm,1.2254282117317834,2
+Juventud,Ciudad CONSTITUCION,3285.5716,osrm,2.870882613343493,2
+CEDI Mexico,Asunción,389.3706,osrm,1.2923919395421861,2
+CEDI Mexico,Zapotlan de Juarez,74.2796,osrm,1.0794646783689235,2
+Juventud,Cunduacan,1388.2409,osrm,1.2387897968318458,2
+Largos Puebla,Ecatepec,151.7824,osrm,1.3982845767316345,2
+Largos Apodaca,Nealtican,968.0704,osrm,1.2583726296381204,2
+CEDI Mexico,S Maria Zacatepec*NU,20.5441,osrm,1.434756328822197,2
+Universidad,Centro,1441.0629,osrm,1.2456999628936816,2
+CEDI Tuxtla,Teopisca,86.868,osrm,1.2971823345380125,2
+Juventud,Jesús María,597.1295,osrm,1.2461403848669674,2
+Largos Apodaca,Chilpancingo,1185.9254,osrm,1.2916547219355456,2
+CEDI Veracruz,Perote,160.67370000000005,osrm,1.3010844769392138,2
+CEDI Mexico,Alamo Temapache*NU,304.97229999999996,osrm,1.352507998359754,2
+Largos Apodaca,Nuevas Casas Grandes,1129.0395,osrm,1.2525380229873697,2
+Largos Apodaca,Tepatitlán de Morelos,735.5414000000001,osrm,1.2016653421775871,2
+CEDI Puebla,Tlachichuca,113.7293,osrm,1.2471178663184461,2
+CEDI Puebla,"Ajalpan,Tecamachalco, Pue",,multidestino,,2
+CEDI Mexico,San Sebastian Tutla,469.1513,osrm,1.2640448515507192,2
+Largos Puebla,Escarcega,928.0287,osrm,1.1830265619645863,2
+CEDI Mexico,Atotonilco el Grande,134.69879999999998,osrm,1.2032693656298352,2
+Largos Puebla,Tuxtepec,310.066,osrm,1.2710480311323835,2
+Largos Apodaca,S Felipe de Progreso,866.0809,osrm,1.2683141558090296,2
+Largos Puebla,San Fernando,790.1828,osrm,1.218545822405818,2
+Juventud,Santa Maria Huatulco,1581.4646,osrm,1.3367456223518113,2
+Largos Puebla,San Francisco de los Romo,628.7989,osrm,1.1721594706634952,2
+CEDI Mexico,La Trinitaria,992.6691,osrm,1.1888479494972417,2
+Largos Puebla,Tecomán,836.601,osrm,1.4081782334786264,2
+Juventud,Jerez,512.3985,osrm,1.162486160524483,2
+Juventud,Villa de Coz,361.1618,osrm,1.1691838035101088,2
+Juventud,Zumpango,877.7162,osrm,1.305536683012107,2
+Juventud,San Mateo Atenco,906.1273,osrm,1.2477886286165507,2
+Juventud,Villa de Santiago,74.1522,osrm,1.7443429745605414,2
+Largos Apodaca,San Pedro Pochutla,1505.3023,osrm,1.2780786073514956,2
+Juventud,Costa Rica,1023.5547,osrm,1.409241007891019,2
+Juventud,Jalostotitlan,687.583,osrm,1.239405583749404,2
+Pesquería,Corregidora,757.9604,osrm,1.289823644219907,2
+CSI San Luis Potosi,Tlajomulco de Zúñiga,346.462,osrm,1.1094468430851094,2
+Juventud,Caborca,1641.9392,osrm,1.2770832355013506,2
+Juventud,Candelaria,1722.487,osrm,1.3289667301188477,2
+Bodega del Toro,Zamora,843.9535999999999,osrm,1.241165388497074,2
+CEDI Mexico,Salina Cruz,704.1114,osrm,1.282265812686813,2
+Guerrero,Ecuandureo,826.9258000000001,osrm,1.2640513445033708,2
+Juventud,Acayucan,1185.5393,osrm,1.1672945141000715,2
+CEDI Guadalajara,Tlatenango,172.9688,osrm,1.4148184717390386,2
+Juventud,Guasave,1191.3221,osrm,1.4397283976331614,2
+CSI Apodaca,Matamoros,304.1408,osrm,1.1336780236717827,2
+Largos Apodaca,Guanajuato,701.4122,osrm,1.2950743872335626,2
+CSI San Luis Potosi,León,179.8035,osrm,1.3239937886934134,2
+CEDI Mexico,Escarcega,1053.3256,osrm,1.1899188661792937,2
+CEDI Guadalajara,Tecolotlan Jal,103.6093,osrm,1.281114440824777,2
+CEDI Guadalajara,Patzcuaro,268.5045,osrm,1.2290164419770155,2
+Largos Apodaca,Tuxtepec,1089.6756,osrm,1.1424991414342511,2
+CEDI Puebla,"Ajalpan,Tepeaca",,multidestino,,2
+Guerrero,Naucalpan de Juárez,898.0564,osrm,1.2714317856342152,2
+Largos Apodaca,Valparaiso,584.9189,osrm,1.2060177057676909,2
+CEDI Norte,Tlalnepantla,911.5783,osrm,1.2900976325959823,2
+Largos Apodaca,Xalisco,1017.614,osrm,1.4798860976896984,2
+Juventud,Santa Maria Rayon,915.0923,osrm,1.2374906081160795,2
+Universidad,Chihuahua,811.1759000000001,osrm,1.236975061373786,2
+Bodega del Toro,Cárdenas,1353.6658,osrm,1.2430255084877897,2
+Bodega del Toro,Huimanguillo,1372.5988,osrm,1.2170025768434802,2
+Bodega del Toro,Sta Cruz Xoxocotlan,1276.2606,osrm,1.2198912369570145,2
+Largos Puebla,Tamuin,526.9123000000001,osrm,1.5418994810988194,2
+CEDI Mexico,ACALA,881.32,osrm,1.1895929997854982,2
+CEDI Mexico,Pijijiapan,957.4692,osrm,1.256617609906095,2
+CEDI Tuxtla,Villa Corzo,115.4269,osrm,1.4718873403173585,2
+Largos Apodaca,Jesús María,609.9604,osrm,1.2518863271021434,2
+Juventud,San Luis Río Colorado,2119.4702,osrm,1.333687306312196,2
+Juventud,Puente de Vigas,894.3959,osrm,1.2723098980973877,2
+Largos Puebla,Paraíso,632.0350999999999,osrm,1.185718002532259,2
+Juventud,Acapulco,1278.6233,osrm,1.2926860271394525,2
+Guerrero,Ixtlahuacan de los M,793.5871,osrm,1.1921785564933323,2
+Bodega del Toro,Tapachula,1741.7043,osrm,1.1859688231864534,2
+Juventud,Gomez Farias,919.6132,osrm,1.26081627282361,2
+Largos Puebla,Jojutla,146.6842,osrm,1.2297177628435836,2
+Largos Puebla,Chicoloapan,113.2754,osrm,1.337969814061482,2
+Largos Puebla,Libres,84.0709,osrm,1.1432561299809239,2
+Largos Puebla,Zaragoza,1443.4203,osrm,1.2623173429206442,2
+Largos Apodaca,ACALA,1535.6327,osrm,1.1995575647287695,2
+Largos Puebla,Jacona,559.9602,osrm,1.2635827474532593,2
+CEDI Norte,Ciudad Madero,518.3175,osrm,1.1251014697525976,2
+CEDI Puebla,Puebla,0.0,osrm,,2
+Juventud,Doctor Gonzalez,54.7369,osrm,1.1364219776845035,2
+Largos Puebla,Atlixco,33.991699999999994,osrm,1.159151823556899,2
+Largos Puebla,Macuspana,697.4657,osrm,1.1189048844116685,2
+Largos Puebla,Tantoyuca,372.8688,osrm,1.4294341671358155,2
+CEDI Guadalajara,Nueva Italia,257.0899,osrm,1.2937538687186205,2
+Largos Puebla,El Grullo,831.5289,osrm,1.3144806002203109,2
+Juventud,Coahuayana,1073.7575,osrm,1.264574513601456,2
+Juventud,Compostela,993.4286,osrm,1.4441707274200297,2
+CSI Apodaca,Nogales,1741.0358,osrm,1.4303152730132358,2
+Juventud,San Pablo Monte,952.4037,osrm,1.2431481929446133,2
+Largos Puebla,La Trinitaria,867.3721999999999,osrm,1.191840261915533,2
+CSI Apodaca,Tlajomulco de Zúñiga,824.0899000000001,osrm,1.2204013193235619,2
+CEDI Guadalajara,San Francisco del Rincón,241.9267,osrm,1.492500682859272,2
+Largos Apodaca,Izuca de Matamoros,1025.3958,osrm,1.2360010143915605,2
+Largos Puebla,Jalpa,702.1216999999999,osrm,1.214681454539392,2
+Largos Apodaca,Mapastepec,1635.4056,osrm,1.1889207962548447,2
+CSI San Luis Potosi,Aguascalientes,165.1827,osrm,1.1848999581278905,2
+Juventud,Ciudad Madero,519.148,osrm,1.1270242868924263,2
+Largos Apodaca,Unión de Tula,955.83,osrm,1.250025635245658,2
+CEDI Mexico,Arcelia,293.743,osrm,1.7060571201393566,2
+Largos Apodaca,Misantla,835.4073000000001,osrm,1.1410925673073593,2
+CEDI Puebla,Nochixtlán,264.07370000000003,osrm,1.2764580028814834,2
+CSI San Luis Potosi,San Nicolás de los Garza,518.4176,osrm,1.2744051028838197,2
+Largos Apodaca,Escarcega,1707.6383,osrm,1.357787256153124,2
+CEDI Mexico,Tuxpan,285.2368,osrm,1.157990103779051,2
+Pesquería,Piedras Negras,405.4443,osrm,1.2224682007596253,2
+Largos Puebla,Ciudad Juárez,1923.0028,osrm,1.1745710377095289,2
+Guerrero,Jacona,835.5429,osrm,1.2303309610207382,2
+CEDI Norte,Guadalupe,24.5634,osrm,1.2450448237757534,2
+CSI Apodaca,CDMX+EDOMEX,,region,,2
+Juventud,Tonalá,781.2093000000001,osrm,1.210379423992355,2
+Largos Apodaca,Matehuala,356.7979,osrm,1.3975512041793923,2
+Largos Puebla,Emiliano Zapata,160.6024,osrm,1.4991658934444367,2
+Largos Apodaca,Yecapistla,1024.5653,osrm,1.310182153118971,2
+Juventud,Hunucma,1988.0232,osrm,1.695992138394368,2
+Churubusco,Lagos de Moreno,650.4194,osrm,1.3384602606399147,2
+CSI Apodaca,San Juan del Río,762.9539,osrm,1.2700652663189371,2
+Largos Puebla,Santiago Pinotepa Nacional,579.7555,osrm,1.8974410579518728,2
+Bodega del Toro,Tantoyuca,662.9528,osrm,1.234717217924193,2
+Juventud,Villagrán,747.828,osrm,1.2732845713801957,2
+Largos Puebla,Los Cabos,4183.2094,osrm,3.2669769054401696,2
+Largos Apodaca,El Mante,446.0354,osrm,1.187708266903662,2
+CEDI Puebla,Tepanco de Lopez,107.5066,osrm,1.2589352463597783,2
+CEDI Norte,Tepic,1016.5308,osrm,1.490222720872699,2
+Juventud,Puerto Vallarta,1102.1914,osrm,1.450795113825904,2
+Largos Apodaca,Zacualpan,1018.2928,osrm,1.293079253128641,2
+Bodega del Toro,CDMX+EDOMEX,,region,,2
+Largos Puebla,Cuautla,108.5534,osrm,1.2705266699262598,1
+Bodega Aceromex,Puebla,905.3683,osrm,1.2581225396053721,1
+Churubusco,Veracruz,941.4885,osrm,1.1227825961550342,1
+Guerrero,Chicoloapan,928.052,osrm,1.2904598085274526,1
+CEDI Mexico,Hunucma,1326.1159,osrm,1.3656541693702138,1
+CEDI Mexico,Querétaro,208.0609,osrm,1.1297272943491379,1
+CEDI Mexico,Ixtalahuaca,111.3694,osrm,1.5108806529260188,1
+Juventud,Cerano,797.489,osrm,1.250368075837984,1
+CEDI Mexico,Santa Maria Rayon,75.4473,osrm,1.3455737602244493,1
+Juventud,Zempoala,883.8501,osrm,1.319541176557191,1
+Juventud,"Cantamayec,Merida",,multidestino,,1
+CEDI Puebla,Tantoyuca,372.8688,osrm,1.4294341671358155,1
+CEDI Mexico,Texcoco,34.6232,osrm,1.1731218410220425,1
+Bodega del Toro,Apaseo El Grande,727.6081999999999,osrm,1.2528961197402264,1
+Bodega Aceromex,Villa de Reyes,523.7275,osrm,1.2389723092842113,1
+Juventud,Amatlan de los Reyes,1049.3891,osrm,1.2458897114618226,1
+CEDI Mexico,Acolman,39.8127,osrm,1.2178871992270746,1
+CEDI Puebla,"A Nochixtlan, Oax,San Jacinto Amilpas,San Sebastian Tutla",,multidestino,,1
+CEDI Tuxtla,"Ocosingo,Tila, Chs",,multidestino,,1
+CEDI Norte,San Juan de los Lagos,675.6650999999999,osrm,1.2184503157376183,1
+CEDI Mexico,Atzcapotzalco,9.9514,osrm,1.2707897853389067,1
+CEDI Mexico,Puerto Escondido,652.9714,osrm,1.4434382808666384,1
+CEDI Mexico,Tecamac,39.8444,osrm,1.1225892927681438,1
+Largos Apodaca,Valle de Santiago,757.2669000000001,osrm,1.2439856649499486,1
+Churubusco,Huejotzingo,950.0966,osrm,1.2672702598368861,1
+CEDI Mexico,Coatepec de Harinas,136.3166,osrm,1.5267679517960877,1
+Juventud,Huimanguillo,1366.9845,osrm,1.219185158434346,1
+Juventud,Tuxpan,699.044,osrm,1.1410808470865135,1
+Juventud,Tangancícuaro,844.954,osrm,1.2325104297051157,1
+Guerrero,Jesus Carranza,1280.8875,osrm,1.1819376739503311,1
+CEDI Norte,El Marques,732.1324000000001,osrm,1.289346136472803,1
+CEDI Tuxtla,Tuxtla Chico,383.8637,osrm,1.663815726322878,1
+Universidad,Villahermosa,1413.9363999999998,osrm,1.2305502881590005,1
+CEDI Mexico,Candelaria,1060.5797,osrm,1.1860745377631283,1
+CEDI Guadalajara,Acatic,59.7766,osrm,1.3083547484004323,1
+Bodega Aceromex,Jalapa,880.0746,osrm,1.2487896844305357,1
+Juventud,San Andrés Tuxtla,1099.2604,osrm,1.1386250282510637,1
+Juventud,Nuevas Casas Grandes,1116.2087,osrm,1.2468484847049042,1
+Largos Apodaca,Zapotlanejo,772.5914,osrm,1.201723765631924,1
+Largos Apodaca,Jalpa,629.1005,osrm,1.1560357347387462,1
+CEDI Mexico,Coactepec,292.4308,osrm,1.2830696807306834,1
+CEDI Guadalajara,San Miguel de Allende,337.8355,osrm,1.2441973836545401,1
+Largos Apodaca,Centla,1465.347,osrm,1.2929929636973703,1
+Bodega Aceromex,Perote,850.7011,osrm,1.2244438403890483,1
+Largos Puebla,San Martin de las P,124.2857,osrm,1.2521481474764717,1
+CEDI Puebla,Puerto Escondido,527.6745,osrm,1.416113829653147,1
+CEDI Norte,Apaseo el Alto,761.0248,osrm,1.2619797755230278,1
+Pesquería,Chihuahua,845.1078,osrm,1.2409874238440204,1
+Bodega Aceromex,Chachapa,909.68,osrm,1.2646005756114955,1
+CEDI Puebla,"A Nochixtlan, Oax,Oaxaca de Juarez,San Sebastian Tutla,Sta Cruz Xoxocotlan",,multidestino,,1
+Juventud,Ocozocoautla,1485.7856000000002,osrm,1.2160222289998135,1
+Largos Puebla,Centla,685.7374,osrm,1.163995876432503,1
+CEDI Veracruz,Altotonga,169.64579999999998,osrm,1.3989708552832052,1
+CEDI Puebla,Veracruz,274.4272,osrm,1.2640654966910971,1
+CEDI Mexico,Escuintla,1039.3068,osrm,1.2486553370364426,1
+Largos Puebla,Ciudad Obregón,1760.7581,osrm,1.1576602566961116,1
+Juventud,Tila,1553.2219,osrm,1.2610159639924219,1
+Largos Puebla,Tecpan de Galeana,532.7511,osrm,1.6360849553124577,1
+Bodega Aceromex,Chicoloapan,906.942,osrm,1.3576952794471406,1
+Juventud,Comalcalco,1404.7871,osrm,1.2697938264588413,1
+CEDI Tuxtla,La Independencia,175.5171,osrm,1.2328736446898434,1
+Bodega Foremex Agua Fria,Mérida,1960.3565,osrm,1.62928973423194,1
+CEDI Veracruz,"Alamo Temapache*NU,Coatzintla",,multidestino,,1
+Universidad,Tampico,512.6052,osrm,1.1202957376027758,1
+Universidad,Nueva Ideal,703.4729,osrm,1.451539999703102,1
+Guerrero,Villahermosa,1413.9363999999998,osrm,1.2305502881590005,1
+Guerrero,Sta Cruz Xoxocotlan,1270.6464,osrm,1.222300865351564,1
+CEDI Norte,Iztapalapa,945.9044,osrm,1.298101265957732,1
+CEDI Mexico,San Martin Texmelucan,99.7528,osrm,1.3024884424918517,1
+Bodega Aceromex,Celaya,725.6591999999999,osrm,1.3017828865612069,1
+CEDI Veracruz,Coscomatepec,149.3773,osrm,1.461770872474955,1
+CEDI Mexico,Tepatlaxco Ver,323.72709999999995,osrm,1.3289230630086453,1
+Juventud,Zonas Postales*NU,,sin_geocodificar_destino,,1
+Universidad,Kanasin,1972.7378,osrm,1.6150239466791432,1
+Juventud,Calpulalpan,961.632,osrm,1.3525566670025817,1
+Bodega Aceromex,Guadalupe,102.0561,osrm,1.3792574304169403,1
+Churubusco,Altamira,465.0405,osrm,1.1281776510170045,1
+Juventud,Huetamo,1075.2294,osrm,1.3543902091539743,1
+Largos Puebla,Tlalmanalco,123.1566,osrm,2.088596062443188,1
+Universidad,Tonalá,781.2093000000001,osrm,1.210379423992355,1
+Largos Puebla,Mexicali,2714.2425,osrm,1.1850006713987744,1
+Bodega Aceromex,Iztapalapa,919.3395,osrm,1.3666198353734063,1
+CSI Apodaca,Tlalnepantla,903.493,osrm,1.2881535657708358,1
+Largos Puebla,San Vicente Chicoloapa,113.2754,osrm,1.337969814061482,1
+Largos Puebla,Cosamaloapan,302.3552,osrm,1.2088572228038554,1
+CEDI Mexico,Patzcuaro,375.3002,osrm,1.4160174649629613,1
+Bodega Foremex Agua Fria,Mexicali,2184.5796,osrm,1.31158155257052,1
+CSI Apodaca,Veracruz,943.4103,osrm,1.1204317873778886,1
+CEDI Puebla,"Ajalpan,Santiago Miahuatlan,Tehuacan",,multidestino,,1
+CEDI Norte,Teapa,1459.5675,osrm,1.2413508050286088,1
+Juventud,Xalisco,1004.7831,osrm,1.4826011060350555,1
+Juventud,"Alamo Temapache*NU,Huiloapan de Cuauht",,multidestino,,1
+CEDI Mexico,Silao,338.03409999999997,osrm,1.155190169961666,1
+Universidad,El Salto,781.8566999999999,osrm,1.197458571461512,1
+CEDI Puebla,"San Sebastian Tutla,Tlalixtac de Cabrera",,multidestino,,1
+Largos Puebla,San Miguel de Allende,383.9419,osrm,1.1395797556588962,1
+Largos Puebla,Cadereyta,912.4709,osrm,1.215203003778974,1
+Largos Puebla,Juan R Escudero,356.2568,osrm,1.446679620562575,1
+Juventud,Miguel Auza,560.9654,osrm,1.5341633635400704,1
+Largos Puebla,Naranjos,328.3606,osrm,1.2739873019712524,1
+Largos Puebla,Salvatierra,395.9575,osrm,1.288762164641322,1
+Bodega Aceromex,Tijuana,2470.4099,osrm,1.317933811037594,1
+Bodega del Toro,Matamoros,324.5482,osrm,1.1512451071256178,1
+Juventud,Atotonilco de Tula,863.7365,osrm,1.3219409631907408,1
+Juventud,Cosoleacaque,1232.7458,osrm,1.1838391038078628,1
+Largos Puebla,Coatzacoalcos,467.3263,osrm,1.1421152756630588,1
+Largos Puebla,Ixtapaluca,88.8732,osrm,1.242858388397229,1
+CSI Apodaca,Gómez Palacios,365.9833,osrm,1.1006543563463083,1
+Juventud,"Ixtlahuacan de los M,Tlajomulco de Zuñiga",,multidestino,,1
+CEDI Puebla,"San Sebastian Tutla,Villa de Zaachila",,multidestino,,1
+CEDI Veracruz,"Alamo Temapache*NU,Poza Rica,Tantoyuca",,multidestino,,1
+CEDI Guadalajara,Arandas,134.682,osrm,1.2643119986480027,1
+Largos Apodaca,Zinacantepec,909.1837,osrm,1.254857210979781,1
+CSI Apodaca,Monclova,219.1761,osrm,1.3872522401613088,1
+Largos Puebla,Jalapa,170.55470000000005,osrm,1.171373939343492,1
+Juventud,Huitiupan,1565.2351999999998,osrm,1.2734295988655275,1
+Juventud,Mitontic,1588.4031,osrm,1.2502439802960603,1
+Largos Puebla,Medellín de Bravo,266.6502,osrm,1.2368572860595257,1
+Bodega Aceromex,Matamoros,269.60490000000004,osrm,1.274326006947173,1
+CEDI Norte,Córdoba,1053.9758,osrm,1.2552302508396944,1
+Largos Puebla,Tierra Blanca,265.8704,osrm,1.2280120007905557,1
+Bodega Aceromex,Tlatenango,734.5702,osrm,1.3324666954155704,1
+Universidad,Texcoco,922.0651,osrm,1.2920326959820245,1
+CEDI Tuxtla,Pueblo Nuevo,1141.8467,osrm,1.1821847858270984,1
+Bodega del Toro,Tlajomulco de Zúñiga,805.4061999999999,osrm,1.2009640307217633,1
+CEDI Norte,Matehuala,364.8832,osrm,1.3935338698271966,1
+CEDI Guadalajara,Abasolo,228.5149,osrm,1.2223339661611634,1
+CEDI Veracruz,Naranjos,326.7515,osrm,1.150072852615358,1
+Pesquería,Acatzingo,999.4281,osrm,1.278801889728415,1
+Bodega Aceromex,Uman,1896.8605,osrm,1.6935745343527597,1
+Bodega Aceromex,Hermosillo,1605.5605,osrm,1.3366706446003012,1
+CEDI Veracruz,"Cuichapa, Ver,Las Choapas",,multidestino,,1
+CEDI Mexico,Tecpan de Galeana,513.9805,osrm,1.815589748049974,1
+Largos Apodaca,Puerto Peñazco,2007.0948,osrm,1.397226578672603,1
+Bodega Aceromex,Gómez Palacios,455.5546,osrm,1.1481214908708093,1
+CEDI Puebla,Orizaba,141.15079999999998,osrm,1.2147646358786668,1
+Bodega Aceromex,Texcoco,901.9223,osrm,1.362565339828641,1
+Largos Puebla,Reynosa,916.5344,osrm,1.1692559345257676,1
+CEDI Guadalajara,Manzanillo,286.6907,osrm,1.378191662947669,1
+CEDI Mexico,Progreso Obregón,112.2963,osrm,1.1568134165534092,1
+Juventud,Villa de Reyes,552.8608,osrm,1.2507675044807798,1
+Bodega del Toro,Tepatitlán de Morelos,716.8576999999999,osrm,1.1783049678347193,1
+Juventud,Coatzacoalcos,1254.5305,osrm,1.2066819483010887,1
+Bodega del Toro,Aguascalientes,569.5398,osrm,1.1848279143908869,1
+Juventud,Huautla de Jimenez,1131.5232,osrm,1.23099821852558,1
+Largos Puebla,San Juan del Río,282.1913,osrm,1.1681670734738219,1
+Bodega del Toro,Acatzingo,1003.7671,osrm,1.2575224915987648,1
+Largos Apodaca,Huejotzingo,952.0183,osrm,1.2560913013998993,1
+CSI Apodaca,Derramadero,153.924,osrm,1.2487181381389696,1
+CSI San Luis Potosi,Mérida,1700.4452,osrm,1.4396906192526586,1
+CEDI Norte,San Fernando,301.2245,osrm,1.2429235651374775,1
+CEDI Mexico,Motozintla,1085.6958,osrm,1.2718526270063035,1
+CEDI Norte,Cuautitlán,896.816,osrm,1.3008229061634573,1
+CEDI Norte,Villahermosa,1413.106,osrm,1.233013288717311,1
+CSI San Luis Potosi,Culiacán,929.8828,osrm,1.2960869381652604,1
+Largos Puebla,Ciudad Valles,472.8603,osrm,1.353985019130984,1
+Largos Puebla,Tlapa,244.7289,osrm,1.410261303818554,1
+Juventud,Teapa,1460.398,osrm,1.2393790962903526,1
+Bodega del Toro,Oaxaca,1268.9491,osrm,1.2227672091235877,1
+Bodega del Toro,Comitán,1642.7522,osrm,1.2082479605197078,1
+Bodega Aceromex,Zumpango,894.841,osrm,1.4376591600130928,1
+Bodega del Toro,Iztapalapa,919.1353,osrm,1.26223020629309,1
+Bodega del Toro,Papantla,764.7312,osrm,1.1356734274806475,1
+Largos Apodaca,Conkal,1978.3042,osrm,1.6401720279945624,1
+Bodega del Toro,ACALA,1548.8415,osrm,1.20014588232699,1
+Bodega del Toro,Córdoba,1060.4204,osrm,1.2565625825073927,1
+Juventud,S FelipeTeotlalcingo,956.665,osrm,1.2795984163328928,1
+Largos Apodaca,Valle Hermoso,283.52840000000003,osrm,1.2049765339750373,1
+CEDI Norte,Derramadero,162.0094,osrm,1.248773304126915,1
+CEDI Puebla,"Ajalpan,Amozoc",,multidestino,,1
+Juventud,Ciudad Delicias,728.9861999999999,osrm,1.2638101792086691,1
+Guerrero,Soledad de Graciano Sánchez,503.1972,osrm,1.293430755012683,1
+CSI San Luis Potosi,Amealco,281.851,osrm,1.1852184371507708,1
+Guerrero,Playa Vicente,1180.5929,osrm,1.1699613381013423,1
+Juventud,"Tenayuca,Tezoyuca",,multidestino,,1
+Juventud,"Tenayuca,Tlalnepantla de Baz",,multidestino,,1
+Juventud,Tenayuca,889.0544,osrm,1.2736118263380594,1
+Bodega del Toro,Cunduacan,1393.8552,osrm,1.2365647212966733,1
+CEDI Mexico,"Alamo Temapache*NU,Tuxpan",,multidestino,,1
+CEDI Puebla,"Miahuatlan de P Diaz,Sta Maria Colotepec",,multidestino,,1
+Juventud,Paraíso,1419.2392,osrm,1.2900877199914778,1
+Largos Puebla,Zacatlán,125.1042,osrm,1.2038570186976332,1
+Largos Apodaca,Cajeme,1503.0977,osrm,1.5213343556216408,1
+CEDI Puebla,"A Nochixtlan, Oax,Miahuatlan de P Diaz,San Sebastian Tutla,Villa de Zaachila",,multidestino,,1
+CEDI Puebla,Sta Maria Colotepec,512.3126,osrm,1.3508829788628924,1
+Bodega del Toro,Zapopan,796.1918000000001,osrm,1.2312077162661184,1
+CEDI Puebla,"San Sebastian Tutla,Tlaxiaco",,multidestino,,1
+Guerrero,"Ixtlahuacan de los M,San Luis Potosi",,multidestino,,1
+Juventud,"Puente de Vigas,Tenancingo",,multidestino,,1
+CEDI Norte,Aguascalientes,596.3089,osrm,1.2126592537387337,1
+Juventud,Matías Romero,1328.5246000000002,osrm,1.1968313313421248,1
+Juventud,Apizaco,906.7577,osrm,1.2262142409221983,1
+Guerrero,Emiliano Zapata,1010.2788,osrm,1.2940784649807968,1
+Largos Apodaca,Ahome,1289.1905,osrm,1.4283016778661208,1
+CEDI Guadalajara,Maravatio,340.9205,osrm,1.088697089295911,1
+Largos Apodaca,San Luis de la Paz,656.8104000000001,osrm,1.338013781691018,1
+Largos Apodaca,San Miguel de Allende,697.2442,osrm,1.2796416016719727,1
+CEDI Puebla,"Puerto Escondido*NU,Sta Maria Colotepec,Stgo Pinotepa Nal,Tlalixtac de Cabrera",,multidestino,,1
+Juventud,Eduardo Neri,1135.1138,osrm,1.281367291616547,1
+Guerrero,Iztapalapa,924.9882,osrm,1.281438551217296,1
+Juventud,"Ajalpan,Tepeaca",,multidestino,,1
+Bodega Aceromex,Tlajomulco de Zúñiga,834.5701,osrm,1.238693286473135,1
+CEDI Veracruz,"Alamo Temapache*NU,Tantoyuca",,multidestino,,1
+Juventud,"Mezquital, Dgo",,multidestino,,1
+Guerrero,Riva Palacio,960.5547,osrm,1.3334456063378035,1
+Largos Apodaca,Chanal,1599.8036000000002,osrm,1.2211631658502051,1
+Juventud,Zamora,849.8064,osrm,1.2603809795949519,1
+Guerrero,Miguel Auza,560.9654,osrm,1.5341633635400704,1
+Pesquería,Ciudad Hidalgo,881.2928,osrm,1.3043514788901633,1
+Juventud,Arcelia,1118.2686,osrm,1.3404394865441307,1
+Bodega del Toro,El Salto,776.0039,osrm,1.1817837571981469,1
+Churubusco,Soledad de Graciano Sánchez,496.0634,osrm,1.3042521834827652,1
+Juventud,Santiago Mihuatlán,1064.6684,osrm,1.2483077270484984,1
+Juventud,Santiago Pinotepa Nacional,1472.1949,osrm,1.3697952776599005,1
+Bodega Aceromex,Fresnillo,567.5918,osrm,1.3600063907275517,1
+CEDI Puebla,"San Sebastian Tutla,Sgo Juxtlahuaca, Oax",,multidestino,,1
+Universidad,Ciudad Guzmán,916.1274,osrm,1.2211727907080143,1
+Largos Puebla,Chicomuselo,914.0929,osrm,1.2845648233827547,1
+Largos Puebla,Bucerías,937.9013,osrm,1.2181575202015893,1
+CSI Apodaca,Culiacán,1058.1138999999998,osrm,1.4437505473467322,1
+Largos Puebla,Ciudad Altamirano,393.4869000000001,osrm,1.451537009989659,1
+Largos Apodaca,Cd Ayala,1045.8436,osrm,1.3104535489386608,1
+CEDI Norte,Veracruz,950.1745,osrm,1.1245127954888203,1
+Juventud,Jiutepec,996.7073,osrm,1.2903006909146064,1
+CEDI Guadalajara,Acaponeta,350.52790000000005,osrm,1.2519798649507956,1
+Largos Apodaca,La Concordia,1615.9031,osrm,1.218221066326354,1
+Largos Puebla,Piedras Negras,1319.0543,osrm,1.2004693014785863,1
+Largos Puebla,Angel Albino Corzo,869.9045,osrm,1.2622959940458591,1
+Juventud,Jiquilpan,814.4334,osrm,1.1843280524474313,1
+Juventud,Zacatecas,470.1871,osrm,1.1633438221512147,1
+Juventud,Villa de Álvarez,983.527,osrm,1.2236711815074681,1
+Largos Puebla,Ometepec,536.629,osrm,2.0308586620075917,1
+CEDI Mexico,Solidaridad,1587.3959,osrm,1.2566711375727526,1
+Largos Apodaca,Huimanguillo,1359.3899,osrm,1.2165472760400031,1
+CSI San Luis Potosi,Guadalajara,327.8581,osrm,1.1148996187652551,1
+Largos Puebla,Tonalá,652.024,osrm,1.1726019045308773,1
+Juventud,Teziutlán,870.5784,osrm,1.210673361175608,1
+Guerrero,Teapa,1460.398,osrm,1.2393790962903526,1
+Juventud,Tlapa,1196.9329,osrm,1.2846159811926998,1
+Largos Puebla,Puruandiro,471.0627,osrm,1.2730475239768768,1
+CEDI Mexico,Apodaca,919.2678,osrm,1.286092652063246,1
+Largos Apodaca,Coactepec,931.2852,osrm,1.1970184724370014,1
+CEDI Veracruz,Misantla,157.5412,osrm,1.3922966124659624,1
+CEDI Veracruz,"Sgo Sochiapan,Sta Ma Jalapa del M",,multidestino,,1
+CEDI Guadalajara,Arteaga,743.0448,osrm,1.2688516224242306,1
+Churubusco,Riva Palacio,953.4209,osrm,1.319840547425166,1
+Juventud,Estacion Manuel,439.186,osrm,1.121458009515181,1
+CEDI Puebla,Tultitlán,156.9377,osrm,1.315491149587382,1
+Juventud,Tulum,2191.0321,osrm,1.5421678179272327,1
+Juventud,Tecamac,897.3839,osrm,1.3088995555595788,1
+CEDI Mexico,Minatitlán,572.7516999999999,osrm,1.1278004704369902,1
+Largos Puebla,Ozumba,105.7255,osrm,1.682737371428748,1
+Juventud,Ciudad Acuña,512.5349,osrm,1.275150359712383,1
+CEDI Norte,Hermosillo,1524.0746,osrm,1.3520480229481648,1
+Juventud,Jitotol,1571.6708,osrm,1.274551467361162,1
+Juventud,Campeche,1796.5065,osrm,1.5023504615953556,1
+Churubusco,Culiacán,1038.1491,osrm,1.4447749739093678,1
+Largos Puebla,"Ixtaczoquitlan, Ver",,multidestino,,1
+Juventud,Valparaiso,572.0880999999999,osrm,1.203984284071756,1
+CEDI Norte,Tepatitlán de Morelos,743.6266999999999,osrm,1.200834282856513,1
+Churubusco,Hunucma,1978.5068,osrm,1.6894246919073932,1
+Largos Apodaca,Villacorzo,1566.5313999999998,osrm,1.2072371739905952,1
+Largos Puebla,Acolman,133.9451,osrm,1.3412973466317033,1
+Largos Apodaca,Matías Romero,1320.93,osrm,1.1925835493337464,1
+CEDI Mexico,Tierra Blanca,391.1673,osrm,1.2113770629329454,1
+Largos Puebla,Chilon,806.5712,osrm,1.21784447000004,1
+Largos Apodaca,Tecalitlan,966.4289,osrm,1.2520859713448558,1
+Largos Puebla,Tuxpan,275.0082,osrm,1.2171834246784488,1
+CEDI Mexico,"S Maria Zacatepec*NU,San Andres Cholula",,multidestino,,1
+Juventud,"Ajalpan,Puebla",,multidestino,,1
+Largos Apodaca,Comalapan,1740.3489,osrm,1.2478811400808858,1
+Juventud,Arandas,734.6648,osrm,1.2371309997727598,1
+Largos Puebla,Colima,787.0548,osrm,1.353967529983881,1
+Largos Apodaca,Villa de Ramos,488.9504,osrm,1.3489842501613396,1
+Largos Apodaca,Tepanco de Lopez,1057.4639,osrm,1.2469765463769091,1
+Juventud,Villa de Ramos,476.1196,osrm,1.3431610524523383,1
+3PL Apodaca,Chihuahua,824.0068,osrm,1.24270873587478,1
+Largos Apodaca,Tacambaro,947.8869,osrm,1.2836441080977627,1
+CEDI Mexico,"A Nochixtlan, Oax,San Pedro Mixtepec",,multidestino,,1
+CSC Apodaca,Juan C Bonilla,962.8366,osrm,1.258904326657996,1
+Juventud,Dr Coss,167.8938,osrm,1.3208446115525367,1
+Largos Puebla,Cunduacan,601.0368000000001,osrm,1.1252590858257512,1
+Largos Puebla,Huauchinango,153.75539999999998,osrm,1.209641515835093,1
+Largos Apodaca,Axtla de Terraz,592.7628000000001,osrm,1.1782950189484998,1
+Juventud,Rosarito,2363.724,osrm,1.3243521978494752,1
+CEDI Norte,Medellín de Bravo,964.3365,osrm,1.1213887859472769,1
+Largos Puebla,Lázaro Cárdenas,704.452,osrm,1.6056935932029295,1
+Largos Apodaca,"Cueramaro, Gto",,multidestino,,1
+Juventud,Acatzingo,998.1528,osrm,1.2609545222911611,1
+Largos Puebla,Coatzintla,246.9446,osrm,1.4673024761936146,1
+CEDI Mexico,Lagos de Moreno,439.5501,osrm,1.2059015766393415,1
+Largos Apodaca,Loreto,584.6152,osrm,1.365236959894644,1
+Pesquería,"Ixtlahuacan de los M,Zapotlanejo",,multidestino,,1
+Pesquería,Zapotlanejo,793.6924,osrm,1.2255623048425546,1
+CEDI Puebla,"San Pedro Mixtepec,Stgo Pinotepa Nal",,multidestino,,1
+Largos Apodaca,Nueva Rosita,320.403,osrm,1.2313665313063529,1
+Guerrero,Salamanca,734.2821,osrm,1.2778090748190047,1
+Largos Apodaca,Huajuapan de León,1160.6756,osrm,1.2599443996100292,1
+Pesquería,"Ixtlahuacan de los M,Tlajomulco de Zuñiga",,multidestino,,1
+Largos Apodaca,Pénjamo,785.8521999999999,osrm,1.263677634584812,1
+Largos Puebla,Juchitán,600.5436,osrm,1.3210067788245252,1
+Churubusco,Sabinas,325.2133,osrm,1.238703582456894,1
+Largos Apodaca,Xochitepec,1022.1136,osrm,1.2989362463663963,1
+Largos Apodaca,Berriozabal,1470.5733,osrm,1.2070390634609576,1
+Largos Puebla,Netzahualcóyotl,124.5252,osrm,1.2715330665655844,1
+Largos Apodaca,Huixtla,1695.9895,osrm,1.18626935095313,1
+Bodega del Toro,Tlatenango,626.3152,osrm,1.1639682096502801,1
+Largos Puebla,Ciudad Guzmán,774.642,osrm,1.3784232163719152,1
+Bodega del Toro,San Francisco de los Romo,554.792,osrm,1.1944977031707769,1
+Largos Puebla,Nochixtlán,264.07370000000003,osrm,1.2764580028814834,1
+CEDI Norte,Ciudad Valles,533.2283,osrm,1.233087707327468,1
+CSI Apodaca,Santa Rosa de Jáuregui,706.7112,osrm,1.2500882324763687,1
+CEDI Puebla,"San Sebastian Tutla,Sta Cruz Xoxocotlan,Tlalixtac de Cabrera",,multidestino,,1
+Largos Apodaca,Motozintla,1725.3851000000002,osrm,1.2135348282699796,1
+Juventud,Yajalón,1582.3004,osrm,1.2577350250051889,1
+CEDI Mexico,San Pablo Monte,139.7218,osrm,1.2750046671970467,1
+Largos Apodaca,S.SALVADOR ATENCO,922.7399,osrm,1.308169770802828,1
+Largos Apodaca,Yajalón,1574.7058,osrm,1.2561136804494737,1

@@ -4,3 +4,4 @@
 *.db
 etl_pipeline_*.log
 .DS_Store
+__pycache__/

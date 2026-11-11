@@ -1,0 +1,188 @@
+Ruta_ID,PLANTA_ORIGEN,Ciudad_Destino,Viajes,Kilometros_Ruta,Vel_Implicita_kmh,Faltante,Fuente,Sospechoso,Pct_Acumulado_Viajes
+Largos Puebla | Amozoc,Largos Puebla,Amozoc,403,19.6373,1.3270438504279922,False,osrm,True,16.6
+Largos Apodaca | Guadalupe,Largos Apodaca,Guadalupe,117,16.081,0.45943891115431923,False,osrm,True,21.4
+CEDI Tuxtla | Comitán,CEDI Tuxtla,Comitán,112,146.6789,2.062627716982643,False,osrm,True,26.0
+Largos Apodaca | Saltillo,Largos Apodaca,Saltillo,108,108.9607,2.2787180202161035,False,osrm,True,30.5
+CEDI Puebla | Tepeaca,CEDI Puebla,Tepeaca,97,38.6461,2.0375202835300663,False,osrm,True,34.5
+CEDI Veracruz | Acayucan,CEDI Veracruz,Acayucan,86,244.6411,2.665472082708485,False,osrm,True,38.0
+CEDI Veracruz | Córdoba,CEDI Veracruz,Córdoba,73,113.908,2.374416194275722,False,osrm,True,41.0
+CEDI Puebla | Atlixco,CEDI Puebla,Atlixco,60,33.991699999999994,1.6752129778568736,False,osrm,True,43.5
+CEDI Guadalajara | El Salto,CEDI Guadalajara,El Salto,56,28.7003,1.1794913125870452,False,osrm,True,45.8
+CEDI Tuxtla | San Cristóbal de las Casas,CEDI Tuxtla,San Cristóbal de las Casas,51,61.413599999999995,0.8545788930505467,False,osrm,True,47.9
+Largos Puebla | Santa Isabel Xiloxoxtla,Largos Puebla,Santa Isabel Xiloxoxtla,50,28.0559,1.724659597356693,False,osrm,True,50.0
+CEDI Norte | Saltillo,CEDI Norte,Saltillo,38,117.0461,2.567097556369219,False,osrm,True,51.5
+CEDI Tuxtla | Comalapan,CEDI Tuxtla,Comalapan,37,257.4845,2.184746393890827,False,osrm,True,53.0
+CEDI Tuxtla | Chiapa de Corzo,CEDI Tuxtla,Chiapa de Corzo,37,26.1752,0.28890240612199847,False,osrm,True,54.6
+CEDI Tuxtla | Angel Albino Corzo,CEDI Tuxtla,Angel Albino Corzo,34,173.1386,2.598795287721266,False,osrm,True,56.0
+CEDI Puebla | Amozoc,CEDI Puebla,Amozoc,32,19.6373,0.7212083001775113,False,osrm,True,57.3
+CEDI Tuxtla | Margaritas,CEDI Tuxtla,Margaritas,31,165.9654,2.399875643173027,False,osrm,True,58.6
+Largos Puebla | Sta Ana Chautempan,Largos Puebla,Sta Ana Chautempan,27,33.380900000000004,2.2967631206758155,False,osrm,True,59.7
+CEDI Puebla | S FelipeTeotlalcingo,CEDI Puebla,S FelipeTeotlalcingo,24,51.452,2.341506333274341,False,osrm,True,60.7
+CEDI Tuxtla | Chicomuselo,CEDI Tuxtla,Chicomuselo,24,217.327,2.1929794023788802,False,osrm,True,61.7
+Largos Apodaca | Allende,Largos Apodaca,Allende,23,62.6323,2.364995227556404,False,osrm,True,62.6
+Largos Puebla | San Martin Texmelucan,Largos Puebla,San Martin Texmelucan,23,41.3791,2.8082714676218306,False,osrm,True,63.6
+CEDI Veracruz | San Andrés Tuxtla,CEDI Veracruz,San Andrés Tuxtla,22,158.5796,2.43130128147798,False,osrm,True,64.5
+CEDI Puebla | Acajete,CEDI Puebla,Acajete,21,32.6453,1.4165722068874076,False,osrm,True,65.3
+CEDI Tuxtla | Chilon,CEDI Tuxtla,Chilon,20,195.0427,1.3457549863010283,False,osrm,True,66.1
+CEDI Puebla | Zacatelco,CEDI Puebla,Zacatelco,20,22.016599999999997,0.9200631486081767,False,osrm,True,67.0
+CEDI Veracruz | Jalapa,CEDI Veracruz,Jalapa,20,101.5643,1.5750269445988034,False,osrm,True,67.8
+CEDI Veracruz | Tuxtepec,CEDI Veracruz,Tuxtepec,20,156.372,2.657617516676817,False,osrm,True,68.6
+CEDI Mexico | Metepec,CEDI Mexico,Metepec,19,63.0275,1.4239033573893947,False,osrm,True,69.4
+CEDI Puebla | Zacapoaxtla,CEDI Puebla,Zacapoaxtla,18,131.55829999999995,2.0909097651748927,False,osrm,True,70.1
+CEDI Tuxtla | Huixtla,CEDI Tuxtla,Huixtla,18,331.28290000000004,2.9296401997607395,False,osrm,True,70.9
+CEDI Puebla | Tecamachalco,CEDI Puebla,Tecamachalco,18,62.0964,2.4157976128080576,False,osrm,True,71.6
+CEDI Tuxtla | Huitiupan,CEDI Tuxtla,Huitiupan,18,145.7243,2.857884019284722,False,osrm,True,72.4
+CEDI Mexico | Centro,CEDI Mexico,Centro,18,779.1555999999999,2.243460208608771,False,osrm,True,73.1
+CEDI Mexico | Comalcalco,CEDI Mexico,Comalcalco,15,742.8798,2.4013699397674744,False,osrm,True,73.7
+Largos Puebla | Magdalena Tlatelulco,Largos Puebla,Magdalena Tlatelulco,15,30.0379,0.5800470961824199,False,osrm,True,74.3
+Largos Puebla | Tecamachalco,Largos Puebla,Tecamachalco,13,62.0964,1.105502811391948,False,osrm,True,74.9
+CEDI Veracruz | Coactepec,CEDI Veracruz,Coactepec,13,107.6235,2.307550192670768,False,osrm,True,75.4
+CEDI Tuxtla | La Concordia,CEDI Tuxtla,La Concordia,13,139.5276,1.5302434744461504,False,osrm,True,75.9
+Juventud | Guadalupe,Juventud,Guadalupe,13,15.1478,0.2911125702663314,False,osrm,True,76.5
+CEDI Mexico | Tulancingo,CEDI Mexico,Tulancingo,13,119.1215,2.456338496082115,False,osrm,True,77.0
+CEDI Mexico | Atotonilco de Tula,CEDI Mexico,Atotonilco de Tula,13,67.95360000000001,0.9227288877824676,False,osrm,True,77.6
+CEDI Tuxtla | Mitontic,CEDI Tuxtla,Mitontic,12,97.9441,1.298075189962891,False,osrm,True,78.0
+CEDI Tuxtla | Arriaga,CEDI Tuxtla,Arriaga,11,127.8682,0.9205589841015899,False,osrm,True,78.5
+Largos Apodaca | Valle de Chalco,Largos Apodaca,Valle de Chalco,11,954.9865,2.545165782360819,False,osrm,True,79.0
+CEDI Guadalajara | Jacona,CEDI Guadalajara,Jacona,11,164.9443,2.381523245740687,False,osrm,True,79.4
+CEDI Norte | Allende,CEDI Norte,Allende,11,69.3965,1.5474746348533839,False,osrm,True,79.9
+CEDI Mexico | Teziutlán,CEDI Mexico,Teziutlán,10,260.1667,2.733445655774425,False,osrm,True,80.3
+CEDI Tuxtla | Villaflores,CEDI Tuxtla,Villaflores,10,86.05330000000001,1.4420393894679024,False,osrm,True,80.7
+CEDI Norte | Reynosa,CEDI Norte,Reynosa,10,221.5632,2.3577520543895947,False,osrm,True,81.1
+Largos Puebla | Zacatelco,Largos Puebla,Zacatelco,10,22.016599999999997,1.1964098538823813,False,osrm,True,81.5
+CEDI Guadalajara | Tangancícuaro,CEDI Guadalajara,Tangancícuaro,10,174.3555,2.46320882812316,False,osrm,True,81.9
+CEDI Veracruz | Tierra Blanca,CEDI Veracruz,Tierra Blanca,9,112.1764,2.5300728006315234,False,osrm,True,82.3
+CEDI Tuxtla | Oxchuc Chs,CEDI Tuxtla,Oxchuc Chs,9,116.3782,1.5031627439724458,False,osrm,True,82.7
+CEDI Veracruz | Cosamaloapan,CEDI Veracruz,Cosamaloapan,9,148.6612,1.6578134767349293,False,osrm,True,83.0
+CEDI Veracruz | San Juan B Tuxtepec,CEDI Veracruz,San Juan B Tuxtepec,9,156.372,2.0372063735619497,False,osrm,True,83.4
+CEDI Veracruz | Papantla,CEDI Veracruz,Papantla,9,217.7128,1.793441185488927,False,osrm,True,83.8
+Largos Puebla | Apizaco,Largos Puebla,Apizaco,9,56.4426,1.6265878962536022,False,osrm,True,84.1
+Largos Puebla | Tepeaca,Largos Puebla,Tepeaca,9,38.6461,1.4396312086092713,False,osrm,True,84.5
+CEDI Mexico | Cárdenas,CEDI Mexico,Cárdenas,9,686.1443,2.2754606479498354,False,osrm,True,84.9
+Largos Puebla | Tlalpan,Largos Puebla,Tlalpan,9,135.7893,1.9718028687135964,False,osrm,True,85.3
+CEDI Mexico | Amozoc,CEDI Mexico,Amozoc,9,144.4595,2.9976033200760845,False,osrm,True,85.6
+CEDI Tuxtla | Berriozabal,CEDI Tuxtla,Berriozabal,9,37.3588,0.5095848804959004,False,osrm,True,86.0
+Largos Apodaca | Puruandiro,Largos Apodaca,Puruandiro,8,811.4761,2.8488742109998024,False,osrm,True,86.3
+Bodega del Toro | Gómez Palacios,Bodega del Toro,Gómez Palacios,8,347.2996,2.7337187236596554,False,osrm,True,86.7
+CSI San Luis Potosi | Chihuahua,CSI San Luis Potosi,Chihuahua,8,1015.4662,2.9515255021405693,False,osrm,True,87.0
+CEDI Mexico | Comalapan,CEDI Mexico,Comalapan,7,1086.0362,2.5484451912867145,False,osrm,True,87.3
+CEDI Puebla | Rafael Lara Grajales,CEDI Puebla,Rafael Lara Grajales,7,57.9084,2.554782352941176,False,osrm,True,87.6
+CEDI Mexico | Apizaco,CEDI Mexico,Apizaco,7,133.09279999999998,2.800119687689934,False,osrm,True,87.9
+CEDI Veracruz | Santo Domingo Tehuantepec,CEDI Veracruz,Santo Domingo Tehuantepec,7,520.4802,1.9674625718479815,False,osrm,True,88.1
+CEDI Mexico | Tapilula,CEDI Mexico,Tapilula,7,856.5074000000001,2.801482626941937,False,osrm,True,88.4
+CEDI Tuxtla | Ocozocoautla,CEDI Tuxtla,Ocozocoautla,7,44.231300000000005,0.48528942243515316,False,osrm,True,88.7
+CEDI Veracruz | Jalacingo,CEDI Veracruz,Jalacingo,6,176.2705,2.8229690443726243,False,osrm,True,89.0
+CEDI Tuxtla | Mezcalapa,CEDI Tuxtla,Mezcalapa,6,102.8614,2.3088042946257943,False,osrm,True,89.2
+Juventud | Atotonilco el Alto,Juventud,Atotonilco el Alto,6,741.5976999999999,2.533706863662505,False,osrm,True,89.5
+CEDI Mexico | Emiliano Zapata,CEDI Mexico,Emiliano Zapata,6,99.0688,0.3834943970098748,False,osrm,True,89.7
+Largos Puebla | Ocoyucan,Largos Puebla,Ocoyucan,6,24.1803,1.2083856324830817,False,osrm,True,90.0
+CEDI Mexico | Pachuca,CEDI Mexico,Pachuca,6,90.1989,1.4809060124915343,False,osrm,True,90.2
+CEDI Puebla | TLACOTEPEC,CEDI Puebla,TLACOTEPEC,6,97.41,2.6519151510568304,False,osrm,True,90.4
+Largos Puebla | Pachuca,Largos Puebla,Pachuca,6,149.21720000000002,2.6308137823628663,False,osrm,True,90.7
+CEDI Mexico | Chicomuselo,CEDI Mexico,Chicomuselo,5,1039.3898000000002,2.6755890645457234,False,osrm,True,90.9
+Largos Puebla | Poza Rica,Largos Puebla,Poza Rica,5,256.7747,2.7724209787567142,False,osrm,True,91.1
+CEDI Mexico | Chachapa,CEDI Mexico,Chachapa,5,136.9011,2.8938731459842875,False,osrm,True,91.3
+CEDI Mexico | Arriaga,CEDI Mexico,Arriaga,5,852.0896,2.8451617857931244,False,osrm,True,91.5
+CEDI Mexico | Tetla,CEDI Mexico,Tetla,5,135.52470000000002,2.5460343271042185,False,osrm,True,91.7
+Largos Puebla | Acatlán,Largos Puebla,Acatlán,5,154.4306,2.9857848860627607,False,osrm,True,91.9
+CEDI Mexico | Tila,CEDI Mexico,Tila,5,891.3146999999999,2.474438381432995,False,osrm,True,92.1
+CEDI Mexico | Zacatelco,CEDI Mexico,Zacatelco,5,123.6842,2.7726184827483142,False,osrm,True,92.3
+Largos Puebla | San Luis Teolocholco,Largos Puebla,San Luis Teolocholco,4,25.7394,0.9994859210760494,False,osrm,True,92.5
+CEDI Mexico | Simojovel,CEDI Mexico,Simojovel,4,927.8319,2.6825868426790738,False,osrm,True,92.7
+CEDI Guadalajara | Tala,CEDI Guadalajara,Tala,4,55.6096,1.4284459698105938,False,osrm,True,92.8
+Largos Apodaca | Arteaga,Largos Apodaca,Arteaga,4,134.6552,1.5003713178114628,False,osrm,True,93.0
+CEDI Veracruz | Río Blanco,CEDI Veracruz,Río Blanco,4,144.3085,2.3542100755416384,False,osrm,True,93.2
+Juventud | Colon,Juventud,Colon,4,737.9612,2.5754424544768457,False,osrm,True,93.3
+CEDI Mexico | Huitiupan,CEDI Mexico,Huitiupan,4,903.3279,2.5320295015912877,False,osrm,True,93.5
+Largos Apodaca | Tamuin,Largos Apodaca,Tamuin,4,533.4043,1.8240435660436773,False,osrm,True,93.7
+CEDI Veracruz | Medellín de Bravo,CEDI Veracruz,Medellín de Bravo,4,24.486,0.8077078494165509,False,osrm,True,93.8
+Largos Puebla | Acayucan,Largos Puebla,Acayucan,4,398.3350999999999,2.641095110312196,False,osrm,True,94.0
+CEDI Veracruz | Tlapacoyan,CEDI Veracruz,Tlapacoyan,4,186.1726,2.5496256141331948,False,osrm,True,94.2
+CEDI Tuxtla | Yajalón,CEDI Tuxtla,Yajalón,4,209.7569,2.1175534103097986,False,osrm,True,94.3
+CEDI Puebla | San Pablo Monte,CEDI Puebla,San Pablo Monte,3,17.3403,0.8747909192825112,False,osrm,True,94.4
+CEDI Mexico | Atzitzihuacan,CEDI Mexico,Atzitzihuacan,3,158.5157,2.1659588713534195,False,osrm,True,94.6
+CEDI Mexico | Huimanguillo,CEDI Mexico,Huimanguillo,3,705.0773,1.947008723759877,False,osrm,True,94.7
+Largos Puebla | Apetatitlan,Largos Puebla,Apetatitlan,3,36.0003,1.0270475798015661,False,osrm,True,94.8
+CEDI Mexico | Alamo,CEDI Mexico,Alamo,3,304.97229999999996,2.50026252863721,False,osrm,True,94.9
+CEDI Puebla | Santiago Juxtlahuaca,CEDI Puebla,Santiago Juxtlahuaca,3,330.7465,2.789461921227967,False,osrm,True,95.1
+CEDI Mexico | Chimalhuacan,CEDI Mexico,Chimalhuacan,3,25.5261,0.6021095531385139,False,osrm,True,95.2
+CEDI Puebla | Izuca de Matamoros,CEDI Puebla,Izuca de Matamoros,3,80.7864,1.8760025027898366,False,osrm,True,95.3
+Juventud | Manzanillo,Juventud,Manzanillo,3,1075.4796,2.779537768703439,False,osrm,True,95.4
+CEDI Mexico | Zempoala,CEDI Mexico,Zempoala,3,85.8295,1.2995062496845717,False,osrm,True,95.6
+Juventud | Miguel Aleman,Juventud,Miguel Aleman,3,193.2581,0.49353379362398375,False,osrm,True,95.7
+Juventud | Poza Rica,Juventud,Poza Rica,2,731.7642,2.947944625418101,False,osrm,True,95.8
+Largos Apodaca | Yecapistla,Largos Apodaca,Yecapistla,2,1024.5653,2.968853319081084,False,osrm,True,95.8
+Juventud | Santa Maria Rayon,Juventud,Santa Maria Rayon,2,915.0923,2.247696773031451,False,osrm,True,95.9
+Largos Puebla | Atlautla,Largos Puebla,Atlautla,2,112.2242,2.0520892338324628,False,osrm,True,96.0
+Bodega del Toro | Villa de Reyes,Bodega del Toro,Villa de Reyes,2,547.0079000000001,2.6367668338835446,False,osrm,True,96.1
+Juventud | Doctor Gonzalez,Juventud,Doctor Gonzalez,2,54.7369,1.5803673168227896,False,osrm,True,96.2
+Juventud | Jerez,Juventud,Jerez,2,512.3985,2.5018185517094063,False,osrm,True,96.3
+Guerrero | Jacona,Guerrero,Jacona,2,835.5429,1.9632514233462066,False,osrm,True,96.3
+Juventud | Acayucan,Juventud,Acayucan,2,1185.5393,2.9910732479590267,False,osrm,True,96.4
+CEDI Guadalajara | San Francisco del Rincón,CEDI Guadalajara,San Francisco del Rincón,2,241.9267,1.5800240558618475,False,osrm,True,96.5
+Largos Apodaca | Xalisco,Largos Apodaca,Xalisco,2,1017.614,2.692309258250107,False,osrm,True,96.6
+Largos Puebla | Atlixco,Largos Puebla,Atlixco,2,33.991699999999994,0.5966407360365872,False,osrm,True,96.7
+CEDI Puebla | Tepanco de Lopez,CEDI Puebla,Tepanco de Lopez,2,107.5066,1.257846873857404,False,osrm,True,96.7
+CEDI Mexico | Escarcega,CEDI Mexico,Escarcega,2,1053.3256,2.9487607531992768,False,osrm,True,96.8
+CEDI Mexico | S Maria Zacatepec*NU,CEDI Mexico,S Maria Zacatepec*NU,2,20.5441,0.29978379210966855,False,osrm,True,96.9
+CEDI Mexico | Sn Salvador el Verde,CEDI Mexico,Sn Salvador el Verde,2,92.8484,2.49107910612943,False,osrm,True,97.0
+CEDI Norte | Guadalupe,CEDI Norte,Guadalupe,2,24.5634,0.40721629450203317,False,osrm,True,97.1
+CEDI Norte | Sabinas,CEDI Norte,Sabinas,2,332.36940000000004,1.7286134958512147,False,osrm,True,97.2
+CEDI Puebla | Acatlán,CEDI Puebla,Acatlán,2,154.4306,2.6029944611177958,False,osrm,True,97.2
+CEDI Guadalajara | Gabriel Zamora,CEDI Guadalajara,Gabriel Zamora,2,293.4018,2.2499514967419527,False,osrm,True,97.3
+CEDI Puebla | Puebla,CEDI Puebla,Puebla,2,0.0,0.0,False,osrm,True,97.4
+CEDI Puebla | San Martin Texmelucan,CEDI Puebla,San Martin Texmelucan,2,41.3791,0.8716945889485112,False,osrm,True,97.5
+CEDI Mexico | Atotonilco el Grande,CEDI Mexico,Atotonilco el Grande,2,134.69879999999998,2.760747751876638,False,osrm,True,97.6
+CEDI Mexico | ACALA,CEDI Mexico,ACALA,2,881.32,2.611365802508358,False,osrm,True,97.7
+Largos Puebla | Emiliano Zapata,Largos Puebla,Emiliano Zapata,2,160.6024,2.263497806652664,False,osrm,True,97.7
+CEDI Guadalajara | Patzcuaro,CEDI Guadalajara,Patzcuaro,2,268.5045,1.877732267373249,False,osrm,True,97.8
+CEDI Tuxtla | Villa Corzo,CEDI Tuxtla,Villa Corzo,2,115.4269,2.147560448079383,False,osrm,True,97.9
+CEDI Guadalajara | Nueva Italia,CEDI Guadalajara,Nueva Italia,2,257.0899,2.122042749299262,False,osrm,True,98.0
+Largos Puebla | Tamazuchale,Largos Puebla,Tamazuchale,2,354.46540000000005,1.3157716116372913,False,osrm,True,98.1
+Pesquería | Chihuahua,Pesquería,Chihuahua,1,845.1078,1.3908492149698826,False,osrm,True,98.1
+Largos Puebla | Ciudad Valles,Largos Puebla,Ciudad Valles,1,472.8603,2.031790516225826,False,osrm,True,98.1
+Largos Puebla | San Martin de las P,Largos Puebla,San Martin de las P,1,124.2857,1.3667364755475455,False,osrm,True,98.2
+Largos Puebla | San Juan del Río,Largos Puebla,San Juan del Río,1,282.1913,1.8675866151430809,False,osrm,True,98.2
+Largos Puebla | Medellín de Bravo,Largos Puebla,Medellín de Bravo,1,266.6502,2.91239732406972,False,osrm,True,98.3
+Largos Puebla | Coatzintla,Largos Puebla,Coatzintla,1,246.9446,2.1175452687541982,False,osrm,True,98.3
+Largos Puebla | Zacatlán,Largos Puebla,Zacatlán,1,125.1042,2.3556539340652445,False,osrm,True,98.4
+Largos Puebla | Acolman,Largos Puebla,Acolman,1,133.9451,2.239478912683042,False,osrm,True,98.4
+Largos Puebla | Cosamaloapan,Largos Puebla,Cosamaloapan,1,302.3552,2.3443233743409495,False,osrm,True,98.4
+Largos Puebla | Ixtapaluca,Largos Puebla,Ixtapaluca,1,88.8732,1.452150106207222,False,osrm,True,98.5
+Largos Puebla | San Vicente Chicoloapa,Largos Puebla,San Vicente Chicoloapa,1,113.2754,2.6469307162051643,False,osrm,True,98.5
+Bodega Aceromex | Tlatenango,Bodega Aceromex,Tlatenango,1,734.5702,1.9600313373441378,False,osrm,True,98.6
+Largos Apodaca | Valle Hermoso,Largos Apodaca,Valle Hermoso,1,283.52840000000003,1.6035590858460733,False,osrm,True,98.6
+CEDI Mexico | Acolman,CEDI Mexico,Acolman,1,39.8127,0.8587880857795114,False,osrm,True,98.6
+CEDI Mexico | San Pablo Monte,CEDI Mexico,San Pablo Monte,1,139.7218,1.9805584955584956,False,osrm,True,98.7
+CEDI Mexico | Progreso Obregón,CEDI Mexico,Progreso Obregón,1,112.2963,2.5649160607560244,False,osrm,True,98.7
+CEDI Mexico | Minatitlán,CEDI Mexico,Minatitlán,1,572.7516999999999,2.045042697913009,False,osrm,True,98.8
+CEDI Mexico | Ixtalahuaca,CEDI Mexico,Ixtalahuaca,1,111.3694,0.3309320793682631,False,osrm,True,98.8
+CEDI Mexico | Coatepec de Harinas,CEDI Mexico,Coatepec de Harinas,1,136.3166,1.4241017307223531,False,osrm,True,98.8
+CEDI Mexico | Apodaca,CEDI Mexico,Apodaca,1,919.2678,2.7770553361176358,False,osrm,True,98.9
+CEDI Guadalajara | San Miguel de Allende,CEDI Guadalajara,San Miguel de Allende,1,337.8355,1.2882697447098341,False,osrm,True,98.9
+CEDI Mexico | Texcoco,CEDI Mexico,Texcoco,1,34.6232,1.250951133592268,False,osrm,True,99.0
+CEDI Guadalajara | Maravatio,CEDI Guadalajara,Maravatio,1,340.9205,1.019865083163815,False,osrm,True,99.0
+CEDI Guadalajara | Manzanillo,CEDI Guadalajara,Manzanillo,1,286.6907,1.9779919315426853,False,osrm,True,99.1
+CEDI Guadalajara | Acatic,CEDI Guadalajara,Acatic,1,59.7766,2.852730960429509,False,osrm,True,99.1
+Bodega del Toro | Tlajomulco de Zúñiga,Bodega del Toro,Tlajomulco de Zúñiga,1,805.4061999999999,2.279197070767257,False,osrm,True,99.1
+Bodega del Toro | Papantla,Bodega del Toro,Papantla,1,764.7312,2.3458651905982437,False,osrm,True,99.2
+Bodega del Toro | Oaxaca,Bodega del Toro,Oaxaca,1,1268.9491,2.9364834065705203,False,osrm,True,99.2
+CEDI Mexico | Santa Maria Rayon,CEDI Mexico,Santa Maria Rayon,1,75.4473,1.454304546403731,False,osrm,True,99.3
+CEDI Norte | Ciudad Valles,CEDI Norte,Ciudad Valles,1,533.2283,2.498320303501591,False,osrm,True,99.3
+Largos Apodaca | Tacambaro,Largos Apodaca,Tacambaro,1,947.8869,1.9206613023421264,False,osrm,True,99.3
+Juventud | Cerano,Juventud,Cerano,1,797.489,2.3667405304341806,False,osrm,True,99.4
+Juventud | Zonas Postales*NU,Juventud,Zonas Postales*NU,1,,,True,sin_geocodificar_destino,False,99.4
+Juventud | Teziutlán,Juventud,Teziutlán,1,870.5784,2.1171753811524994,False,osrm,True,99.5
+Juventud | Tecamac,Juventud,Tecamac,1,897.3839,2.0400484976771,False,osrm,True,99.5
+Juventud | Eduardo Neri,Juventud,Eduardo Neri,1,1135.1138,5675.569,False,osrm,True,99.5
+Juventud | Dr Coss,Juventud,Dr Coss,1,167.8938,0.5085067048736637,False,osrm,True,99.6
+Juventud | Ciudad Acuña,Juventud,Ciudad Acuña,1,512.5349,1.8004668600044498,False,osrm,True,99.6
+CEDI Veracruz | Naranjos,CEDI Veracruz,Naranjos,1,326.7515,1.332025886229681,False,osrm,True,99.7
+CEDI Norte | Córdoba,CEDI Norte,Córdoba,1,1053.9758,2.944854791203418,False,osrm,True,99.7
+CEDI Veracruz | Altotonga,CEDI Veracruz,Altotonga,1,169.64579999999998,2.2573457031971906,False,osrm,True,99.8
+CEDI Tuxtla | Tuxtla Chico,CEDI Tuxtla,Tuxtla Chico,1,383.8637,1.3529666572677286,False,osrm,True,99.8
+CEDI Tuxtla | La Independencia,CEDI Tuxtla,La Independencia,1,175.5171,1.0017003467086458,False,osrm,True,99.8
+Bodega del Toro | Aguascalientes,Bodega del Toro,Aguascalientes,1,569.5398,2.980882338830323,False,osrm,True,99.9
+CEDI Norte | San Fernando,CEDI Norte,San Fernando,1,301.2245,0.7819482651825818,False,osrm,True,99.9
+CEDI Norte | Matehuala,CEDI Norte,Matehuala,1,364.8832,2.49710957341647,False,osrm,True,100.0
+Universidad | Tonalá,Universidad,Tonalá,1,781.2093000000001,1.8850868157029714,False,osrm,True,100.0

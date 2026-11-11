@@ -1,0 +1,481 @@
+clave,consulta,lat,lon,estado_resultado,display,estatus
+APOCADA|NUEVO LEON,"Apocada, Nuevo León, México",,,,,sin_resultado
+LAS BRISAS|NUEVO LEON,"Las Brisas, Nuevo León, México",25.3941131,-99.5466797,Nuevo León,"Las Brisas, General Terán, Nuevo León, México",ok
+CIUDAD GENERAL ESCOBEDO|NUEVO LEON,"Ciudad General Escobedo, Nuevo León, México",25.808517,-100.3224334,Nuevo León,"General Escobedo, Nuevo León, 66053, México",ok
+GUADALAJARA|JALISCO,"Guadalajara, Jalisco, México",20.6784455,-103.3356942,Jalisco,"Guadalajara, Región Centro, Jalisco, México",ok
+CIUDAD DE MEXICO|CIUDAD DE MEXICO,"Ciudad de México, Ciudad de México, México",19.4326296,-99.1331785,Ciudad de México,"Ciudad de México, Cuauhtémoc, Ciudad de México, México",ok
+CIUDAD NATURA|NUEVO LEON,"Ciudad Natura, Nuevo León, México",25.8400699,-100.1426315,Nuevo León,"Ciudad Natura, Apodaca, Nuevo León, México",ok
+PUEBLA|PUEBLA,"Puebla, Puebla, México",19.0437975,-98.1981513,Puebla,"Puebla de Zaragoza, Municipio de Puebla, Puebla, 72000, México",ok
+TUXTLA GUTIERREZ|CHIAPAS,"Tuxtla Gutiérrez, Chiapas, México",16.753801,-93.115959,Chiapas,"Tuxtla Gutiérrez, Chiapas, 29019, México",ok
+VERACRUZ|VERACRUZ,"Veracruz, Veracruz, México",19.2003429,-96.1383572,Veracruz,"Veracruz, Municipio de Veracruz, Veracruz, 91701, México",ok
+APODACA|NUEVO LEON,"Apodaca, Nuevo León, México",25.7871006,-100.1850769,Nuevo León,"Apodaca, Nuevo León, México",ok
+SAN LUIS POTOSI|SAN LUIS POTOSI,"San Luis Potosí, San Luis Potosí, México",22.1516472,-100.9763993,San Luis Potosí,"San Luis Potosí, Municipio de San Luis Potosí, San Luis Potosí, 78000, México",ok
+MONTERREY|NUEVO LEON,"Monterrey, Nuevo León, México",25.6802019,-100.315258,Nuevo León,"Monterrey, Nuevo León, 64490, México",ok
+SAN NICOLAS DE LOS GARZA|NUEVO LEON,"San Nicolás de los Garza, Nuevo León, México",25.7558021,-100.289648,Nuevo León,"San Nicolás de los Garza, Nuevo León, 66417, México",ok
+PESQUERIA|NUEVO LEON,"Pesquería, Nuevo León, México",25.7469488,-100.0044684,Nuevo León,"Pesquería, Nuevo León, México",ok
+RAMOS ARIZPE|COAHUILA,"Ramos Arizpe, Coahuila, México",25.9234599,-101.3128597,Coahuila,"Ramos Arizpe, Coahuila, México",ok
+NUEVO LAREDO|TAMAULIPAS,"Nuevo Laredo, Tamaulipas, México",27.4933935,-99.5062463,Tamaulipas,"Nuevo Laredo, Tamaulipas, 88040, México",ok
+ALTAMIRA|TAMAULIPAS,"Altamira, Tamaulipas, México",22.5630208,-98.1165184,Tamaulipas,"Altamira, Tamaulipas, México",ok
+CASTANOS|COAHUILA,"Castaños, Coahuila, México",26.5419142,-101.3046396,Coahuila,"Castaños, Coahuila, México",ok
+CIUDAD FRONTERA|COAHUILA,"Ciudad Frontera, Coahuila, México",26.9330383,-101.4513298,Coahuila,"Patio de ferrocarril de Ciudad Frontera, Boulevard Benito Juárez, Zona Centro, Frontera, Coahuila, 25716, México",ok
+MONCLOVA|COAHUILA,"Monclova, Coahuila, México",26.8792399,-101.1992336,Coahuila,"Monclova, Coahuila, México",ok
+QUERETARO|QUERETARO,"Querétaro, Querétaro, México",20.5922997,-100.3917424,Querétaro,"Santiago de Querétaro, Municipio de Querétaro, Querétaro, México",ok
+SALTILLO|COAHUILA,"Saltillo, Coahuila, México",25.4230425,-100.9927509,Coahuila,"Saltillo, Coahuila, 25000, México",ok
+TULTITLAN|ESTADO DE MEXICO,"Tultitlán, Estado de México, México",19.6169912,-99.1592775,Estado de México,"Tultitlán, Estado de México, México",ok
+LEON|GUANAJUATO,"León, Guanajuato, México",21.121965,-101.6829766,Guanajuato,"León, Guanajuato, 37004, México",ok
+MEXICALI|BAJA CALIFORNIA,"Mexicali, Baja California, México",32.6392535,-115.4747273,Baja California,"Mexicali, Municipio de Mexicali, Baja California, 21000, México",ok
+TORREON|COAHUILA,"Torreón, Coahuila, México",25.542698,-103.410512,Coahuila,"Torreón, Coahuila, 27289, México",ok
+MATAMOROS|TAMAULIPAS,"Matamoros, Tamaulipas, México",25.8810158,-97.5064866,Tamaulipas,"Matamoros, Tamaulipas, 87300, México",ok
+CELAYA|GUANAJUATO,"Celaya, Guanajuato, México",20.5222851,-100.8307739,Guanajuato,"Celaya, Guanajuato, México",ok
+CUAUTITLAN|ESTADO DE MEXICO,"Cuautitlán, Estado de México, México",19.7055182,-99.1666257,Estado de México,"Cuautitlán, Estado de México, México",ok
+NAUCALPAN DE JUAREZ|ESTADO DE MEXICO,"Naucalpan de Juárez, Estado de México, México",19.4788356,-99.2327986,Estado de México,"Naucalpan de Juárez, Estado de México, México",ok
+CIUDAD HIDALGO|MICHOACAN,"Ciudad Hidalgo, Michoacán, México",19.6919174,-100.555689,Michoacán,"Ciudad Hidalgo, Hidalgo, Michoacán, México",ok
+SILAO|GUANAJUATO,"Silao, Guanajuato, México",20.9432447,-101.4291951,Guanajuato,"Silao (Ciudad), Silao de la Victoria, Guanajuato, México",ok
+TIJUANA|BAJA CALIFORNIA,"Tijuana, Baja California, México",32.5364775,-117.0371232,Baja California,"Tijuana, Municipio de Tijuana, Baja California, 22000, México",ok
+GOMEZ PALACIO|DURANGO,"Gómez Palacio, Durango, México",25.5732473,-103.494779,Durango,"Gómez Palacio, Durango, 35000, México",ok
+SAN JOSE ITURBIDE|GUANAJUATO,"San José Iturbide, Guanajuato, México",21.0012598,-100.384479,Guanajuato,"San José Iturbide, Guanajuato, México",ok
+CIUDAD JUAREZ|CHIHUAHUA,"Ciudad Juárez, Chihuahua, México",31.7389744,-106.4832065,Chihuahua,"Ciudad Juárez, Juárez, Chihuahua, 32001, México",ok
+ARTEAGA|COAHUILA,"Arteaga, Coahuila, México",25.3453685,-100.6831723,Coahuila,"Arteaga, Coahuila, México",ok
+TEPEJI DEL RIO DE OCAMPO|HIDALGO,"Tepeji del Río de Ocampo, Hidalgo, México",19.8936827,-99.3487182,Hidalgo,"Tepeji del Río de Ocampo, Hidalgo, México",ok
+AGUASCALIENTES|AGUASCALIENTES,"Aguascalientes, Aguascalientes, México",21.880487,-102.2967195,Aguascalientes,"Aguascalientes, Municipio de Aguascalientes, Aguascalientes, 20000, México",ok
+LOS REYES LA PAZ|ESTADO DE MEXICO,"Los Reyes La Paz, Estado de México, México",19.3542001,-98.9899944,Estado de México,"Autopista México - Puebla, Ciudad de México, Iztapalapa, Los Reyes Acaquilpan, La Paz, Estado de México, 56400, México",ok
+REYNOSA|TAMAULIPAS,"Reynosa, Tamaulipas, México",26.0928368,-98.2779499,Tamaulipas,"Reynosa, Tamaulipas, 88500, México",ok
+EL MARQUES|QUERETARO,"El Marqués, Querétaro, México",20.7350779,-100.2835765,Querétaro,"El Marqués, Querétaro, México",ok
+HERMOSILLO|SONORA,"Hermosillo, Sonora, México",29.0948207,-110.9692202,Sonora,"Hermosillo, Sonora, 83140, México",ok
+TEPEAPULCO|HIDALGO,"Tepeapulco, Hidalgo, México",19.8063011,-98.5060045,Hidalgo,"Tepeapulco, Hidalgo, México",ok
+AMOZOC|PUEBLA,"Amozoc, Puebla, México",19.0637658,-98.0443494,Puebla,"Amozoc, Puebla, México",ok
+TAPACHULA|CHIAPAS,"Tapachula, Chiapas, México",14.9258055,-92.3221957,Chiapas,"Tapachula, Chiapas, México",ok
+VILLA DE REYES|SAN LUIS POTOSI,"Villa de Reyes, San Luis Potosí, México",21.8347546,-101.0042083,San Luis Potosí,"Villa de Reyes, San Luis Potosí, México",ok
+CHIHUAHUA|CHIHUAHUA,"Chihuahua, Chihuahua, México",28.6368669,-106.076745,Chihuahua,"Chihuahua, Municipio de Chihuahua, Chihuahua, 31000, México",ok
+DERRAMADERO|COAHUILA,"Derramadero, Coahuila, México",25.2897741,-101.2831008,Coahuila,"El Derramadero, Saltillo, Coahuila, México",ok
+ECATEPEC DE MORELOS|ESTADO DE MEXICO,"Ecatepec de Morelos, Estado de México, México",19.5994083,-99.0487281,Estado de México,"Ecatepec de Morelos, Atenco, Estado de México, México",ok
+CIUDAD CUAUHTEMOC|CHIHUAHUA,"Ciudad Cuauhtémoc, Chihuahua, México",28.4009579,-106.8665305,Chihuahua,"Cuauhtémoc, Chihuahua, 31500, México",ok
+CULIACAN|SINALOA,"Culiacán, Sinaloa, México",24.7978965,-107.393395,Sinaloa,"Culiacán, Culiacán Rosales, Culiacán, Sinaloa, 80220, México",ok
+APASEO EL GRANDE|GUANAJUATO,"Apaseo el Grande, Guanajuato, México",20.5919326,-100.5979868,Guanajuato,"Apaseo el Grande, Guanajuato, México",ok
+CUAUTLANCINGO|PUEBLA,"Cuautlancingo, Puebla, México",19.119366,-98.2491624,Puebla,"Cuautlancingo, Puebla, México",ok
+VILLAGRAN|GUANAJUATO,"Villagrán, Guanajuato, México",20.5140574,-100.996994,Guanajuato,"Villagrán, Guanajuato, 38260, México",ok
+SAN PEDRO TLAQUEPAQUE|JALISCO,"San Pedro Tlaquepaque, Jalisco, México",20.6397718,-103.3120428,Jalisco,"Tlaquepaque, San Pedro Tlaquepaque, Región Centro, Jalisco, 45500, México",ok
+ZAPOPAN|JALISCO,"Zapopan, Jalisco, México",20.7211203,-103.3913671,Jalisco,"Zapopan, Región Centro, Jalisco, 45101, México",ok
+CIENEGA DE FLORES|NUEVO LEON,"Ciénega de Flores, Nuevo León, México",25.9533262,-100.1874241,Nuevo León,"Ciénega de Flores, Nuevo León, 65580, México",ok
+VILLAHERMOSA|TABASCO,"Villahermosa, Tabasco, México",17.9884657,-92.9366326,Tabasco,"Villahermosa, Centro, Tabasco, México",ok
+TEXCOCO|ESTADO DE MEXICO,"Texcoco, Estado de México, México",19.4755907,-98.8553964,Estado de México,"Texcoco, Estado de México, México",ok
+EL SALTO|JALISCO,"El Salto, Jalisco, México",20.5196964,-103.1813141,Jalisco,"El Salto, Región Centro, Jalisco, México",ok
+JESUS MARIA|AGUASCALIENTES,"Jesús María, Aguascalientes, México",21.9345555,-102.4684517,Aguascalientes,"Jesús María, Aguascalientes, México",ok
+COMITAN DE DOMINGUEZ|CHIAPAS,"Comitán de Domínguez, Chiapas, México",16.2523617,-92.1354233,Chiapas,"Comitán, Comitán de Domínguez, Chiapas, 30018, México",ok
+MERIDA|YUCATAN,"Mérida, Yucatán, México",20.9670759,-89.6237402,Yucatán,"Mérida, Yucatán, 97000, México",ok
+ORIZABA|VERACRUZ,"Orizaba, Veracruz, México",18.8592328,-97.1106537,Veracruz,"Orizaba, Veracruz, México",ok
+TLAJOMULCO DE ZUNIGA|JALISCO,"Tlajomulco de Zúñiga, Jalisco, México",20.4818737,-103.4005097,Jalisco,"Tlajomulco de Zúñiga, Región Centro, Jalisco, México",ok
+OCOTLAN|JALISCO,"Ocotlán, Jalisco, México",20.3514474,-102.768809,Jalisco,"Ocotlán, Región Ciénega, Jalisco, México",ok
+GUADALUPE|NUEVO LEON,"Guadalupe, Nuevo León, México",25.6751114,-100.2151753,Nuevo León,"Guadalupe, Nuevo León, 67180, México",ok
+TEPIC|NAYARIT,"Tepic, Nayarit, México",21.5119156,-104.8915889,Nayarit,"Tepic, Nayarit, 63000, México",ok
+OCOSINGO|CHIAPAS,"Ocosingo, Chiapas, México",16.6577062,-91.193079,Chiapas,"Ocosingo, Chiapas, México",ok
+IRAPUATO|GUANAJUATO,"Irapuato, Guanajuato, México",20.6758761,-101.3521052,Guanajuato,"Irapuato, Guanajuato, 36500, México",ok
+SANTA ROSA DE JAUREGUI|QUERETARO,"Santa Rosa de Jáuregui, Querétaro, México",20.7083384,-100.4391572,Querétaro,"Calle Universidad del Valle de México, Delegación Santa Rosa Jáuregui, Santiago de Querétaro, Municipio de Querétaro, Querétaro, 76226, México",ok
+TEHUACAN|PUEBLA,"Tehuacán, Puebla, México",18.4658011,-97.3978348,Puebla,"Tehuacán, Puebla, México",ok
+GARCIA|NUEVO LEON,"García, Nuevo León, México",25.8054661,-100.6396468,Nuevo León,"García, Nuevo León, México",ok
+TEPEACA|PUEBLA,"Tepeaca, Puebla, México",18.9680556,-97.9025,Puebla,"Tepeaca, Puebla, 75200, México",ok
+MORELIA|MICHOACAN,"Morelia, Michoacán, México",19.6546004,-101.2623797,Michoacán,"Morelia, Michoacán, México",ok
+MAZATLAN|SINALOA,"Mazatlán, Sinaloa, México",23.2035785,-106.4208391,Sinaloa,"Mazatlán, Sinaloa, 82000, México",ok
+DURANGO|DURANGO,"Durango, Durango, México",24.022008,-104.654741,Durango,"Victoria de Durango, Municipio de Durango, Durango, México",ok
+CHIMALHUACAN|ESTADO DE MEXICO,"Chimalhuacán, Estado de México, México",19.4177511,-98.9575169,Estado de México,"Chimalhuacán, Estado de México, México",ok
+FRESNILLO|ZACATECAS,"Fresnillo, Zacatecas, México",23.1811278,-102.8729073,Zacatecas,"Fresnillo, Zacatecas, 99000, México",ok
+OAXACA DE JUAREZ|OAXACA,"Oaxaca de Juárez, Oaxaca, México",17.0965868,-96.7207816,Oaxaca,"Oaxaca de Juárez, Oaxaca, México",ok
+IZTAPALAPA|CIUDAD DE MEXICO,"Iztapalapa, Ciudad de México, México",19.3588629,-99.0925404,Ciudad de México,"Iztapalapa, Ciudad de México, México",ok
+CANCUN|QUINTANA ROO,"Cancún, Quintana Roo, México",21.1527467,-86.8425761,Quintana Roo,"Cancún, Benito Juárez, Distrito 5, Quintana Roo, México",ok
+ATITALAQUIA|HIDALGO,"Atitalaquia, Hidalgo, México",20.0597395,-99.2132882,Hidalgo,"Atitalaquia, Hidalgo, 42970, México",ok
+JIUTEPEC|MORELOS,"Jiutepec, Morelos, México",18.8863894,-99.1701224,Morelos,"Jiutepec, Morelos, México",ok
+NOGALES|SONORA,"Nogales, Sonora, México",31.3285057,-110.9450472,Sonora,"Heroica Nogales, Nogales, Sonora, 84010, México",ok
+JILOTEPEC|ESTADO DE MEXICO,"Jilotepec, Estado de México, México",20.0169568,-99.6281796,Estado de México,"Jilotepec, Estado de México, México",ok
+PIEDRAS NEGRAS|COAHUILA,"Piedras Negras, Coahuila, México",28.6913408,-100.5403411,Coahuila,"Piedras Negras, Coahuila, México",ok
+CORREGIDORA|QUERETARO,"Corregidora, Querétaro, México",20.4773709,-100.4408668,Querétaro,"Corregidora, Querétaro, México",ok
+CORDOBA|VERACRUZ,"Córdoba, Veracruz, México",18.8944704,-96.9352891,Veracruz,"Córdoba, Veracruz, 94500, México",ok
+POZA RICA DE HIDALGO|VERACRUZ,"Poza Rica de Hidalgo, Veracruz, México",20.5376574,-97.4451248,Veracruz,"Poza Rica de Hidalgo, Veracruz, México",ok
+ACAPULCO DE JUAREZ|GUERRERO,"Acapulco de Juárez, Guerrero, México",16.8680495,-99.8940182,Guerrero,"Acapulco, Acapulco de Juárez, Guerrero, 39300, México",ok
+TANTOYUCA|VERACRUZ,"Tantoyuca, Veracruz, México",21.3896801,-98.19708,Veracruz,"Tantoyuca, Veracruz, México",ok
+CHALCO|ESTADO DE MEXICO,"Chalco, Estado de México, México",19.2382585,-98.8188838,Estado de México,"Chalco, Estado de México, México",ok
+SAN CRISTOBAL DE LAS CASAS|CHIAPAS,"San Cristóbal de las Casas, Chiapas, México",16.735377,-92.63873,Chiapas,"San Cristóbal, San Cristóbal de las Casas, Chiapas, 29200, México",ok
+TLALNEPANTLA DE BAZ|ESTADO DE MEXICO,"Tlalnepantla de Baz, Estado de México, México",19.5464902,-99.1899352,Estado de México,"Tlalnepantla de Baz, Estado de México, México",ok
+ACAYUCAN|VERACRUZ,"Acayucan, Veracruz, México",18.0281048,-95.0359382,Veracruz,"Acayucan, Veracruz, México",ok
+TOLUCA|ESTADO DE MEXICO,"Toluca, Estado de México, México",19.292545,-99.6569007,Estado de México,"Toluca, Estado de México, 50000, México",ok
+BENITO JUAREZ|QUINTANA ROO,"Benito Juárez, Quintana Roo, México",21.0742627,-86.9265622,Quintana Roo,"Benito Juárez, Distrito 18, Quintana Roo, México",ok
+TEZIUTLAN|PUEBLA,"Teziutlán, Puebla, México",19.8739926,-97.3715629,Puebla,"Teziutlán, Puebla, México",ok
+CUAUTLA|MORELOS,"Cuautla, Morelos, México",18.8150158,-98.9736172,Morelos,"Cuautla, Morelos, México",ok
+LOS MOCHIS|SINALOA,"Los Mochis, Sinaloa, México",25.7928058,-108.990188,Sinaloa,"Los Mochis, Ahome, Sinaloa, México",ok
+JUCHITAN DE ZARAGOZA|OAXACA,"Juchitán de Zaragoza, Oaxaca, México",16.413329,-94.9118795,Oaxaca,"Juchitán de Zaragoza, Oaxaca, México",ok
+ATLIXCO|PUEBLA,"Atlixco, Puebla, México",18.908889,-98.437778,Puebla,"Atlixco, Puebla, 74260, México",ok
+CIUDAD VICTORIA|TAMAULIPAS,"Ciudad Victoria, Tamaulipas, México",23.7389846,-99.1441352,Tamaulipas,"Ciudad Victoria, Victoria, Tamaulipas, 87000, México",ok
+JALACINGO|VERACRUZ,"Jalacingo, Veracruz, México",19.7736811,-97.2904206,Veracruz,"Jalacingo, Veracruz, México",ok
+XALAPA|VERACRUZ,"Xalapa, Veracruz, México",19.5408338,-96.9146374,Veracruz,"Xalapa-Enríquez, Xalapa, Veracruz, 91170, México",ok
+SAN JUAN DE LOS LAGOS|JALISCO,"San Juan de los Lagos, Jalisco, México",21.2543127,-102.2813711,Jalisco,"San Juan de los Lagos, Región Altos Norte, Jalisco, México",ok
+SANTA ANA CHIAUTEMPAN|TLAXCALA,"Santa Ana Chiautempan, Tlaxcala, México",19.313889,-98.1925,Tlaxcala,"Santa Ana Chiautempan, Chiautempan, Tlaxcala, 90800, México",ok
+SAN FRANCISCO DE CAMPECHE|CAMPECHE,"San Francisco de Campeche, Campeche, México",19.8436755,-90.5367454,Campeche,"San Francisco de Campeche, Municipio de Campeche, Campeche, 24000, México",ok
+PUERTO VALLARTA|JALISCO,"Puerto Vallarta, Jalisco, México",20.6407176,-105.220306,Jalisco,"Puerto Vallarta, Región Costa Norte, Jalisco, 48300, México",ok
+CUERNAVACA|MORELOS,"Cuernavaca, Morelos, México",18.9331321,-99.2599579,Morelos,"Cuernavaca, Morelos, México",ok
+CENTRO|TABASCO,"Centro, Tabasco, México",18.0271588,-92.7747912,Tabasco,"Centro, Tabasco, México",ok
+SANTA CRUZ XOXOCOTLAN|OAXACA,"Santa Cruz Xoxocotlán, Oaxaca, México",17.0097137,-96.7376443,Oaxaca,"Santa Cruz Xoxocotlán, Oaxaca, México",ok
+TIZAYUCA|HIDALGO,"Tizayuca, Hidalgo, México",19.8525794,-98.9592703,Hidalgo,"Tizayuca, Hidalgo, México",ok
+ATOTONILCO DE TULA|HIDALGO,"Atotonilco de Tula, Hidalgo, México",19.9603048,-99.2368612,Hidalgo,"Atotonilco de Tula, Hidalgo, México",ok
+TEPATITLAN DE MORELOS|JALISCO,"Tepatitlán de Morelos, Jalisco, México",20.8151477,-102.758809,Jalisco,"Tepatitlán de Morelos, Región Altos Sur, Jalisco, México",ok
+COLIMA|COLIMA,"Colima, Colima, México",19.2433991,-103.7280738,Colima,"Colima, Municipio de Colima, Colima, 28000, México",ok
+SAN PABLO DEL MONTE|TLAXCALA,"San Pablo del Monte, Tlaxcala, México",19.1609632,-98.1294456,Tlaxcala,"San Pablo del Monte, Tlaxcala, México",ok
+TONALA|JALISCO,"Tonalá, Jalisco, México",20.6241367,-103.2421263,Jalisco,"Tonalá, Región Centro, Jalisco, 44418, México",ok
+MEDELLIN DE BRAVO|VERACRUZ,"Medellín de Bravo, Veracruz, México",19.0432374,-96.1470701,Veracruz,"Avenida Medellín de Bravo, El Guasimal, Medellín, Veracruz, 94277, México",ok
+SAN JUAN DEL RIO|QUERETARO,"San Juan del Río, Querétaro, México",20.3870462,-100.0119627,Querétaro,"San Juan del Río, Querétaro, México",ok
+SAN FRANCISCO DE LOS ROMO|AGUASCALIENTES,"San Francisco de los Romo, Aguascalientes, México",22.0219467,-102.2517776,Aguascalientes,"San Francisco de los Romo, Aguascalientes, México",ok
+PALENQUE|CHIAPAS,"Palenque, Chiapas, México",17.453161,-91.8121241,Chiapas,"Palenque, Chiapas, 29960, México",ok
+CHICOLOAPAN|ESTADO DE MEXICO,"Chicoloapan, Estado de México, México",19.4162929,-98.9014367,Estado de México,"Chicoloapan, Estado de México, México",ok
+GENERAL ESCOBEDO|NUEVO LEON,"General Escobedo, Nuevo León, México",25.808517,-100.3224334,Nuevo León,"General Escobedo, Nuevo León, 66053, México",ok
+SOLIDARIDAD|QUINTANA ROO,"Solidaridad, Quintana Roo, México",20.6589482,-87.1083473,Quintana Roo,"Guardia Nacional Solidaridad, Las Palmas I, Playa del Carmen, Quintana Roo, México",ok
+PACHUCA DE SOTO|HIDALGO,"Pachuca de Soto, Hidalgo, México",20.1044977,-98.7889161,Hidalgo,"Pachuca de Soto, Hidalgo, México",ok
+EL PRIETO|VERACRUZ,"El Prieto, Veracruz, México",21.830278,-98.4825,Veracruz,"El Palmar Prieto, El Higo, Veracruz, México",ok
+TECOMAN|COLIMA,"Tecomán, Colima, México",18.9031173,-103.846273,Colima,"Tecomán, Colima, México",ok
+COATZACOALCOS|VERACRUZ,"Coatzacoalcos, Veracruz, México",18.1405019,-94.4344003,Veracruz,"Coatzacoalcos, Veracruz, 96576, México",ok
+TAMPICO|TAMAULIPAS,"Tampico, Tamaulipas, México",22.2701096,-97.8948674,Tamaulipas,"Tampico, Tamaulipas, México",ok
+SANTIAGO MIAHUATLAN|PUEBLA,"Santiago Miahuatlán, Puebla, México",18.5503968,-97.4477267,Puebla,"Santiago Miahuatlán, Puebla, México",ok
+SAN FERNANDO|TAMAULIPAS,"San Fernando, Tamaulipas, México",24.8721093,-97.981607,Tamaulipas,"San Fernando, Tamaulipas, México",ok
+SAN ANDRES CHOLULA|PUEBLA,"San Andrés Cholula, Puebla, México",19.0220464,-98.2872661,Puebla,"San Andrés Cholula, Puebla, México",ok
+CHIAPA DE CORZO|CHIAPAS,"Chiapa de Corzo, Chiapas, México",16.6013224,-92.9968156,Chiapas,"Chiapa de Corzo, Chiapas, 29160, México",ok
+LAS MARGARITAS|CHIAPAS,"Las Margaritas, Chiapas, México",16.3117811,-91.9817243,Chiapas,"Las Margaritas, Chiapas, México",ok
+OCOYOACAC|ESTADO DE MEXICO,"Ocoyoacac, Estado de México, México",19.2587373,-99.4177779,Estado de México,"Ocoyoacac, Estado de México, México",ok
+SANTA ISABEL XILOXOXTLA|TLAXCALA,"Santa Isabel Xiloxoxtla, Tlaxcala, México",19.2635018,-98.2071064,Tlaxcala,"Santa Isabel Xiloxoxtla, Tlaxcala, México",ok
+TECAMACHALCO|PUEBLA,"Tecamachalco, Puebla, México",18.8640574,-97.7282334,Puebla,"Tecamachalco, Puebla, México",ok
+ATLAUTLA|ESTADO DE MEXICO,"Atlautla, Estado de México, México",19.0161834,-98.7055367,Estado de México,"Atlautla, Estado de México, México",ok
+ACATLAN DE OSORIO|PUEBLA,"Acatlán de Osorio, Puebla, México",18.203333,-98.048611,Puebla,"Acatlán de Osorio, Acatlán, Puebla, México",ok
+JACONA|MICHOACAN,"Jacona, Michoacán, México",19.940849,-102.3174877,Michoacán,"Jacona, Michoacán, México",ok
+APIZACO|TLAXCALA,"Apizaco, Tlaxcala, México",19.426431,-98.0774334,Tlaxcala,"Apizaco, Tlaxcala, México",ok
+FRONTERA COMALAPA|CHIAPAS,"Frontera Comalapa, Chiapas, México",15.7821935,-92.0791043,Chiapas,"Frontera Comalapa, Chiapas, 30140, México",ok
+ZAPOTLAN EL GRANDE|JALISCO,"Zapotlán el Grande, Jalisco, México",19.6973465,-103.510648,Jalisco,"Zapotlán el Grande, Región Sur, Jalisco, México",ok
+ZACATLAN|PUEBLA,"Zacatlán, Puebla, México",19.9605952,-98.0057214,Puebla,"Zacatlán, Puebla, México",ok
+ZAMORA DE HIDALGO|MICHOACAN,"Zamora de Hidalgo, Michoacán, México",19.6976432,-100.5690118,Michoacán,"Calle Zamora, Ciudad Hidalgo, Hidalgo, Michoacán, México",ok
+TECAMAC|ESTADO DE MEXICO,"Tecámac, Estado de México, México",19.7115011,-98.968354,Estado de México,"Tecámac, Estado de México, México",ok
+UMAN|YUCATAN,"Umán, Yucatán, México",20.8471315,-89.7679138,Yucatán,"Umán, Yucatán, México",ok
+SAN ANDRES TUXTLA|VERACRUZ,"San Andrés Tuxtla, Veracruz, México",18.4633672,-95.1983153,Veracruz,"San Andrés Tuxtla, Veracruz, México",ok
+TETLA DE LA SOLIDARIDAD|TLAXCALA,"Tetla de la Solidaridad, Tlaxcala, México",19.4951787,-98.0891303,Tlaxcala,"Tetla de la Solidaridad, Tlaxcala, 90434, México",ok
+JUAN C. BONILLA|PUEBLA,"Juan C. Bonilla, Puebla, México",19.1215047,-98.3474275,Puebla,"Juan C. Bonilla, Puebla, México",ok
+LERMA|ESTADO DE MEXICO,"Lerma, Estado de México, México",19.3263632,-99.460052,Estado de México,"Lerma, Estado de México, México",ok
+MANZANILLO|COLIMA,"Manzanillo, Colima, México",19.0506256,-104.3159957,Colima,"Manzanillo, Colima, 28200, México",ok
+ECUANDUREO|MICHOACAN,"Ecuandureo, Michoacán, México",20.1604747,-102.2651584,Michoacán,"Ecuandureo, Michoacán, México",ok
+ANGEL ALBINO CORZO|CHIAPAS,"Ángel Albino Corzo, Chiapas, México",15.7587635,-92.6895488,Chiapas,"Ángel Albino Corzo, Chiapas, México",ok
+EMILIANO ZAPATA|MORELOS,"Emiliano Zapata, Morelos, México",18.809391,-99.1860346,Morelos,"Emiliano Zapata, Morelos, México",ok
+APETATITLAN|TLAXCALA,"Apetatitlán, Tlaxcala, México",19.3320915,-98.1964176,Tlaxcala,"Apetatitlán, Apetatitlán de Antonio Carvajal, Tlaxcala, 90600, México",ok
+MATIAS ROMERO AVENDANO|OAXACA,"Matías Romero Avendaño, Oaxaca, México",17.1324525,-94.8785788,Oaxaca,"Matías Romero Avendaño, Oaxaca, México",ok
+CIUDAD ALTAMIRANO|GUERRERO,"Ciudad Altamirano, Guerrero, México",18.3584543,-100.6681865,Guerrero,"Ciudad Altamirano, Pungarabato, Guerrero, 40660, México",ok
+ZACATELCO|TLAXCALA,"Zacatelco, Tlaxcala, México",19.215833,-98.239722,Tlaxcala,"Zacatelco, Tlaxcala, México",ok
+RIVA PALACIO|CHIHUAHUA,"Riva Palacio, Chihuahua, México",28.8463271,-106.699068,Chihuahua,"Riva Palacio, Chihuahua, 31647, México",ok
+SANTIAGO|NUEVO LEON,"Santiago, Nuevo León, México",25.374378,-100.2609439,Nuevo León,"Santiago, Nuevo León, México",ok
+OTHON P. BLANCO|QUINTANA ROO,"Othón P. Blanco, Quintana Roo, México",18.4370456,-88.8257582,Quintana Roo,"Othón P. Blanco, Quintana Roo, México",ok
+CHILON|CHIAPAS,"Chilón, Chiapas, México",17.1050377,-92.2734209,Chiapas,"Chilón, Chiapas, México",ok
+ALLENDE|NUEVO LEON,"Allende, Nuevo León, México",25.2988343,-100.0452016,Nuevo León,"Allende, Nuevo León, 67350, México",ok
+ACAJETE|PUEBLA,"Acajete, Puebla, México",19.1002424,-97.9334995,Puebla,"Acajete, Puebla, México",ok
+SALAMANCA|GUANAJUATO,"Salamanca, Guanajuato, México",20.6511359,-101.166767,Guanajuato,"Salamanca, Guanajuato, México",ok
+MAPASTEPEC|CHIAPAS,"Mapastepec, Chiapas, México",15.4468825,-92.9153762,Chiapas,"Mapastepec, Chiapas, 30560, México",ok
+SANTA ANA XALMIMILULCO|PUEBLA,"Santa Ana Xalmimilulco, Puebla, México",19.2111351,-98.3807,Puebla,"Santa Ana Xalmimilulco, Huejotzingo, Puebla, 74169, México",ok
+SAN JUAN BAUTISTA TUXTEPEC|OAXACA,"San Juan Bautista Tuxtepec, Oaxaca, México",18.0816805,-96.1182813,Oaxaca,"Tuxtepec, San Juan Bautista Tuxtepec, Oaxaca, 68300, México",ok
+CHICOMUSELO|CHIAPAS,"Chicomuselo, Chiapas, México",15.7935524,-92.4192662,Chiapas,"Chicomuselo, Chiapas, México",ok
+SAN FELIPE TEOTLALCINGO|PUEBLA,"San Felipe Teotlalcingo, Puebla, México",19.2332366,-98.5220448,Puebla,"San Felipe Teotlalcingo, Puebla, México",ok
+OCOZOCOAUTLA DE ESPINOSA|CHIAPAS,"Ocozocoautla de Espinosa, Chiapas, México",16.7931431,-93.4569636,Chiapas,"Ocozocoautla de Espinosa, Chiapas, 29140, México",ok
+CAJEME|SONORA,"Cajeme, Sonora, México",27.7119807,-109.9022075,Sonora,"Cajeme, Sonora, México",ok
+URUAPAN|MICHOACAN,"Uruapan, Michoacán, México",19.4147269,-102.0522647,Michoacán,"Uruapan, Michoacán, 60050, México",ok
+CIUDAD VALLES|SAN LUIS POTOSI,"Ciudad Valles, San Luis Potosí, México",22.0757924,-99.0733758,San Luis Potosí,"Ciudad Valles, San Luis Potosí, México",ok
+TALA|JALISCO,"Tala, Jalisco, México",20.6100625,-103.7075033,Jalisco,"Tala, Región Valles, Jalisco, México",ok
+VILLA DE TEZONTEPEC|HIDALGO,"Villa de Tezontepec, Hidalgo, México",19.9143587,-98.8003277,Hidalgo,"Villa de Tezontepec, Hidalgo, 43882, México",ok
+LAGOS DE MORENO|JALISCO,"Lagos de Moreno, Jalisco, México",21.5330301,-101.8199571,Jalisco,"Lagos de Moreno, Región Altos Norte, Jalisco, México",ok
+MARTINEZ DE LA TORRE|VERACRUZ,"Martínez de la Torre, Veracruz, México",20.1197165,-97.0461647,Veracruz,"Martínez de la Torre, Veracruz, México",ok
+JESUS CARRANZA|VERACRUZ,"Jesús Carranza, Veracruz, México",17.3879312,-94.9094973,Veracruz,"Jesús Carranza, Veracruz, México",ok
+HUIXTLA|CHIAPAS,"Huixtla, Chiapas, México",15.122125,-92.5039971,Chiapas,"Huixtla, Chiapas, 30640, México",ok
+METEPEC|ESTADO DE MEXICO,"Metepec, Estado de México, México",19.2511338,-99.5937281,Estado de México,"Metepec, Estado de México, México",ok
+CHETUMAL|QUINTANA ROO,"Chetumal, Quintana Roo, México",18.5024381,-88.2957948,Quintana Roo,"Chetumal, Othón P. Blanco, Quintana Roo, 77000, México",ok
+BAHIA DE BANDERAS|NAYARIT,"Bahía de Banderas, Nayarit, México",20.8279022,-105.3180766,Nayarit,"Bahía de Banderas, Nayarit, México",ok
+SAN MARTIN TEXMELUCAN|PUEBLA,"San Martín Texmelucan, Puebla, México",19.2659835,-98.424878,Puebla,"San Martín Texmelucan, Puebla, México",ok
+DELICIAS|CHIHUAHUA,"Delicias, Chihuahua, México",28.1227078,-105.4684895,Chihuahua,"Delicias, Chihuahua, México",ok
+ATIZAPAN DE ZARAGOZA|ESTADO DE MEXICO,"Atizapán de Zaragoza, Estado de México, México",19.564017,-99.2795356,Estado de México,"Atizapán de Zaragoza, Estado de México, México",ok
+AMATLAN DE LOS REYES|VERACRUZ,"Amatlán de los Reyes, Veracruz, México",18.8725117,-96.8685724,Veracruz,"Amatlán de los Reyes, Veracruz, México",ok
+ZACAPOAXTLA|PUEBLA,"Zacapoaxtla, Puebla, México",19.8407045,-97.5792998,Puebla,"Zacapoaxtla, Puebla, 73680, México",ok
+RIO GRANDE|ZACATECAS,"Río Grande, Zacatecas, México",23.8126704,-103.0512985,Zacatecas,"Río Grande, Zacatecas, 98400, México",ok
+CACAHOATAN|CHIAPAS,"Cacahoatán, Chiapas, México",15.0875109,-92.1646353,Chiapas,"Cacahoatán, Chiapas, 30890, México",ok
+SAN LORENZO CACAOTEPEC|OAXACA,"San Lorenzo Cacaotepec, Oaxaca, México",17.1259245,-96.8075313,Oaxaca,"San Lorenzo Cacaotepec, Oaxaca, México",ok
+GUAYMAS|SONORA,"Guaymas, Sonora, México",27.9216441,-110.8994059,Sonora,"Guaymas, Sonora, 85400, México",ok
+SAN FRANCISCO DEL RINCON|GUANAJUATO,"San Francisco del Rincón, Guanajuato, México",20.9237028,-101.7985201,Guanajuato,"San Francisco del Rincón, Guanajuato, México",ok
+AZCAPOTZALCO|CIUDAD DE MEXICO,"Azcapotzalco, Ciudad de México, México",19.4838908,-99.1843937,Ciudad de México,"Azcapotzalco, Ciudad de México, México",ok
+TAPILULA|CHIAPAS,"Tapilula, Chiapas, México",17.2496804,-93.0167904,Chiapas,"Tapilula, Chiapas, México",ok
+HUITIUPAN|CHIAPAS,"Huitiupán, Chiapas, México",17.2407536,-92.7028575,Chiapas,"Huitiupán, Chiapas, México",ok
+SANTIAGO PINOTEPA NACIONAL|OAXACA,"Santiago Pinotepa Nacional, Oaxaca, México",16.2961977,-98.1602324,Oaxaca,"Santiago Pinotepa Nacional, Oaxaca, México",ok
+COMALCALCO|TABASCO,"Comalcalco, Tabasco, México",18.2615076,-93.2231523,Tabasco,"Comalcalco, Tabasco, 86300, México",ok
+ARRIAGA|CHIAPAS,"Arriaga, Chiapas, México",16.2549512,-93.8949881,Chiapas,"Arriaga, Chiapas, 30450, México",ok
+COATZINTLA|VERACRUZ,"Coatzintla, Veracruz, México",20.4312288,-97.5555273,Veracruz,"Coatzintla, Veracruz, 93166, México",ok
+ZARAGOZA|COAHUILA,"Zaragoza, Coahuila, México",28.8695421,-101.5245368,Coahuila,"Zaragoza, Coahuila, México",ok
+NEZAHUALCOYOTL|ESTADO DE MEXICO,"Nezahualcóyotl, Estado de México, México",19.4325047,-99.0352121,Estado de México,"Nezahualcóyotl, Estado de México, México",ok
+ACUNA|COAHUILA,"Acuña, Coahuila, México",29.321434,-100.959501,Coahuila,"Ciudad Acuña, Acuña, Coahuila, 26230, México",ok
+AJALPAN|PUEBLA,"Ajalpan, Puebla, México",18.4350086,-97.0247486,Puebla,"Ajalpan, Puebla, 75910, México",ok
+ALVARADO|VERACRUZ,"Alvarado, Veracruz, México",18.7711218,-95.7607957,Veracruz,"Alvarado, Veracruz, 95270, México",ok
+LOS CABOS|BAJA CALIFORNIA SUR,"Los Cabos, Baja California Sur, México",23.2718481,-109.6897684,Baja California Sur,"Municipio de Los Cabos, Baja California Sur, México",ok
+PLAYA VICENTE|VERACRUZ,"Playa Vicente, Veracruz, México",17.7577502,-95.667229,Veracruz,"Playa Vicente, Veracruz, México",ok
+PURUANDIRO|MICHOACAN,"Puruándiro, Michoacán, México",20.1194479,-101.5406729,Michoacán,"Puruándiro, Michoacán, 58500, México",ok
+SAN MIGUEL XOXTLA|PUEBLA,"San Miguel Xoxtla, Puebla, México",19.1728092,-98.3050288,Puebla,"San Miguel Xoxtla, Puebla, 72620, México",ok
+TARIMBARO|MICHOACAN,"Tarímbaro, Michoacán, México",19.8162789,-101.1637311,Michoacán,"Tarímbaro, Michoacán, México",ok
+VILLA DE ALVAREZ|COLIMA,"Villa de Álvarez, Colima, México",19.2651417,-103.736013,Colima,"Villa de Álvarez, Colima, 28987, México",ok
+HEROICA CIUDAD DE HUAJUAPAN DE LEON|OAXACA,"Heroica Ciudad de Huajuapan de León, Oaxaca, México",17.808846,-97.7780564,Oaxaca,"Huajuapan, Huajuapan de León, Oaxaca, 69000, México",ok
+APASEO EL ALTO|GUANAJUATO,"Apaseo el Alto, Guanajuato, México",20.4325631,-100.5921521,Guanajuato,"Apaseo el Alto, Guanajuato, México",ok
+S MARIA ZACATEPEC|,"S Maria Zacatepec, México",19.3579551,-99.0219567,Ciudad de México,"Avenida México, Colonia Paraje Zacatepec, Santa María Aztahuacan, Ciudad de México, Iztapalapa, Pueblo Santiago Acahualtepec, Ciudad de México, 09520, México",ok
+PIJIJIAPAN|CHIAPAS,"Pijijiapan, Chiapas, México",15.6536741,-93.1366253,Chiapas,"Pijijiapan, Chiapas, México",ok
+VALLE DE SANTIAGO|GUANAJUATO,"Valle de Santiago, Guanajuato, México",20.3916556,-101.193665,Guanajuato,"Valle de Santiago, Guanajuato, México",ok
+SEYBAPLAYA|CAMPECHE,"Seybaplaya, Campeche, México",19.6033723,-90.625367,Campeche,"Seybaplaya, Campeche, México",ok
+ZAPOTILTIC|JALISCO,"Zapotiltic, Jalisco, México",19.6260743,-103.4164682,Jalisco,"Zapotiltic, Región Sur, Jalisco, México",ok
+RIO BRAVO|TAMAULIPAS,"Río Bravo, Tamaulipas, México",25.7274781,-98.0537153,Tamaulipas,"Río Bravo, Tamaulipas, México",ok
+SANTA CATARINA|NUEVO LEON,"Santa Catarina, Nuevo León, México",25.6745052,-100.4616371,Nuevo León,"Santa Catarina, Nuevo León, 66350, México",ok
+IZUCAR DE MATAMOROS|PUEBLA,"Izúcar de Matamoros, Puebla, México",18.5065817,-98.4230778,Puebla,"Izúcar de Matamoros, Puebla, México",ok
+CIUDAD OBREGON|SONORA,"Ciudad Obregón, Sonora, México",27.4846619,-109.9337782,Sonora,"Ciudad Obregón, Cajeme, Sonora, 85080, México",ok
+MITONTIC|CHIAPAS,"Mitontic, Chiapas, México",16.8764022,-92.5591867,Chiapas,"Mitontic, Chiapas, México",ok
+VILLA CORZO|CHIAPAS,"Villa Corzo, Chiapas, México",16.0631888,-93.2650025,Chiapas,"Villa Corzo, Chiapas, México",ok
+LA PIEDAD|MICHOACAN,"La Piedad, Michoacán, México",20.2986899,-102.0478188,Michoacán,"La Piedad, Michoacán, México",ok
+CHILPANCINGO DE LOS BRAVO|GUERRERO,"Chilpancingo de los Bravo, Guerrero, México",17.5542149,-99.5048416,Guerrero,"Chilpancingo de los Bravo, Guerrero, 39000, México",ok
+BUCERIAS|NAYARIT,"Bucerías, Nayarit, México",20.7555883,-105.3343517,Nayarit,"Bucerías, Bahía de Banderas, Nayarit, México",ok
+IXTAPALUCA|ESTADO DE MEXICO,"Ixtapaluca, Estado de México, México",19.32929,-98.8082745,Estado de México,"Ixtapaluca, Estado de México, México",ok
+FORTIN|VERACRUZ,"Fortín, Veracruz, México",19.5476689,-96.9412115,Veracruz,"Fortín, Calle Esmeralda, FOVISSSTE, Xalapa-Enríquez, Xalapa, Veracruz, 91010, México",ok
+COSOLEACAQUE|VERACRUZ,"Cosoleacaque, Veracruz, México",18.0060183,-94.617483,Veracruz,"Cosoleacaque, Veracruz, México",ok
+COATEPEC|VERACRUZ,"Coatepec, Veracruz, México",19.4543134,-96.9596375,Veracruz,"Coatepec, Veracruz, México",ok
+TEQUILA|JALISCO,"Tequila, Jalisco, México",21.1158202,-103.8101371,Jalisco,"Tequila, Región Valles, Jalisco, México",ok
+TUXPAN|VERACRUZ,"Tuxpan, Veracruz, México",20.9298337,-97.3936617,Veracruz,"Tuxpan, Veracruz, México",ok
+VILLA DE ZAACHILA|OAXACA,"Villa de Zaachila, Oaxaca, México",16.9529021,-96.7839466,Oaxaca,"Villa de Zaachila, Oaxaca, México",ok
+NAVOJOA|SONORA,"Navojoa, Sonora, México",27.0721872,-109.4438227,Sonora,"Navojoa, Sonora, 85870, México",ok
+BERRIOZABAL|CHIAPAS,"Berriozábal, Chiapas, México",16.8716894,-93.3370762,Chiapas,"Berriozábal, Chiapas, México",ok
+OXCHUC|CHIAPAS,"Oxchuc, Chiapas, México",16.7963526,-92.3068803,Chiapas,"Oxchuc, Chiapas, México",ok
+LA MAGDALENA TLATELULCO|TLAXCALA,"La Magdalena Tlatelulco, Tlaxcala, México",,,,,sin_resultado
+APATZINGAN|MICHOACAN,"Apatzingán, Michoacán, México",18.9681711,-102.4693968,Michoacán,"Apatzingán, Michoacán, México",ok
+CUNDUACAN|TABASCO,"Cunduacán, Tabasco, México",18.0872904,-93.2321356,Tabasco,"Cunduacán, Tabasco, 86690, México",ok
+SIMOJOVEL|CHIAPAS,"Simojovel, Chiapas, México",17.1468963,-92.539171,Chiapas,"Simojovel, Chiapas, México",ok
+AUTLAN DE NAVARRO|JALISCO,"Autlán de Navarro, Jalisco, México",19.75703,-104.3183402,Jalisco,"Autlán de Navarro, Región Costa Sur, Jalisco, México",ok
+LA CONCORDIA|CHIAPAS,"La Concordia, Chiapas, México",16.1178232,-92.6907913,Chiapas,"La Concordia, Chiapas, México",ok
+SOLEDAD DE GRACIANO SANCHEZ|SAN LUIS POTOSI,"Soledad de Graciano Sánchez, San Luis Potosí, México",22.2970555,-100.8671956,San Luis Potosí,"Soledad de Graciano Sánchez, San Luis Potosí, México",ok
+TULANCINGO DE BRAVO|HIDALGO,"Tulancingo de Bravo, Hidalgo, México",20.0839585,-98.3635381,Hidalgo,"Tulancingo de Bravo, Hidalgo, México",ok
+TLALPAN|CIUDAD DE MEXICO,"Tlalpan, Ciudad de México, México",19.2880603,-99.1669733,Ciudad de México,"Tlalpan, Ciudad de México, México",ok
+PAPANTLA|VERACRUZ,"Papantla, Veracruz, México",20.4173494,-97.321741,Veracruz,"Papantla, Veracruz, México",ok
+CHIAUTLA|PUEBLA,"Chiautla, Puebla, México",18.2843826,-98.5788792,Puebla,"Chiautla, Puebla, México",ok
+CARDENAS|TABASCO,"Cárdenas, Tabasco, México",18.1693695,-93.7052292,Tabasco,"Cárdenas, Tabasco, México",ok
+TEMIXCO|MORELOS,"Temixco, Morelos, México",18.8476735,-99.2455945,Morelos,"Temixco, Morelos, México",ok
+CATEMACO|VERACRUZ,"Catemaco, Veracruz, México",18.435189,-95.009364,Veracruz,"Catemaco, Veracruz, México",ok
+GUASAVE|SINALOA,"Guasave, Sinaloa, México",25.5046381,-108.5399603,Sinaloa,"Guasave, Sinaloa, México",ok
+JANTETELCO|MORELOS,"Jantetelco, Morelos, México",18.6701094,-98.7566889,Morelos,"Jantetelco, Morelos, 62935, México",ok
+TAMAZULA DE GORDIANO|JALISCO,"Tamazula de Gordiano, Jalisco, México",19.6853653,-103.170067,Jalisco,"Tamazula de Gordiano, Región Sureste, Jalisco, México",ok
+LIBRES|PUEBLA,"Libres, Puebla, México",19.4536825,-97.6484303,Puebla,"Libres, Puebla, México",ok
+IXTLAHUACAN DE LOS MEMBRILLOS|JALISCO,"Ixtlahuacán de los Membrillos, Jalisco, México",20.4030275,-103.2050488,Jalisco,"Ixtlahuacán de los Membrillos, Región Centro, Jalisco, México",ok
+AHOME|SINALOA,"Ahome, Sinaloa, México",25.9240491,-109.2058344,Sinaloa,"Ahome, Sinaloa, México",ok
+SAN FRANCISCO TEOTIMEHUACAN|PUEBLA,"San Francisco Teotimehuacán, Puebla, México",,,,,sin_resultado
+RIO BLANCO|VERACRUZ,"Río Blanco, Veracruz, México",18.8452371,-97.1523093,Veracruz,"Río Blanco, Veracruz, México",ok
+PLAYA DEL CARMEN|QUINTANA ROO,"Playa del Carmen, Quintana Roo, México",20.6462848,-87.0807866,Quintana Roo,"Playa del Carmen, Quintana Roo, México",ok
+SABINAS|COAHUILA,"Sabinas, Coahuila, México",27.9424641,-101.0727813,Coahuila,"Sabinas, Coahuila, México",ok
+ALAMO TEMAPACHE|VERACRUZ,"Álamo Temapache, Veracruz, México",20.9951932,-97.7557842,Veracruz,"Álamo Temapache, Veracruz, México",ok
+HUEJUTLA DE REYES|HIDALGO,"Huejutla de Reyes, Hidalgo, México",21.1433803,-98.3883787,Hidalgo,"Huejutla de Reyes, Hidalgo, 43000, México",ok
+MIGUEL AUZA|ZACATECAS,"Miguel Auza, Zacatecas, México",24.1622771,-103.4626439,Zacatecas,"Miguel Auza, Zacatecas, 98330, México",ok
+TEJERIA|VERACRUZ,"Tejería, Veracruz, México",19.3686111,-96.9127427,Veracruz,"Tejería, Monte Blanco, Teocelo, Veracruz, México",ok
+MOROLEON|GUANAJUATO,"Moroleón, Guanajuato, México",20.084423,-101.2584666,Guanajuato,"Moroleón, Guanajuato, México",ok
+TIERRA BLANCA|VERACRUZ,"Tierra Blanca, Veracruz, México",18.5272475,-96.2152008,Veracruz,"Tierra Blanca, Veracruz, México",ok
+VALLE DE CHALCO SOLIDARIDAD|ESTADO DE MEXICO,"Valle de Chalco Solidaridad, Estado de México, México",19.282153,-98.9416122,Estado de México,"Valle de Chalco Solidaridad, Estado de México, México",ok
+TEPATLAXCO|VERACRUZ,"Tepatlaxco, Veracruz, México",19.0483712,-96.8487672,Veracruz,"Tepatlaxco, Veracruz, México",ok
+HUIMANGUILLO|TABASCO,"Huimanguillo, Tabasco, México",17.7620967,-93.6634408,Tabasco,"Huimanguillo, Tabasco, México",ok
+SAN SALVADOR EL VERDE|PUEBLA,"San Salvador el Verde, Puebla, México",19.2583335,-98.5239746,Puebla,"San Salvador el Verde, Puebla, 74130, México",ok
+TEAPA|TABASCO,"Teapa, Tabasco, México",17.6197305,-92.9729413,Tabasco,"Teapa, Tabasco, México",ok
+TANGANCICUARO|MICHOACAN,"Tangancícuaro, Michoacán, México",19.8734565,-102.2941892,Michoacán,"Tangancícuaro, Michoacán, México",ok
+HUAUTLA DE JIMENEZ|OAXACA,"Huautla de Jiménez, Oaxaca, México",18.1474052,-96.8009327,Oaxaca,"Huautla de Jiménez, Oaxaca, 68500, México",ok
+YAJALON|CHIAPAS,"Yajalón, Chiapas, México",17.1768885,-92.351961,Chiapas,"Yajalón, Chiapas, México",ok
+TEZOYUCA|ESTADO DE MEXICO,"Tezoyuca, Estado de México, México",19.5902244,-98.9079359,Estado de México,"Tezoyuca, Estado de México, 56020, México",ok
+ASUNCION NOCHIXTLAN|OAXACA,"Asunción Nochixtlán, Oaxaca, México",17.4517598,-97.1843544,Oaxaca,"Asunción Nochixtlán, Oaxaca, México",ok
+VILLAFLORES|CHIAPAS,"Villaflores, Chiapas, México",16.3755023,-93.3589334,Chiapas,"Villaflores, Chiapas, México",ok
+COSAMALOAPAN DE CARPIO|VERACRUZ,"Cosamaloapan de Carpio, Veracruz, México",18.2816739,-95.9643575,Veracruz,"Cosamaloapan de Carpio, Veracruz, 95400, México",ok
+TULA DE ALLENDE|HIDALGO,"Tula de Allende, Hidalgo, México",20.0489487,-99.3729562,Hidalgo,"Tula de Allende, Hidalgo, México",ok
+TAMUIN|SAN LUIS POTOSI,"Tamuín, San Luis Potosí, México",22.0818969,-98.6931978,San Luis Potosí,"Tamuín, San Luis Potosí, México",ok
+LA HUERTA|JALISCO,"La Huerta, Jalisco, México",19.4969638,-104.8072221,Jalisco,"La Huerta, Región Costa Sur, Jalisco, México",ok
+ALAMO TEMAPACHE|,"Alamo Temapache, México",20.9951932,-97.7557842,Veracruz,"Álamo Temapache, Veracruz, México",ok
+LA BARCA|JALISCO,"La Barca, Jalisco, México",20.357208,-102.50327,Jalisco,"La Barca, Región Ciénega, Jalisco, México",ok
+TLALMANALCO|ESTADO DE MEXICO,"Tlalmanalco, Estado de México, México",19.2066075,-98.7323191,Estado de México,"Tlalmanalco, Estado de México, México",ok
+HUAMANTLA|TLAXCALA,"Huamantla, Tlaxcala, México",19.3233319,-97.9145665,Tlaxcala,"Huamantla, Tlaxcala, México",ok
+PEDRO MEOQUI|CHIHUAHUA,"Pedro Meoqui, Chihuahua, México",28.6136525,-106.0601515,Chihuahua,"Pedro Meoqui, Chihuahua, Municipio de Chihuahua, Chihuahua, 31054, México",ok
+ZACATECAS|ZACATECAS,"Zacatecas, Zacatecas, México",22.7753891,-102.5722706,Zacatecas,"Zacatecas, Municipio de Zacatecas, Zacatecas, 98000, México",ok
+HUEJOTZINGO|PUEBLA,"Huejotzingo, Puebla, México",19.1642771,-98.4392754,Puebla,"Huejotzingo, Puebla, México",ok
+XALISCO|NAYARIT,"Xalisco, Nayarit, México",21.3992422,-104.942178,Nayarit,"Xalisco, Nayarit, México",ok
+ACALA|CHIAPAS,"Acala, Chiapas, México",16.5367734,-92.8232848,Chiapas,"Acala, Chiapas, México",ok
+SAN PABLO ETLA|OAXACA,"San Pablo Etla, Oaxaca, México",17.155047,-96.7429206,Oaxaca,"San Pablo Etla, Oaxaca, México",ok
+TLACHICHUCA|PUEBLA,"Tlachichuca, Puebla, México",19.1486197,-97.3373857,Puebla,"Tlachichuca, Puebla, 75050, México",ok
+JUAN R. ESCUDERO|GUERRERO,"Juan R. Escudero, Guerrero, México",17.1368438,-99.3829339,Guerrero,"Juan R. Escudero, Guerrero, México",ok
+SAN FELIPE DEL PROGRESO|ESTADO DE MEXICO,"San Felipe del Progreso, Estado de México, México",19.6491974,-99.970188,Estado de México,"San Felipe del Progreso, Estado de México, México",ok
+CIUDAD CONSTITUCION|BAJA CALIFORNIA SUR,"Ciudad Constitución, Baja California Sur, México",25.0321149,-111.6580455,Baja California Sur,"Ciudad Constitución, Municipio de Comondú, Baja California Sur, 23600, México",ok
+SAN PATRICIO MELAQUE|JALISCO,"San Patricio Melaque, Jalisco, México",19.2231994,-104.7046088,Jalisco,"San Patricio / Melaque, Melaque, Cihuatlán, Región Costa Sur, Jalisco, México",ok
+BENEMERITO DE LAS AMERICAS|CHIAPAS,"Benemérito de las Américas, Chiapas, México",16.3393467,-90.50312,Chiapas,"Benemérito de las Américas, Chiapas, 29956, México",ok
+JALPA|ZACATECAS,"Jalpa, Zacatecas, México",21.6305514,-103.0076986,Zacatecas,"Jalpa, Zacatecas, 99600, México",ok
+MINATITLAN|VERACRUZ,"Minatitlán, Veracruz, México",17.992773,-94.5567103,Veracruz,"Minatitlán, Veracruz, 96730, México",ok
+EZEQUIEL MONTES|QUERETARO,"Ezequiel Montes, Querétaro, México",20.6529044,-99.9083904,Querétaro,"Ezequiel Montes, Querétaro, México",ok
+SALINA CRUZ|OAXACA,"Salina Cruz, Oaxaca, México",16.1977789,-95.2131936,Oaxaca,"Salina Cruz, Oaxaca, México",ok
+LOS REYES DE SALGADO|MICHOACAN,"Los Reyes de Salgado, Michoacán, México",19.5894175,-102.4741883,Michoacán,"Los Reyes de Salgado, Los Reyes, Michoacán, 60300, México",ok
+HEROICA CABORCA|SONORA,"Heroica Caborca, Sonora, México",30.7166014,-112.1562598,Sonora,"Heroica Caborca, Caborca, Sonora, 83600, México",ok
+TLAPA DE COMONFORT|GUERRERO,"Tlapa de Comonfort, Guerrero, México",17.5271292,-98.5855376,Guerrero,"Tlapa de Comonfort, Guerrero, México",ok
+SANTO DOMINGO TEHUANTEPEC|OAXACA,"Santo Domingo Tehuantepec, Oaxaca, México",16.1889599,-95.3960273,Oaxaca,"Santo Domingo Tehuantepec, Oaxaca, 70760, México",ok
+OZUMBA|ESTADO DE MEXICO,"Ozumba, Estado de México, México",19.0159932,-98.7951311,Estado de México,"Ozumba, Estado de México, 56800, México",ok
+JOJUTLA|MORELOS,"Jojutla, Morelos, México",18.6000251,-99.2299716,Morelos,"Jojutla, Morelos, México",ok
+SALINAS VICTORIA|NUEVO LEON,"Salinas Victoria, Nuevo León, México",26.1216805,-100.3270877,Nuevo León,"Salinas Victoria, Nuevo León, 65500, México",ok
+LA TRINITARIA|CHIAPAS,"La Trinitaria, Chiapas, México",16.1206164,-92.0542431,Chiapas,"La Trinitaria, Chiapas, 30170, México",ok
+TENANCINGO|ESTADO DE MEXICO,"Tenancingo, Estado de México, México",18.9646592,-99.5689821,Estado de México,"Tenancingo, Estado de México, México",ok
+MUZQUIZ|COAHUILA,"Múzquiz, Coahuila, México",28.3492667,-101.6740921,Coahuila,"Múzquiz, Coahuila, México",ok
+TLALIXTAC DE CABRERA|OAXACA,"Tlalixtac de Cabrera, Oaxaca, México",17.0776376,-96.6362467,Oaxaca,"Tlalixtac de Cabrera, Oaxaca, México",ok
+ACATZINGO|PUEBLA,"Acatzingo, Puebla, México",19.0301833,-97.76376,Puebla,"Acatzingo, Puebla, 75150, México",ok
+LERDO|DURANGO,"Lerdo, Durango, México",25.470965,-103.6638822,Durango,"Lerdo, Durango, México",ok
+AMECA|JALISCO,"Ameca, Jalisco, México",20.5347004,-104.064661,Jalisco,"Ameca, Región Valles, Jalisco, México",ok
+SALVATIERRA|GUANAJUATO,"Salvatierra, Guanajuato, México",20.1926546,-100.8659931,Guanajuato,"Salvatierra, Guanajuato, México",ok
+COATEPEC HARINAS|ESTADO DE MEXICO,"Coatepec Harinas, Estado de México, México",18.9396862,-99.8042877,Estado de México,"Coatepec Harinas, Estado de México, 51700, México",ok
+RAFAEL LARA GRAJALES|PUEBLA,"Rafael Lara Grajales, Puebla, México",19.2658861,-97.8280953,Puebla,"Rafael Lara Grajales, Puebla, 75000, México",ok
+CERANO|GUANAJUATO,"Cerano, Guanajuato, México",20.1090688,-101.3842108,Guanajuato,"Parque Cerano, Yuriria, Guanajuato, 38961, México",ok
+TLALTENANGO DE SANCHEZ ROMAN|ZACATECAS,"Tlaltenango de Sánchez Román, Zacatecas, México",21.7746322,-103.2446738,Zacatecas,"Tlaltenango de Sánchez Román, Zacatecas, 99700, México",ok
+HEROICA CIUDAD DE TLAXIACO|OAXACA,"Heroica Ciudad de Tlaxiaco, Oaxaca, México",17.269444,-97.679167,Oaxaca,"Tlaxiaco, Oaxaca, 69800, México",ok
+CIUDAD SAHAGUN|HIDALGO,"Ciudad Sahagún, Hidalgo, México",19.771389,-98.580278,Hidalgo,"Ciudad Sahagún, Tepeapulco, Hidalgo, 43990, México",ok
+GABRIEL ZAMORA|MICHOACAN,"Gabriel Zamora, Michoacán, México",19.1543566,-102.0105599,Michoacán,"Gabriel Zamora, Michoacán, México",ok
+JEREZ DE GARCIA SALINAS|ZACATECAS,"Jerez de García Salinas, Zacatecas, México",22.6494432,-102.9900276,Zacatecas,"Jerez, Zacatecas, 99300, México",ok
+SANTIAGO JUXTLAHUACA|OAXACA,"Santiago Juxtlahuaca, Oaxaca, México",17.208558,-98.0383524,Oaxaca,"Santiago Juxtlahuaca, Oaxaca, México",ok
+ESCARCEGA|CAMPECHE,"Escárcega, Campeche, México",18.5796919,-90.760872,Campeche,"Escárcega, Campeche, México",ok
+ATOTONILCO EL ALTO|JALISCO,"Atotonilco el Alto, Jalisco, México",20.5413692,-102.5175664,Jalisco,"Atotonilco el Alto, Región Ciénega, Jalisco, México",ok
+NEXTLALPAN|ESTADO DE MEXICO,"Nextlalpan, Estado de México, México",19.7262794,-99.0788789,Estado de México,"Nextlalpan, Estado de México, México",ok
+CAMARGO|CHIHUAHUA,"Camargo, Chihuahua, México",28.0582028,-104.3801065,Chihuahua,"Camargo, Chihuahua, 33700, México",ok
+HIDALGO DEL PARRAL|CHIHUAHUA,"Hidalgo del Parral, Chihuahua, México",27.1153848,-105.764288,Chihuahua,"Hidalgo del Parral, Chihuahua, México",ok
+AMAXAC DE GUERRERO|TLAXCALA,"Amaxac de Guerrero, Tlaxcala, México",19.3780619,-98.2189915,Tlaxcala,"Amaxac de Guerrero, Tlaxcala, México",ok
+URIANGATO|GUANAJUATO,"Uriangato, Guanajuato, México",20.117735,-101.1380477,Guanajuato,"Uriangato, Guanajuato, México",ok
+TILA|CHIAPAS,"Tila, Chiapas, México",17.3704574,-92.4958994,Chiapas,"Tila, Chiapas, México",ok
+TEMOAC|MORELOS,"Temoac, Morelos, México",18.7598621,-98.792135,Morelos,"Temoac, Morelos, México",ok
+MEZCALAPA|CHIAPAS,"Mezcalapa, Chiapas, México",17.2364959,-93.6349752,Chiapas,"Mezcalapa, Chiapas, 29600, México",ok
+CHACHAPA|PUEBLA,"Chachapa, Puebla, México",19.0641158,-98.1036742,Puebla,"Chachapa, Boulevard Autopista Puebla-Orizaba, Bosques de Amalucan Segunda Sección, Santa María Xonacatepec, Municipio de Puebla, Puebla, 72229, México",ok
+LAZARO CARDENAS|MICHOACAN,"Lázaro Cárdenas, Michoacán, México",17.9594769,-102.198659,Michoacán,"Lázaro Cárdenas, Michoacán, 60950, México",ok
+CIHUATLAN|JALISCO,"Cihuatlán, Jalisco, México",19.2632848,-104.6049737,Jalisco,"Cihuatlán, Región Costa Sur, Jalisco, México",ok
+TLACOTEPEC DE BENITO JUAREZ|PUEBLA,"Tlacotepec de Benito Juárez, Puebla, México",18.6343763,-97.637373,Puebla,"Tlacotepec de Benito Juárez, Puebla, 75680, México",ok
+COLON|QUERETARO,"Colón, Querétaro, México",20.7496727,-100.079663,Querétaro,"Colón, Querétaro, México",ok
+OCOYUCAN|PUEBLA,"Ocoyucan, Puebla, México",18.9300722,-98.3217272,Puebla,"Ocoyucan, Puebla, 72850, México",ok
+ZAPOTLANEJO|JALISCO,"Zapotlanejo, Jalisco, México",20.6396569,-103.0515186,Jalisco,"Zapotlanejo, Región Centro, Jalisco, México",ok
+PEROTE|VERACRUZ,"Perote, Veracruz, México",19.5108641,-97.2685345,Veracruz,"Perote, Veracruz, México",ok
+PASO DEL MACHO|VERACRUZ,"Paso del Macho, Veracruz, México",18.9476437,-96.6439794,Veracruz,"Paso del Macho, Veracruz, 94970, México",ok
+CHAMPOTON|CAMPECHE,"Champotón, Campeche, México",19.0954287,-90.4811937,Campeche,"Champotón, Campeche, México",ok
+SAN PEDRO MIXTEPEC|OAXACA,"San Pedro Mixtepec, Oaxaca, México",15.9462321,-97.0708389,Oaxaca,"San Pedro Mixtepec, Oaxaca, México",ok
+MACUSPANA|TABASCO,"Macuspana, Tabasco, México",17.8556822,-92.4223906,Tabasco,"Macuspana, Tabasco, México",ok
+EL GRULLO|JALISCO,"El Grullo, Jalisco, México",19.7955481,-104.1778165,Jalisco,"El Grullo, Región Sierra de Amula, Jalisco, México",ok
+XICOTEPEC DE JUAREZ|PUEBLA,"Xicotepec de Juárez, Puebla, México",20.2767053,-97.9606968,Puebla,"Xicotepec, Puebla, México",ok
+SOMBRERETE|ZACATECAS,"Sombrerete, Zacatecas, México",23.6354312,-103.6410119,Zacatecas,"Sombrerete, Zacatecas, 99100, México",ok
+ABASOLO|GUANAJUATO,"Abasolo, Guanajuato, México",20.5375581,-101.5457869,Guanajuato,"Abasolo, Guanajuato, México",ok
+SAN SEBASTIAN TUTLA|OAXACA,"San Sebastián Tutla, Oaxaca, México",17.0445044,-96.6776218,Oaxaca,"San Sebastián Tutla, Oaxaca, México",ok
+CIUDAD DEL CARMEN|CAMPECHE,"Ciudad del Carmen, Campeche, México",18.651739,-91.81492,Campeche,"Ciudad del Carmen, Carmen, Campeche, 24100, México",ok
+GUANAJUATO|GUANAJUATO,"Guanajuato, Guanajuato, México",21.0158848,-101.25284,Guanajuato,"Guanajuato, Municipio de Guanajuato, Guanajuato, 36003, México",ok
+IGUALA DE LA INDEPENDENCIA|GUERRERO,"Iguala de la Independencia, Guerrero, México",18.3466358,-99.5376944,Guerrero,"Iguala, Iguala de la Independencia, Guerrero, 40000, México",ok
+SAN JACINTO AMILPAS|OAXACA,"San Jacinto Amilpas, Oaxaca, México",17.0934661,-96.7578335,Oaxaca,"San Jacinto Amilpas, Oaxaca, México",ok
+SAN AGUSTIN YATARENI|OAXACA,"San Agustín Yatareni, Oaxaca, México",17.0804835,-96.6782232,Oaxaca,"San Agustín Yatareni, Oaxaca, México",ok
+ENSENADA|BAJA CALIFORNIA,"Ensenada, Baja California, México",31.8658887,-116.602983,Baja California,"Ensenada, Municipio de Ensenada, Baja California, México",ok
+TLAPACOYAN|VERACRUZ,"Tlapacoyan, Veracruz, México",20.0221087,-97.1566932,Veracruz,"Tlapacoyan, Veracruz, 93650, México",ok
+SAN BUENAVENTURA|COAHUILA,"San Buenaventura, Coahuila, México",27.8415365,-101.9366339,Coahuila,"San Buenaventura, Coahuila, 25500, México",ok
+ESTACION MANUEL|TAMAULIPAS,"Estación Manuel, Tamaulipas, México",22.7265809,-98.3189312,Tamaulipas,"Estación Manuel, González, Tamaulipas, México",ok
+BOCA DEL RIO|VERACRUZ,"Boca del Río, Veracruz, México",19.1129068,-96.1118481,Veracruz,"Boca del Río, Veracruz, México",ok
+TEPALCINGO|MORELOS,"Tepalcingo, Morelos, México",18.595138,-98.8450462,Morelos,"Tepalcingo, Morelos, México",ok
+SAN PEDRO GARZA GARCIA|NUEVO LEON,"San Pedro Garza García, Nuevo León, México",25.652395,-100.3726067,Nuevo León,"San Pedro Garza García, Nuevo León, México",ok
+CIUDAD MADERO|TAMAULIPAS,"Ciudad Madero, Tamaulipas, México",22.278368,-97.8242861,Tamaulipas,"Ciudad Madero, Tamaulipas, México",ok
+LINARES|NUEVO LEON,"Linares, Nuevo León, México",24.8530057,-99.4103419,Nuevo León,"Linares, Nuevo León, México",ok
+PUENTE DE IXTLA|MORELOS,"Puente de Ixtla, Morelos, México",18.5783377,-99.3104855,Morelos,"Puente de Ixtla, Morelos, México",ok
+CORONANGO|PUEBLA,"Coronango, Puebla, México",19.1367048,-98.2918774,Puebla,"Coronango, Puebla, México",ok
+SAN LUIS TEOLOCHOLCO|TLAXCALA,"San Luis Teolocholco, Tlaxcala, México",19.2444087,-98.1916544,Tlaxcala,"Zócalo de San Luis, Teolocholco, Tlaxcala, México",ok
+VILLA DE POZOS|SAN LUIS POTOSI,"Villa de Pozos, San Luis Potosí, México",22.0983632,-100.8242087,San Luis Potosí,"Villa de Pozos, San Luis Potosí, México",ok
+KANASIN|YUCATAN,"Kanasín, Yucatán, México",20.9152278,-89.5425702,Yucatán,"Kanasín, Yucatán, 97370, México",ok
+NUEVO IDEAL|DURANGO,"Nuevo Ideal, Durango, México",24.8391964,-105.0029249,Durango,"Nuevo Ideal, Durango, México",ok
+TONILA|JALISCO,"Tonila, Jalisco, México",19.4294093,-103.5300375,Jalisco,"Tonila, Región Sur, Jalisco, México",ok
+SANTA CLARA|DURANGO,"Santa Clara, Durango, México",24.4851051,-103.3622171,Durango,"Santa Clara, Durango, México",ok
+SAN PEDRO POCHUTLA|OAXACA,"San Pedro Pochutla, Oaxaca, México",15.7914326,-96.4300667,Oaxaca,"San Pedro Pochutla, Oaxaca, México",ok
+ZEMPOALA|HIDALGO,"Zempoala, Hidalgo, México",19.925944,-98.6433499,Hidalgo,"Zempoala, Hidalgo, México",ok
+HUNUCMA|YUCATAN,"Hunucmá, Yucatán, México",21.075634,-89.9893949,Yucatán,"Hunucmá, Yucatán, México",ok
+UNION DE TULA|JALISCO,"Unión de Tula, Jalisco, México",20.0045243,-104.2276769,Jalisco,"Unión de Tula, Región Sierra de Amula, Jalisco, México",ok
+TECOLOTLAN|JALISCO,"Tecolotlán, Jalisco, México",20.2758086,-103.9822552,Jalisco,"Tecolotlán, Región Sierra de Amula, Jalisco, México",ok
+TAMAZULA|DURANGO,"Tamazula, Durango, México",24.9721953,-106.8542938,Durango,"Tamazula, Durango, México",ok
+VALPARAISO|ZACATECAS,"Valparaíso, Zacatecas, México",22.6654361,-103.5262656,Zacatecas,"Valparaíso, Zacatecas, México",ok
+PARAISO|TABASCO,"Paraíso, Tabasco, México",18.3623055,-93.1883587,Tabasco,"Paraíso, Tabasco, México",ok
+ARCELIA|GUERRERO,"Arcelia, Guerrero, México",18.2536993,-100.1939067,Guerrero,"Arcelia, Guerrero, México",ok
+MIGUEL ALEMAN|TAMAULIPAS,"Miguel Alemán, Tamaulipas, México",26.230013,-99.0819155,Tamaulipas,"Miguel Alemán, Tamaulipas, 88310, México",ok
+MISANTLA|VERACRUZ,"Misantla, Veracruz, México",19.9591009,-96.8580623,Veracruz,"Misantla, Veracruz, México",ok
+ZUMPANGO|ESTADO DE MEXICO,"Zumpango, Estado de México, México",19.8129368,-99.0818095,Estado de México,"Zumpango, Estado de México, México",ok
+TEPANCO DE LOPEZ|PUEBLA,"Tepanco de López, Puebla, México",18.5533722,-97.5738597,Puebla,"Tepanco de López, Puebla, 75809, México",ok
+MATEHUALA|SAN LUIS POTOSI,"Matehuala, San Luis Potosí, México",23.5229037,-100.604046,San Luis Potosí,"Matehuala, San Luis Potosí, México",ok
+CANDELARIA|CAMPECHE,"Candelaria, Campeche, México",18.1602905,-90.744475,Campeche,"Candelaria, Campeche, México",ok
+CHILAPA DE ALVAREZ|GUERRERO,"Chilapa de Álvarez, Guerrero, México",17.4905531,-99.1322116,Guerrero,"Chilapa de Álvarez, Guerrero, 41100, México",ok
+SAN MIGUEL DE ALLENDE|GUANAJUATO,"San Miguel de Allende, Guanajuato, México",20.9130501,-100.73566,Guanajuato,"San Miguel de Allende, Guanajuato, México",ok
+PATZCUARO|MICHOACAN,"Pátzcuaro, Michoacán, México",19.501844,-101.6602118,Michoacán,"Pátzcuaro, Michoacán, México",ok
+SAN JUAN BAUTISTA GUELACHE|OAXACA,"San Juan Bautista Guelache, Oaxaca, México",17.2390971,-96.7506332,Oaxaca,"San Juan Bautista Guelache, Oaxaca, México",ok
+NUEVO CASAS GRANDES|CHIHUAHUA,"Nuevo Casas Grandes, Chihuahua, México",30.506296,-107.6654256,Chihuahua,"Nuevo Casas Grandes, Chihuahua, México",ok
+RAYON|ESTADO DE MEXICO,"Rayón, Estado de México, México",19.1390759,-99.5675551,Estado de México,"Rayón, Estado de México, 52360, México",ok
+ATZITZIHUACAN|PUEBLA,"Atzitzihuacán, Puebla, México",18.8132669,-98.6127487,Puebla,"Atzitzihuacán, Puebla, México",ok
+SAN LUIS DE LA PAZ|GUANAJUATO,"San Luis de la Paz, Guanajuato, México",21.3808525,-100.4818037,Guanajuato,"San Luis de la Paz, Guanajuato, México",ok
+PUENTE DE VIGAS|ESTADO DE MEXICO,"Puente de Vigas, Estado de México, México",19.5121532,-99.2141211,Estado de México,"Puente de Vigas, Tlalnepantla, Tlalnepantla de Baz, Estado de México, 54080, México",ok
+SANTA MARIA HUATULCO|OAXACA,"Santa María Huatulco, Oaxaca, México",15.8220916,-96.2059859,Oaxaca,"Santa María Huatulco, Oaxaca, México",ok
+VILLA DE COS|ZACATECAS,"Villa de Cos, Zacatecas, México",23.5290895,-102.1173296,Zacatecas,"Villa de Cos, Zacatecas, México",ok
+SAN MATEO ATENCO|ESTADO DE MEXICO,"San Mateo Atenco, Estado de México, México",19.2621168,-99.537009,Estado de México,"San Mateo Atenco, Estado de México, México",ok
+COSTA RICA|SINALOA,"Costa Rica, Sinaloa, México",24.5895489,-107.3920441,Sinaloa,"Costa Rica, Culiacán, Sinaloa, 80450, México",ok
+JALOSTOTITLAN|JALISCO,"Jalostotitlán, Jalisco, México",21.2011318,-102.5106961,Jalisco,"Jalostotitlán, Región Altos Sur, Jalisco, México",ok
+MOTOZINTLA|CHIAPAS,"Motozintla, Chiapas, México",15.3050827,-92.3488036,Chiapas,"Motozintla, Chiapas, 30910, México",ok
+SAN LUIS RIO COLORADO|SONORA,"San Luis Río Colorado, Sonora, México",32.4393307,-114.7720862,Sonora,"San Luis Río Colorado, Sonora, 83400, México",ok
+YECAPIXTLA|MORELOS,"Yecapixtla, Morelos, México",18.8594955,-98.8744443,Morelos,"Yecapixtla, Morelos, México",ok
+GOMEZ FARIAS|JALISCO,"Gómez Farías, Jalisco, México",19.8597509,-103.4101899,Jalisco,"Gómez Farías, Región Sur, Jalisco, México",ok
+DOCTOR GONZALEZ|NUEVO LEON,"Doctor González, Nuevo León, México",25.8447798,-99.8187804,Nuevo León,"Doctor González, Nuevo León, México",ok
+COAHUAYANA|MICHOACAN,"Coahuayana, Michoacán, México",18.7586364,-103.5969147,Michoacán,"Coahuayana, Michoacán, México",ok
+COMPOSTELA|NAYARIT,"Compostela, Nayarit, México",21.2375206,-104.8993726,Nayarit,"Compostela, Nayarit, México",ok
+ARANDAS|JALISCO,"Arandas, Jalisco, México",20.7493121,-102.3142822,Jalisco,"Arandas, Región Altos Sur, Jalisco, México",ok
+VILLA DE RAMOS|SAN LUIS POTOSI,"Villa de Ramos, San Luis Potosí, México",22.9147161,-101.8768919,San Luis Potosí,"Villa de Ramos, San Luis Potosí, México",ok
+EL MANTE|TAMAULIPAS,"El Mante, Tamaulipas, México",22.6078737,-98.9353414,Tamaulipas,"El Mante, Tamaulipas, México",ok
+ZACUALPAN|ESTADO DE MEXICO,"Zacualpan, Estado de México, México",18.714286,-99.7930298,Estado de México,"Zacualpan, Estado de México, México",ok
+ATOTONILCO EL GRANDE|HIDALGO,"Atotonilco el Grande, Hidalgo, México",20.3409203,-98.6714438,Hidalgo,"Atotonilco el Grande, Hidalgo, México",ok
+NUEVA ITALIA|MICHOACAN,"Nueva Italia, Michoacán, México",19.3955555,-102.011346,Michoacán,"Nueva Italia, Uruapan, Michoacán, 60157, México",ok
+TECPAN DE GALEANA|GUERRERO,"Técpan de Galeana, Guerrero, México",17.4010835,-100.7505619,Guerrero,"Técpan de Galeana, Guerrero, México",ok
+ZIHUATANEJO DE AZUETA|GUERRERO,"Zihuatanejo de Azueta, Guerrero, México",17.8079,-101.4969524,Guerrero,"Zihuatanejo de Azueta, Guerrero, México",ok
+CANTAMAYEC|YUCATAN,"Cantamayec, Yucatán, México",20.4131013,-89.0571223,Yucatán,"Cantamayec, Yucatán, México",ok
+COACALCO DE BERRIOZABAL|ESTADO DE MEXICO,"Coacalco de Berriozábal, Estado de México, México",19.6359452,-99.0948573,Estado de México,"Coacalco de Berriozábal, Estado de México, México",ok
+PUERTO ESCONDIDO|OAXACA,"Puerto Escondido, Oaxaca, México",15.8693331,-97.0726428,Oaxaca,"Puerto Escondido, San Pedro Mixtepec, Oaxaca, 71800, México",ok
+CENTLA|TABASCO,"Centla, Tabasco, México",18.3536762,-92.6521986,Tabasco,"Centla, Tabasco, México",ok
+ACOLMAN|ESTADO DE MEXICO,"Acolman, Estado de México, México",19.6389474,-98.9109537,Estado de México,"Acolman, Estado de México, México",ok
+ACAMBARO|GUANAJUATO,"Acámbaro, Guanajuato, México",20.0708476,-100.7447445,Guanajuato,"Acámbaro, Guanajuato, México",ok
+TAMAZUNCHALE|SAN LUIS POTOSI,"Tamazunchale, San Luis Potosí, México",21.2435015,-98.7968696,San Luis Potosí,"Tamazunchale, San Luis Potosí, México",ok
+HOPELCHEN|CAMPECHE,"Hopelchén, Campeche, México",19.5392663,-89.6207172,Campeche,"Hopelchén, Campeche, México",ok
+VICENTE GUERRERO|DURANGO,"Vicente Guerrero, Durango, México",23.727186,-103.9463725,Durango,"Vicente Guerrero, Durango, México",ok
+ZAPOTLAN DE JUAREZ|HIDALGO,"Zapotlán de Juárez, Hidalgo, México",19.988115,-98.8434491,Hidalgo,"Zapotlán de Juárez, Hidalgo, 42190, México",ok
+NARANJOS AMATLAN|VERACRUZ,"Naranjos Amatlán, Veracruz, México",21.3093326,-97.6760122,Veracruz,"Naranjos Amatlán, Veracruz, México",ok
+TEOPISCA|CHIAPAS,"Teopisca, Chiapas, México",16.5525849,-92.5234712,Chiapas,"Teopisca, Chiapas, México",ok
+AMATITAN|JALISCO,"Amatitán, Jalisco, México",20.8443487,-103.7105199,Jalisco,"Amatitán, Región Valles, Jalisco, 45380, México",ok
+NEALTICAN|PUEBLA,"Nealtican, Puebla, México",19.0580362,-98.4441385,Puebla,"Nealtican, Puebla, México",ok
+CHANAL|CHIAPAS,"Chanal, Chiapas, México",16.6026265,-92.2572642,Chiapas,"Chanal, Chiapas, México",ok
+OMETEPEC|GUERRERO,"Ometepec, Guerrero, México",16.6726427,-98.3630312,Guerrero,"Ometepec, Guerrero, México",ok
+JIQUILPAN|MICHOACAN,"Jiquilpan, Michoacán, México",19.9901664,-102.7191956,Michoacán,"Jiquilpan, Michoacán, México",ok
+ACAPONETA|NAYARIT,"Acaponeta, Nayarit, México",22.4604948,-105.2485721,Nayarit,"Acaponeta, Nayarit, México",ok
+AYALA|MORELOS,"Ayala, Morelos, México",18.6968614,-98.9799888,Morelos,"Ayala, Morelos, México",ok
+EDUARDO NERI|GUERRERO,"Eduardo Neri, Guerrero, México",17.8141179,-99.609049,Guerrero,"Eduardo Neri, Guerrero, 40180, México",ok
+MARAVATIO|MICHOACAN,"Maravatío, Michoacán, México",19.8901453,-100.4532732,Michoacán,"Maravatío, Michoacán, México",ok
+JITOTOL|CHIAPAS,"Jitotol, Chiapas, México",17.0894294,-92.8458845,Chiapas,"Jitotol, Chiapas, México",ok
+TULUM|QUINTANA ROO,"Tulum, Quintana Roo, México",20.429647,-87.6529306,Quintana Roo,"Tulum, Quintana Roo, México",ok
+PLAYAS DE ROSARITO|BAJA CALIFORNIA,"Playas de Rosarito, Baja California, México",32.365166,-117.0557923,Baja California,"Rosarito, Municipio de Playas de Rosarito, Baja California, 22703, México",ok
+TECALITLAN|JALISCO,"Tecalitlán, Jalisco, México",19.4710115,-103.307062,Jalisco,"Tecalitlán, Región Sureste, Jalisco, México",ok
+XOCHITEPEC|MORELOS,"Xochitepec, Morelos, México",18.7653308,-99.2338981,Morelos,"Xochitepec, Morelos, México",ok
+PENJAMO|GUANAJUATO,"Pénjamo, Guanajuato, México",20.4054833,-101.840522,Guanajuato,"Pénjamo, Guanajuato, México",ok
+NUEVA ROSITA|COAHUILA,"Nueva Rosita, Coahuila, México",27.9378334,-101.218748,Coahuila,"Nueva Rosita, San Juan de Sabinas, Coahuila, 25800, México",ok
+LORETO|ZACATECAS,"Loreto, Zacatecas, México",22.27393,-101.9125554,Zacatecas,"Loreto, Zacatecas, 98830, México",ok
+AXTLA DE TERRAZAS|SAN LUIS POTOSI,"Axtla de Terrazas, San Luis Potosí, México",21.424175,-98.8780799,San Luis Potosí,"Axtla de Terrazas, San Luis Potosí, México",ok
+HUAUCHINANGO|PUEBLA,"Huauchinango, Puebla, México",20.1782494,-98.0490728,Puebla,"Huauchinango, Puebla, México",ok
+DOCTOR COSS|NUEVO LEON,"Doctor Coss, Nuevo León, México",25.9712446,-99.0420263,Nuevo León,"Doctor Coss, Nuevo León, México",ok
+TACAMBARO|MICHOACAN,"Tacámbaro, Michoacán, México",19.2499715,-101.4519835,Michoacán,"Tacámbaro, Michoacán, 61650, México",ok
+SANTA MARIA COLOTEPEC|OAXACA,"Santa María Colotepec, Oaxaca, México",15.851434,-96.9396029,Oaxaca,"Santa María Colotepec, Oaxaca, México",ok
+HUETAMO|MICHOACAN,"Huetamo, Michoacán, México",18.6597188,-101.1402634,Michoacán,"Huetamo, Michoacán, México",ok
+CALPULALPAN|TLAXCALA,"Calpulalpan, Tlaxcala, México",19.5520174,-98.6112927,Tlaxcala,"Calpulalpan, Tlaxcala, México",ok
+ZONAS POSTALES|,"Zonas Postales, México",,,,,sin_resultado
+COSCOMATEPEC|VERACRUZ,"Coscomatepec, Veracruz, México",19.0591501,-97.0995339,Veracruz,"Coscomatepec, Veracruz, México",ok
+LA INDEPENDENCIA|CHIAPAS,"La Independencia, Chiapas, México",16.2135718,-91.9054476,Chiapas,"La Independencia, Chiapas, México",ok
+ESCUINTLA|CHIAPAS,"Escuintla, Chiapas, México",15.3510026,-92.5557654,Chiapas,"Escuintla, Chiapas, 30600, México",ok
+ALTOTONGA|VERACRUZ,"Altotonga, Veracruz, México",19.764922,-97.1280745,Veracruz,"Altotonga, Veracruz, 93700, México",ok
+SAN MARTIN DE LAS PIRAMIDES|ESTADO DE MEXICO,"San Martín de las Pirámides, Estado de México, México",19.7044644,-98.8344713,Estado de México,"San Martín de las Pirámides, Estado de México, 55850, México",ok
+ACATIC|JALISCO,"Acatic, Jalisco, México",20.7805923,-102.9101603,Jalisco,"Acatic, Región Altos Sur, Jalisco, México",ok
+TUXTLA CHICO|CHIAPAS,"Tuxtla Chico, Chiapas, México",14.8768619,-92.1967525,Chiapas,"Tuxtla Chico, Chiapas, 30870, México",ok
+IXTLAHUACA|ESTADO DE MEXICO,"Ixtlahuaca, Estado de México, México",19.6013674,-99.813327,Estado de México,"Ixtlahuaca, Estado de México, México",ok
+CONKAL|YUCATAN,"Conkal, Yucatán, México",21.0811955,-89.5261082,Yucatán,"Conkal, Yucatán, 97345, México",ok
+TENAYUCA|ESTADO DE MEXICO,"Tenayuca, Estado de México, México",19.5640606,-99.1664193,Estado de México,"Tenayuca, Tlalnepantla, Tlalnepantla de Baz, Estado de México, 54149, México",ok
+AMEALCO DE BONFIL|QUERETARO,"Amealco de Bonfil, Querétaro, México",20.1874446,-100.0691552,Querétaro,"Amealco de Bonfil, Querétaro, 76850, México",ok
+VALLE HERMOSO|TAMAULIPAS,"Valle Hermoso, Tamaulipas, México",25.7823792,-97.8349848,Tamaulipas,"Valle Hermoso, Tamaulipas, México",ok
+PROGRESO DE OBREGON|HIDALGO,"Progreso de Obregón, Hidalgo, México",20.3044803,-99.180891,Hidalgo,"Progreso de Obregón, Hidalgo, México",ok
+CADEREYTA JIMENEZ|NUEVO LEON,"Cadereyta Jiménez, Nuevo León, México",25.5876993,-100.0012458,Nuevo León,"Cadereyta Jiménez, Nuevo León, México",ok
+PUERTO PENASCO|SONORA,"Puerto Peñasco, Sonora, México",31.5301718,-113.3897189,Sonora,"Puerto Peñasco, Sonora, México",ok
+PUEBLO NUEVO|GUANAJUATO,"Pueblo Nuevo, Guanajuato, México",20.5481083,-101.3656228,Guanajuato,"Pueblo Nuevo, Guanajuato, México",ok
+SAN MIGUEL ZINACANTEPEC|ESTADO DE MEXICO,"San Miguel Zinacantepec, Estado de México, México",19.2844909,-99.7350408,Estado de México,"San Miguel Zinacantepec, Zinacantepec, Estado de México, 50350, México",ok
+SAN SALVADOR ATENCO|ESTADO DE MEXICO,"San Salvador Atenco, Estado de México, México",19.5523874,-98.9163581,Estado de México,"San Salvador Atenco, Atenco, Estado de México, 56300, México",ok
+LA MAGDALENA TLALTELULCO|TLAXCALA,"La Magdalena Tlaltelulco, Tlaxcala, México",19.2799672,-98.1925346,Tlaxcala,"La Magdalena Tlaltelulco, Tlaxcala, 90930, México",ok
+SAN FRANCISCO TOTIMEHUACAN|PUEBLA,"San Francisco Totimehuacán, Puebla, México",18.9692033,-98.1854459,Puebla,"San Francisco Totimehuacán, Municipio de Puebla, Puebla, 72595, México",ok

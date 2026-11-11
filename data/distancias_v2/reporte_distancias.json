@@ -1,0 +1,37 @@
+{
+  "rutas": 1600,
+  "destinos": 524,
+  "plantas": 20,
+  "plantas_sin_ciudad": [],
+  "destinos_por_tipo": {
+    "puntual": 478,
+    "multidestino": 45,
+    "region": 1
+  },
+  "viajes_por_tipo_destino": {
+    "multidestino": 88,
+    "puntual": 70842,
+    "region": 1037
+  },
+  "destinos_a_revisar": 20,
+  "geocodificacion": {
+    "ok": 476,
+    "sin_resultado": 4
+  },
+  "lugares_pendientes_por_red": 0,
+  "factor_carretera": 1.252,
+  "factor_calibrado_con": 1534,
+  "rutas_por_fuente": {
+    "osrm": 1537,
+    "multidestino": 51,
+    "region": 11,
+    "sin_geocodificar_destino": 1
+  },
+  "viajes_por_fuente": {
+    "multidestino": 88,
+    "osrm": 70841,
+    "region": 1037,
+    "sin_geocodificar_destino": 1
+  },
+  "rutas_ratio_dudoso(<1 o >2.5)": 5
+}
