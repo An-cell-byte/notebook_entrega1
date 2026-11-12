@@ -13,7 +13,7 @@ Principios (cada uno corrige un problema detectado en data_engineer.py):
   5. El script no sobrescribe su entrada y deja un reporte de calidad auditable.
 Uso:
   python etl_oro.py --plata data/plata/viajes_foraneos_plata.csv --sep ";" \
-      --catalogo catalogo_distancias.csv --salida data/oro_v2
+      --catalogo data/distancias_v2/catalogo_distancias_v2.csv --salida data/oro_v2
 """
 import argparse, json, re, unicodedata
 from pathlib import Path
@@ -29,6 +29,7 @@ VEL_MAX_KMH = 90      # velocidad media implícita (incluye esperas): arriba de 
 VEL_MIN_KMH = 3       # abajo de esto el km casi seguro es erróneo
 KM_MIN = 5
 MAD_Z = 5.0
+DISCREPANCIA_KG = 1000   # |programado − real| > 1 t: probable error de captura del peso programado
 MIN_N_GRUPO = 8
 
 # Reglas en orden: la primera que coincide gana
@@ -37,6 +38,7 @@ REGLAS_TIPO = [
     (r'PORTACINTA|BIG COIL',    'T3-S3 (Portacintas/Big Coil)'),
     (r'53 PIES',                'Plataforma larga 53 pies'),
     (r'48 PIES',                'Plataforma larga 48 pies'),
+    (r'40 PIES',                'Plataforma larga 40 pies'),
     (r'TORTONETA',              'Tortoneta'),
     (r'\bTORTON\b',             'Torton'),
     (r'CAMIONETA',              'Camioneta 3.5'),
@@ -52,6 +54,7 @@ CAPACIDADES_DEFAULT = pd.DataFrame([
     ('Plataforma larga 48 pies', 25000), ('Plataforma larga 53 pies', 24000),
     ('Torton', 20000), ('Tortoneta', 12000), ('Camioneta 3.5', 3500),
     ('Cama Baja Doble Piso', 35000), ('Heavy', 40000),
+    ('Plataforma larga 40 pies', np.nan),   # sin capacidad definida: queda pendiente
 ], columns=['Nomenclatura_Inferida', 'Capacidad_Max_kg'])
 CAPACIDADES_DEFAULT['Verificado_NOM012'] = False
 CAPACIDADES_DEFAULT['Fuente'] = 'heredado de data_engineer.py (carga útil supuesta); pendiente de verificar'
@@ -133,7 +136,11 @@ def limpiar_y_rechazar(df, rep):
 
 def metricas_capacidad(df, capacidades, rep):
     df = df.copy()
-    df['Nomenclatura_Inferida'] = clasificar(df['FAMILIA_CAMION_DESC'])
+    # Respaldo: si la familia viene vacía se usa el tipo declarado ('Tipo Camión'); no se modifica la columna original
+    texto = df['FAMILIA_CAMION_DESC']
+    if 'Tipo Camión' in df.columns:
+        texto = texto.fillna(df['Tipo Camión'])
+    df['Nomenclatura_Inferida'] = clasificar(texto)
     rep['sin_clasificar'] = int((df['Nomenclatura_Inferida'] == 'SIN_CLASIFICAR').sum())
     df = df.merge(capacidades[['Nomenclatura_Inferida', 'Capacidad_Max_kg']],
                   on='Nomenclatura_Inferida', how='left', validate='m:1')
@@ -149,7 +156,10 @@ def metricas_capacidad(df, capacidades, rep):
     # Es una cota superior laxa, no un ahorro ejecutable.
     df['Costo_Ton_Optimo'] = df['Monto total'] / df['Toneladas_Maximas']
     df['Sobrecosto_Ton'] = df['Costo_Ton_Real'] - df['Costo_Ton_Optimo']
+    # Se marca (no se corrige): p. ej. programados de 72 t o en unidades equivocadas
+    df['Flag_Discrepancia_Peso'] = df['Discrepancia_Peso_kg'].abs() > DISCREPANCIA_KG
     rep['excede_capacidad'] = int(df['Excede_Capacidad'].sum())
+    rep['discrepancia_peso'] = int(df['Flag_Discrepancia_Peso'].sum())
     return df
 
 
@@ -177,7 +187,12 @@ def integrar_distancias(df, ruta_catalogo, rep):
     else:
         df['Kilometros_Ruta'], df['Km_Fuente'] = np.nan, np.nan
         rep['aviso_catalogo'] = 'no se encontró catálogo de distancias'
-    df['Km_Fuente'] = df['Km_Fuente'].where(df['Kilometros_Ruta'].notna(), 'faltante')
+    # Si el catálogo explica por qué no hay km (multidestino, region, sin_geocodificar_*), se conserva;
+    # 'faltante' solo cuando la ruta ni siquiera está en el catálogo.
+    df['Km_Fuente'] = df['Km_Fuente'].fillna('faltante')
+    destino = df['Ciudad Destino'].astype(str)
+    df['Es_Multidestino'] = destino.str.contains(',', regex=False)   # varios destinos en un viaje: sin km de ruta
+    df['Es_Region'] = destino.str.contains('+', regex=False)         # p. ej. 'CDMX+EDOMEX': no es un punto
 
     ruta = df['PLANTA_ORIGEN'] + ' | ' + df['Ciudad Destino']
     df['Ruta_ID'] = ruta
@@ -186,13 +201,19 @@ def integrar_distancias(df, ruta_catalogo, rep):
     df['Km_Sospechoso'] = df['Kilometros_Ruta'].notna() & (
         (df['Vel_Implicita_kmh'] > VEL_MAX_KMH) | (df['Vel_Implicita_kmh'] < VEL_MIN_KMH)
         | (df['Kilometros_Ruta'] < KM_MIN))
-    df['Km_Confiable'] = df['Kilometros_Ruta'].notna() & ~df['Km_Sospechoso']
+    df['Km_Estimado'] = df['Km_Fuente'].eq('estimado_haversine')     # línea recta × factor carretera, no ruta real
+    df['Km_Confiable'] = df['Kilometros_Ruta'].notna() & ~df['Km_Sospechoso'] & ~df['Km_Estimado']
     df['Tonelada_Kilometro'] = df['Toneladas_Reales'] * df['Kilometros_Ruta'].where(df['Km_Confiable'])
     df['Costo_Ton_Km'] = df['Monto total'] / df['Tonelada_Kilometro']
+    # Versión sin filtrar (incluye km sospechosos o estimados) para análisis de sensibilidad
+    df['Costo_Ton_Km_Bruto'] = df['Monto total'] / (df['Toneladas_Reales'] * df['Kilometros_Ruta'])
     df = df.drop(columns=['_o', '_d'])
     rep['km'] = {'viajes_km_confiable': int(df['Km_Confiable'].sum()),
                  'viajes_km_faltante': int((df['Km_Fuente'] == 'faltante').sum()),
-                 'viajes_km_sospechoso': int(df['Km_Sospechoso'].sum())}
+                 'viajes_km_sospechoso': int(df['Km_Sospechoso'].sum()),
+                 'viajes_km_estimado': int(df['Km_Estimado'].sum()),
+                 'viajes_multidestino': int(df['Es_Multidestino'].sum()),
+                 'viajes_region': int(df['Es_Region'].sum())}
     return df
 
 
@@ -219,10 +240,12 @@ def ventana(df, rep):
 
 
 def rutas_pendientes(df):
+    # Faltante = no hay km y no es multidestino ni región (esos dos no tienen km de ruta por definición)
+    df = df.assign(_sin_km=df['Kilometros_Ruta'].isna() & ~df['Es_Multidestino'] & ~df['Es_Region'])
     g = df.groupby('Ruta_ID').agg(PLANTA_ORIGEN=('PLANTA_ORIGEN', 'first'), Ciudad_Destino=('Ciudad Destino', 'first'),
                                   Viajes=('ID_VIAJE', 'size'), Kilometros_Ruta=('Kilometros_Ruta', 'first'),
                                   Vel_Implicita_kmh=('Vel_Implicita_kmh', 'first'),
-                                  Faltante=('Km_Fuente', lambda s: (s == 'faltante').all()),
+                                  Faltante=('_sin_km', 'all'), Fuente=('Km_Fuente', 'first'),
                                   Sospechoso=('Km_Sospechoso', 'any'))
     g = g[g.Faltante | g.Sospechoso].sort_values('Viajes', ascending=False)
     g['Pct_Acumulado_Viajes'] = (g.Viajes.cumsum() / g.Viajes.sum() * 100).round(1)
@@ -261,7 +284,7 @@ if __name__ == '__main__':
     
     ap = argparse.ArgumentParser()
     ap.add_argument('--plata', required=True); ap.add_argument('--sep', default=';')
-    ap.add_argument('--catalogo', default='catalogo_distancias.csv')
+    ap.add_argument('--catalogo', default='data/distancias_v2/catalogo_distancias_v2.csv')
     ap.add_argument('--salida', default='data/oro_v2'); ap.add_argument('--capacidades', default=None)
     a = ap.parse_args()
     _, r = ejecutar(a.plata, a.sep, a.catalogo, a.salida, a.capacidades)
