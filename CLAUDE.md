@@ -245,6 +245,11 @@
 - Rutas a Baja California Sur (Los Cabos, Cd. Constitución; 29 viajes): OSRM da ~3,300–4,200 km por tierra vía Mexicali
   (ratio 2.8–3.7). Si en la práctica cruzan en ferry (Topolobampo/Mazatlán→La Paz), los km reales son mucho menores. POR DECIDIR.
 - Los archivos `test_etl.py` / `test_distancias.py` NO están en el repo (no se encontraron).
+- (2026-11-12) `etl_oro.py` había perdido lógica (editado 18:07 del 10-nov, después de generar oro_v2). Reconstruido y
+  VERIFICADO: reproduce data/oro_v2 exacto (todas las columnas y archivos auxiliares). Reglas: Flag_Discrepancia_Peso =
+  |programado − real| > 1,000 kg; Es_Multidestino = ',' en destino; Es_Region = '+'; Km_Estimado = fuente estimado_haversine
+  (no confiable); Costo_Ton_Km_Bruto sin filtro; Km_Fuente conserva motivo del catálogo; respaldo `Tipo Camión` si la familia
+  es nula (plataforma 40 pies); rutas_pendientes con columna Fuente.
 
 ## 6. Pendientes
 1. ~~Revisar salidas de distancias; rerun del ETL con catálogo v2~~ (hecho 2026-11-10). Queda: decidir ruta ferry vs. tierra a BCS.
