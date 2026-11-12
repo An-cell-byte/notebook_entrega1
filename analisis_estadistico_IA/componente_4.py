@@ -6,10 +6,13 @@ Componente 2, maldición del optimizador (partición de datos), disponibilidad d
 mercado. Reporta escenarios por supuestos con su intervalo muestral (bootstrap de dos vías transportista ×
 ruta, como C1–C3), el punto de quiebre, la anualización, la holgura estructural y el tamaño de un piloto.
 
-Ejecutar desde la raíz del proyecto:  python componente_4.py
+Ejecutar:  python analisis_estadistico_IA/componente_4.py
 """
 from pathlib import Path
 import json
+import os
+
+os.chdir(Path(__file__).resolve().parent.parent)   # data/ y resultados_ternium/ están en la raíz del proyecto
 
 import numpy as np
 import pandas as pd
@@ -80,6 +83,7 @@ def flota(q):
 
 
 def decidir(T, F):
+    """Unidad asignada a cada viaje por el MILP con tarifas T y flota F; descarta cambios donde el peso real no cabe."""
     k, _ = opt.resolver(T, con_flota=True, F=F)
     k = k.copy()
     k[qr > opt.CAP_LEG[k]] = k0[qr > opt.CAP_LEG[k]]    # peso real no cabe en la unidad nueva: no se cambia
@@ -132,6 +136,7 @@ def sorteos(x):
 
 
 def ic(x):
+    """IC 95 % (percentiles 2.5 y 97.5) del total de `x` sobre las réplicas bootstrap."""
     return np.percentile(sorteos(x), [2.5, 97.5])
 
 
@@ -154,6 +159,7 @@ cascada = []
 
 
 def paso(nombre, corto, a, tn=None):
+    """Agrega un escalón a la cascada: ahorro total, IC y viajes que cambian (y lo imprime)."""
     lo, hi = ic(a)
     cascada.append(dict(Ajuste=nombre, Corto=corto, Ahorro_M=a.sum() / 1e6, IC_inf_M=lo / 1e6, IC_sup_M=hi / 1e6,
                         Viajes=int((a != 0).sum())))

@@ -7,14 +7,21 @@ from scipy import sparse
 from ternium_comun import capacidades
 
 def preparar_optimizador(df):
+    """Prepara el estado del optimizador para el universo `df` (capacidades, tarifas por ruta × unidad y flota).
+
+    Guarda todo en variables globales del módulo para que `tarifas`, `factibles` y `resolver` las usen
+    igual que en la sección 6 de componente_2.ipynb. Hay que llamarla una vez antes de las demás funciones.
+    """
     global cap, CAP_DEC, CAP_LEG, K, DELTA, PERMITIDO, o, rutas_o, cel, cid, con_cel, orden, pos_cel, costo_ord, cid_ord, ini, fin, cel_r, cel_k, semanal, F_max
     cap = capacidades(df)
     CAP_DEC = cap['Cap_decision_t'].reindex(UNIDADES).values
     CAP_LEG = cap['Cap_legal_t'].reindex(UNIDADES).values
     K = len(UNIDADES)
-    DELTA = 0.03
+    DELTA = 0.03                                 # solo se cambia de unidad si ahorra ≥ 3 % (ruido de la tarifa)
+    # PERMITIDO[a, b]: la carga de la unidad a puede pasar a b (la caja seca, cerrada, no pasa a plataforma abierta)
     PERMITIDO = np.array([[not (a == 'Caja Seca 2 Ejes' and b != a) for b in UNIDADES] for a in UNIDADES])
-    
+
+    # Índices por viaje: unidad actual (k0), semana, ruta (r) y peso programado (q)
     o = df.copy()
     o['k0'] = o['Unidad'].cat.codes.values
     o['Semana'] = o['FECHA_EGRESO'].dt.to_period('W').astype(str)
@@ -31,11 +38,13 @@ def preparar_optimizador(df):
     costo_ord, cid_ord = o['Costo'].values[pos_cel], o['cid'].values[pos_cel].astype(int)
     ini = np.searchsorted(cid_ord, np.arange(len(cel)), 'left'); fin = np.searchsorted(cid_ord, np.arange(len(cel)), 'right')
     cel_r, cel_k = cel.get_level_values(0).values, cel.get_level_values(1).values
+    # Disponibilidad de flota: máximo de viajes semanales de cada unidad observado en cada planta
     semanal = o.groupby([PLANTA, 'Semana', 'k0']).size()
     F_max = semanal.groupby(level=[0, 2]).max()
     
 
 def tarifas(w=None):
+    """Matriz rutas × unidades con la mediana (ponderada por `w`) del costo por viaje; NaN si no hay tarifa."""
     w = np.ones(len(o)) if w is None else w
     cum = np.concatenate([[0.0], np.cumsum(w[pos_cel])])
     tot = cum[fin] - cum[ini]
@@ -82,6 +91,7 @@ def resolver(T, con_flota=True, F=None, delta=0.03, cap_dec=None):
         lim = np.maximum(lim.fillna(0), usado_sem.reindex(uso.index).fillna(0))
         if (uso <= lim).all():
             continue
+        # Programa entero de la semana: una variable por cada par (viaje, unidad) factible
         ii, kk = np.nonzero(~np.isnan(sub))
         c = sub[ii, kk]
         n_v = len(ii)
@@ -95,6 +105,7 @@ def resolver(T, con_flota=True, F=None, delta=0.03, cap_dec=None):
             ya = ((pl_sem == p_) & (k0[ix] == k_)).sum()
             cap_s.append(max(f, ya))
         A_in = sparse.csr_matrix((np.ones(n_v), (s_codes, np.arange(n_v))), shape=(len(s_uniq), n_v))
+        # Cada viaje en exactamente una unidad; por planta × unidad, no más que la flota disponible
         r = milp(c, constraints=[LinearConstraint(A_eq, 1, 1), LinearConstraint(A_in, 0, np.array(cap_s))],
                  integrality=np.ones(n_v), bounds=Bounds(0, 1))
         if not r.success or r.x is None:

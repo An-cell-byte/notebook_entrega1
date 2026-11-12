@@ -6,7 +6,7 @@ Se usa un inner join, así que solo quedan los viajes que aparecen en las 3 tabl
 from pathlib import Path
 import pandas as pd
 
-DATA = Path(__file__).resolve().parent / "data"
+DATA = Path(__file__).resolve().parent.parent / "data"   # el script vive en data_processing/; data/ está en la raíz
 SALIDA = DATA / "plata" / "viajes_foraneos_plata.csv"
 
 

@@ -2,7 +2,7 @@
 from pathlib import Path
 import pandas as pd
 
-DATA = Path(__file__).resolve().parent / "data"
+DATA = Path(__file__).resolve().parent.parent / "data"   # el script vive en data_processing/; data/ está en la raíz
 ENTRADA = DATA / "Detalles viajes foraneos ultimo año.xlsx"
 SALIDA = DATA / "Detalles viajes foraneos ultimo año.csv"
 

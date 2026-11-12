@@ -11,11 +11,11 @@ Principios (cada uno corrige un problema detectado en data_engineer.py):
   4. Las capacidades viven en capacidades_config.csv (editable, con campo de verificación
      contra la NOM-012-SCT-2).
   5. El script no sobrescribe su entrada y deja un reporte de calidad auditable.
-Uso:
-  python etl_oro.py --plata data/plata/viajes_foraneos_plata.csv --sep ";" \
+Uso (las rutas se interpretan desde la raíz del proyecto):
+  python data_processing/etl_oro.py --plata data/plata/viajes_foraneos_plata.csv --sep ";" \
       --catalogo data/distancias_v2/catalogo_distancias_v2.csv --salida data/oro_v2
 """
-import argparse, json, re, unicodedata
+import argparse, json, os, re, unicodedata
 from pathlib import Path
 import numpy as np
 import pandas as pd
@@ -277,7 +277,8 @@ def ejecutar(plata, sep, catalogo, salida, capacidades_csv=None):
 
 
 if __name__ == '__main__':
-    
+    os.chdir(Path(__file__).resolve().parent.parent)   # rutas relativas a la raíz del proyecto, se corra desde donde se corra
+
     DS_FILE_ADRESS = Path()
     DATA_DIR = DS_FILE_ADRESS/'data'/'plata'
     DATA_ADRESS = DATA_DIR/'viajes_foraneos_plata.csv'

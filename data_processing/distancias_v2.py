@@ -1,12 +1,12 @@
 """
 Catálogo de distancias v2 (sin coordenadas de plantas: se trabaja con CIUDADES).
 
-Flujo:
-  1. python etl_oro.py ...                      -> data/oro_v2/viajes_foraneos_oro.csv
-  2. python distancias_v2.py --solo-tablas      -> genera config/plantas.csv y config/destinos_canonicos.csv
+Flujo (desde la raíz del proyecto; las rutas se interpretan desde ahí):
+  1. python data_processing/etl_oro.py ...                   -> data/oro_v2/viajes_foraneos_oro.csv
+  2. python data_processing/distancias_v2.py --solo-tablas   -> genera config/plantas.csv y config/destinos_canonicos.csv
      (revisas/completas esas tablas a mano; son la fuente única de verdad)
-  3. python distancias_v2.py                    -> geocodifica + rutea; escribe catalogo_distancias_v2.csv
-  4. python etl_oro.py --catalogo catalogo_distancias_v2.csv ...   (vuelve a correr el ETL)
+  3. python data_processing/distancias_v2.py                 -> geocodifica + rutea; escribe catalogo_distancias_v2.csv
+  4. python data_processing/etl_oro.py ...                   (vuelve a correr el ETL con el catálogo nuevo)
 
 Garantías:
   * Todo lo que consulta a Nominatim/OSRM se guarda en caché (se puede interrumpir y reanudar).
@@ -364,6 +364,7 @@ def construir_catalogo(oro_csv, plantas_csv, destinos_csv, salida, geocoder=None
 
 
 if __name__ == '__main__':
+    os.chdir(Path(__file__).resolve().parent.parent)   # rutas relativas a la raíz del proyecto, se corra desde donde se corra
     ap = argparse.ArgumentParser()
     ap.add_argument('--oro', default='data/oro_v2/viajes_foraneos_oro.csv')
     ap.add_argument('--plantas', default='config/plantas.csv')
