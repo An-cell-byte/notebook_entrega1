@@ -138,6 +138,11 @@
 - Sensibilidad: umbral 0–10% → 36.9–38.7 M (estable). Capacidad 2E: P95 (~26 t) 27.8 M; P99 (29 t) 38.5 M; legal (32 t) 66.7 M →
   el tope de 2 ejes vale ~28 M. Benchmark del mismo transportista (1,381 viajes): 10.4 vs 12.7 M, sugerida más barata en 84%.
 - IC sesgado hacia arriba (elegir el mínimo de tarifas ruidosas = "maldición del ganador"); el punto es razonable.
+- CAMBIO (2026-11-11, pedido del usuario): el bootstrap de la sección 6 ahora evalúa los MISMOS movimientos (decisión base fija)
+  con tarifas remuestreadas (antes re-decidía en cada réplica → IC acotado en 0 por construcción). Nuevo total 38.5 M [17.4–62.6]
+  (incluye incertidumbre de composición, dos vías). Por movimiento: 3E→2E 24.1 [17.2–29.4]; BC→2E 10.8 [7.4–12.9];
+  Torton→2E 1.4 [−0.4–1.8]; 2E→3E 1.2 [−2.6–3.3]; 3E→Full 0.5 [−0.9–1.1]. Por planta: Pesquería 15.3 [5.5–28.7],
+  Juventud 9.5 [4.8–15.1], Churubusco 5.2 [1.3–10.0]; Largos Apodaca 2.3 [−2.4–4.3] y Largos Puebla 0.5 [−1.9–2.8] cruzan 0.
 - Juventud 3E ligeros (u<0.5, 1,114 viajes): 423 pasan a 2E (3.7 M); 630 no tienen tarifa de 2E en su ruta y no hay Torton en
   Juventud → para ellos es problema de consolidación (o de abrir unidad chica), no de cambio de unidad. Recupera poco de 60 M.
 
@@ -145,6 +150,8 @@
 - Solo se grafica lo que lleva IC; lo descriptivo (universo, mezcla por planta, capacidades, histogramas) va en tabla.
   Títulos centrados, subtítulos cortos (IC y ventana), etiquetas con el valor solamente. Tablas compactas (pocas columnas).
 - `titulo(fig, texto, sub)` se llama al final de cada figura y hace el `tight_layout`.
+- Histogramas de carga vs capacidad por unidad RESTAURADOS (2026-11-11, pedido del usuario), tras la tabla de la 4.2, con u agregada
+  e IC 95 % en cada panel.
 - Notebook: 6 figuras (utilización planta×unidad; % del gasto ocioso por unidad; top-10 costo ocioso; costo/t-km real vs lleno;
   movimientos de right-sizing; utilización antes/después y ahorro por planta). Respaldos previos en el scratchpad.
 - DECISIÓN: los movimientos que suben de unidad (2E→3E, Torton→2E, 3E→Full) SÍ cuentan en el ahorro reportado (38.5 M),
@@ -199,6 +206,9 @@
   Entrena ene–may, valida jun (lr 0.05, 31 hojas), reentrena ene–jun, prueba jul–ago.
 - Exactitud jul–ago: modelo 94.9% [92.4–96.8], regla "más usada en la ruta" 81.9% [74.8–87.7]; balanceada 0.94 vs 0.50.
   Importancia: peso programado 30 pp, historial ruta 14 pp, distancia 2, planta 1.5; mes y retorno ~0.
+- Comparación con Random Forest (sección 5.1b; one-hot de planta/grupo, min_samples_leaf=5 por log-loss en jun): exactitud
+  94.5% [91.4–97.0] vs boosting 94.9%; diferencia pareada +0.4% [−0.7, +2.1] (empate); log-loss RF 0.180 vs 0.156 → se queda
+  el boosting porque el simulador usa las probabilidades.
 - Atípicos (P(unidad más chica) ≥ 0.5): 3.3% de 3E en jul–ago (301), peso mediano 24 t; vs right-sizing C1 ~9% de 3E →
   el ahorro es sobre todo CAMBIO DE POLÍTICA (pedir 2E para ~24 t en rutas que hoy usan 3E sistemáticamente), no corrección de errores.
 
@@ -235,6 +245,11 @@
 - Rutas a Baja California Sur (Los Cabos, Cd. Constitución; 29 viajes): OSRM da ~3,300–4,200 km por tierra vía Mexicali
   (ratio 2.8–3.7). Si en la práctica cruzan en ferry (Topolobampo/Mazatlán→La Paz), los km reales son mucho menores. POR DECIDIR.
 - Los archivos `test_etl.py` / `test_distancias.py` NO están en el repo (no se encontraron).
+- (2026-11-12) `etl_oro.py` había perdido lógica (editado 18:07 del 10-nov, después de generar oro_v2). Reconstruido y
+  VERIFICADO: reproduce data/oro_v2 exacto (todas las columnas y archivos auxiliares). Reglas: Flag_Discrepancia_Peso =
+  |programado − real| > 1,000 kg; Es_Multidestino = ',' en destino; Es_Region = '+'; Km_Estimado = fuente estimado_haversine
+  (no confiable); Costo_Ton_Km_Bruto sin filtro; Km_Fuente conserva motivo del catálogo; respaldo `Tipo Camión` si la familia
+  es nula (plataforma 40 pies); rutas_pendientes con columna Fuente.
 
 ## 6. Pendientes
 1. ~~Revisar salidas de distancias; rerun del ETL con catálogo v2~~ (hecho 2026-11-10). Queda: decidir ruta ferry vs. tierra a BCS.
