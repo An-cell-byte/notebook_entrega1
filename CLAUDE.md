@@ -158,6 +158,15 @@
   identificados aparte como "subir de unidad".
 
 ## 4h. Componente 2 — DAG (2026-11-11)
+- ENTREVISTA (2026-11-12): a veces la unidad pedida NO está disponible → se cancela y se pide otra. Datos solo tienen viajes
+  realizados (unidad asignada ≠ pedida). Diagnóstico: en 82 rutas "de 2E", 3E con ≤26 t = 2.3% (posibles sustituciones; 59% por
+  transportista que también hace 2E ahí); no cuestan más (+1.9% [−2.2, +6.2]) ni suben en semanas de más demanda (+0.3 pp n.s.).
+  Implica: nodo no observado "disponibilidad" en el DAG; el modelo de elección reproduce asignación, no solicitud; el ahorro
+  depende de disponibilidad (rango 18.8–31.6 M). Pedir registro de solicitudes canceladas. Registro de cancelaciones NO existe ni se puede obtener (usuario).
+  IMPLEMENTADO en C2: DAG con T = unidad ASIGNADA y nodo no observado que incluye disponibilidad; sección 1.4 (huella de
+  sustituciones: 1.5% de viajes en rutas de 2E, presión de demanda +0.30 pp [−0.07, +0.68], costo +3.6% [−1.5, +8.9] → sin sesgo
+  detectable); nota en 5.4; 6.3 reporta rango 18.8–31.6 M; sección 7.4 escenario: ahorro jul–ago 6.2 / 5.6 / 5.0 / 4.3 / 3.1 M
+  para p = 0 / 10 / 20 / 30 / 50 % de indisponibilidad, positivo en 100% de réplicas.
 - Pendiente de Ternium: ¿cuántos 2 ejes adicionales por semana pueden surtir los transportistas por planta?; ¿revisión tarifaria abr–may?, nodos faltantes (cliente que exige unidad, ventanas), retorno.
 - Lineamientos C2: validación temporal, solo info al momento de decidir, supuestos diagnosticados, robustez (3–4 decisiones),
   falsificación; Reto B: DAG + positividad + sensibilidad (Cinelli-Hazlett/valor E), econometría con EF de ruta y retorno,
@@ -207,8 +216,13 @@
 - Exactitud jul–ago: modelo 94.9% [92.4–96.8], regla "más usada en la ruta" 81.9% [74.8–87.7]; balanceada 0.94 vs 0.50.
   Importancia: peso programado 30 pp, historial ruta 14 pp, distancia 2, planta 1.5; mes y retorno ~0.
 - Comparación con Random Forest (sección 5.1b; one-hot de planta/grupo, min_samples_leaf=5 por log-loss en jun): exactitud
-  94.5% [91.4–97.0] vs boosting 94.9%; diferencia pareada +0.4% [−0.7, +2.1] (empate); log-loss RF 0.180 vs 0.156 → se queda
-  el boosting porque el simulador usa las probabilidades.
+  94.5% [91.4–97.0] vs boosting 94.9%; diferencia pareada +0.4% [−0.7, +2.1] (empate); log-loss RF 0.180 vs 0.156.
+- DECISIÓN usuario (2026-11-12): Random Forest = modelo PRINCIPAL de elección (familia única con el RF de tarifas de la sección 8);
+  gradient boosting queda como comparación (5.1b). Con RF: exactitud 94.5% [91.4–96.8]; importancia peso 27 pp, historial 12 pp;
+  atípicos 2.9% de 3E (266). Simulador: validación 3/3 dentro; jul–ago ahorro 5.5 M [3.2–8.7] (antes 6.2 con GB); u +0.4 pp
+  [0.0–0.8]; ociosa −2.7 kt [0.3–5.2]. Indisponibilidad 0/10/20/30/50% → 5.5/4.9/4.4/3.8/2.8 M. Sección 8: observadas 5.4 M
+  [2.9–9.0]; con RF tarifas 5.5 verificado + 1.0 [0.7–1.3] modelo; con filtro del RF de elección (P≥2%) casi igual (5.5 + 0.8),
+  a diferencia del GB (2.3 M) → el filtro ya no es el obstáculo.
 - Atípicos (P(unidad más chica) ≥ 0.5): 3.3% de 3E en jul–ago (301), peso mediano 24 t; vs right-sizing C1 ~9% de 3E →
   el ahorro es sobre todo CAMBIO DE POLÍTICA (pedir 2E para ~24 t en rutas que hoy usan 3E sistemáticamente), no corrección de errores.
 
@@ -232,6 +246,29 @@
 - Jul–ago fuera de muestra: 1,474 de 13,800 viajes cambian; ahorro 6.2 M [3.3–10.0] (1.5%), positivo en 100% de réplicas;
   u +0.48 pp [0.06–0.97]; ociosa −3.0 kt [0.4–6.2]. ~25 M en ritmo de 8 meses (vs 31.6 M in-sample de la sección 6).
 - Componente 2 completa (secciones 1–7). Falta: hilo conductor del reporte; respuestas de Ternium.
+
+## 4n. Componente 2 — predecir y optimizar: RF de tarifas + programa lineal (sección 8, 2026-11-12; sugerencia del profesor)
+- RF de regresión de log(costo); entradas pre-decisión (unidad, km, planta, grupo, coord. destino, peso prog., mes) + historial
+  de tarifa de la ruta en CADA unidad (solo viajes anteriores; congelado al corte). Sin transportista (mediador).
+  Ajuste ene–may, calibración jun (leaf 3, max_features 0.6), final ene–jun, prueba jul–ago: R² log 0.952; error típico 6%
+  (celda con tarifa previa) y 11% (extrapolación); intervalo 90% cubre 89–92%.
+- LP: tarifa observada (mediana ene–jun, ≥5) o predicha; compatibilidad = cabe + planta ya usa la unidad (≥30 viajes) + caja seca;
+  mover si ahorro > max(3%, error típico de las tarifas predichas); RESPALDO CAUSAL: tarifas predichas solo para 3E→2E y BC→2E;
+  flota (máx semanal ene–jun). El clasificador NO se usa como filtro (codifica la política actual; con P≥2% el ahorro cae a 2.3 M).
+- Jul–ago: solo observadas 6.1 M [3.0–10.8] verificado; con RF 6.2 M verificado + 1.0 M [0.7–1.3] solo según el modelo (356
+  viajes 3E/BC→2E sin tarifa previa). Sin respaldo causal +1.9 M pero incluye 3E→Full (contradice sección 3). Aporte chico:
+  la flota amarra, la regla causal limita y la política actual pesa. Valor: lista de rutas piloto (8.5): Pesquería→Castaños
+  BC→2E (118 viajes, −15%), Guerrero→Matamoros 3E→2E (27, −28%), etc.
+- Ojo: la sección 7 reutiliza el nombre `val` (tabla) → la sección 8 usa máscaras m_entr/m_val/m_prueba.
+
+## 4o. Reorganización del repositorio (compañeros, 2026-11-12)
+- Notebooks y `ternium_comun.py` en `analisis_estadistico_IA/`; ETL (`etl_oro.py`, `distancias_v2.py`, `capa_plata.py`,
+  `limpieza_viajes_foraneos.py`) en `data_processing/`. La primera celda de cada notebook hace `os.chdir` a la raíz y agrega
+  esas carpetas al path. El oro viejo quedó como `data/plata/viajes_foraneos_oro_ANTIGUO.csv`.
+- `data/oro_v2/viajes_foraneos_oro.csv` fue re-guardado (commit 778a9b7): fechas en formato `1/8/2026 16:57` y
+  FECHA_VIAJE_FINALIZADO sin segundos; el resto idéntico. Resultados de C2 sin cambio. Para volver al formato del ETL:
+  regenerar con `python data_processing/etl_oro.py ...`.
+- `borrador_entrega2_reto.docx` se sacó del repo (queda local, sin versionar).
 
 ## 5. Estado del código (carpeta `etl/`)
 - `etl_oro.py` (ETL v2) + `test_etl.py`. `distancias_v2.py` + `test_distancias.py` (17 pruebas totales, pasan).

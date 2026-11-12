@@ -13,6 +13,10 @@ Ventana de datos: viajes con egreso del 2026-01-01 al 2026-08-31.
    útil legal (49.5 t). Un doble remolque suele pesar más que un sencillo. ¿Cuál es su tara real?
 3. 🟡 **Tara del Torton (C3).** Por ahora su capacidad es el techo operativo (P99 = 16.9 t).
 4. 🟡 **Hueco de julio.** Julio tiene 6,887 viajes contra ~9,000 en los otros meses. ¿Es un problema de extracción o una baja real?
+6. 🟡 **Unidades no disponibles (entrevista, 2026-11-12).** Ternium comentó que a veces la unidad pedida no está disponible y
+   se cancela la solicitud para pedir otra. ¿Existe un registro de solicitudes canceladas o rechazadas (unidad pedida, unidad
+   finalmente asignada, planta, fecha)? Con él se mediría qué tan seguido no hay 2 ejes, que es el parámetro que más mueve el
+   ahorro del right-sizing (18.8–31.6 M en ene–ago según la disponibilidad supuesta).
 5. 🟡 **Full solo en Largos Puebla.** Largos Apodaca no usa Full (y sí 44% de 2 ejes). ¿Hay una razón operativa (clientes,
    rutas, permisos)?
 
@@ -51,3 +55,6 @@ Ventana de datos: viajes con egreso del 2026-01-01 al 2026-08-31.
    jun–ago, con el salto entre finales de abril y mayo. ¿Hubo un ajuste de tarifas? ¿A qué transportistas o rutas aplicó?
 11. 🟡 **Fecha de finalización.** `FECHA_VIAJE_FINALIZADO` no parece la llegada física (la placa sale a otro viaje antes de
    esa fecha en 37% de los casos). ¿Qué evento registra? ¿Las placas son del tractor o del remolque?
+12. 🟡 **Piloto de 2 ejes en rutas sin historial.** El modelo de tarifas predice que en rutas donde hoy solo se usa 3 ejes o Big Coil
+   un 2 ejes costaría 15–30 % menos (error típico del modelo ±10 %). Propuesta: probar algunos viajes en 2 ejes en Pesquería →
+   Castaños (Big Coil, 118 viajes en jul–ago) y Guerrero → Matamoros (3 ejes, 27 viajes) y comparar la tarifa real con la predicha.
