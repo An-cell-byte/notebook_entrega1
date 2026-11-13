@@ -288,14 +288,16 @@ Los cuatro componentes trabajan sobre el **mismo universo**: **58,275 viajes** (
 
 | Sección | Qué hace |
 |---|---|
-| 1. Cuatro perspectivas | Compara sobre la misma demanda: **actual**, **heurística** (la unidad más frecuente en la ruta o la más chica compatible), **MILP con flota** (el de C2) y **consolidación** First-Fit Decreasing (juntar viajes de 3 ejes del mismo día y ruta hasta 36.575 t). |
-| 2. Discusión crítica | Qué supone y qué ignora cada enfoque. |
-| 3. Casos raros | 20 viajes que contradicen el patrón (sobrecosto, subcosto, peso alto en 2 ejes e inversión tarifaria), con diagnóstico provisional y la evidencia que habría que pedirle a Ternium. |
+| 1. Cinco perspectivas | Compara sobre la misma demanda: **actual**, **reglas de C1** (peso real, sin flota), **heurística** (la unidad más frecuente en la ruta o la más chica compatible), **MILP con flota** (el de C2) y **consolidación** First-Fit Decreasing (juntar viajes de 3 ejes del mismo día y ruta hasta 36.575 t). Separa el ahorro con y sin respaldo causal según C2, y calcula el IC con el método de C1 (mismos movimientos, tarifas recalculadas). |
+| 2. Discusión crítica | Qué supone y qué ignora cada enfoque, el paso de C1 a C2 y lo que C2 agrega fuera de la comparación: disponibilidad de unidades, resultado fuera de muestra y modelo de tarifas. |
+| 3. Casos raros | 20 viajes que contradicen el patrón, 4 por familia: sobrecosto, subcosto, peso alto en 2 ejes, inversión tarifaria y posible sustitución por indisponibilidad (definición de C2, sección 1.4). Cada uno con diagnóstico provisional y la evidencia que habría que pedirle a Ternium. |
 
 **Resultados principales (ene–ago 2026)**
 
-- Heurística: **31.2 M MXN [16.6–54.8]**, el 98.8 % de lo que logra el MILP, aunque no respeta la disponibilidad de flota.
-- MILP con flota: **31.6 M MXN [16.7–55.2]**.
+- Reglas de C1: **38.5 M MXN [17.4–62.6]**, idéntico a C1. Con peso programado baja a 34.9 M y con disponibilidad de flota a 31.6 M (el MILP de C2).
+- Heurística: **31.2 M MXN [14.3–48.9]**, el 98.8 % de lo que logra el MILP, aunque no respeta la disponibilidad de flota.
+- MILP con flota: **31.6 M MXN [13.9–52.7]**.
+- Con respaldo causal (3E→2E y Big Coil→2E) está entre el 84 % y el 91 % del ahorro de cada enfoque (MILP: 27.4 M).
 - Consolidación: **0.7 M MXN [0.1–1.8]**, con solo 37 viajes eliminados. Las cargas típicas (~29 t) no caben de dos en dos en un 3 ejes.
 
 ## Componente 4: ¿cuánto ganaría Ternium realmente?
