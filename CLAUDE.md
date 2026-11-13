@@ -199,6 +199,8 @@
   Cobertura: 2E vs 3E cubre 48% de viajes 3E; Full vs 3E 7%.
 - Retorno no abarata (−2.1% n.s.; +0.3% mismo transportista). Control negativo FALLA parcialmente: consigue retorno −3.2%
   [−5.8, −0.5]; con mismo transportista −0.8% → factores no ajustados de ~1–3%; no afecta 2E vs 3E (−21%) pero sí efectos pequeños.
+- TERNIUM (2026-11-12): la tarifa depende solo de la carga de ida → retorno fuera del DAG (figura y tablas 1.1–1.2 actualizadas);
+  la sección 2 queda como verificación. La estimación (sección 3) aún incluye "es retorno" como control; quitarlo casi no cambia nada.
 
 ## 4j. Componente 2 — robustez y falsificación (sección 4, 2026-11-11)
 - Robustez (7 variantes: soporte ≥2/≥20, peso real, incluir pesos imposibles, solo km confiable, sin mayo): 2E vs 3E entre
@@ -244,7 +246,7 @@
 - Validación ene–ago (actual simulado vs C1): costo/viaje 28,182 [25,330–31,311] vs 28,082 [23,285–33,483]; u 0.790 vs 0.791
   [0.770–0.815]; % ocioso 21.0 vs 20.9 [18.5–23.0] → 3/3 dentro. Placebo modelo de costos: +0.8% (conservador para el RS).
 - Jul–ago fuera de muestra: 1,474 de 13,800 viajes cambian; ahorro 6.2 M [3.3–10.0] (1.5%), positivo en 100% de réplicas;
-  u +0.48 pp [0.06–0.97]; ociosa −3.0 kt [0.4–6.2]. ~25 M en ritmo de 8 meses (vs 31.6 M in-sample de la sección 6).
+  u +0.48 pp [0.06–0.97]; ociosa −3.0 kt [0.4–6.2]. ~25 M en ritmo de 8 meses (vs 31.6 M in-sample de la sección 6). Con RF (2026-11-13, notebook re-ejecutado): 5.5 M [3.2–8.7], ~22 M en ritmo de 8 meses.
 - Componente 2 completa (secciones 1–7). Falta: hilo conductor del reporte; respuestas de Ternium.
 
 ## 4n. Componente 2 — predecir y optimizar: RF de tarifas + programa lineal (sección 8, 2026-11-12; sugerencia del profesor)

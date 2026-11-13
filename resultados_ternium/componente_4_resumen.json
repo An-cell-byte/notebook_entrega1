@@ -24,32 +24,32 @@
    "Viajes": 4713
   },
   {
-   "Ajuste": "2. Solo movimientos con efecto causal estimado en C2 (3E→2E, Big Coil→2E, Big Coil→3E)",
-   "Ahorro_M": 28.426417,
-   "IC_inf_M": 14.413559521846565,
-   "IC_sup_M": 49.05082777861587,
-   "Viajes": 4067
+   "Ajuste": "2. Solo movimientos con efecto causal estimado en C2 (3E→2E, Big Coil→2E)",
+   "Ahorro_M": 27.392028,
+   "IC_inf_M": 13.997372324820082,
+   "IC_sup_M": 46.607730452359625,
+   "Viajes": 3503
   },
   {
    "Ajuste": "3. Maldición del optimizador: elegir con semanas pares, medir con impares (y al revés)",
-   "Ahorro_M": 28.194269,
-   "IC_inf_M": 14.207366275344489,
-   "IC_sup_M": 48.507318534073924,
-   "Viajes": 4687
+   "Ahorro_M": 27.15212,
+   "IC_inf_M": 13.908594732370009,
+   "IC_sup_M": 46.47105917831983,
+   "Viajes": 3423
   },
   {
    "Ajuste": "4. Disponibilidad: unidades por planta y semana = P90 semanal observado (no el máximo)",
-   "Ahorro_M": 20.794876,
-   "IC_inf_M": 11.021752545472918,
-   "IC_sup_M": 34.03615140384708,
-   "Viajes": 3270
+   "Ahorro_M": 19.514541,
+   "IC_inf_M": 10.583185046608959,
+   "IC_sup_M": 31.53103952982193,
+   "Viajes": 2192
   },
   {
    "Ajuste": "5. Respuesta del mercado: la unidad adicional se paga con prima de 6.7%",
-   "Ahorro_M": 15.551672763801983,
-   "IC_inf_M": 8.269233075151348,
-   "IC_sup_M": 25.0651438505165,
-   "Viajes": 3281
+   "Ahorro_M": 15.53084790989951,
+   "IC_inf_M": 8.262777761276636,
+   "IC_sup_M": 25.354509968721054,
+   "Viajes": 2206
   }
  ],
  "escenarios": [
@@ -69,15 +69,15 @@
   {
    "Escenario": "Central",
    "Supuestos": "movimientos con respaldo causal; flota = P90 semanal; prima 6.7%; 2E hasta 29 t",
-   "Viajes": 3281,
-   "Rutas": 160,
-   "Ahorro_M": 15.551672763801983,
-   "IC_inf_M": 8.269233075151348,
-   "IC_sup_M": 25.0651438505165,
-   "Anual_M": 23.327509145702976,
-   "Anual_inf_M": 12.403849612727022,
-   "Anual_sup_M": 37.597715775774745,
-   "Pct_gasto": 0.9503193441933319
+   "Viajes": 2206,
+   "Rutas": 155,
+   "Ahorro_M": 15.53084790989951,
+   "IC_inf_M": 8.262777761276636,
+   "IC_sup_M": 25.354509968721054,
+   "Anual_M": 23.296271864849267,
+   "Anual_inf_M": 12.394166641914953,
+   "Anual_sup_M": 38.03176495308158,
+   "Pct_gasto": 0.9490467954582797
   },
   {
    "Escenario": "Pesimista",
@@ -86,63 +86,233 @@
    "Rutas": 122,
    "Ahorro_M": 5.605413000522054,
    "IC_inf_M": 2.5091776581771192,
-   "IC_sup_M": 10.282603960988837,
+   "IC_sup_M": 10.282603960988846,
    "Anual_M": 8.40811950078308,
    "Anual_inf_M": 3.763766487265679,
-   "Anual_sup_M": 15.423905941483255,
+   "Anual_sup_M": 15.42390594148327,
    "Pct_gasto": 0.3425311532395308
   }
  ],
  "sens_flota": [
   {
    "Cuantil": 1.0,
-   "Viajes": 4709,
-   "Ahorro_M": 21.213000014192826
+   "Viajes": 3446,
+   "Ahorro_M": 21.4310487524079,
+   "Sin_prima_M": 27.15212,
+   "Sin_prima_inf_M": 13.908594732370009,
+   "Sin_prima_sup_M": 46.47105917831983
   },
   {
    "Cuantil": 0.95,
-   "Viajes": 4086,
-   "Ahorro_M": 18.938313262736283
+   "Viajes": 2960,
+   "Ahorro_M": 19.032702301225918,
+   "Sin_prima_M": 24.064407,
+   "Sin_prima_inf_M": 12.458172796723325,
+   "Sin_prima_sup_M": 40.74340178701774
   },
   {
    "Cuantil": 0.9,
-   "Viajes": 3281,
-   "Ahorro_M": 15.551672763801983
+   "Viajes": 2206,
+   "Ahorro_M": 15.53084790989951,
+   "Sin_prima_M": 19.514541,
+   "Sin_prima_inf_M": 10.583185046608959,
+   "Sin_prima_sup_M": 31.53103952982193
   },
   {
    "Cuantil": 0.75,
-   "Viajes": 2407,
-   "Ahorro_M": 11.239641873052262
+   "Viajes": 1542,
+   "Ahorro_M": 11.05012802872672,
+   "Sin_prima_M": 13.879207,
+   "Sin_prima_inf_M": 7.56589769797666,
+   "Sin_prima_sup_M": 22.053105493159336
   },
   {
    "Cuantil": 0.5,
-   "Viajes": 1049,
-   "Ahorro_M": 5.358842838478865
+   "Viajes": 668,
+   "Ahorro_M": 5.169669009039424,
+   "Sin_prima_M": 6.482914,
+   "Sin_prima_inf_M": 3.7133370548363476,
+   "Sin_prima_sup_M": 10.023200561151874
   }
  ],
- "p_quiebre": 0.26576687184622017,
- "p_quiebre_ic": [
-  0.21617584485812194,
-  0.33160566493226307
+ "extremos_disponibilidad": [
+  {
+   "Extremo": "Optimista: siempre disponible (sin tope de flota)",
+   "Viajes": 4231,
+   "Sin_prima_M": 31.506514,
+   "Sin_prima_inf_M": 15.049813395303463,
+   "Sin_prima_sup_M": 56.73330354549065,
+   "Con_prima_M": 24.7980136314497,
+   "Con_prima_inf_M": 11.594664431382185,
+   "Con_prima_sup_M": 45.50342905373638
+  },
+  {
+   "Extremo": "Conservador: salió de la planta esa semana",
+   "Viajes": 4219,
+   "Sin_prima_M": 31.388217,
+   "Sin_prima_inf_M": 15.025016024470023,
+   "Sin_prima_sup_M": 56.690875824547405,
+   "Con_prima_M": 24.708755386829754,
+   "Con_prima_inf_M": 11.519931037609922,
+   "Con_prima_sup_M": 45.31555019197043
+  },
+  {
+   "Extremo": "Conservador: salió de la planta ese día",
+   "Viajes": 4089,
+   "Sin_prima_M": 30.426491,
+   "Sin_prima_inf_M": 14.489184610594286,
+   "Sin_prima_sup_M": 55.37885571259813,
+   "Con_prima_M": 23.995756269639966,
+   "Con_prima_inf_M": 10.986313651567821,
+   "Con_prima_sup_M": 44.1951632079596
+  }
  ],
- "pct_sobre_quiebre": 0.1079245283018868,
- "tarifa_media": 23847.8515696434,
- "validacion": {
-  "ahorro": 4708462.1422587605,
-  "ic": [
-   2235692.731569009,
-   8088255.916675568
-  ],
-  "viajes": 941,
-  "central_julago": 3888945.4882818013
+ "dos_ejes_adicionales": {
+  "por_semana": 61.27777777777778,
+  "actuales_semana": 379.5,
+  "por_planta": [
+   {
+    "Planta": "Pesquería",
+    "Hoy": 2256,
+    "Adicionales": 975,
+    "Hoy_sem": 62.666666666666664,
+    "Adicionales_sem": 27.083333333333332,
+    "Aumento_pct": 43.21808510638298
+   },
+   {
+    "Planta": "Juventud",
+    "Hoy": 2191,
+    "Adicionales": 447,
+    "Hoy_sem": 60.861111111111114,
+    "Adicionales_sem": 12.416666666666666,
+    "Aumento_pct": 20.401643085349157
+   },
+   {
+    "Planta": "Churubusco",
+    "Hoy": 926,
+    "Adicionales": 370,
+    "Hoy_sem": 25.72222222222222,
+    "Adicionales_sem": 10.277777777777779,
+    "Aumento_pct": 39.956803455723545
+   },
+   {
+    "Planta": "Guerrero",
+    "Hoy": 1548,
+    "Adicionales": 165,
+    "Hoy_sem": 43.0,
+    "Adicionales_sem": 4.583333333333333,
+    "Aumento_pct": 10.65891472868217
+   },
+   {
+    "Planta": "Largos Apodaca",
+    "Hoy": 3382,
+    "Adicionales": 118,
+    "Hoy_sem": 93.94444444444444,
+    "Adicionales_sem": 3.2777777777777777,
+    "Aumento_pct": 3.4890597279716142
+   },
+   {
+    "Planta": "Universidad",
+    "Hoy": 579,
+    "Adicionales": 44,
+    "Hoy_sem": 16.083333333333332,
+    "Adicionales_sem": 1.2222222222222223,
+    "Aumento_pct": 7.599309153713299
+   },
+   {
+    "Planta": "CSI San Luis Potosi",
+    "Hoy": 582,
+    "Adicionales": 33,
+    "Hoy_sem": 16.166666666666668,
+    "Adicionales_sem": 0.9166666666666666,
+    "Aumento_pct": 5.670103092783505
+   },
+   {
+    "Planta": "CSI Apodaca",
+    "Hoy": 83,
+    "Adicionales": 32,
+    "Hoy_sem": 2.3055555555555554,
+    "Adicionales_sem": 0.8888888888888888,
+    "Aumento_pct": 38.55421686746988
+   },
+   {
+    "Planta": "CEDI Norte",
+    "Hoy": 83,
+    "Adicionales": 14,
+    "Hoy_sem": 2.3055555555555554,
+    "Adicionales_sem": 0.3888888888888889,
+    "Aumento_pct": 16.867469879518072
+   },
+   {
+    "Planta": "Bodega del Toro",
+    "Hoy": 158,
+    "Adicionales": 3,
+    "Hoy_sem": 4.388888888888889,
+    "Adicionales_sem": 0.08333333333333333,
+    "Aumento_pct": 1.89873417721519
+   },
+   {
+    "Planta": "CEDI Mexico",
+    "Hoy": 1641,
+    "Adicionales": 3,
+    "Hoy_sem": 45.583333333333336,
+    "Adicionales_sem": 0.08333333333333333,
+    "Aumento_pct": 0.18281535648994515
+   },
+   {
+    "Planta": "CEDI Tuxtla",
+    "Hoy": 31,
+    "Adicionales": 2,
+    "Hoy_sem": 0.8611111111111112,
+    "Adicionales_sem": 0.05555555555555555,
+    "Aumento_pct": 6.451612903225806
+   }
+  ]
  },
- "anual": 23327509.145702973,
- "anual_bajo": 22200585.05463025,
- "anual_alto": 24328500.299389772,
- "anual_jul": 24360449.73929506,
- "pct_gasto": 0.009503193441933318,
+ "quiebre_cancelacion": {
+  "ahorro_por_viaje": 7040.275571123985,
+  "tabla": [
+   {
+    "p_no_surtidas": 0.1,
+    "Costo_quiebre_MXN": 63362.48014011586
+   },
+   {
+    "p_no_surtidas": 0.2,
+    "Costo_quiebre_MXN": 28161.10228449594
+   },
+   {
+    "p_no_surtidas": 0.3,
+    "Costo_quiebre_MXN": 16427.309665955963
+   },
+   {
+    "p_no_surtidas": 0.5,
+    "Costo_quiebre_MXN": 7040.275571123985
+   }
+  ]
+ },
+ "p_quiebre": 0.3282567536525752,
+ "p_quiebre_ic": [
+  0.28530757927556977,
+  0.3705506601242521
+ ],
+ "pct_sobre_quiebre": 0.0739622641509434,
+ "tarifa_media": 26948.783318223028,
+ "validacion": {
+  "ahorro": 4684782.407011207,
+  "ic": [
+   2120726.5899933362,
+   8332913.547960961
+  ],
+  "viajes": 625,
+  "central_julago": 3865584.8060932835
+ },
+ "anual": 23296271.864849266,
+ "anual_bajo": 22203015.1554932,
+ "anual_alto": 24389888.312650956,
+ "anual_jul": 24325229.191312574,
+ "pct_gasto": 0.009490467954582797,
  "ociosa_act": 442.38327656,
- "ociosa_cen": 429.72198656,
+ "ociosa_cen": 428.73527656,
  "consolidacion": [
   {
    "Ventana": "Mismo día (C3)",
@@ -166,16 +336,16 @@
  "peso_med": 29.47,
  "pct_dos_caben": 0.06362934362934362,
  "piloto": {
-  "delta": 0.05826690580413964,
-  "sigma": 0.17599420676635713,
-  "n_iid": 144,
-  "icc": 0.3951654708425553,
-  "mbar": 14.80503144654088,
-  "deff": 6.45527175156861,
-  "n_clu": 930,
-  "bloques": 63,
-  "por_semana": 130.77777777777777,
-  "semanas": 13,
+  "delta": 0.05580603080479764,
+  "sigma": 0.18682479104355507,
+  "n_iid": 176,
+  "icc": 0.4009654333835395,
+  "mbar": 14.830246913580247,
+  "deff": 6.5454509475050635,
+  "n_clu": 1152,
+  "bloques": 78,
+  "por_semana": 133.47222222222223,
+  "semanas": 16,
   "rutas": [
    "Pesquería | San Luis Potosí",
    "Pesquería | Altamira",
@@ -183,31 +353,25 @@
    "Pesquería | Mexicali",
    "Juventud | Nuevo Laredo",
    "Churubusco | San Luis Potosí",
-   "Pesquería | Gómez Palacios",
    "Juventud | Culiacán",
    "Guerrero | Mexicali",
-   "Juventud | Mexicali"
+   "Juventud | Mexicali",
+   "Juventud | Tultitlán"
   ],
-  "pct_top": 0.4892979681373098
+  "pct_top": 0.4900634843285217
  },
  "movimientos": [
   {
    "De": "3 Ejes",
    "A": "2 Ejes",
-   "size": 1603,
-   "sum": 11940012.213715183
+   "size": 1515,
+   "sum": 11724520.663790796
   },
   {
    "De": "Big Coil",
    "A": "2 Ejes",
-   "size": 603,
-   "sum": 3430781.314225966
-  },
-  {
-   "De": "Big Coil",
-   "A": "3 Ejes",
-   "size": 1075,
-   "sum": 180879.23586083378
+   "size": 691,
+   "sum": 3806327.2461087164
   }
  ]
 }

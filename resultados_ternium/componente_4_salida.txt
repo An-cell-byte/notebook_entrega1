@@ -5,60 +5,84 @@ Viajes cobrados a la tarifa modal (ruta × unidad × transportista): 71.3%
 === CASCADA (ene–ago 2026, M MXN, IC 95 % transportista × ruta) ===
   31.60 M [ 17.53,  52.33] |  4,721 viajes | 0. Número ingenuo: MILP con flota de C3
   31.56 M [ 17.48,  52.26] |  4,713 viajes | 1. Factibilidad: peso programado confiable y peso real dentro de la capacidad legal
-  28.43 M [ 14.41,  49.05] |  4,067 viajes | 2. Solo movimientos con efecto causal estimado en C2 (3E→2E, Big Coil→2E, Big Coil→3E)
-  28.19 M [ 14.21,  48.51] |  4,687 viajes | 3. Maldición del optimizador: elegir con semanas pares, medir con impares (y al revés)
-  20.79 M [ 11.02,  34.04] |  3,270 viajes | 4. Disponibilidad: unidades por planta y semana = P90 semanal observado (no el máximo)
-  15.55 M [  8.27,  25.07] |  3,281 viajes | 5. Respuesta del mercado: la unidad adicional se paga con prima de 6.7%
+  27.39 M [ 14.00,  46.61] |  3,503 viajes | 2. Solo movimientos con efecto causal estimado en C2 (3E→2E, Big Coil→2E)
+  27.15 M [ 13.91,  46.47] |  3,423 viajes | 3. Maldición del optimizador: elegir con semanas pares, medir con impares (y al revés)
+  19.51 M [ 10.58,  31.53] |  2,192 viajes | 4. Disponibilidad: unidades por planta y semana = P90 semanal observado (no el máximo)
+  15.53 M [  8.26,  25.35] |  2,206 viajes | 5. Respuesta del mercado: la unidad adicional se paga con prima de 6.7%
                  size        sum
 De       A                      
-3 Ejes   2 Ejes  1603  11.940012
-Big Coil 2 Ejes   603   3.430781
-         3 Ejes  1075   0.180879
+3 Ejes   2 Ejes  1515  11.724521
+Big Coil 2 Ejes   691   3.806327
 
 === ESCENARIOS ===
 Escenario  Viajes  Rutas  Ahorro_M  IC_inf_M  IC_sup_M  Anual_M  Anual_inf_M  Anual_sup_M  Pct_gasto
 Optimista    5316    193     30.69     16.80     51.04    46.03        25.20        76.57       1.88
-  Central    3281    160     15.55      8.27     25.07    23.33        12.40        37.60       0.95
+  Central    2206    155     15.53      8.26     25.35    23.30        12.39        38.03       0.95
 Pesimista    1191    122      5.61      2.51     10.28     8.41         3.76        15.42       0.34
- Cuantil  Viajes  Ahorro_M
-    1.00    4709     21.21
-    0.95    4086     18.94
-    0.90    3281     15.55
-    0.75    2407     11.24
-    0.50    1049      5.36
 
-Quiebre de prima: 26.6% [21.6%, 33.2%]; tarifa media de la unidad nueva $23,848; de los 2E cobrados arriba de tarifa, 10.8% superan el quiebre
-Validación jul–ago (decidido con ene–jun): 4.71 M [2.24, 8.09], 941 viajes; el central atribuye a jul–ago 3.89 M
+Flota por planta × semana (Ahorro_M incluye la prima; Sin_prima_* con su IC 95 %)
+ Cuantil  Viajes  Ahorro_M  Sin_prima_M  Sin_prima_inf_M  Sin_prima_sup_M
+    1.00    3446     21.43        27.15            13.91            46.47
+    0.95    2960     19.03        24.06            12.46            40.74
+    0.90    2206     15.53        19.51            10.58            31.53
+    0.75    1542     11.05        13.88             7.57            22.05
+    0.50     668      5.17         6.48             3.71            10.02
+
+=== EXTREMOS DE DISPONIBILIDAD (M MXN, ene–ago) ===
+                                          Extremo  Viajes  Sin_prima_M  Sin_prima_inf_M  Sin_prima_sup_M  Con_prima_M  Con_prima_inf_M  Con_prima_sup_M
+Optimista: siempre disponible (sin tope de flota)    4231        31.51            15.05            56.73        24.80            11.59            45.50
+       Conservador: salió de la planta esa semana    4219        31.39            15.03            56.69        24.71            11.52            45.32
+          Conservador: salió de la planta ese día    4089        30.43            14.49            55.38        24.00            10.99            44.20
+
+2 Ejes adicionales que exige el central: 61.3 viajes/semana sobre 379.5 actuales (+16%)
+                Hoy_sem  Adicionales_sem  Aumento_pct
+Planta                                               
+Pesquería          62.7             27.1         43.2
+Juventud           60.9             12.4         20.4
+Churubusco         25.7             10.3         40.0
+Guerrero           43.0              4.6         10.7
+Largos Apodaca     93.9              3.3          3.5
+Universidad        16.1              1.2          7.6
+Ahorro por viaje cambiado (central, con prima): $7,040; sin prima: $8,846
+Costo por cancelación que borra el ahorro:
+ p_no_surtidas  Costo_quiebre_MXN
+           0.1            63362.0
+           0.2            28161.0
+           0.3            16427.0
+           0.5             7040.0
+
+Quiebre de prima: 32.8% [28.5%, 37.1%]; tarifa media de la unidad nueva $26,949; de los 2E cobrados arriba de tarifa, 7.4% superan el quiebre
+Validación jul–ago (decidido con ene–jun): 4.68 M [2.12, 8.33], 625 viajes; el central atribuye a jul–ago 3.87 M
          Ahorro_M  Viajes_cambiados  Viajes  Gasto_M  Pct_gasto
-2026-01      2.18               407    6817   188.18       1.16
-2026-02      1.83               282    7413   200.82       0.91
-2026-03      1.82               353    7101   198.72       0.92
-2026-04      1.66               384    7288   196.75       0.84
-2026-05      1.97               475    7837   218.93       0.90
-2026-06      2.19               566    8019   228.68       0.96
-2026-07      2.05               433    5630   156.36       1.31
-2026-08      1.84               381    8170   248.04       0.74
-Anual ×12/8: 23.3 M; sep–dic como el peor/mejor mes: 22.2–24.3 M; con julio completado a volumen típico: 24.4 M; % del gasto 0.95%
+2026-01      2.21               271    6817   188.18       1.18
+2026-02      1.76               205    7413   200.82       0.88
+2026-03      1.81               269    7101   198.72       0.91
+2026-04      1.67               243    7288   196.75       0.85
+2026-05      2.05               305    7837   218.93       0.94
+2026-06      2.16               318    8019   228.68       0.94
+2026-07      2.04               303    5630   156.36       1.31
+2026-08      1.82               292    8170   248.04       0.73
+Anual ×12/8: 23.3 M; sep–dic como el peor/mejor mes: 22.2–24.4 M; con julio completado a volumen típico: 24.3 M; % del gasto 0.95%
 
-Capacidad ociosa legal: actual 442.4 kt; central 429.7 kt (recupera 12.7 kt = 2.9%)
+Capacidad ociosa legal: actual 442.4 kt; central 428.7 kt (recupera 13.6 kt = 3.1%)
        Ventana  Involucrados  Eliminados  Ahorro_M
 Mismo día (C3)            74          37      0.70
   Misma semana           218         109      2.11
      Mismo mes           348         175      3.52
 Peso real mediano 29.5 t; viajes con ≤ 18.3 t (dos cabrían juntos): 6.4%
 
-Piloto: δ=0.058 log (6.0%), σ=0.176 → n iid=144/grupo; ICC=0.395, m=14.8, DEFF=6.46 → n=930 viajes/grupo = 63 bloques ruta×semana; 131 cargas elegibles/semana → 13 semanas
+Piloto: δ=0.056 log (5.7%), σ=0.187 → n iid=176/grupo; ICC=0.401, m=14.8, DEFF=6.55 → n=1,152 viajes/grupo = 78 bloques ruta×semana; 133 cargas elegibles/semana → 16 semanas
                               Viajes  Ahorro_M
 Ruta                                          
-Pesquería | San Luis Potosí      533      1.76
-Pesquería | Altamira             367      1.18
+Pesquería | San Luis Potosí      383      1.84
+Pesquería | Altamira             216      1.33
 Juventud | Ciudad Hidalgo         40      1.07
 Pesquería | Mexicali              40      0.78
 Juventud | Nuevo Laredo          126      0.60
-Churubusco | San Luis Potosí     292      0.58
-Pesquería | Gómez Palacios       113      0.45
+Churubusco | San Luis Potosí     151      0.54
 Juventud | Culiacán               26      0.45
 Guerrero | Mexicali               23      0.37
 Juventud | Mexicali               14      0.37
+Juventud | Tultitlán              49      0.27
 Top 10 rutas = 49% del ahorro central
 Figuras guardadas.

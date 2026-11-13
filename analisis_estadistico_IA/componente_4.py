@@ -58,11 +58,12 @@ def pares(lista):
     return M & (PERM0 | np.eye(K, dtype=bool))
 
 
-# Respaldo causal (C2, sección 3): 2E vs 3E −20.8 % [−24.2, −17.2]; 2E vs Big Coil −28.8 %; 3E vs Big Coil −9.5 %.
-# Sin respaldo: Torton→2E (−1.3 % [−19, +21], n.s.), 3E→Full (Full +21.5 %), 2E→3E (2E más barato en 91 % de rutas;
+# Respaldo causal (C2, secciones 3–4 y regla de la sección 8): 2E vs 3E −20.8 % [−24.2, −17.2]; 2E vs Big Coil −28.8 %.
+# Sin respaldo: Big Coil→3E (−9.5 % total, pero −0.8 % con el mismo transportista: efecto de proveedor, no de unidad;
+# C2 no lo afirma), Torton→2E (−1.3 % [−19, +21], n.s.), 3E→Full (Full +21.5 %), 2E→3E (2E más barato en 91 % de rutas;
 # estable solo en 16 % de réplicas), movimientos a Torton o caja seca (sin efecto estimado).
-CAUSAL = [('3 Ejes', '2 Ejes'), ('Big Coil', '2 Ejes'), ('Big Coil', '3 Ejes')]
-ESTRICTO = [('3 Ejes', '2 Ejes'), ('Big Coil', '2 Ejes')]
+CAUSAL = [('3 Ejes', '2 Ejes'), ('Big Coil', '2 Ejes')]
+ESTRICTO = CAUSAL
 FLAG = df['Flag_Discrepancia_Peso'].astype(bool).to_numpy()
 CAP2E_P95 = float(df.loc[df['Unidad'] == '2 Ejes', 'Toneladas_Reales'].quantile(.95))
 
@@ -178,7 +179,7 @@ paso('1. Factibilidad: peso programado confiable y peso real dentro de la capaci
 
 configurar(perm=pares(CAUSAL), excluir_flag=True)
 a2, _, _ = en_muestra(opt.F_max)
-paso('2. Solo movimientos con efecto causal estimado en C2 (3E→2E, Big Coil→2E, Big Coil→3E)', 'Respaldo\ncausal (C2)', a2)
+paso('2. Solo movimientos con efecto causal estimado en C2 (3E→2E, Big Coil→2E)', 'Respaldo\ncausal (C2)', a2)
 
 a3, _, _ = crossfit(opt.F_max)
 paso('3. Maldición del optimizador: elegir con semanas pares, medir con impares (y al revés)', 'Maldición del\noptimizador', a3)
@@ -231,9 +232,88 @@ configurar(perm=pares(CAUSAL), excluir_flag=True)
 sens_flota = []
 for q in [1.0, 0.95, 0.90, 0.75, 0.50]:
     a, tn, k = crossfit(flota(q))
-    sens_flota.append(dict(Cuantil=q, Viajes=int((k != k0).sum()), Ahorro_M=(a - PRIMA_C * tn).sum() / 1e6))
+    lo, hi = ic(a)
+    sens_flota.append(dict(Cuantil=q, Viajes=int((k != k0).sum()), Ahorro_M=(a - PRIMA_C * tn).sum() / 1e6,
+                           Sin_prima_M=a.sum() / 1e6, Sin_prima_inf_M=lo / 1e6, Sin_prima_sup_M=hi / 1e6))
 sens_flota = pd.DataFrame(sens_flota)
+print('\nFlota por planta × semana (Ahorro_M incluye la prima; Sin_prima_* con su IC 95 %)')
 print(sens_flota.round(2).to_string(index=False))
+
+# ----------------------------------------------------------------------------
+# 5b. Extremos de disponibilidad (lineamiento del Reto B): optimista = la unidad siempre está libre (sin tope de
+#     flota); conservador = solo cuenta como disponible si ese tipo salió de la misma planta ese día (o esa semana).
+# ----------------------------------------------------------------------------
+_pl = df[tc.PLANTA].astype(str)
+
+
+def presencia(periodo):
+    """Matriz viajes × unidades: True si ese tipo de unidad salió de la misma planta en el mismo periodo."""
+    clave = (_pl + '|' + periodo.astype(str)).to_numpy()
+    cod, _ = pd.factorize(clave)
+    hay = np.zeros((cod.max() + 1, K), bool)
+    hay[cod, k0] = True
+    return hay[cod]
+
+
+def crossfit_presencia(P=None):
+    """Como `crossfit`, sin tope de flota; si se da `P`, solo se permiten unidades presentes (P[i, k])."""
+    a, tn = np.zeros(N), np.zeros(N)
+    for A in (par, ~par):
+        TA, TB = opt.tarifas(A.astype(float)), opt.tarifas((~A).astype(float))
+        C, _ = opt.factibles(TA)
+        if P is not None:
+            actual = C[np.arange(N), k0].copy()
+            C = np.where(P, C, np.nan)
+            C[np.arange(N), k0] = actual
+        k = np.where(np.isnan(C), np.inf, C + 1e-6 * opt.CAP_LEG[None, :]).argmin(1)
+        k[qr > opt.CAP_LEG[k]] = k0[qr > opt.CAP_LEG[k]]
+        m = (~A) & (k != k0)
+        d, t = TB[rr[m], k0[m]] - TB[rr[m], k[m]], TB[rr[m], k[m]]
+        sin = np.isnan(d)
+        d[sin] = (TA[rr[m], k0[m]] - TA[rr[m], k[m]])[sin]
+        t[sin] = TA[rr[m], k[m]][sin]
+        a[m], tn[m] = d, t
+    return a, tn
+
+
+extremos = []
+for nombre, P in [('Optimista: siempre disponible (sin tope de flota)', None),
+                  ('Conservador: salió de la planta esa semana', presencia(semana)),
+                  ('Conservador: salió de la planta ese día', presencia(df['FECHA_EGRESO'].dt.normalize()))]:
+    a, tn = crossfit_presencia(P)
+    lo, hi = ic(a)
+    lo_p, hi_p = ic(a - PRIMA_C * tn)
+    extremos.append(dict(Extremo=nombre, Viajes=int((a != 0).sum()), Sin_prima_M=a.sum() / 1e6,
+                         Sin_prima_inf_M=lo / 1e6, Sin_prima_sup_M=hi / 1e6, Con_prima_M=(a - PRIMA_C * tn).sum() / 1e6,
+                         Con_prima_inf_M=lo_p / 1e6, Con_prima_sup_M=hi_p / 1e6))
+extremos = pd.DataFrame(extremos)
+extremos.to_csv(OUT / 'componente_4_extremos_disponibilidad.csv', index=False, encoding='utf-8-sig')
+print('\n=== EXTREMOS DE DISPONIBILIDAD (M MXN, ene–ago) ===')
+print(extremos.round(2).to_string(index=False))
+
+# ----------------------------------------------------------------------------
+# 5c. Quiebre por disponibilidad: 2 Ejes adicionales por semana que exige el central y costo por cancelación
+#     que borraría el ahorro si una fracción p de las solicitudes no se surte (ahorro × (1 − p) = p × costo).
+# ----------------------------------------------------------------------------
+i2 = IDX['2 Ejes']
+n_sem = semana.nunique()
+extra = pd.DataFrame({'Planta': _pl, 'Hoy': k0 == i2, 'Adicionales': (k4 != k0) & (k4 == i2)}).groupby('Planta').sum()
+extra = extra[extra['Adicionales'] > 0].sort_values('Adicionales', ascending=False)
+extra['Hoy_sem'] = extra['Hoy'] / n_sem
+extra['Adicionales_sem'] = extra['Adicionales'] / n_sem
+extra['Aumento_pct'] = extra['Adicionales'] / extra['Hoy'] * 100
+extra.to_csv(OUT / 'componente_4_2ejes_adicionales.csv', encoding='utf-8-sig')
+extra_sem, hoy_sem = extra['Adicionales'].sum() / n_sem, (k0 == i2).sum() / n_sem
+ahorro_mov = a_cen.sum() / (k_cen != k0).sum()
+cancel = pd.DataFrame({'p_no_surtidas': [0.1, 0.2, 0.3, 0.5]})
+cancel['Costo_quiebre_MXN'] = ahorro_mov * (1 - cancel['p_no_surtidas']) / cancel['p_no_surtidas']
+print(f"\n2 Ejes adicionales que exige el central: {extra_sem:.1f} viajes/semana sobre {hoy_sem:.1f} actuales "
+      f"(+{extra_sem / hoy_sem:.0%})")
+print(extra[['Hoy_sem', 'Adicionales_sem', 'Aumento_pct']].head(6).round(1).to_string())
+print(f"Ahorro por viaje cambiado (central, con prima): ${ahorro_mov:,.0f}; sin prima: "
+      f"${a4.sum() / (k4 != k0).sum():,.0f}")
+print('Costo por cancelación que borra el ahorro:')
+print(cancel.round({'p_no_surtidas': 2, 'Costo_quiebre_MXN': 0}).to_string(index=False))
 
 # ----------------------------------------------------------------------------
 # 6. Punto de quiebre: prima sobre la tarifa de la unidad nueva que borra el ahorro central
@@ -370,7 +450,10 @@ print(f"Top 10 rutas = {pct_top:.0%} del ahorro central")
 resumen = dict(N=N, n_meses=n_meses, gasto=gasto, pct_tarifa=pct_tarifa, prima_c=PRIMA_C, prima_p=PRIMA_P,
                n_prima=len(prima_obs), cap2e_p95=CAP2E_P95, flag=int(FLAG.sum()),
                cascada=cascada.drop(columns='Corto').to_dict('records'), escenarios=esc.to_dict('records'),
-               sens_flota=sens_flota.to_dict('records'),
+               sens_flota=sens_flota.to_dict('records'), extremos_disponibilidad=extremos.to_dict('records'),
+               dos_ejes_adicionales=dict(por_semana=extra_sem, actuales_semana=hoy_sem,
+                                         por_planta=extra.reset_index().to_dict('records')),
+               quiebre_cancelacion=dict(ahorro_por_viaje=ahorro_mov, tabla=cancel.to_dict('records')),
                p_quiebre=p_quiebre, p_quiebre_ic=list(p_q_ic), pct_sobre_quiebre=pct_sobre_q, tarifa_media=tarifa_media,
                validacion=dict(ahorro=a_val.sum(), ic=[val_lo, val_hi], viajes=int(mv.sum()), central_julago=cen_julago),
                anual=anual, anual_bajo=anual_bajo, anual_alto=anual_alto, anual_jul=anual_jul, pct_gasto=tot / gasto,

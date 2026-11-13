@@ -1,7 +1,7 @@
 ﻿Ajuste,Ahorro_M,IC_inf_M,IC_sup_M,Viajes
 0. Número ingenuo: MILP con flota de C3,31.602774,17.52923154940844,52.334413254190125,4721
 1. Factibilidad: peso programado confiable y peso real dentro de la capacidad legal,31.559748,17.483826296200874,52.26109654174971,4713
-"2. Solo movimientos con efecto causal estimado en C2 (3E→2E, Big Coil→2E, Big Coil→3E)",28.426417,14.413559521846565,49.05082777861587,4067
-"3. Maldición del optimizador: elegir con semanas pares, medir con impares (y al revés)",28.194269,14.207366275344489,48.507318534073924,4687
-4. Disponibilidad: unidades por planta y semana = P90 semanal observado (no el máximo),20.794876,11.021752545472918,34.03615140384708,3270
-5. Respuesta del mercado: la unidad adicional se paga con prima de 6.7%,15.551672763801983,8.269233075151348,25.0651438505165,3281
+"2. Solo movimientos con efecto causal estimado en C2 (3E→2E, Big Coil→2E)",27.392028,13.997372324820082,46.607730452359625,3503
+"3. Maldición del optimizador: elegir con semanas pares, medir con impares (y al revés)",27.15212,13.908594732370009,46.47105917831983,3423
+4. Disponibilidad: unidades por planta y semana = P90 semanal observado (no el máximo),19.514541,10.583185046608959,31.53103952982193,2192
+5. Respuesta del mercado: la unidad adicional se paga con prima de 6.7%,15.53084790989951,8.262777761276636,25.354509968721054,2206
