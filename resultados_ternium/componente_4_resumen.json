@@ -48,7 +48,7 @@
    "Ajuste": "5. Respuesta del mercado: la unidad adicional se paga con prima de 6.7%",
    "Ahorro_M": 15.53084790989951,
    "IC_inf_M": 8.262777761276636,
-   "IC_sup_M": 25.354509968721054,
+   "IC_sup_M": 25.354509968721064,
    "Viajes": 2206
   }
  ],
@@ -73,10 +73,10 @@
    "Rutas": 155,
    "Ahorro_M": 15.53084790989951,
    "IC_inf_M": 8.262777761276636,
-   "IC_sup_M": 25.354509968721054,
+   "IC_sup_M": 25.354509968721064,
    "Anual_M": 23.296271864849267,
    "Anual_inf_M": 12.394166641914953,
-   "Anual_sup_M": 38.03176495308158,
+   "Anual_sup_M": 38.0317649530816,
    "Pct_gasto": 0.9490467954582797
   },
   {
@@ -86,10 +86,10 @@
    "Rutas": 122,
    "Ahorro_M": 5.605413000522054,
    "IC_inf_M": 2.5091776581771192,
-   "IC_sup_M": 10.282603960988846,
+   "IC_sup_M": 10.282603960988837,
    "Anual_M": 8.40811950078308,
    "Anual_inf_M": 3.763766487265679,
-   "Anual_sup_M": 15.42390594148327,
+   "Anual_sup_M": 15.423905941483255,
    "Pct_gasto": 0.3425311532395308
   }
  ],
@@ -143,8 +143,8 @@
    "Sin_prima_inf_M": 15.049813395303463,
    "Sin_prima_sup_M": 56.73330354549065,
    "Con_prima_M": 24.7980136314497,
-   "Con_prima_inf_M": 11.594664431382185,
-   "Con_prima_sup_M": 45.50342905373638
+   "Con_prima_inf_M": 11.594664431382187,
+   "Con_prima_sup_M": 45.50342905373641
   },
   {
    "Extremo": "Conservador: salió de la planta esa semana",
@@ -153,8 +153,8 @@
    "Sin_prima_inf_M": 15.025016024470023,
    "Sin_prima_sup_M": 56.690875824547405,
    "Con_prima_M": 24.708755386829754,
-   "Con_prima_inf_M": 11.519931037609922,
-   "Con_prima_sup_M": 45.31555019197043
+   "Con_prima_inf_M": 11.519931037609926,
+   "Con_prima_sup_M": 45.31555019197046
   },
   {
    "Extremo": "Conservador: salió de la planta ese día",
@@ -163,8 +163,8 @@
    "Sin_prima_inf_M": 14.489184610594286,
    "Sin_prima_sup_M": 55.37885571259813,
    "Con_prima_M": 23.995756269639966,
-   "Con_prima_inf_M": 10.986313651567821,
-   "Con_prima_sup_M": 44.1951632079596
+   "Con_prima_inf_M": 10.986313651567817,
+   "Con_prima_sup_M": 44.195163207959624
   }
  ],
  "dos_ejes_adicionales": {
@@ -301,7 +301,7 @@
   "ahorro": 4684782.407011207,
   "ic": [
    2120726.5899933362,
-   8332913.547960961
+   8332913.547960968
   ],
   "viajes": 625,
   "central_julago": 3865584.8060932835

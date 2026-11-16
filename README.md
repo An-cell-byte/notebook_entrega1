@@ -39,8 +39,10 @@ data/oro_v2/viajes_foraneos_oro.csv            (ORO v2) + rechazados, rutas pend
    ├─▶ componente_1.ipynb   → línea base: utilización, costo de la capacidad ociosa, right-sizing por reglas
    ├─▶ componente_2.ipynb   → DAG, efecto causal del tipo de camión, modelo de elección, optimización y simulador
    ├─▶ componente_3.ipynb   → comparación de enfoques (actual, heurística, MILP, consolidación) y casos raros
-   └─▶ componente_4.py      → ahorro creíble: cascada de supuestos, escenarios, anualización y piloto
-                              └─▶ resultados_ternium/componente_4_*
+   ├─▶ componente_4.py      → ahorro creíble: cascada de supuestos, escenarios, anualización y piloto
+   │                          └─▶ resultados_ternium/componente_4_*
+   └─▶ componente_5.ipynb   → 20 viajes de Nuevo León con acción, ahorro [IC], condición y confianza
+                              └─▶ resultados_ternium/componente_5_*
 ```
 
 ---
@@ -73,6 +75,7 @@ Los datos de `data/oro_v2/` ya están en el repo, así que **no hace falta corre
 2. [componente_2.ipynb](analisis_estadistico_IA/componente_2.ipynb). La celda de estabilidad de la sección 6.2 tarda ~11 min (400 réplicas del optimizador).
 3. [componente_3.ipynb](analisis_estadistico_IA/componente_3.ipynb)
 4. `python analisis_estadistico_IA/componente_4.py`. Escribe tablas, figuras, `componente_4_salida.txt` y `componente_4_documento.html` en `resultados_ternium/`.
+5. [componente_5.ipynb](analisis_estadistico_IA/componente_5.ipynb) (~20 s). No depende de las salidas de C4: repite su escenario central con las mismas reglas y verifica que dé las mismas cifras.
 
 Los notebooks viven en `analisis_estadistico_IA/`, pero `data/`, `config/` y `resultados_ternium/` están en la raíz. Por eso la primera celda de cada notebook cambia el directorio de trabajo a la raíz y agrega `analisis_estadistico_IA/` y `data_processing/` al path de Python. Los scripts (`componente_4.py` y los de `data_processing/`) hacen lo mismo, así que se pueden correr desde cualquier carpeta.
 
@@ -185,6 +188,7 @@ El Componente 2 también importa `clave()` de `distancias_v2.py` (que usa `norm(
 | [componente_2.ipynb](analisis_estadistico_IA/componente_2.ipynb) | Efecto causal, modelo de elección, optimización y simulador. [Detalle](#componente-2-efecto-del-tipo-de-camión-optimización-y-simulador). |
 | [componente_3.ipynb](analisis_estadistico_IA/componente_3.ipynb) | Comparación de enfoques y casos raros. [Detalle](#componente-3-comparación-de-enfoques-y-casos-raros). |
 | [componente_4.py](analisis_estadistico_IA/componente_4.py) | Ahorro creíble y piloto. [Detalle](#componente-4-cuánto-ganaría-ternium-realmente). |
+| [componente_5.ipynb](analisis_estadistico_IA/componente_5.ipynb) | Veinte acciones concretas en Nuevo León. [Detalle](#componente-5-veinte-acciones-concretas-en-nuevo-león). |
 
 ### Configuración y datos
 
@@ -197,7 +201,7 @@ El Componente 2 también importa `clave()` de `distancias_v2.py` (que usa `norm(
 | `config/plantas.csv`, `config/destinos_canonicos.csv` | Ciudad y estado de cada planta (20) y nombre limpio, estado y tipo de cada destino (524), revisados a mano. Son la fuente para geocodificar. Los `*.bak.csv` son respaldos que deja `distancias_v2.py`. |
 | `data/distancias_v2/` | Catálogo de distancias, caché de geocodificación y de rutas, `geocoding_revisar.csv`, `rutas_ratio_dudoso.csv` y `reporte_distancias.json`. |
 | `data/oro_v2/` | Salidas de `etl_oro.py` (ver arriba). |
-| `resultados_ternium/componente_4_*` | Salidas de `componente_4.py`. El resto de esa carpeta son salidas del análisis exploratorio. |
+| `resultados_ternium/componente_4_*`, `componente_5_*` | Salidas de `componente_4.py` y `componente_5.ipynb` (`componente_5_viajes.csv` y `.png`). El resto de esa carpeta son salidas del análisis exploratorio. |
 
 ### Documentación
 
@@ -205,7 +209,7 @@ El Componente 2 también importa `clave()` de `distancias_v2.py` (que usa `norm(
 |---|---|
 | [CLAUDE.md](CLAUDE.md) | Bitácora del proyecto: decisiones, hallazgos por fecha y pendientes. |
 | [sugerencias_ternium.md](sugerencias_ternium.md) | Preguntas abiertas y sugerencias para Ternium, con su estado. |
-| `borrador_entrega2_reto.docx` | Borrador del documento de la entrega 2. |
+| `Entrega 2_ Reto.docx` | Documento de la entrega 2 (local, sin versionar). |
 
 ### Archivos heredados
 
@@ -223,7 +227,7 @@ El pipeline v1 (`data_engineer.py`, `imputación_rutas_capa_oro.ipynb`, `fix_kil
 
 ## Universo y convenciones comunes
 
-Los cuatro componentes trabajan sobre el **mismo universo**: **58,275 viajes** (81 % de la ventana, 1.67 Mt) en seis unidades.
+Los cinco componentes trabajan sobre el **mismo universo**: **58,275 viajes** (81 % de la ventana, 1.67 Mt) en seis unidades.
 
 | Unidad | Familias incluidas | Carga útil para el análisis |
 |---|---|---|
@@ -257,7 +261,7 @@ Los cuatro componentes trabajan sobre el **mismo universo**: **58,275 viajes** (
 
 - Utilización: Torton 0.85, 2 Ejes 0.75, 3 Ejes 0.81, Big Coil 0.71, Full 0.95.
 - Costo de la capacidad ociosa: **343 M MXN [302–378] = 20.9 % del gasto** (1,636 M). El mayor foco es Juventud con 3 ejes (~60 M).
-- Right-sizing: **5,784 viajes (9.9 %)**, ahorro de **38.5 M MXN** (2.35 % del gasto). El grueso es 3 ejes → 2 ejes y Big Coil → 2 ejes. Recupera ~11 % del costo ocioso.
+- Right-sizing: **5,784 viajes (9.9 %)**, ahorro de **38.5 M MXN [17.4–62.6]** (2.35 % del gasto). El grueso es 3 ejes → 2 ejes y Big Coil → 2 ejes. Recupera ~11 % del costo ocioso.
 
 ## Componente 2: efecto del tipo de camión, optimización y simulador
 
@@ -265,20 +269,22 @@ Los cuatro componentes trabajan sobre el **mismo universo**: **58,275 viajes** (
 
 | Sección | Qué hace |
 |---|---|
-| 1. DAG | Grafo causal tipo de camión → costo. Ajuste: efectos fijos de ruta, peso programado, mes y "es retorno". El transportista es **mediador** (Ternium pide la unidad y después los transportistas ofertan). Verifica con datos las consecuencias del grafo. |
+| 1. DAG | Grafo causal tipo de camión → costo. Ajuste: efectos fijos de ruta, peso programado y mes. El transportista es **mediador** (Ternium pide la unidad y después los transportistas ofertan). Verifica con datos las consecuencias del grafo. |
 | 2. Retorno | Reconstruye los ciclos de cada placa. Solo ~1 % de los viajes regresa con carga de Ternium. |
 | 3. Efecto del tipo de camión | Regresión por pares de unidades, solo en rutas donde operan ambas. Sensibilidad a un confusor omitido (Cinelli y Hazlett) y control negativo. |
 | 4. Robustez y falsificación | Siete variantes del análisis, replicación ene–jun vs. jul–ago, efecto mes a mes, placebo por permutación y heterogeneidad entre rutas. |
-| 5. Modelo de elección de unidad | Clasificador **HistGradientBoosting** que reproduce qué unidad pide Ternium con la información disponible al pedirla (entrena ene–may, valida jun, prueba jul–ago). La sección 5.1b lo compara con un **Random Forest** con las mismas variables y la misma partición. Marca las decisiones atípicas. |
+| 5. Modelo de elección de unidad | **Random Forest** de clasificación que reproduce qué unidad pide Ternium con la información disponible al pedirla (entrena ene–may, valida jun, prueba jul–ago). La sección 5.1b lo compara con un gradient boosting con las mismas variables y la misma partición. Marca las decisiones atípicas (≥ 50 % de probabilidad de una unidad más chica). |
 | 6. Optimización | **MILP** por semana: minimiza el costo con restricciones de capacidad, compatibilidad, materialidad (3 %) y disponibilidad de flota por planta. Incluye la estabilidad ante cambios de tarifas y reglas. |
-| 7. Simulador | Política actual (modelo de la sección 5) contra right-sizing (decidido con ene–jun) en jul–ago, fuera de muestra. Antes valida que reproduzca la línea base de C1. |
+| 7. Simulador | Política actual (modelo de la sección 5) contra right-sizing (decidido con ene–jun) en jul–ago, fuera de muestra. Antes valida que reproduzca la línea base de C1. La sección 7.4 agrega un escenario de indisponibilidad de la unidad pedida. |
+| 8. Predecir y optimizar | **Random Forest de regresión** de la tarifa (log del costo) para las combinaciones ruta × unidad sin tarifa observada; sus predicciones entran al mismo programa lineal con respaldo causal y un umbral que incluye el error del modelo. Separa el ahorro verificable del que solo existe según el modelo y propone rutas piloto. |
 
 **Resultados principales**
 
 - **2 ejes vs. 3 ejes:** en la misma ruta, mes y peso, el 2 ejes cuesta **−20.8 % [−24.2, −17.2]** (~5,200 MXN por viaje). Es robusto: se replica todos los meses y pasa el placebo. **2 ejes vs. Big Coil:** −28.8 %. **Torton → 2 ejes no es significativo** (−1.3 % [−19, +21]).
-- **Modelo de elección:** acierta el **94.9 % [92.4–96.8]** en jul–ago, contra 81.9 % de la regla "unidad más usada en la ruta". El Random Forest acierta lo mismo (94.5 %), pero sus probabilidades son peores (log-loss 0.180 contra 0.156), y el simulador sortea con esas probabilidades. Solo 3.3 % de los 3 ejes son atípicos: el ahorro viene de **cambiar la política**, no de corregir errores.
+- **Modelo de elección:** el Random Forest acierta el **94.5 % [91.4–96.8]** en jul–ago, contra 81.9 % de la regla "unidad más usada en la ruta"; el gradient boosting empata (94.9 %). Solo 2.9 % de los 3 ejes son atípicos: el ahorro viene de **cambiar la política**, no de corregir errores.
 - **Optimización con flota:** 4,721 viajes, **31.6 M MXN** en ene–ago. Es sensible a la disponibilidad de flota: con flota P75 baja a 18.8 M.
-- **Simulador en jul–ago (fuera de muestra):** **6.2 M MXN [3.3–10.0]** en dos meses (1.5 % del gasto), positivo en el 100 % de las réplicas.
+- **Simulador en jul–ago (fuera de muestra):** **5.5 M MXN [3.2–8.7]** en dos meses (1.4 % del gasto), positivo en el 100 % de las réplicas. Con 10/20/30/50 % de solicitudes no surtidas: 4.9/4.4/3.8/2.8 M.
+- **Tarifas predichas (sección 8):** 5.5 M verificados con costos reales + 1.0 M [0.7–1.3] que solo existe según el modelo (jul–ago).
 
 > **Versión anterior (al final del notebook, bajo "⚠️ Versión anterior").** Se conserva solo como referencia y sus resultados **no deben usarse**. Lee el oro v1 y contiene el OLS sobre el top 50 de rutas, los clusters K-Means de destino, un **Random Forest** y un **XGBoost** de regresión del costo y el bootstrap del ahorro. Problemas: clasificación circular de camiones por peso, ahorro fabricado (costo real − predicho, recortado en 0), fuga de información del periodo de prueba en los clusters y etiquetas "Q4", "Oct–Dic" y "anual" que no corresponden a los datos.
 
@@ -310,24 +316,45 @@ Parte del número ingenuo (MILP de C3, 31.6 M) y lo reduce paso a paso con supue
 |---|---|---|
 | 0. Número ingenuo: MILP con flota (C3) | 31.6 [17.5–52.3] | 4,721 |
 | 1. Factibilidad: peso programado confiable y peso real dentro de la capacidad legal | 31.6 [17.5–52.3] | 4,713 |
-| 2. Solo movimientos con efecto causal estimado en C2 (3E→2E, Big Coil→2E, Big Coil→3E) | 28.4 [14.4–49.1] | 4,067 |
-| 3. Maldición del optimizador: decidir con semanas pares y medir con impares (y al revés) | 28.2 [14.2–48.5] | 4,687 |
-| 4. Disponibilidad: unidades por planta y semana = P90 semanal (no el máximo) | 20.8 [11.0–34.0] | 3,270 |
-| 5. Respuesta del mercado: la unidad adicional se paga con prima de 6.7 % | **15.6 [8.3–25.1]** | 3,281 |
+| 2. Solo movimientos con efecto causal estimado en C2 (3E→2E, Big Coil→2E) | 27.4 [14.0–46.6] | 3,503 |
+| 3. Maldición del optimizador: decidir con semanas pares y medir con impares (y al revés) | 27.2 [13.9–46.5] | 3,423 |
+| 4. Disponibilidad: unidades por planta y semana = P90 semanal (no el máximo) | 19.5 [10.6–31.5] | 2,192 |
+| 5. Respuesta del mercado: la unidad adicional se paga con prima de 6.7 % | **15.5 [8.3–25.4]** | 2,206 |
 
-- **Escenarios:** optimista 30.7 M, **central 15.6 M** y pesimista 5.6 M en ene–ago (0.3–1.9 % del gasto). Anualizado (×12/8): central **23.3 M [12.4–37.6]**. Es la única anualización del proyecto y depende de que sep–dic se comporte como ene–ago.
-- **Punto de quiebre:** el ahorro desaparece si la unidad nueva se paga con una prima de **26.6 % [21.6–33.2]**.
-- **Validación fuera de muestra** (decide con ene–jun, mide jul–ago): 4.7 M [2.2–8.1].
+- **Movimientos del central:** 3 ejes → 2 ejes 11.7 M (1,515 viajes) y Big Coil → 2 ejes 3.8 M (691). Big Coil → 3 ejes ya no cuenta como causal (C2: con el mismo transportista el efecto es −0.8 %).
+- **Escenarios:** optimista 30.7 M, **central 15.5 M** y pesimista 5.6 M en ene–ago (0.3–1.9 % del gasto). Anualizado (×12/8): central **23.3 M [12.4–38.0]**. Es la única anualización del proyecto y depende de que sep–dic se comporte como ene–ago.
+- **Disponibilidad:** los extremos (siempre disponible; solo si la unidad salió de la planta esa semana o ese día) dan ~31 M sin prima. El central exige ~61 viajes de 2 ejes adicionales por semana sobre ~380 actuales (+16 %).
+- **Punto de quiebre:** el ahorro desaparece si la unidad nueva se paga con una prima de **32.8 % [28.5–37.1]**.
+- **Validación fuera de muestra** (decide con ene–jun, mide jul–ago): 4.7 M [2.1–8.3].
 - **Consolidación con ventanas más amplias:** mismo día 0.7 M, misma semana 2.1 M, mismo mes 3.5 M.
-- **Piloto propuesto:** ~930 viajes por grupo (63 bloques ruta × semana), unas **13 semanas**. Las 10 rutas principales concentran el 49 % del ahorro central, empezando por Pesquería → San Luis Potosí y Pesquería → Altamira.
+- **Piloto propuesto:** ~1,150 viajes por grupo (78 bloques ruta × semana), unas **16 semanas**. Las 10 rutas principales concentran el 49 % del ahorro central, empezando por Pesquería → San Luis Potosí y Pesquería → Altamira.
 
-**Las cifras de los componentes no se suman.** Son estimaciones del mismo ahorro con supuestos cada vez más estrictos: C1 (38.5 M, peso real, sin límite de flota) → C2 y C3 (31.6 M, peso programado, con flota) → C4 (15.6 M central, con respaldo causal, disponibilidad realista y prima de mercado). El simulador de C2 (6.2 M) cubre solo jul–ago.
+## Componente 5: veinte acciones concretas en Nuevo León
+
+[componente_5.ipynb](analisis_estadistico_IA/componente_5.ipynb), resultados en `resultados_ternium/componente_5_viajes.csv` y `componente_5_viajes.png`
+
+Convierte el ahorro creíble en acciones viaje por viaje. Misma ventana (ene–ago 2026) y universo que C3.
+
+| Sección | Qué hace |
+|---|---|
+| 1. Punto de partida | Reproduce el MILP con flota de C3 (4,721 viajes, 31.6 M). |
+| 2. Limpieza del ruido | Repite el escenario central de C4 viaje por viaje (factibilidad, respaldo causal, maldición del optimizador, flota P90, prima 6.7 %) y verifica que dé 2,206 viajes y 15.53 M. |
+| 3. Candidatos | Viajes que cambian en C3 y siguen cambiando, a la misma unidad, en C4; planta de Nuevo León (`config/plantas.csv`); movimiento 3 ejes o Big Coil → 2 ejes. |
+| 4. IC por viaje | Bootstrap de dos vías transportista × ruta con un peso Poisson por viaje (B = 1,000), mismos movimientos y tarifas recalculadas en la mitad de semanas donde se mide el viaje. Se exige que el IC del 95 % excluya el cero. |
+| 5. Selección y confianza | Los 20 de mayor ahorro, uno por ruta. Para cada uno: acción, ahorro [IC], condición (flota de 2 ejes esa semana, tarifa observada, peso ≤ 29 t, prima) y confianza alta/media/baja según cuatro riesgos: IC amplio, peso > 26.4 t, flota al tope y poca evidencia tarifaria. |
+
+**Resultados principales**
+
+- 2,112 candidatos de Nuevo León (15.26 de los 15.53 M del central de C4); en 1,427 el IC excluye el cero (11.93 M).
+- Los 20 viajes ahorran **$0.42 M** ($16,000–$33,000 cada uno; $0.35 M con prima del 12.7 %). Sus 20 rutas suman 235 viajes iguales y **4.66 M MXN**: la acción es por ruta.
+- 19 son 3 ejes → 2 ejes (sobre todo hacia Mexicali, Tijuana y Hermosillo) y 1 es Big Coil → 2 ejes. Confianza: 3 altos, 14 medios y 3 bajos; los riesgos más comunes son la flota al tope (11) y el peso arriba de 26.4 t (10).
+
+**Las cifras de los componentes no se suman.** Son estimaciones del mismo ahorro con supuestos cada vez más estrictos: C1 (38.5 M, peso real, sin límite de flota) → C2 y C3 (31.6 M, peso programado, con flota) → C4 (15.5 M central, con respaldo causal, disponibilidad realista y prima de mercado). C5 no es otra estimación: desglosa en acciones una parte del central de C4. El simulador de C2 (5.5 M) cubre solo jul–ago.
 
 ---
 
 ## Notas y limitaciones
 
-- **Resultados guardados desactualizados.** En `componente_1.ipynb` cambió el cálculo del IC del right-sizing (ahora evalúa los mismos movimientos con tarifas remuestreadas) y hay una figura nueva sin ejecutar. Los resultados guardados son de la versión anterior, así que el IC del ahorro de C1 se omite arriba hasta volver a correr el notebook. La comparación con Random Forest (sección 5.1b de C2) tampoco tiene resultados guardados; las cifras citadas vienen de su texto de lectura.
 - **Capacidades provisionales.** Las taras son un supuesto dentro de 14–17 t. Falta la tara real del Full y del Torton, y `capacidades_config.csv` tiene `Verificado_NOM012 = False`.
 - **Techo de ~26 t en 2 ejes.** Las unidades de 2 ejes casi nunca cargan más de ~26 t, aunque la ley permitiría ~31–32 t. Si es una restricción real, el ahorro baja (en C1, con capacidad P95: 27.8 M en lugar de 38.5 M). Está entre las preguntas para Ternium.
 - **Solo hay peso.** No hay datos de volumen, largo ni producto. La compatibilidad producto–unidad se aproxima con la ruta y las unidades que ya la operan.

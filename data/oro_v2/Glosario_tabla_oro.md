@@ -42,7 +42,7 @@ Las columnas se dividen en dos bloques:
 
 | # | Columna | Tipo | Unidad | Descripción |
 |---|---|---|---|---|
-| 6 | `PLANTA_ORIGEN` | texto | – | Planta de salida (20 distintas, p. ej. *Guerrero*). Junto con `Ciudad Destino` define la ruta. |
+| 6 | `PLANTA_ORIGEN` | texto | – | Planta de salida (20 distintas, p. ej. *Guerrero*). Junto con `Ciudad Destino` define la ruta. El oro no trae el estado de la planta: está en `config/plantas.csv` (13 de las 20 están en Nuevo León), y el Componente 5 lo usa para quedarse con las plantas de Nuevo León. |
 | 7 | `GRUPO_PLANTA_ORIGEN` | texto | – | Grupo de producto o planta: *Masivos* (34,220), *Largos* (16,300), *Revestidos* (10,853), *CEDIS* (5,798), *CeSer* (4,048), *Bodega* (748). Es lo más cercano a "producto" que hay en los datos. |
 | 8 | `FECHA_EGRESO` | fecha-hora | – | Momento en que el camión salió de la planta. Define la ventana, el mes y la semana. |
 | 9 | `FAMILIA_CAMION_DESC` | texto | – | Familia de camión registrada (p. ej. *PLATAFORMA 3 EJES NEUMATICA*). Es la base para clasificar la unidad. 5 viajes la tienen vacía (plataformas de 40 pies). |
@@ -110,7 +110,7 @@ Las columnas se dividen en dos bloques:
 | 27 | `Costo_Ton_Real` | decimal | MXN/t | `Monto total / Toneladas_Reales` | Lo que se pagó por tonelada movida. |
 | 28 | `Costo_Ton_Optimo` | decimal | MXN/t | `Monto total / Toneladas_Maximas` | Costo por tonelada si el camión hubiera ido lleno con la misma tarifa. |
 | 29 | `Sobrecosto_Ton` | decimal | MXN/t | `Costo_Ton_Real − Costo_Ton_Optimo` | Dinero por tonelada que paga la capacidad vacía. **Supone consolidación total**: es una cota superior laxa, no un ahorro alcanzable. |
-| 30 | `Flag_Discrepancia_Peso` | booleano | – | `|Discrepancia_Peso_kg| > 1,000` | El peso programado difiere más de 1 t del real (1,489 viajes). Casi siempre es un error de captura (p. ej. programados de 72 t o en unidades equivocadas). Los componentes 2 y 4 excluyen estos viajes cuando usan el peso programado. |
+| 30 | `Flag_Discrepancia_Peso` | booleano | – | `|Discrepancia_Peso_kg| > 1,000` | El peso programado difiere más de 1 t del real (1,489 viajes). Casi siempre es un error de captura (p. ej. programados de 72 t o en unidades equivocadas). Los componentes 2, 4 y 5 excluyen estos viajes cuando usan el peso programado. |
 
 ### 4. Distancia y su calidad
 
